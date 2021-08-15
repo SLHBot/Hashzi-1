@@ -84,7 +84,7 @@ async function whatsAsena() {
     setInterval(async () => {
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
-        await axios.get('https://gist.github.com/xneon2/4c6a4c4981b3b693cb141d6701246075/raw/').then(async (ann) => {
+        await axios.get('https://gist.github.com/SLHBot/db6f600cefdde3881a4a18a942fc48b5/raw/').then(async (ann) => {
             const { infotr, infoen, infoes, infopt, infoid, infoaz, infohi, infoml, inforu } = ann.data.announcements
             if (infotr !== '' && config.LANG == 'TR') {
                 while (getGMTh == 19 && getGMTm == 1) {
@@ -103,7 +103,7 @@ async function whatsAsena() {
             }
             else if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 19 && getGMTm == 1) {
-                    return conn.sendMessage(conn.user.jid, '[ ```🌐SLHackers-Team_BOT🌐 Announcements🙇``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text)
+                    return conn.sendMessage(conn.user.jid, '[ ```🌐SLHackers Team Bot🌐 Announcements🙇``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text)
                 }
             }
             else if (infohi !== '' && config.LANG == 'HI') {
@@ -396,7 +396,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🌐SLHackers-Team_BOT🌐 Working as Public! 🙇*\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:private_\n\n*Thanks for using 🌐SLHackers-Team_BOT🌐💌*\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\nNewinfomation\n⚙Bot News\n', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🌐SLHackers-Team_BOT🌐 Working as Public! 🙇*\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:private_\n\n*Thanks for using 🌐SLHackers-Team_BOT🌐💌*\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\nhttps://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci\n⚙Bot News\n', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -451,7 +451,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🌐SLHackers-Team_BOT🌐 Working as Private! 🙇*\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:public_\n\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\n Newinfomation\n⚙Bot News\n Botnews\n⚙Bot News 02 Group\nBotnews2\n⚙SLHackersPlug group\n Botplugins\n\n*Thanks for using 🌐SLHackers-Team_BOT🌐💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🌐SLHackers-Team_BOT🌐 Working as Private! 🙇*\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:public_\n\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\n https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci\n⚙Bot News\n https://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n⚙Bot News 02 Group\nhttps://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n⚙SLHackersPlug group\n https://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n\n*Thanks for using 🌐SLHackers-Team_BOT🌐💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -797,7 +797,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     '\n*🌐SLHackers-Team_BOT🌐 නිසි ලෙස ක්‍රියා කරයි!*' +
                                     '\n_මෙය LOG අංකයයි.. මෙහි පණිවිඩ පිළිබඳව සැලකිලිමත් වන්න..!_' +
                                     '\n_ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහයට සම්බන්ධ වන්න.._' +
-                                    '\n_සහය සමූහය_: Newinfomation' +
+                                    '\n_සහය සමූහය_: https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci' +
                                     '\n_(සුරැකි පණිවිඩ)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, { detectLinks: false }

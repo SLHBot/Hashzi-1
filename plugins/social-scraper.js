@@ -176,7 +176,7 @@ else if (cn.WORKTYPE == 'public') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: '*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰* ',
+            caption: '*Made by 🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰* ',
           })
         })
         .catch(
