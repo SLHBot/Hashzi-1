@@ -9,89 +9,83 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Language = require('../language');
-const XN_DESC = "NSFU වීඩියෝ බාගත කරයි"
-const XN_NEED = "*Link අවශ්‍යයි!*"
-const XN_D = "*🙇Downloading Your Video*"
-const EDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:01*\n*📂TYPE:* *Video*\n*Uploading..📵*"
-const XEDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:02*\n*📂TYPE:* *video*\n*Uploading..📵*"
-const XXEDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:03*\n*📂TYPE:* *video*\n*Uploading..📵*"
-const XXXEDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:04*\n*📂TYPE:* *video*\n*Uploading..📵*"
-const XXXXEDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:05*\n*📂TYPE:* *video*\n*Uploading..📵*"
-const XXXXXEDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:06*\n*📂TYPE:* *video*\n*Uploading..📵*"
-const XXXXXXEDU_SLHEDU = "*TITLE:* *�MOTIVATION Video No:07*\n*📂TYPE:* *video*\n*Uploading..📵*"
-// LIST
-const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
-const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ යුතුය*"
+const EDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:01*\n*📂TYPE:* *Video*\n*Uploading..🎦*"
+const EEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:02*\n*📂TYPE:* *video*\n*Uploading..🎦*"
+const EEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:03*\n*📂TYPE:* *video*\n*Uploading..🎦*"
+const EEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:04*\n*📂TYPE:* *video*\n*Uploading..🎦*"
+const EEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:05*\n*📂TYPE:* *video*\n*Uploading..🎦*"
+const EEEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:06*\n*📂TYPE:* *video*\n*Uploading..🎦*"
+const EEEEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:07*\n*📂TYPE:* *video*\n*Uploading..🎦*"
 
 if (Config.NEOA == 'aca83a4354ac') {
 
-    Asena.addCommand({ pattern: '1slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '1motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39049`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
-    Asena.addCommand({ pattern: '2slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '2motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39050`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XEDU_SLHEDU, MessageType.text);
+        await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
-    Asena.addCommand({ pattern: '3slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '3motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39053`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XXEDU_SLHEDU, MessageType.text);
+        await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
-    Asena.addCommand({ pattern: '4slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '4motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39055`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XXXEDU_SLHEDU, MessageType.text);
+        await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
-    Asena.addCommand({ pattern: '5slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '5motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39056`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XXXXEDU_SLHEDU, MessageType.text);
+        await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
-    Asena.addCommand({ pattern: '6slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '6motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39059`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XXXXXEDU_SLHEDU, MessageType.text);
+        await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
-    Asena.addCommand({ pattern: '7slhedu ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: '7motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39061`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XXXXXXEDU_SLHEDU, MessageType.text);
+        await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: 'Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
 
     }));
 
