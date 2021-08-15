@@ -4,13 +4,13 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
-const {MessageType, MessageOptions} = require('@adiwajshing/baileys');
+const { MessageType, MessageOptions } = require('@adiwajshing/baileys');
 const Config = require('../config');
 
 // ==================== MAIN DESCRIPTION TEXT ====================
 const h_Des = "Yardım menüsünden botu kullanım hakkında bilgi verir."
 const h_DedEN = "Gives information about using the bot from the Help menu."
-const matchnullEN = "========== *🆘 🎭ɴᴇᴏᴛʀᴏ𝙭🪐 Help 🆘* ==========\n\n🔹 *.install:* install external plugins.\n\n🔹 *.plugin:* Shows the complete list of plugins you have installed.\n🔹 *.setvar:* It settings config without entering Heroku.\n🔹 *.remove:* remove the installed plugins.\n\n🔹 *.ban:* ban someone in the group.reply to mesage or tag a person to use .\n🔹 *.add:* add someone to the group .\n🔹 *.promote:* give admin.\n\n🔹 *.demote:*remove from admiin.\n🔹 *.mute:* mute the group that only admins can send message.\n🔹 *.unmute:* unmute the group anyone can send message.\n\n🔹 *.invite:* provide the group invitation link.\n🔹 *.afk:* it makes you afk \n.🔹 *.filter:* it adds a filter if someone types your filter it sends the action if you just write .filter it shows your filtr list.\n\n🔹 *.stop:* stop the filter you previously added.\n🔹 *.welcome:* it sets the welcome message.\n\n🔹 *.goodbye:* it sets the goodbye message.\n🔹 *.degis:* changes the text of module like alive,afk etc....\n🔹 *.restart:* restart the bot.\n\n🔹 *.shutdown:* shutdown the bot.\n🔹 *.dyno:* check heroku dyno usage.\n🔹 *.getvar:* get heroku config var.\n\n🔹 *.delvar:* delete heroku config var.\n🔹 *.kickme:* leave from a grooup.\n🔹 *.pp:* makes the replyed photo your profile.\n\n🔹 *.block:* block user.\n🔹 *.jid:* gives the user jid.\n🔹 *.scam:* create 5 mint of fake action.\n\n🔹 *.spam:* it spam until you stop it.\n🔹 *.tagadmin:* tags group admin.\n🔹 *.tagall:* tags everyone in the group.\n\n🔹 *.update:* check for new updates.\n🔹 *.update now:* it makes updates.========== *End General Help* =========="
+const matchnullEN = "========== *🆘 🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 Help 🆘* ==========\n\n🔹 *.install:* install external plugins.\n\n🔹 *.plugin:* Shows the complete list of plugins you have installed.\n🔹 *.setvar:* It settings config without entering Heroku.\n🔹 *.remove:* remove the installed plugins.\n\n🔹 *.ban:* ban someone in the group.reply to mesage or tag a person to use .\n🔹 *.add:* add someone to the group .\n🔹 *.promote:* give admin.\n\n🔹 *.demote:*remove from admiin.\n🔹 *.mute:* mute the group that only admins can send message.\n🔹 *.unmute:* unmute the group anyone can send message.\n\n🔹 *.invite:* provide the group invitation link.\n🔹 *.afk:* it makes you afk \n.🔹 *.filter:* it adds a filter if someone types your filter it sends the action if you just write .filter it shows your filtr list.\n\n🔹 *.stop:* stop the filter you previously added.\n🔹 *.welcome:* it sets the welcome message.\n\n🔹 *.goodbye:* it sets the goodbye message.\n🔹 *.degis:* changes the text of module like alive,afk etc....\n🔹 *.restart:* restart the bot.\n\n🔹 *.shutdown:* shutdown the bot.\n🔹 *.dyno:* check heroku dyno usage.\n🔹 *.getvar:* get heroku config var.\n\n🔹 *.delvar:* delete heroku config var.\n🔹 *.kickme:* leave from a grooup.\n🔹 *.pp:* makes the replyed photo your profile.\n\n🔹 *.block:* block user.\n🔹 *.jid:* gives the user jid.\n🔹 *.scam:* create 5 mint of fake action.\n\n🔹 *.spam:* it spam until you stop it.\n🔹 *.tagadmin:* tags group admin.\n🔹 *.tagall:* tags everyone in the group.\n\n🔹 *.update:* check for new updates.\n🔹 *.update now:* it makes updates.========== *End General Help* =========="
 const matchnull = "========== *🆘 Genel Yardım 🆘* ==========\n\n🔹 *.alive:* Botun çalışıp çalışmadığını kontrol eder.\n🔹 *.asena:* Tüm komut listesini gösterir.\n🔹 *.setvar:* Herokuya girmeden config ayarlar.\n\n🔸 Daha fazla yardım için ```.help <yardım almak istediğiniz konu>``` komutunu kullanın.\nÖrnek: ```.help botumu nasıl public yaparım?```\n\n========== *Genel Yardım Bitti* =========="
 const notfound = "```Almak istediğiniz yardım bulunamadı!```\n```Lütfen daha açıklayıcı bir şekilde sorunu belirtin.```"
 const notfoundEN = "```The help you wanted to get was not found!```\n```Please state the problem in a more descriptive way.```"
@@ -27,8 +27,8 @@ const blEN = "Closes BlockChat bot to group, person or multiple chats you specif
 const sudoEN = "SUDO, Shares your bot to the user you choose with all its powers.If you put ,0 at the end of the number, the user can also use it in the group.\nTo use, type *.setvar SUDO:90xxxx && 90xx,90xxx [with county code, (❌ +90xx • ✅ 90xx)]*"
 
 if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
-    
-    Asena.addCommand({pattern: 'nsup ?(.*)', fromMe: true, desc: h_Des}, (async (message, match) => {
+
+    Asena.addCommand({ pattern: 'nsup ?(.*)', fromMe: true, desc: h_Des }, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(
@@ -37,28 +37,28 @@ if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('public') && match[1].includes('nasıl')) || (match[1].includes('public') && match[1].includes('yapimi')) || (match[1].includes('public') && match[1].includes('yapımı')) || (match[1].includes('public') && match[1].includes('nedir')) || (match[1].includes('herkese') && match[1].includes('acik') || match[1].includes('açık')) ) {
+        else if ((match[1].includes('public') && match[1].includes('nasıl')) || (match[1].includes('public') && match[1].includes('yapimi')) || (match[1].includes('public') && match[1].includes('yapımı')) || (match[1].includes('public') && match[1].includes('nedir')) || (match[1].includes('herkese') && match[1].includes('acik') || match[1].includes('açık'))) {
             return await message.client.sendMessage(
                 message.jid,
                 pubTR,
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('private') && match[1].includes('nasıl')) || (match[1].includes('private') && match[1].includes('yapimi')) || (match[1].includes('private') && match[1].includes('yapımı')) || (match[1].includes('private') && match[1].includes('nedir')) || (match[1].includes('bana') && match[1].includes('özel')) ) {
+        else if ((match[1].includes('private') && match[1].includes('nasıl')) || (match[1].includes('private') && match[1].includes('yapimi')) || (match[1].includes('private') && match[1].includes('yapımı')) || (match[1].includes('private') && match[1].includes('nedir')) || (match[1].includes('bana') && match[1].includes('özel'))) {
             return await message.client.sendMessage(
                 message.jid,
                 privTR,
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('belirli') && match[1].includes('sohbet')) || (match[1].includes('sohbet') && match[1].includes('kapat')) || (match[1].includes('nasil') && match[1].includes('kapatabilirim')) || (match[1].includes('blockchat') && match[1].includes('nedir')) || (match[1].includes('sohbet') && match[1].includes('özel')) ) {
+        else if ((match[1].includes('belirli') && match[1].includes('sohbet')) || (match[1].includes('sohbet') && match[1].includes('kapat')) || (match[1].includes('nasil') && match[1].includes('kapatabilirim')) || (match[1].includes('blockchat') && match[1].includes('nedir')) || (match[1].includes('sohbet') && match[1].includes('özel'))) {
             return await message.client.sendMessage(
                 message.jid,
                 blTR,
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('SUDO') && match[1].includes('nedir')) || (match[1].includes('SUDO') && match[1].includes('nasil')) || (match[1].includes('botu') && match[1].includes('baskasina')) || (match[1].includes('botu') && match[1].includes('arkadaşıma')) || (match[1].includes('SUDO') && match[1].includes('kullanmak')) ) {
+        else if ((match[1].includes('SUDO') && match[1].includes('nedir')) || (match[1].includes('SUDO') && match[1].includes('nasil')) || (match[1].includes('botu') && match[1].includes('baskasina')) || (match[1].includes('botu') && match[1].includes('arkadaşıma')) || (match[1].includes('SUDO') && match[1].includes('kullanmak'))) {
             return await message.client.sendMessage(
                 message.jid,
                 sudoTR,
@@ -75,8 +75,8 @@ if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
     }));
 }
 else {
-    
-    Asena.addCommand({pattern: 'nsup ?(.*)', fromMe: true, desc: h_DedEN}, (async (message, match) => {
+
+    Asena.addCommand({ pattern: 'nsup ?(.*)', fromMe: true, desc: h_DedEN }, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(
@@ -85,28 +85,28 @@ else {
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('public') && match[1].includes('how')) || (match[1].includes('public') && match[1].includes('set')) || (match[1].includes('public') && match[1].includes('setting')) ) {
+        else if ((match[1].includes('public') && match[1].includes('how')) || (match[1].includes('public') && match[1].includes('set')) || (match[1].includes('public') && match[1].includes('setting'))) {
             return await message.client.sendMessage(
                 message.jid,
                 pubEN,
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('private') && match[1].includes('how')) || (match[1].includes('private') && match[1].includes('set')) || (match[1].includes('private') && match[1].includes('setting')) ) {
+        else if ((match[1].includes('private') && match[1].includes('how')) || (match[1].includes('private') && match[1].includes('set')) || (match[1].includes('private') && match[1].includes('setting'))) {
             return await message.client.sendMessage(
                 message.jid,
                 privEN,
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('SUDO') && match[1].includes('usage')) || (match[1].includes('SUDO') && match[1].includes('what')) || (match[1].includes('how') && match[1].includes('SUDO')) || (match[1].includes('set') && match[1].includes('SUDO')) || (match[1].includes('share') && match[1].includes('bot')) ) {
+        else if ((match[1].includes('SUDO') && match[1].includes('usage')) || (match[1].includes('SUDO') && match[1].includes('what')) || (match[1].includes('how') && match[1].includes('SUDO')) || (match[1].includes('set') && match[1].includes('SUDO')) || (match[1].includes('share') && match[1].includes('bot'))) {
             return await message.client.sendMessage(
                 message.jid,
                 sudoEN,
                 MessageType.text
             );
         }
-        else if ( (match[1].includes('block') && match[1].includes('chat')) || (match[1].includes('how') && match[1].includes('block')) || (match[1].includes('close') && match[1].includes('bot')) || (match[1].includes('specific') && match[1].includes('chat')) || (match[1].includes('specific') && match[1].includes('set')) ) {
+        else if ((match[1].includes('block') && match[1].includes('chat')) || (match[1].includes('how') && match[1].includes('block')) || (match[1].includes('close') && match[1].includes('bot')) || (match[1].includes('specific') && match[1].includes('chat')) || (match[1].includes('specific') && match[1].includes('set'))) {
             return await message.client.sendMessage(
                 message.jid,
                 blEN,

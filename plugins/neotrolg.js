@@ -1,37 +1,38 @@
 const Asena = require('../events');
 const Config = require('../config');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 //language
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 if (Config.WORKTYPE == 'public') {
-Asena.addCommand({pattern: 'textimg', fromMe: false, desc: Lang.UP}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'textimg', fromMe: false, desc: Lang.UP }, (async (message, match) => {
 
-    var r_text = new Array ();
-    
-    
-    r_text[0] = "https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg";
-    r_text[1] = "https://telegra.ph/file/4efb53aba19b0f1ccad12.jpg";
-    r_text[2] = "https://telegra.ph/file/7e18f85e60d0fe643c5d4.jpg";
-    r_text[3] = "https://telegra.ph/file/7b068a15a9b0adb97064d.jpg";
-    r_text[4] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
-    r_text[5] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
-    
-        
-     var i = Math.floor(6*Math.random())
+        var r_text = new Array();
 
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*◁○Neutro Logopack ○▷*
+        r_text[0] = "https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg";
+        r_text[1] = "https://telegra.ph/file/4efb53aba19b0f1ccad12.jpg";
+        r_text[2] = "https://telegra.ph/file/7e18f85e60d0fe643c5d4.jpg";
+        r_text[3] = "https://telegra.ph/file/7b068a15a9b0adb97064d.jpg";
+        r_text[4] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
+        r_text[5] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
+
+
+        var i = Math.floor(6 * Math.random())
+
+        var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
+            mimetype: Mimetype.png, caption: `*◁○SLHackers Logopack ○▷*
 
  ╔════════════════╗
-*╠▷  Neotro Logo Pack🎭◁╣*
+*╠▷  SLHackers Logo Pack🎭◁╣*
 ╚════════════════╝
 
 ▷මෙය පහසුවෙන්ම විවිධ LoGo සාදයි කළයුතු වන්නෙ පහත විධානයකට ඉදිරියෙන් ඔබේ අකුරු දමන්න පමණි.
-🙇උදා: .ninjalogo Neotrox
+🙇උදා: .ninjalogo SLHackersx
 
 ▷ මෙහි සමහරක් Command ක්‍රියා නොකිරීම Bot ගෙ දෝෂයක් නොවෙ සෙවාව ලබාගත් API ගැටලු වේ.
 
@@ -131,8 +132,8 @@ Asena.addCommand({pattern: 'textimg', fromMe: false, desc: Lang.UP}, (async (mes
 *🌀විධානය* : .vtext
 *💠විස්තරය* : එය අකුරු video බවට හරවයි.
 
-*━⚜NEUTRO PACK⚜━*
-`}) 
+*━⚜SLHACKERS PACK⚜━*
+`})
 
- }));
+    }));
 }

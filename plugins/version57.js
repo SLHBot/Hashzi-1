@@ -4,10 +4,10 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const { MessageType } = require('@adiwajshing/baileys');
 
-Asena.addCommand({pattern: 'version', fromMe: false}, (async (message, match) => {
+Asena.addCommand({ pattern: 'version', fromMe: false }, (async (message, match) => {
 
-    await message.sendMessage("*🙇NEUTRO VERSION CHECKER🙇*\n\n*🧚‍♂️Neutro ▻5.2.4*\n*Global Stable*");
+    await message.sendMessage("*🙇SLHACKERS VERSION CHECKER🙇*\n\n*🧚‍♂️SLHackers ▻5.2.4*\n*Global Stable*");
 
 }));

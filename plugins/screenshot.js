@@ -4,7 +4,7 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
 const request = require('request');
@@ -16,34 +16,34 @@ const Lang = Language.getString('webss');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true&delay=400`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
 
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'ss ?(.*)', fromMe: false, desc: Lang.SS_DESC}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'ss ?(.*)', fromMe: false, desc: Lang.SS_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true&delay=400`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
 
     }));
-    Asena.addCommand({pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
 
         var webimage = await axios.get(`https://screenshotapi.net/api/v1/screenshot?url=${match[1]}&output=image&full_page=true&delay=400`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
 
     }));
 }

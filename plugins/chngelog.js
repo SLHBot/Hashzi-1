@@ -1,30 +1,31 @@
 const Asena = require('../events');
 const Config = require('../config');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 //language
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 if (Config.WORKTYPE == 'private') {
-Asena.addCommand({pattern: 'cnlog', fromMe: true, desc: Lang.UP}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'cnlog', fromMe: true, desc: Lang.UP }, (async (message, match) => {
 
-    var r_text = new Array ();
-    
-    
-    r_text[0] = "https://telegra.ph/file/ad6da8cf7b2f61717a4bc.jpg";
-    r_text[1] = "https://telegra.ph/file/497ca2a8c2c767f6f3670.jpg";
-    r_text[2] = "https://telegra.ph/file/2ee7da329678fdf999341.jpg";
-    r_text[3] = "https://telegra.ph/file/ad6da8cf7b2f61717a4bc.jpg";
-    r_text[4] = "https://telegra.ph/file/497ca2a8c2c767f6f3670.jpg";
-    r_text[5] = "https://telegra.ph/file/2ee7da329678fdf999341.jpg";
-    
-        
-     var i = Math.floor(6*Math.random())
+        var r_text = new Array();
 
-    var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-    await message.sendMessage (Buffer.from (respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: `*◁○Neutro ChangeLogs ○▷*
+        r_text[0] = "https://telegra.ph/file/ad6da8cf7b2f61717a4bc.jpg";
+        r_text[1] = "https://telegra.ph/file/497ca2a8c2c767f6f3670.jpg";
+        r_text[2] = "https://telegra.ph/file/2ee7da329678fdf999341.jpg";
+        r_text[3] = "https://telegra.ph/file/ad6da8cf7b2f61717a4bc.jpg";
+        r_text[4] = "https://telegra.ph/file/497ca2a8c2c767f6f3670.jpg";
+        r_text[5] = "https://telegra.ph/file/2ee7da329678fdf999341.jpg";
+
+
+        var i = Math.floor(6 * Math.random())
+
+        var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+
+        await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
+            mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs ○▷*
 
  *🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
 _2021/08/08_
@@ -120,12 +121,12 @@ _2021/05/02_
 ◉Added SINHALA command list
 
 _Conz : Lode404_
-🎭ɴᴇᴏᴛʀᴏ𝙭🪐 is a first Made in sri lanka 🇱🇰chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.
+🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 is a first Made in sri lanka 🇱🇰chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.
 ♦https://youtu.be/mcEeIspWOpY
-◼Github link : https://github.com/xneon2/Hashzi-X
+◼Github link : https://github.com/Hirusha21/Hashzi-X
 
-*━⚜NEUTRO CHANGELOG⚜━*
-`}) 
+*━⚜SLHACKERS CHANGELOG⚜━*
+`})
 
- }));
+    }));
 }

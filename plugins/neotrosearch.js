@@ -1,5 +1,5 @@
 const Asena = require('../events');
-const {MessageType,Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 
 const fs = require('fs');
 const axios = require('axios');
@@ -8,8 +8,8 @@ const ffmpeg = require('fluent-ffmpeg');
 
 const FIND_DESC = "Finds the Song"
 
-Asena.addCommand({pattern: 'search', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
-    if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*අනිවාර්යයෙන් ඔබ mp3 එකකට reply දැමිය යුතුයි⚡NeotroX!*', MessageType.text);
+Asena.addCommand({ pattern: 'search', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
+    if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*අනිවාර්යයෙන් ඔබ mp3 එකකට reply දැමිය යුතුයි⚡SLHackersX!*', MessageType.text);
     var filePath = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'search', fromMe: false, desc: FIND_DESC }, (async (m
             } else {
                 await message.client.sendMessage(message.jid, '*කණගාටුයි හමුනොවීය..', MessageType.text);
             }
-        }).catch((error) =>  {
+        }).catch((error) => {
             console.log(error);
         });
     });

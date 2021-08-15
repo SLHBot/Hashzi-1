@@ -7,7 +7,7 @@ Special Thanks:
 */
 
 const Asena = require('../events');
-const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
 
@@ -16,9 +16,9 @@ const Lang = Language.getString('wallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'wallpaper', fromMe: true, desc: Lang.WP }, (async (message, match) => {
 
-        var r_text = new Array ();
+        var r_text = new Array();
 
         r_text[0] = "https://images.wallpaperscraft.com/image/trees_pines_lake_198439_4480x6720.jpg";
         r_text[1] = "https://images.wallpaperscraft.com/image/trees_pines_mountains_160486_3648x5472.jpg";
@@ -641,19 +641,19 @@ if (Config.WORKTYPE == 'private') {
         r_text[618] = "https://images.wallpaperscraft.com/image/face_funny_art_141579_1350x2400.jpg";
         r_text[619] = "https://images.wallpaperscraft.com/image/face_surprise_emotions_141979_1350x2400.jpg";
         r_text[620] = "https://images.wallpaperscraft.com/image/smiley_emotions_minimalism_134124_1350x2400.jpg";
-        var i = Math.floor(621*Math.random())
+        var i = Math.floor(621 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by WhatsAsena' })
 
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'wallpaper', fromMe: false, desc: Lang.WP}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'wallpaper', fromMe: false, desc: Lang.WP }, (async (message, match) => {
 
-        var r_text = new Array ();
+        var r_text = new Array();
 
         r_text[0] = "https://images.wallpaperscraft.com/image/trees_pines_lake_198439_4480x6720.jpg";
         r_text[1] = "https://images.wallpaperscraft.com/image/trees_pines_mountains_160486_3648x5472.jpg";
@@ -1276,16 +1276,16 @@ else if (Config.WORKTYPE == 'public') {
         r_text[618] = "https://images.wallpaperscraft.com/image/face_funny_art_141579_1350x2400.jpg";
         r_text[619] = "https://images.wallpaperscraft.com/image/face_surprise_emotions_141979_1350x2400.jpg";
         r_text[620] = "https://images.wallpaperscraft.com/image/smiley_emotions_minimalism_134124_1350x2400.jpg";
-        var i = Math.floor(621*Math.random())
+        var i = Math.floor(621 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
 
     }));
-    Asena.addCommand({pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAddCommandList: true }, (async (message, match) => {
 
-        var r_text = new Array ();
+        var r_text = new Array();
 
         r_text[0] = "https://images.wallpaperscraft.com/image/trees_pines_lake_198439_4480x6720.jpg";
         r_text[1] = "https://images.wallpaperscraft.com/image/trees_pines_mountains_160486_3648x5472.jpg";
@@ -1908,11 +1908,11 @@ else if (Config.WORKTYPE == 'public') {
         r_text[618] = "https://images.wallpaperscraft.com/image/face_funny_art_141579_1350x2400.jpg";
         r_text[619] = "https://images.wallpaperscraft.com/image/face_surprise_emotions_141979_1350x2400.jpg";
         r_text[620] = "https://images.wallpaperscraft.com/image/smiley_emotions_minimalism_134124_1350x2400.jpg";
-        var i = Math.floor(621*Math.random())
+        var i = Math.floor(621 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
+        await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
 
     }));
 }

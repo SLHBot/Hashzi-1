@@ -32,11 +32,11 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC}, async (mes
         const msg = `${type}`
 
 	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
+          caption: "Made By *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*"
         })}
 		 	 
 	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
+          caption: "*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*"
         })}
 	
         
@@ -71,7 +71,7 @@ Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC }, async (mes
         const msg = `*${CAPTION}*: ${judul}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
+          caption: "Made By *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*"
         })
       })
       .catch(

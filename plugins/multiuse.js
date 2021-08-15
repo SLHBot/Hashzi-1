@@ -1,5 +1,5 @@
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
 const axios = require('axios');
@@ -11,40 +11,44 @@ const LOADING = "Downloading the Video..."
 const NOT_FOUNDFB = "Video Not Found"
 const CAPTION = "Caption"
 
-Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC}, async (message, match) => {
+Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
 
-    const userName = match[1]
+  const userName = match[1]
 
-    if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+  if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
 
-    await message.sendMessage(infoMessage("Downloading the Post..."))
+  await message.sendMessage(infoMessage("Downloading the Post..."))
 
-    await axios
-      .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`)
-      .then(async (response) => {
-        const {
-          url,
-          type,
-        } = response.data.result[0]
+  await axios
+    .get(`https://api-anoncybfakeplayer.herokuapp.com/igdown?url=${userName}`)
+    .then(async (response) => {
+      const {
+        url,
+        type,
+      } = response.data.result[0]
 
-        const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+      const profileBuffer = await axios.get(url, { responseType: 'arraybuffer' })
 
-        const msg = `${type}`
+      const msg = `${type}`
 
-	 if (msg === 'image') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
-        })}
-		 	 
-	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
-        })}
-	
-        
-      })
-      .catch(
-        async (err) => await message.sendMessage(errorMessage("Invaild Link, Please Enter a Vaild Instagram Link")),
-      )
-  },
+      if (msg === 'image') {
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+          caption: "Made By *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*"
+        })
+      }
+
+      if (msg === 'video') {
+        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
+          caption: "Made By *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*"
+        })
+      }
+
+
+    })
+    .catch(
+      async (err) => await message.sendMessage(errorMessage("Invaild Link, Please Enter a Vaild Instagram Link")),
+    )
+},
 )
 
 
@@ -52,30 +56,30 @@ Asena.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC}, async 
 
 Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
 
-    const userName = match[1]
+  const userName = match[1]
 
-    if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
+  if (!userName) return await message.sendMessage(errorMessage(NEED_WORD))
 
-    await message.sendMessage(infoMessage(LOADING))
+  await message.sendMessage(infoMessage(LOADING))
 
-    await axios
-      .get(`https://videfikri.com/api/fbdl/?urlfb=${userName}`)
-      .then(async (response) => {
-        const {
-          url,
-          judul,
-        } = response.data.result
+  await axios
+    .get(`https://videfikri.com/api/fbdl/?urlfb=${userName}`)
+    .then(async (response) => {
+      const {
+        url,
+        judul,
+      } = response.data.result
 
-        const profileBuffer = await axios.get(url, {responseType: 'arraybuffer'})
+      const profileBuffer = await axios.get(url, { responseType: 'arraybuffer' })
 
-        const msg = `*${CAPTION}*: ${judul}`
+      const msg = `*${CAPTION}*: ${judul}`
 
-        await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "Made By *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*"
-        })
+      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
+        caption: "Made By *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*"
       })
-      .catch(
-        async (err) => await message.sendMessage(errorMessage(NOT_FOUNDFB )),
-      )
-  },
+    })
+    .catch(
+      async (err) => await message.sendMessage(errorMessage(NOT_FOUNDFB)),
+    )
+},
 )

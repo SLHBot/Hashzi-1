@@ -4,10 +4,10 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
-const {MessageType,Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const ffmpeg = require('fluent-ffmpeg');
-const {execFile} = require('child_process');
+const { execFile } = require('child_process');
 const cwebp = require('cwebp-bin');
 const Config = require('../config');
 
@@ -16,15 +16,15 @@ const Lang = Language.getString('conventer');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'nvideo ?(.*)', fromMe: true, desc: Lang.T_DESC}, (async (message, match) => {    
+    Asena.addCommand({ pattern: 'nvideo ?(.*)', fromMe: true, desc: Lang.T_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
         if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text);
 
         if (match[1] === 'dodge') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -38,13 +38,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐* - Dodge TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: '*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰* - Dodge TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'or') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -58,13 +58,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Or TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Or TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'multiply') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -78,13 +78,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Multiply TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Multiply TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'grainmerge') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -98,13 +98,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Grainmerge TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Grainmerge TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'and') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -118,13 +118,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - And TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - And TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'burn') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -138,13 +138,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Burn TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Burn TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'difference') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -158,13 +158,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Difference TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Difference TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'grainextract') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -178,13 +178,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Grainextract TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Grainextract TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'divide') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -198,13 +198,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Divide TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Divide TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'xor') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -218,13 +218,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Xor TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Xor TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'hardmix') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -238,13 +238,13 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Hardmix TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Hardmix TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'negation') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -258,27 +258,27 @@ if (Config.WORKTYPE == 'private') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Negation TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Negation TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
 
         }
         else {
-            return await message.client.sendMessage(message.jid,Lang.T_FALSE, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text);
         }
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'tblend ?(.*)', fromMe: false, desc: Lang.T_DESC}, (async (message, match) => {    
+    Asena.addCommand({ pattern: 'tblend ?(.*)', fromMe: false, desc: Lang.T_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
         if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text);
 
         if (match[1] === 'dodge') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -292,13 +292,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Dodge TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Dodge TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'or') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -312,13 +312,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Or TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Or TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'multiply') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -332,13 +332,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Multiply TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Multiply TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'grainmerge') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -352,13 +352,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Grainmerge TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Grainmerge TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'and') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -372,13 +372,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - And TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - And TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'burn') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -392,13 +392,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Burn TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Burn TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'difference') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -412,13 +412,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Difference TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Difference TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'grainextract') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -432,13 +432,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Grainextract TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Grainextract TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'divide') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -452,13 +452,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Divide TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Divide TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'xor') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -472,13 +472,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Xor TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Xor TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'hardmix') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -492,13 +492,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Hardmix TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Hardmix TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'negation') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -512,24 +512,24 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Negation TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Negation TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
 
         }
         else {
-            return await message.client.sendMessage(message.jid,Lang.T_FALSE, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text);
         }
     }));
-    Asena.addCommand({pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC, dontAddCommandList: true}, (async (message, match) => {    
+    Asena.addCommand({ pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
         if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text);
 
         if (match[1] === 'dodge') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -543,13 +543,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Dodge TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Dodge TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'or') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -563,13 +563,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Or TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Or TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'multiply') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -583,13 +583,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Multiply TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Multiply TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'grainmerge') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -603,13 +603,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Grainmerge TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Grainmerge TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'and') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -623,13 +623,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - And TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - And TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'burn') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -643,13 +643,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Burn TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Burn TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'difference') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -663,13 +663,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Difference TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Difference TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'grainextract') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -683,13 +683,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Grainextract TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Grainextract TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'divide') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -703,13 +703,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Divide TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: '*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Divide TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'xor') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -723,13 +723,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Xor TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Xor TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'hardmix') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -743,13 +743,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Hardmix TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Hardmix TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
         else if (match[1] === 'negation') {
 
-            var downloading = await message.client.sendMessage(message.jid,'```Editing..```',MessageType.text);
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -763,13 +763,13 @@ else if (Config.WORKTYPE == 'public') {
                 .format('mp4')
                 .save('output.mp4')
                 .on('end', async () => {
-                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, {caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*  - Negation TBlend'});
+                    await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*  - Negation TBlend' });
                 });
-            return await message.client.deleteMessage(message.jid, {id: downloading.key.id, remoteJid: message.jid, fromMe: true})
+            return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
 
         }
         else {
-            return await message.client.sendMessage(message.jid,Lang.T_FALSE, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text);
         }
     }));
 }

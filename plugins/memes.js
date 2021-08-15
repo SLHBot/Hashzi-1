@@ -8,7 +8,7 @@ Coded by @KursadHD
 */
 
 const Asena = require('../events');
-const {MessageType, Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const memeMaker = require('meme-maker')
 const fs = require('fs')
 const Config = require('../config');
@@ -18,112 +18,112 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC}, (async (message, match) => {   
+    Asena.addCommand({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');
             topText = split[1];
             bottomText = split[0];
         }
-	    else {
+        else {
             topText = match[1];
             bottomText = '';
         }
-    
-	    var info = await message.reply(Lang.DOWNLOADING);
-	
+
+        var info = await message.reply(Lang.DOWNLOADING);
+
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
                 id: message.reply_message.id
             },
             message: message.reply_message.data.quotedMessage
-        }); 
-    
-	    memeMaker({
-            image: location,         
+        });
+
+        memeMaker({
+            image: location,
             outfile: 'asena-meme.png',
             topText: topText,
             bottomText: bottomText,
-        }, async function(err) {
-            if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'});
-            await info.delete();    
+        }, async function (err) {
+            if (err) throw new Error(err)
+            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' });
+            await info.delete();
         });
     }));
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC}, (async (message, match) => {    
+    Asena.addCommand({ pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');
             topText = split[1];
             bottomText = split[0];
         }
-	    else {
+        else {
             topText = match[1];
             bottomText = '';
         }
-    
-	    var info = await message.reply(Lang.DOWNLOADING);
-	
+
+        var info = await message.reply(Lang.DOWNLOADING);
+
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
                 id: message.reply_message.id
             },
             message: message.reply_message.data.quotedMessage
-        }); 
-    
-	    memeMaker({
-            image: location,         
+        });
+
+        memeMaker({
+            image: location,
             outfile: 'asena-meme.png',
             topText: topText,
             bottomText: bottomText,
-        }, async function(err) {
-            if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'});
-            await info.delete();    
+        }, async function (err) {
+            if (err) throw new Error(err)
+            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' });
+            await info.delete();
         });
     }));
-    Asena.addCommand({pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontAddCommandList: true}, (async (message, match) => {   
+    Asena.addCommand({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid,Lang.NEED_REPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');
             topText = split[1];
             bottomText = split[0];
         }
-	    else {
+        else {
             topText = match[1];
             bottomText = '';
         }
-    
-	    var info = await message.reply(Lang.DOWNLOADING);
-	
+
+        var info = await message.reply(Lang.DOWNLOADING);
+
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
                 id: message.reply_message.id
             },
             message: message.reply_message.data.quotedMessage
-        }); 
-    
-	    memeMaker({
-            image: location,         
+        });
+
+        memeMaker({
+            image: location,
             outfile: 'asena-meme.png',
             topText: topText,
             bottomText: bottomText,
-        }, async function(err) {
-            if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, {filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by *🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'});
-            await info.delete();    
+        }, async function (err) {
+            if (err) throw new Error(err)
+            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' });
+            await info.delete();
         });
     }));
 }
