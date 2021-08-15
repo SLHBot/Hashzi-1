@@ -2,10 +2,19 @@
     "name": "🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰",
     "description": "🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 is a first Made in sri lanka 🇱🇰chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.",
     "logo": "https://telegra.ph/file/cc0e2bb2add47047d0fc0.jpg",
-    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai", "🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰"],
+    "keywords": [
+        "whatsapp",
+        "userbot",
+        "Asena",
+        "WhatsAsena",
+        "bot",
+        "api",
+        "ai",
+        "🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰"
+    ],
     "repository": "",
-    "website":   "https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX",
-    "success_url": "https://chat.whatsapp.com/GTgqgMTo7FoJ1GqdijshsX",
+    "website": "Newinfomation",
+    "success_url": "Newinfomation",
     "stack": "container",
     "env": {
         "NEUTRO_SESSION": {
@@ -83,13 +92,13 @@
             "description": "Bot වැඩ කරන ක්රමය. ඔබ “public” භාවිතා කරන්නේ නම්, සෑම කෙනෙකුටම bot භාවිතා කළ හැකිය. ඔබ “private” භාවිතා කරන්නේ නම්, ඔබේ bot භාවිතා කළ හැක්කේ ඔබට පමණි.",
             "required": true,
             "value": "private"
-        },       
+        },
         "DEBUG": {
             "description": "ඔබ මෙය නොදන්නේ නම්. එය අත්හරින්න.",
             "required": true,
             "value": "false"
         },
-         "ALIVE_LOGO": {
+        "ALIVE_LOGO": {
             "description": "Alive message පින්තූරය වෙනස් කිරීම සඳහා ඔබගේ image link පහත සඳහන් කරන්න.",
             "required": true,
             "value": "https://telegra.ph/file/ef9be86d4f8e07cfb9210.jpg"
@@ -159,10 +168,14 @@
             "value": "true"
         }
     },
-    "addons": [{
-      "plan": "heroku-postgresql"
-    }],
-    "buildpacks": [{
-      "url": "heroku-community/apt"
-      }]
-  }
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ],
+    "buildpacks": [
+        {
+            "url": "heroku-community/apt"
+        }
+    ]
+}
