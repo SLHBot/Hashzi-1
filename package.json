@@ -1,5 +1,5 @@
 {
-  "name": "Hashzi-1",
+  "name": "SLHTBot-1",
   "version": "1.3.2",
   "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./WhatsAsenaDuplicated/bot.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SLHBot/Hashzi-1.git"
+    "url": "git+https://github.com/SLHBot/SLHTBot-1.git"
   },
   "keywords": [
     "whatsapp",
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
   },
-  "homepage": "https://github.com/SLHBot/Hashzi-1#readme",
+  "homepage": "https://github.com/SLHBot/SLHTBot-1#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.4.1",
     "@lh2020/speedtest-net": "^2.1.1",

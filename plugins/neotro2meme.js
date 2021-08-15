@@ -1,4 +1,4 @@
-/* TeenuhX 
+/* SLHTBot-X 
 */
 
 const Asena = require('../events');

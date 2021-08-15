@@ -1,6 +1,6 @@
 /* උස්සන්න එපා බේසිකෙ කොල්ලො අහලා ගනිම්
 Codded BY teenuX
-Wa.me/+94755681800
+Wa.me/+94755681782
 */
 
 const Asena = require('../events');
@@ -25,7 +25,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 
@@ -35,7 +35,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 
@@ -45,7 +45,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 
@@ -55,7 +55,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 
@@ -65,7 +65,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 
@@ -75,7 +75,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 
@@ -85,7 +85,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '*Made by*\n 𝒮 𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
 
     }));
 

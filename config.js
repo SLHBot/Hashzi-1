@@ -24,7 +24,7 @@ module.exports = {
     ZLOCK: 'zeks',
     ZNLOCK: 'zenzapi.xyz',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.NEUTRO_SESSION === undefined ? '' : process.env.NEUTRO_SESSION,
+    SESSION: process.env.SLHACKERS_SESSION === undefined ? '' : process.env.SLHACKERS_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,

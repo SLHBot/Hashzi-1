@@ -189,7 +189,7 @@
             "DOWNLOADING_SONG": "\n⏪Downloading your song\n",
             "UPLOADING_SONG": "\nUploading your song 🔽\n",
             "VIDEO_DESC": "Downloads video from YouTube.",
-            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
+            "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAlVm5qeBc```",
             "DOWNLOADING_VIDEO": "```🙇Downloading...```",
             "UPLOADING_VIDEO": "```📥Uploading...```",
             "YT_DESC": "It searchs on YouTube.",

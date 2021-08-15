@@ -1,6 +1,6 @@
 /* උස්සන්න එපා බේසිකෙ කොල්ලො අහලා ගනිම්
 Codded BY teenuX
-Wa.me/+94755681800
+Wa.me/+94755681782
 */
 
 const Asena = require('../events');

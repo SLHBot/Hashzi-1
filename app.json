@@ -17,7 +17,7 @@
     "success_url": "https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci",
     "stack": "container",
     "env": {
-        "NEUTRO_SESSION": {
+        "SLHACKERS_SESSION": {
             "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්",
             "required": true
         },
@@ -71,7 +71,7 @@
         "BLOCK_CHAT": {
             "description": "බොට් වැඩ නොකරන චැට් එක තෝරන්න. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
             "required": false,
-            "value": "94766598862-1624945302,"
+            "value": "94755681782-1624945302,"
         },
         "UNMUTE_MESSAGE": {
             "description": "Group එකක් unmute කිරිමෙදි ලැබෙන පනිවිඩය.",
