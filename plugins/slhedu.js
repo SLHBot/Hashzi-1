@@ -12,7 +12,7 @@ const Language = require('../language');
 const XN_DESC = "NSFU වීඩියෝ බාගත කරයි"
 const XN_NEED = "*Link අවශ්‍යයි!*"
 const XN_D = "*🙇Downloading Your Video*"
-const EDU_AJA = "*TITLE:* *AJantha Sir කතාව*\n*📂TYPE:* *Pdf*\n*Uploading..📵*"
+const EDU_AJA = "*TITLE:* *AJantha Sir කතාව*\n*📂TYPE:* *Video*\n*Uploading..📵*"
 const XEDU_AJA = "*TITLE:* *�සමන්ති - සම්පූර්ණ කතාව*\n*📂TYPE:* *Pdf*\n*Uploading..📵*"
 const XXEDU_AJA = "*TITLE:* *�කින්නරාවි - සම්පූර්ණ කතාව*\n*📂TYPE:* *Pdf*\n*Uploading..📵*"
 const XXXEDU_AJA = "*TITLE:* *�December Holiday - සම්පූර්ණ කතාව*\n*📂TYPE:* *Pdf*\n*Uploading..📵*"
@@ -31,7 +31,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, EDU_AJA, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4 })
 
     }));
 
@@ -41,7 +41,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, XEDU_AJA, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4 })
 
     }));
 
@@ -51,7 +51,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, XXEDU_AJA, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4 })
 
     }));
 
@@ -61,7 +61,7 @@ if (Config.NEOA == 'aca83a4354ac') {
 
         await message.client.sendMessage(message.jid, XXXEDU_AJA, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4 })
 
     }));
 
