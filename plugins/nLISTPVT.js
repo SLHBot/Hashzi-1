@@ -5,6 +5,8 @@ const axios = require('axios');
 //language
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
+const fs = require("fs")
+const slhb = fs.readFileSync('./media/bot.mp3')
 
 if (Config.WORKTYPE == 'private') {
     Asena.addCommand({ pattern: 'hacked', fromMe: true, desc: Lang.UP }, (async (message, match) => {
@@ -12,24 +14,24 @@ if (Config.WORKTYPE == 'private') {
         var r_text = new Array();
 
 
-        r_text[0] = "https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg";
-        r_text[1] = "https://telegra.ph/file/4efb53aba19b0f1ccad12.jpg";
-        r_text[2] = "https://telegra.ph/file/7e18f85e60d0fe643c5d4.jpg";
-        r_text[3] = "https://telegra.ph/file/7b068a15a9b0adb97064d.jpg";
-        r_text[4] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
-        r_text[5] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
+        r_text[0] = "https://telegra.ph/file/ad60c6d6463cbbcafac83.jpg";
+        r_text[1] = "https://telegra.ph/file/0e624b7af48693551d0c6.jpg";
+        r_text[2] = "https://telegra.ph/file/1d0eb25bbbd219ade062e.jpg";
+        r_text[3] = "https://telegra.ph/file/ad60c6d6463cbbcafac83.jpg";
+        r_text[4] = "https://telegra.ph/file/0e624b7af48693551d0c6.jpg";
+        r_text[5] = "https://telegra.ph/file/1d0eb25bbbd219ade062e.jpg";
 
 
         var i = Math.floor(6 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
+        await message.client.sendMessage(message.jid, slhb, MessageType.audio, { mimetype: 'audio/mp4', ptt: true }, { quoted: message.data })
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
-            mimetype: Mimetype.png, caption: `*◁○SLHackers ⚜pro ○▷*
+            mimetype: Mimetype.png, caption: `*◁○SLHackers ⚜ pro ○▷*
 
-*╔═▣═══❖⦁⦁⦁👽⦁⦁⦁❖═══▣═╗*
-*⦁⦁⦁⦁╍𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭╍⦁⦁⦁⦁*
-.*╚═══❖═══▣ ▣═══❖════╝*
+*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
+*⦁⛨ 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 ⛨⦁*
+.     *╚═❖═▣ ▣═❖══╝*
 
 *⚜විවිධාකාරයේ Logo සෑදීමට⚜*
 
@@ -78,6 +80,19 @@ _status:false❌_
 
 
 *⚜වෙනත් විධාන⚜*
+
+*🛂විධානය* : .pluglist
+*💰විස්තරය* : Bot හට එකතු කර ඇති ප්‍රතිවිධාන පෙන්වයි.
+
+*🛂විධානය* : .whois
+*💰විස්තරය* : සමූහයක හෝ පුද්ගලයකුගෙ විස්තර ලබාදෙයි.
+
+*🛂විධානය* : .calc
+*💰විස්තරය* : සරල Calculater එකකි
+*🌜භාවිතය* : .calc 4+5
+
+*🛂විධානය* : .shorl
+*💰විස්තරය* : URL කුඩාකර tinu url ලබාදෙයි
 
 *🛂විධානය* : .cnlog
 *💰විස්තරය* : Bot ගේ Changlog පෙන්වයි.
@@ -190,7 +205,7 @@ _status:false❌_
 
 🙇මෙම විධාන Bot අයිතිකරුවාට පමණක් ක්‍රියාත්මක වේ
 
-*🛂විධානය* : .install
+*🛂විධානය* : .pkg
 *💰විස්තරය* : අමතර pluging එකතු කරයි
 
 *🛂විධානය* : .remove

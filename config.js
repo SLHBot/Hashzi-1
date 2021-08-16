@@ -60,6 +60,7 @@ module.exports = {
     NS: process.env.NS === undefined ? 'zenzapi' : process.env.NS,
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*🌐SLHackers-Team_BOT🌐*' : process.env.CAPTION_KEY,
     HLOCK: process.env.HLOCK === undefined ? 'hadi-api' : process.env.HLOCK,
+    BANWORD: process.env.BANWORD === undefined ? 'true' : process.env.BANWORD,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
