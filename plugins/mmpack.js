@@ -10,7 +10,7 @@ if (Config.WORKTYPE == 'private') {
 
         var r_text = new Array();
 
-        r_text[1] = "https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg";
+        r_text[1] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
         r_text[2] = "https://telegra.ph/file/4efb53aba19b0f1ccad12.jpg";
         r_text[3] = "https://telegra.ph/file/7e18f85e60d0fe643c5d4.jpg";
         r_text[4] = "https://telegra.ph/file/7b068a15a9b0adb97064d.jpg";
@@ -31,7 +31,7 @@ else if (Config.WORKTYPE == 'public') {
         r_text[2] = "https://telegra.ph/file/b92174516f031df6ebd26.jpg";
         r_text[3] = "https://telegra.ph/file/7b068a15a9b0adb97064d.jpg";
         r_text[4] = "https://telegra.ph/file/4efb53aba19b0f1ccad12.jpg";
-        r_text[5] = "https://telegra.ph/file/0d5425a8dd1b5ad3e3d81.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
 
         var i = Math.floor(06 * Math.random())
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })

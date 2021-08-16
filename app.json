@@ -101,17 +101,17 @@
         "ALIVE_LOGO": {
             "description": "Alive message පින්තූරය වෙනස් කිරීම සඳහා ඔබගේ image link පහත සඳහන් කරන්න.",
             "required": true,
-            "value": "https://telegra.ph/file/ef9be86d4f8e07cfb9210.jpg"
+            "value": "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg"
         },
         "WELCOME_LOGO": {
             "description": "Welcome message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.",
             "required": true,
-            "value": "https://telegra.ph/file/1c9d26b04ca643a8e20f7.mp4"
+            "value": "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg"
         },
         "BYE_LOGO": {
             "description": "Goodbye message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.",
             "required": true,
-            "value": "https://telegra.ph/file/1c9d26b04ca643a8e20f7.mp4"
+            "value": "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg"
         },
         "REMOVE_BG_API_KEY": {
             "description": "මෙහිදි ඔබ remove.bg යන website එකට පිවිස signup වී, API key එකක් ලබාගන්න. එම API key එක මෙම හිස්තැනේ දමන්න.",
