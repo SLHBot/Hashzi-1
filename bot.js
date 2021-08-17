@@ -157,7 +157,7 @@ async function whatsAsena() {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n ♠ 丂Ĺн𝕒Č𝓴𝕖ʳ𝓼 𝓉ẸⒶ𝐦 乃𝕆𝓽 ♣'
+                const biography = 'මම Online ඉන්න/online හිටිය වේලාව.' + '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n 🎲𝑺̲̅𝒂̲̅𝒏̲̅𝒅̲̅𝒖̲̅𝒔̲̅𝒉̲̅𝒊̲̅ 𝑳̲̅𝒐̲̅𝒉̲̅𝒊̲̅𝒏̲̅𝒊̲̅𝒌̲̅𝒂̲̅🎲'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
