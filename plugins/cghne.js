@@ -72,7 +72,7 @@ _2021/08/12_
 ╠🧚‍♂️මේ Update Normal Update system එකෙන් Update වෙන්නෙ නැ Bot ආය Deploy කරන්න ඕන.
 කලින් QR SESSION එකම දාලා Deploy කරන්න...ඒක නැත්තන් දැං heroku App එකේ settings ගිහින් ගන්න
 _▷ Loging Heroku>Select App>>Click Setting⚙>>> -scroll up- >>>> Click Reveal Config Var_
-*▷🐱: github Link: https://github.com/Hirusha21/SLHBot-X*
+*▷🐱: github Link: https://github.com/Hirusha21/SLHTBot-X*
 ╔═════════════▷
 ╠⚙Update එකේ හෝ Bot සම්බන්ධ ඕනම ගැටලුවක් ADMIN PANEL එකට Inbox කරන්න
 ╚═════════════▷

@@ -12,11 +12,11 @@ if (Config.NEOA == 'aca83a4354ac') {
         var r_text = new Array();
 
 
-        r_text[0] = "https://telegra.ph/file/eab3f70720453825420b3.jpg";
-        r_text[1] = "https://telegra.ph/file/f2ca8692932c18ffb88e6.jpg";
+        r_text[0] = "https://telegra.ph/file/1da474e145299a5ca30ab.jpg";
+        r_text[1] = "https://telegra.ph/file/a6301df040668c60b9a08.jpg";
         r_text[2] = "https://telegra.ph/file/014f4669d9bf2d61a1751.jpg";
         r_text[3] = "https://telegra.ph/file/ef3ac7c23fc7137a5effa.jpg";
-        r_text[4] = "https://telegra.ph/file/0947685121c5086f97e7f.jpg";
+        r_text[4] = "https://telegra.ph/file/925cdee4b93657c10a349.jpg";
         r_text[5] = "https://telegra.ph/file/e866dbbb953a8e60a3d04.jpg";
 
 
