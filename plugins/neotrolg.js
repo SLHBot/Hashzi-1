@@ -5,6 +5,8 @@ const axios = require('axios');
 //language
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
+const fs = require("fs")
+const slhb = fs.readFileSync('./media/logo.mp3')
 
 if (Config.WORKTYPE == 'public') {
     Asena.addCommand({ pattern: 'textimg', fromMe: false, desc: Lang.UP }, (async (message, match) => {
@@ -24,6 +26,7 @@ if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
+        await message.client.sendMessage(message.jid, slhb, MessageType.audio, { mimetype: 'audio/mp4', ptt: true }, { quoted: message.data })
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
             mimetype: Mimetype.png, caption: `*◁○SLHackers Logopack ○▷*
 
