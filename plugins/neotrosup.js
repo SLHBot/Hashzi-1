@@ -13,12 +13,12 @@ Asena.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (messa
 
     var r_text = new Array();
 
-    r_text[0] = "https://i.ibb.co/FwPP04q/images.jpg";
-    r_text[1] = "https://i.ibb.co/GH2tWJ4/images-1.jpg";
-    r_text[2] = "https://i.ibb.co/Mf79pVH/download.jpg";
-    r_text[3] = "https://i.ibb.co/b11BDWH/images-2.jpg";
-    r_text[4] = "https://i.ibb.co/7v1m94x/images-3.jpg";
-    r_text[5] = "https://i.ibb.co/vdKJxNX/images-4.jpg";
+    r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+    r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+    r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+    r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+    r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+    r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
     r_text[6] = "https://i.ibb.co/cvKvyzR/images-5.jpg";
     r_text[7] = "https://i.ibb.co/WWRt8vZ/images-6.jpg";
     r_text[8] = "https://i.ibb.co/m8Xg7Gj/images-7.jpg";
@@ -107,12 +107,12 @@ if (Config.WORKTYPE == 'public') {
 
         var r_text = new Array();
 
-        r_text[0] = "https://i.ibb.co/FwPP04q/images.jpg";
-        r_text[1] = "https://i.ibb.co/GH2tWJ4/images-1.jpg";
-        r_text[2] = "https://i.ibb.co/Mf79pVH/download.jpg";
-        r_text[3] = "https://i.ibb.co/b11BDWH/images-2.jpg";
-        r_text[4] = "https://i.ibb.co/7v1m94x/images-3.jpg";
-        r_text[5] = "https://i.ibb.co/vdKJxNX/images-4.jpg";
+        r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+        r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+        r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+        r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+        r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
         r_text[6] = "https://i.ibb.co/cvKvyzR/images-5.jpg";
         r_text[7] = "https://i.ibb.co/WWRt8vZ/images-6.jpg";
         r_text[8] = "https://i.ibb.co/m8Xg7Gj/images-7.jpg";

@@ -1,9 +1,9 @@
-/* Copyright (C) 2020 Yusuf Usta.
+/* Copyright (C) 2021 Hirusha Dayarathne.
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-WhatsAsena - Yusuf Usta
+SLHackers Team Bot - Hirusha Dayarathne
 */
 
 const Asena = require('../events');
@@ -29,7 +29,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 Asena.addCommand({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
-    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/SLHackers23/4232b1c8c4734e1f06c3d991149c6fbd')
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Hirusha21/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
     } catch {
@@ -63,7 +63,7 @@ Asena.addCommand({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, 
 
         await Db.installPlugin(url, plugin_name);
         await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text);
-        if (!match[1].includes('SLHackers23')) {
+        if (!match[1].includes('Hirusha21')) {
             await new Promise(r => setTimeout(r, 400));
             await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text);
         }
@@ -78,7 +78,7 @@ Asena.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (a
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes('SLHackers23') ? msg : inmsg
+                let vf = plugin.dataValues.url.includes('Hirusha21') ? msg : inmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );

@@ -24,8 +24,9 @@ if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
+        await message.client.sendMessage(message.jid, slhb, MessageType.audio, { mimetype: 'audio/mp4', ptt: true }, { quoted: message.data })
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
-            mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs ○▷*
+            mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs○▷*
 
  *🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.4*
 _2021/08/12_

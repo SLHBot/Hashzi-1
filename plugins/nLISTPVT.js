@@ -25,6 +25,7 @@ if (Config.WORKTYPE == 'private') {
         var i = Math.floor(6 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
+
         await message.client.sendMessage(message.jid, slhb, MessageType.audio, { mimetype: 'audio/mp4', ptt: true }, { quoted: message.data })
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
             mimetype: Mimetype.png, caption: `*◁○SLHackers ⚜ pro ○▷*
