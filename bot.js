@@ -417,6 +417,10 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         conn.user.jid,
                         '```Type``` *.update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
                     );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.update now', MessageType.text
+                    );
                 }
             }
         }
@@ -469,7 +473,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```Type``` *.update now* ````යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```Type``` *.update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
+                    );
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.update now', MessageType.text
                     );
                 }
             }
