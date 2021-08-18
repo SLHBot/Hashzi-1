@@ -504,7 +504,7 @@ if (config.WORKTYPE == 'private') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
-            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link :* _https://youtu.be/" + VID + "_\n\nCopyright © 2021 | SLHackers Team Bot " });
+            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link :*https://youtu.be/" + VID + "*\n\n*සැ.යු :* මෙම Videoව ඔබ whatsapp package එකක් දාලා තිබේනම් ඔබට පහසුවෙන්ම මෙහිදී කිසිදු අමතර data ගාස්තුවක් නොමැතිව බලාගත හැක. නමුදු ඔබ whatsapp package එකක් දමා නොමැතිනම් හෝ ඔබේ කැමැත්ත මත, පහල ලින්ක් එකෙන් මෙම Videoව YouTube ඔස්සේ නැරඹිය හැක.\n\nCopyright © 2021 | SLHackers Team Bot " });
         });
     }));
 
@@ -972,7 +972,7 @@ else if (config.WORKTYPE == 'public') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
-            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link :* _https://youtu.be/" + VID + "_\n\nCopyright © 2021 | SLHackers Team Bot " });
+            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link :*https://youtu.be/" + VID + "*\n\n*සැ.යු :* මෙම Videoව ඔබ whatsapp package එකක් දාලා තිබේනම් ඔබට පහසුවෙන්ම මෙහිදී කිසිදු අමතර data ගාස්තුවක් නොමැතිව බලාගත හැක. නමුදු ඔබ whatsapp package එකක් දමා නොමැතිනම් හෝ ඔබේ කැමැත්ත මත, පහල ලින්ක් එකෙන් මෙම Videoව YouTube ඔස්සේ නැරඹිය හැක.\n\n\nCopyright © 2021 | SLHackers Team Bot " });
         });
     }));
 
