@@ -5,6 +5,8 @@ const axios = require('axios');
 //language
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
+const fs = require("fs")
+const slhb = fs.readFileSync('./media/bot.mp3')
 
 if (Config.WORKTYPE == 'public') {
     Asena.addCommand({ pattern: 'cnlog', fromMe: false, desc: Lang.UP }, (async (message, match) => {

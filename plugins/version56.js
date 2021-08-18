@@ -4,7 +4,14 @@ Instagram: www.instagram.com/kyrie.baran
 */
 
 const Asena = require('../events');
-const { MessageType } = require('@adiwajshing/baileys');
+const Config = require('../config');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
+const axios = require('axios');
+//language
+const Language = require('../language');
+const Lang = Language.getString('scrapers');
+const fs = require("fs")
+const slhb = fs.readFileSync('./media/bot.mp3')
 
 Asena.addCommand({ pattern: 'version', fromMe: true }, (async (message, match) => {
 
