@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
             mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs ○▷*
 
- *🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
+ *🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
 _2021/08/08_
 
 ◉mmpack updated
@@ -42,7 +42,7 @@ _2021/08/08_
 ◉ Added Custom Panel Command
 ( .setvar COMMAND: test )
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.2*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.2*
 _2021/08/01_
 
 ◉Added new Command ( .help)
@@ -52,7 +52,7 @@ _2021/08/01_
 ◉Added fulleva AI CHAT bot
 ( .eva on / .eva off)
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.1*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.1*
 _2021/07/21_
 
 ◉merged: 5.1.6,5.1.7, 2.1.8, 5.1.9, 5.2.0
@@ -65,7 +65,7 @@ _2021/07/21_
 ◉Plugging install Bug fixed
 ◉Antispm Bug fixed
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.1*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.1*
 _2021/07/15_
 
 ◉Bug fixed
@@ -75,7 +75,7 @@ _2021/07/15_
 ◉added console (beta)
 ◉removed Api key and billing details from account section
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.0*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.0*
 _2021/06/28_
 
 ◉mod apk download 
@@ -84,7 +84,7 @@ _2021/06/28_
 ◉Yt searcher Update 
 ◉video Download Update
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.9.0*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.9.0*
 _2021/06/12_
 
 ◉New Base
@@ -92,7 +92,7 @@ _2021/06/12_
 ◉ imagtosticker update ( .photo)
 ◉mp4audio update ( .mp3)
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.8.0*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.8.0*
 _2021/06/09_
 
 ◉bug fixed
@@ -102,7 +102,7 @@ _2021/06/09_
 ◉ Wiki version 7.0.0 updated
 ◉fixed img Command 
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.7.0*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.7.0*
 _2021/06/05_
 
 ◉merged: 3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0
@@ -112,7 +112,7 @@ _2021/06/05_
 ◉added Bug Hole VIP ( .bh)
 ◉Added Unlimited Logo Api VIP (.textpro)
 
-*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 2.9.0*
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 2.9.0*
 _2021/05/02_
 
 ◉update songs upload 

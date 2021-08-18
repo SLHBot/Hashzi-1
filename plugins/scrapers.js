@@ -504,7 +504,7 @@ if (config.WORKTYPE == 'private') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
-            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "Copyright © 2021 | SLHackers Team Bot " });
+            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: VID + "Copyright © 2021 | SLHackers Team Bot " });
         });
     }));
 
@@ -521,7 +521,7 @@ if (config.WORKTYPE == 'private') {
 
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*🧞 ' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*🔰 ' + video.title + '* - ' + video.url + '\n'
         });
 
         await message.client.sendMessage(message.jid, mesaj, MessageType.text);
@@ -989,7 +989,7 @@ else if (config.WORKTYPE == 'public') {
 
         var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '*🧞 ' + video.title + '* - ' + video.url + '\n'
+            mesaj += '*🔰 ' + video.title + '* - ' + video.url + '\n'
         });
 
         await message.client.sendMessage(message.jid, mesaj, MessageType.text);
