@@ -504,7 +504,7 @@ if (config.WORKTYPE == 'private') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
-            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link :* _https://youtu.be/" + VID + "_\n\nCopyright © 2021 | SLHackers Team Bot " });
+            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: video.title + "*YOUTUBE Link :* _https://youtu.be/" + VID + "_\n\nCopyright © 2021 | SLHackers Team Bot " });
         });
     }));
 
@@ -972,7 +972,7 @@ else if (config.WORKTYPE == 'public') {
 
         yt.on('end', async () => {
             reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
-            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link :* _https://youtu.be/" + VID + "_\n\nCopyright © 2021 | SLHackers Team Bot " });
+            await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: video.title + "*YOUTUBE Link :* _https://youtu.be/" + VID + "_\n\nCopyright © 2021 | SLHackers Team Bot " });
         });
     }));
 
