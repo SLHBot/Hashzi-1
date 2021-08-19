@@ -4,7 +4,7 @@ const axios = require('axios');
 const { errorMessage, infoMessage } = require('../helpers');
 const Config = require('../config');
 const Language = require('../language');
-const PB_DESC = "NSFU වීඩියෝ බාගත කරයි"
+const PB_DESC = "PHUB වීඩියෝ බාගත කරයි"
 const PB_NEED = "*Link අවශ්‍යයි!*"
 const PB_D = "*🙇Downloading Your Video*"
 const PB_UP = "*🔞Uploading Your Video*"
@@ -13,7 +13,7 @@ const PB_NO = "*කණගාටුයි හමු නොවීය...*"
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'phbsltb ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
+    Asena.addCommand({ pattern: 'phub ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
 
         const link = match[1]
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'phbsltb ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
+    Asena.addCommand({ pattern: 'phub ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
 
         const link = match[1]
 

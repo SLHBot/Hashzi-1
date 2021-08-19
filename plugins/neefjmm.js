@@ -131,7 +131,7 @@ if (Config.NEOY == 'xyz') {
 *✊LINK* : https://www.xnxx.com/video-grtn3e8/cute_small_tits_teen_stepsister_pov_fuck
 *🔞TITLE* : JAPAN GIRL MEGUMI
 *✊LINK* : https://www.xnxx.com/video-s7n9ta3/hot_japan_girl_megumi_haruka_in_porn_scene
-◁═══ _powerd By teenuhX_ ═══▷
+◁═══ _powerd By Hirusha_ ═══▷
           ✊ SLHackers NSFW PANEL
  
 *━⚜SLHackers 🔞+ PANEL⚜━*

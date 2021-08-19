@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
     await message.client.sendMessage(message.jid, XN_D, MessageType.text)
     await axios
-      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=aca83a4354ac`)
+      .get(`https://api.lolhuman.xyz/api/xnxx?apikey=03ffdf45513a71ed7e669db1&url=${link}`)
       .then(async (response) => {
         const {
           url,
@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'public') {
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
     await message.client.sendMessage(message.jid, XN_D, MessageType.text)
     await axios
-      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=aca83a4354ac`)
+      .get(`https://api.lolhuman.xyz/api/xnxx?apikey=03ffdf45513a71ed7e669db1&url=${link}`)
       .then(async (response) => {
         const {
           url,
