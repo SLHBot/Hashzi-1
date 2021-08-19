@@ -417,6 +417,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         conn.user.jid,
                         '```Type``` *.update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
                     );
+
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.update now', MessageType.text
+                    );
                 }
             }
         }
@@ -467,9 +472,15 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                             degisiklikler += '🔸 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' ◁' + commit.author_name + '▷\n';
                         }
                     );
+
                     await conn.sendMessage(
                         conn.user.jid,
                         '```Type``` *.update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
+                    );
+
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.update now', MessageType.text
                     );
                 }
             }
