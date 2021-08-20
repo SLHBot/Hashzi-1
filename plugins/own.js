@@ -58,12 +58,12 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
             text11 = split[10];
         }
         var r_text = new Array();
-        r_text[0] = "https://i.imgur.com/c4icwfK.jpg";
-        r_text[1] = "https://i.imgur.com/iEgTA9J.jpg";
-        r_text[2] = "https://i.imgur.com/64ASTqH.jpg";
-        r_text[3] = "https://i.imgur.com/4EfR0En.jpg";
-        r_text[4] = "https://i.imgur.com/C2nU4lw.jpg";
-        r_text[5] = "https://i.imgur.com/d99SwTb.jpg";
+        r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+        r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+        r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+        r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+        r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
         r_text[6] = "https://i.imgur.com/ioPSNA6.jpg";
         r_text[7] = "https://i.imgur.com/wFKpwvG.jpg";
         r_text[8] = "https://i.imgur.com/vVOdO1e.jpg";
@@ -74,7 +74,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
         var i = Math.floor(10 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *ℕ𝕖𝕠𝕥𝕣𝕠𝕩 ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
     })); /* owner close */
 
 
@@ -99,12 +99,12 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
             text11 = split[10];
         }
         var r_text = new Array();
-        r_text[0] = "https://i.imgur.com/c4icwfK.jpg";
-        r_text[1] = "https://i.imgur.com/iEgTA9J.jpg";
-        r_text[2] = "https://i.imgur.com/64ASTqH.jpg";
-        r_text[3] = "https://i.imgur.com/4EfR0En.jpg";
-        r_text[4] = "https://i.imgur.com/C2nU4lw.jpg";
-        r_text[5] = "https://i.imgur.com/d99SwTb.jpg";
+        r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+        r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+        r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+        r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+        r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
         r_text[6] = "https://i.imgur.com/ioPSNA6.jpg";
         r_text[7] = "https://i.imgur.com/wFKpwvG.jpg";
         r_text[8] = "https://i.imgur.com/vVOdO1e.jpg";
@@ -115,7 +115,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
         var i = Math.floor(10 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *ℕ𝕖𝕠𝕥𝕣𝕠𝕩 ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
     }));
 
 }  /* Public close */
@@ -143,12 +143,12 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
             text11 = split[10];
         }
         var r_text = new Array();
-        r_text[0] = "https://i.imgur.com/c4icwfK.jpg";
-        r_text[1] = "https://i.imgur.com/iEgTA9J.jpg";
-        r_text[2] = "https://i.imgur.com/64ASTqH.jpg";
-        r_text[3] = "https://i.imgur.com/4EfR0En.jpg";
-        r_text[4] = "https://i.imgur.com/C2nU4lw.jpg";
-        r_text[5] = "https://i.imgur.com/d99SwTb.jpg";
+        r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+        r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+        r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+        r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+        r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
         r_text[6] = "https://i.imgur.com/ioPSNA6.jpg";
         r_text[7] = "https://i.imgur.com/wFKpwvG.jpg";
         r_text[8] = "https://i.imgur.com/vVOdO1e.jpg";
@@ -159,7 +159,7 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
         var i = Math.floor(10 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *ℕ𝕖𝕠𝕥𝕣𝕠𝕩 ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
     })); /* owner close */
 
 
