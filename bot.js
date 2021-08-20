@@ -157,7 +157,7 @@ async function whatsAsena() {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '🆆🅾🆁🅺 🅷🅰🆁🅳 අවසන් වරට මම Online සිටි වේලාව.\n\n' + '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🎲𝑺̲̅𝒂̲̅𝒏̲̅𝒅̲̅𝒖̲̅𝒔̲̅𝒉̲̅𝒊̲̅ 𝑳̲̅𝒐̲̅𝒉̲̅𝒊̲̅𝒏̲̅𝒊̲̅𝒌̲̅𝒂̲̅🎲'
+                const biography = '🆆🅾🆁🅺 🆂🆄🅿🅴🆁 🅷🅰🆁🅳 | අවසන් වරට මම Online සිටි වේලාව.\n\n' + '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🎲𝑺̲̅𝒂̲̅𝒏̲̅𝒅̲̅𝒖̲̅𝒔̲̅𝒉̲̅𝒊̲̅ 𝑳̲̅𝒐̲̅𝒉̲̅𝒊̲̅𝒏̲̅𝒊̲̅𝒌̲̅𝒂̲̅🎲'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
@@ -417,6 +417,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         conn.user.jid,
                         '*Type .update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
                     );
+
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.update now', MessageType.text
+                    );
                 }
             }
         }
@@ -470,6 +475,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                     await conn.sendMessage(
                         conn.user.jid,
                         '*Type .update now* ```යතාවත්කාලීන කිරීමට.```\n\n' + degisiklikler + '```', MessageType.text
+                    );
+
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.update now', MessageType.text
                     );
                 }
             }
