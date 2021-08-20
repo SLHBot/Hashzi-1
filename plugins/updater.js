@@ -45,11 +45,6 @@ Asena.addCommand({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, 
             message.jid,
             '.update now', MessageType.text
         );
-
-        await conn.sendMessage(
-            conn.user.jid,
-            '.clear', MessageType.text
-        );
     }
 }));
 
