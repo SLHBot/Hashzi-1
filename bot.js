@@ -422,6 +422,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         conn.user.jid,
                         '.update now', MessageType.text
                     );
+
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.clear', MessageType.text
+                    );
                 }
             }
         }
@@ -480,6 +485,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                     await conn.sendMessage(
                         conn.user.jid,
                         '.update now', MessageType.text
+                    );
+
+                    await conn.sendMessage(
+                        conn.user.jid,
+                        '.clear', MessageType.text
                     );
                 }
             }
