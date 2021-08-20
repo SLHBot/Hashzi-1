@@ -224,7 +224,8 @@
             "INVALID_HEROKU": "*❌ ඔබේ හෙරෝකු තොරතුරු වැරදියි!*",
             "UPDATED": "*යාවත්කාලින වීම සම්පුර්ණයි 🤠✅*",
             "UPDATED_LOCAL": "*✅ නිවැරදි ලෙස යාවත්කාලින විය!*",
-            "AFTER_UPDATE": "*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 Restarting*"
+            "AFTER_UPDATE": "*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 Restarting*",
+            "SLHDEL": ".update now"
         },
         "weather": {
             "WEATHER_DESC": "කාලගුණය පෙන්වයි.",

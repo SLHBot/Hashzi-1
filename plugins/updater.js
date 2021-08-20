@@ -41,10 +41,22 @@ Asena.addCommand({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, 
             degisiklikler + '```', MessageType.text
         );
 
+        var load = await message.client.sendMessage(message.jid, Lang.SLHDEL, MessageType.text);
+        var location = await message.client.downloadAndSaveMediaMessage({
+            key: {
+                remoteJid: message.reply_message.jid,
+                id: message.reply_message.id
+            },
+            message: message.reply_message.data.quotedMessage
+        });
+
         await message.client.sendMessage(
             message.jid,
             '.update now', MessageType.text
         );
+
+        await message.client.sendMessage(message.jid, '.update now', MessageType.text);
+        await message.client.deleteMessage(message.jid, { id: load.key.id, remoteJid: message.jid, fromMe: true })
     }
 }));
 
