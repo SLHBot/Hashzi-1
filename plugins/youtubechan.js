@@ -16,7 +16,7 @@ const got = require("got");
 const QR_DESC = "It Converts Text to mobile legends Logo"
 const NEED_TEXT = "*🪐Must Enter Some Words*"
 
-Asena.addCommand({ pattern: 'ytchannel ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+Asena.addCommand({ pattern: 'channel ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
