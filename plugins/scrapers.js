@@ -343,19 +343,6 @@ if (config.WORKTYPE == 'private') {
             }
         }
     }));
-
-    Asena.applyCMD({ pattern: 'channelyt ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.YT_CHANNEL }, (async (message, match) => {
-
-        if (match[1] === '') return await message.sendMessage(Lang.YT_CHANNEL_NAME);
-
-        var ytchan = await axios.get(`https://docs-jojo.herokuapp.com/api/youtube-channel-search?channel=${match[1]}`, { responseType: 'arraybuffer' })
-
-        await message.sendMessage(Lang.YT_CHANNEL_WORK);
-
-        await message.sendMessage(Buffer.from(ytchan.data), MessageType.text)
-
-    }));
-
     Asena.addCommand({ pattern: 'detectlang$', fromMe: true, desc: dlang_dsc }, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
