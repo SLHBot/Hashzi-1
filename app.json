@@ -26,12 +26,12 @@
             "required": false
         },
         "NO_LOG": {
-            "description": "නොදනී නම් වෙනස් නොකරන්න. Set true if you don t want to see error log.",
+            "description": "Hata logu görmek istemiyorsanız true yapın. Set true if you don t want to see error log.",
             "required": true,
             "value": "false"
         },
         "LANGUAGE": {
-            "description": "BOT LANGUAGE සිංහල=SI English=EN . ",
+            "description": "Bot භාෂාව.සිංහල භාෂාව සඳහා En ලෙස සඳහන් කරන්න. ",
             "required": true,
             "value": "En"
         },
@@ -40,15 +40,10 @@
             "required": true,
             "value": "^[.]"
         },
-        "MENU_LOGO": {
-            "description": "menu logo | මෙනූ ලෝගෝ එක අවශ්‍යනම් වෙනස් කරන්න",
+        "MENU": {
+            "description": "COMMAND LIST එකට දාන්න ඕන දෙයක් තියෙනවන්ම් දාන්න",
             "required": false,
-            "value": "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg"
-        },
-        "BOT_NAME": {
-            "description": "Your Bot Name | ඔබේ Bot ගෙ නම",
-            "required": false,
-            "value": "🚀SLHackers Team Member"
+            "value": "තාවකාලිකව මෙය ක්‍රියා විරහිත කර ඇත."
         },
         "SEND_READ": {
             "description": "Bot message seen කළාද නැතිද යන්න පරිශීලකට පෙන්විය යුතුද?",

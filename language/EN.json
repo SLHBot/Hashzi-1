@@ -555,14 +555,10 @@
             "NOT_AVAILABLE": "⛔丂Ĺн𝕒Č𝓴𝕖ʳ𝓼 𝓉ẸⒶ𝐦 乃𝕆𝓽 chat bot අක්‍රිය කර ඇත."
         },
         "AsenaPlug": {
-            "DELETING": "🧞messages deleting",
-            "UP": "🧞",
+            "DELETING": "🔰messages deleting",
+            "UP": "🔰",
             "SPO_DOWN": "🆙",
             "SPO_UP": "🆙",
-            "REPORT": "Sends reports to group admins.",
-            "USER": "===🚀වාර්තාව===\n\n*User:*",
-            "REASON": "\n*හේතුව:*",
-            "REPLY": "*වාර්තා කිරීමට පරිශීලකයාගේ පණිවිඩයට ප්‍රතිචාර දක්වන්න!!*",
             "SPO_ERR": "🆙"
         }
     }

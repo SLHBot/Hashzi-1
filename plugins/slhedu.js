@@ -1,5 +1,5 @@
 /* උස්සන්න එපා බේසිකෙ කොල්ලො අහලා ගනිම්
-Codded BY hirruX
+Codded BY teenuX
 Wa.me/+94755681782
 */
 

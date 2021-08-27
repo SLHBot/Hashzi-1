@@ -1,6 +1,8 @@
 /* Copyright (C) 2021 Hirusha Dayarathne.
+
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
+
 SLHackers Team Bot - Hirusha Dayarathne
 */
 
@@ -101,12 +103,12 @@ async function whatsAsena() {
             }
             else if (infoen !== '' && config.LANG == 'EN') {
                 while (getGMTh == 19 && getGMTm == 1) {
-                    return conn.sendMessage(conn.user.jid, '[ ```⚙SLHackers Team Bot⚙ දවසේ නිවේදන🙇``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text)
+                    return conn.sendMessage(conn.user.jid, '[ ```⚙SLHackers Team Bot⚙ Announcements🙇``` ]\n\n' + infoen.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text)
                 }
             }
-            else if (infosi !== '' && config.LANG == 'EN') {
+            else if (infohi !== '' && config.LANG == 'HI') {
                 while (getGMTh == 21 && getGMTm == 31) {
-                    return conn.sendMessage(conn.user.jid, '[ ```⚙දවසේ නිවේදන🙇``` ]\n\n' + infohi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text)
+                    return conn.sendMessage(conn.user.jid, '[ ```दैनिक घोषणाएं``` ]\n\n' + infohi.replace('{user}', conn.user.name).replace('{wa_version}', conn.user.phone.wa_version).replace('{version}', config.VERSION).replace('{os_version}', conn.user.phone.os_version).replace('{device_model}', conn.user.phone.device_model).replace('{device_brand}', conn.user.phone.device_manufacturer), MessageType.text)
                 }
             }
             else if (infoml !== '' && config.LANG == 'ML') {
@@ -350,7 +352,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         let afwhasena = config.WORKTYPE == 'public' ? ' Public' : ' Private'
         console.log(chalk.bgGreen('⚙ SLHackers Bot ⚙' + afwhasena));
         await new Promise(r => setTimeout(r, 500));
-        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*⚙ SLHackers Bot ⚙ Working As Chat Bot!* 🙇\n\n_⚙ SLHackers Bot ⚙ සම්පූර්ණ ක්‍රීතීම බුද්ධියෙන් Chat Bot ලෙස ක්‍රියා කරයි..._\n_මෙම විධානය භාවිතයෙන්_ *.eva off* _ඔබට පුලුවන් නැවත සාමාන්‍ය පරිදි සැකසීමට_\n\n*THANK FOR USING ⚙ SLHackers Bot ⚙ 💌*\n    *- Eva*' : '*⚙ SLHackers Bot ⚙ Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using ⚙ SLHackers Bot ⚙ 💌*\n    *- Eva*'
+        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*⚙ SLHackers Bot ⚙ Chatbot Olarak Çalışıyor!* 🙇\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*⚙ SLHackers Bot ⚙\n Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using ⚙ SLHackers Bot ⚙ 💌*\n    *- Eva*'
         if (conn.user.jid == one || conn.user.jid == two || conn.user.jid == three || conn.user.jid == four) {
             await conn.sendMessage(conn.user.jid, nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
             await heroku.get(baseURI + '/formation').then(async (formation) => {
@@ -386,7 +388,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```යතාවත්කාලීන කිරීමට``` *.update now* ```භාවිතා කරන්න.```\n\n' + degisiklikler + '```', MessageType.text
+                        '```Güncellemek İçin``` *.update now* ```Yazın.```\n\n' + degisiklikler + '```', MessageType.text
                     );
                 }
             }
@@ -494,11 +496,11 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         }
         else if (config.WORKTYPE == ' private' || config.WORKTYPE == 'Private' || config.WORKTYPE == ' Private' || config.WORKTYPE == 'privaye' || config.WORKTYPE == ' privaye' || config.WORKTYPE == ' prigate' || config.WORKTYPE == 'prigate' || config.WORKTYPE == 'priavte' || config.WORKTYPE == ' priavte' || config.WORKTYPE == 'PRİVATE' || config.WORKTYPE == ' PRİVATE' || config.WORKTYPE == 'PRIVATE' || config.WORKTYPE == ' PRIVATE') {
 
-            if (config.LANG == 'EN' || config.LANG == 'AZ') {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
 
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_ඔබට පෞද්ගලික මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි..._', MessageType.text
+                    '_Görünüşe Göre Private Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -509,7 +511,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_Looks like you need to switch to general mode! _ * WORK_TYPE * \ n_Dont worry! I try to find the truth for you._', MessageType.text
+                    '_ඔබට පෞද්ගලික මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි...._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -519,10 +521,10 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             }
         }
         else if (config.WORKTYPE == ' public' || config.WORKTYPE == 'Public' || config.WORKTYPE == ' Public' || config.WORKTYPE == 'publoc' || config.WORKTYPE == ' Publoc' || config.WORKTYPE == 'pubcli' || config.WORKTYPE == ' pubcli' || config.WORKTYPE == 'PUBLİC' || config.WORKTYPE == ' PUBLİC' || config.WORKTYPE == 'PUBLIC' || config.WORKTYPE == ' PUBLIC' || config.WORKTYPE == 'puvlic' || config.WORKTYPE == ' puvlic' || config.WORKTYPE == 'Puvlic' || config.WORKTYPE == ' Puvlic') {
-            if (config.LANG == 'EN' || config.LANG == 'AZ') {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '__ඔබට පොදු මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි...__', MessageType.text
+                    '_Görünüşe Göre Public Moduna Geçmek İstiyorsun! Maalesef_ *WORK_TYPE* _Anahtarın Yanlış!_ \n_Merak Etme! Senin İçin Doğrusunu Bulmaya Çalışıyorum.._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -533,7 +535,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             else {
                 await conn.sendMessage(
                     conn.user.jid,
-                    '_Looks like you need to switch to public mode! _ * WORK_TYPE * \ n_Dont worry! I try to find the truth for you._', MessageType.text
+                    '_ඔබට පොදු මාදිලියට මාරුවීමට අවශ්ය බව පෙනේ!_ *WORK_TYPE* \n_කණගාටු නොවන්න! මම ඔබ වෙනුවෙන් සත්යය සොයා ගැනීමට උත්සාහ කරමි.._', MessageType.text
                 );
                 await heroku.patch(baseURI + '/config-vars', {
                     body: {
@@ -543,16 +545,16 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             }
         }
         else {
-            if (config.LANG == 'EN' || config.LANG == 'AZ') {
+            if (config.LANG == 'TR' || config.LANG == 'AZ') {
                 return await conn.sendMessage(
                     conn.user.jid,
-                    '_මෙම_ *WORK_TYPE* _විධාන භාවිතය වැරදියි!_ \n_කරුණාකර මෙය භාවිතා කරන්න_ ```.setvar WORK_TYPE:private``` _හෝ_ ```.setvar WORK_TYPE:public```', MessageType.text
+                    '_Girdiğin_ *WORK_TYPE* _Anahtarı Bulunamadı!_ \n_Lütfen_ ```.setvar WORK_TYPE:private``` _Yada_ ```.setvar WORK_TYPE:public``` _Komutunu Kullanın!_', MessageType.text
                 );
             }
             else {
                 return await conn.sendMessage(
                     conn.user.jid,
-                    'Wrong WORK_TYPE key! Please use “private” or “public', MessageType.text
+                    '_The_ *WORK_TYPE* _විධාන භාවිතය වැරදියි!_ \n_කරුණාකර මෙය භාවිතා කරන්න_ ```.setvar WORK_TYPE:private``` _Or_ ```.setvar WORK_TYPE:public```', MessageType.text
                 );
             }
         }
@@ -676,153 +678,153 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                         catch (error) {
                             if (config.NOLOG == 'true') return;
 
-                            if (config.LANG == 'EN' || config.LANG == 'AZ') {
-                                await conn.sendMessage(conn.user.jid, '*-- බොට් වාර්තාව [⚙ SLHackers Bot ⚙] --*' +
-                                    '\n*⚙ SLHackers Bot ⚙ නිසි ලෙස ක්‍රියා කරයි!*' +
-                                    '\n_මෙය ඔබගේ LOG අංකයයි! _මෙහි විධාන භාවිතයෙන් වළකින්න_' +
-                                    '\n_ඔබට පුලුවන් වෙනත් ඕනෑම කතාබහක විධාන භාවිතා කරන්න._' +
-                                    '\n_වැඩි දුර උදව් සදහා සහය සමූහයට එකතු වෙන්න._' +
-                                    '\n_සහය සමූහය: https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci_\n\n' +
-                                    '*🚫ප්‍රධාන දෝෂය:* ```' + error + '```\n\n'
+                            if (config.LANG == 'TR' || config.LANG == 'AZ') {
+                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [⚙ SLHackers Bot ⚙] --*' +
+                                    '\n*WhatsAsena bir hata gerçekleşti!*' +
+                                    '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
+                                    '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
+                                    '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
+                                    '\n_Hatayı https://chat.whatsapp.com/BPNzFEBUVbT1MnfNv3uTvL bu gruba iletebilirsiniz._\n\n' +
+                                    '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text, { detectLinks: false });
 
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚜ 🙇දෝශ විශ්ලේෂනය [⚙ SLHackers Bot ⚙] ⚜*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Only Absolutely URLs Supported_' +
-                                        '\n*🤖හේතුව:* _LOG අංකය තුළ මාධ්‍ය මෙවලම් (nmedia, sticker..) භාවිතය._' +
-                                        '\n*🧚‍♂️විසඳුම:* _LOG අංකය හැර ඕනෑම චැට් එකකදී ඔබට විධානයන් භාවිතා කළ හැකිය._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Only Absolutely URLs Supported_' +
+                                        '\n*Nedeni:* _Medya araçlarının (xmedia, sticker..) LOG numarasında kullanılması._' +
+                                        '\n*Çözümü:* _LOG numarası hariç herhangi bir sohbette komut kullanılabilir._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _SQL Database Error_' +
-                                        '\n*🤖හේතුව:* _Database\'දෝශයකි._ ' +
-                                        '\n*🧚‍♂️විසඳුම:* _නිශ්චිත විසදුමක් නොමැත..ඔබට හැකියි නැවත යෙදුම්ගත කිරීමට._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _SQL Database Error_' +
+                                        '\n*Nedeni:* _Database\'in bozulması._ ' +
+                                        '\n*Solution:* _Bilinen herhangi bir çözümü yoktur. Yeniden kurmayı deneyebilirsiniz._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Split of Undefined_' +
-                                        '\n*🤖හේතුව:* _කණ්ඩායම් admin භාවිතා කළ හැකි විධානයන් සමහර විට split ක්‍රියාවලිය නොදකි._ ' +
-                                        '\n*🧚‍♂️විසඳුම:* _Restart කිරීම ප්‍රමාණවත් වේ._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Split of Undefined_' +
+                                        '\n*Nedeni:* _Grup adminlerinin kullanabildiği komutların ara sıra split fonksiyonunu görememesi._ ' +
+                                        '\n*Çözümü:* _Restart atmanız yeterli olacaktır._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Ookla Server Connection_' +
-                                        '\n*🤖හේතුව:* _සේවාදායකයට වේගවත්ම දත්ත සම්ප්‍රේෂණය කළ නොහැක._' +
-                                        '\n*🧚‍♂️විසඳුම:* _ඔබ එය තවත් වරක් භාවිතා කළහොත් ගැටළුව විසඳනු ඇත.._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Ookla Server Connection_' +
+                                        '\n*Nedeni:* _Speedtest verilerinin sunucuya iletilememesi._' +
+                                        '\n*Çözümü:* _Bir kez daha kullanırsanız sorun çözülecektir._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Requested Audio Params_' +
-                                        '\n*🤖හේතුව:* _හෝඩියේ පිටත TTS විධානය භාවිතා කිරීම._' +
-                                        '\n*🧚‍♂️විසඳුම:* _ඔබ අකුරු රාමුව තුළ ඇති විධානය භාවිතා කළහොත් ගැටළුව විසඳනු ඇත._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Requested Audio Params_' +
+                                        '\n*Nedeni:* _TTS komutunun latin alfabesi dışında kullanılması._' +
+                                        '\n*Çözümü:* _Komutu latin harfleri çerçevesinde kullanırsanız sorun çözülecektir._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _No Such File or Directory_' +
-                                        '\n*🤖හේතුව:* _Pluginයේ වැරදි කේතීකරණය._' +
-                                        '\n*🧚‍♂️විසඳුම:* _කරුණාකර ඔබේ plugin කේත පරීක්‍ෂා කරන්න._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _No Such File or Directory_' +
+                                        '\n*Nedeni:* _Pluginin yanlış kodlanması._' +
+                                        '\n*Çözümü:* _Lütfen plugininin kodlarını kontrol edin._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Error 404 HTTPS_' +
-                                        '\n*🤖හේතුව:* _Heroku plugins යටතේ ඇති විධානයන් භාවිතා කිරීම හේතුවෙන් සේවාදායකයා සමඟ සන්නිවේදනය කිරීමට නොහැකි වීම._' +
-                                        '\n*🧚‍♂️විසඳුම:* _ටික වේලාවක් බලා නැවත උත්සාහ කරන්න. ඔබ තවමත් දෝෂයක් ලබා ගන්නේ නම්, වෙබ් අඩවිය මඟින් යලි ආරම්භ කිරීම සිදු කරන්න._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Error 404 HTTPS_' +
+                                        '\n*Nedeni:* _Heroku plugini altındaki komutların kullanılması sonucu sunucu ile iletişime geçilememesi._' +
+                                        '\n*Çözümü:* _Biraz bekleyip tekrar deneyin. Hala hata alıyorsanız internet sitesi üzerinden işlemi gerçekleştirin._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
-                                        '\n*🤖හේතුව:* _IMG හෝ Wiki විධානයන් භාවිතා කිරීම. (Official වට්ස්ඇප් භාවිතය.)_' +
-                                        '\n*🧚‍♂️විසඳුම:* _මෙම දෝෂය සඳහා විසඳුමක් නොමැත. එය fatal error නොවේ._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Reply Delete Function_' +
+                                        '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
+                                        '\n*Çözümü:* _Bu hatanın çözümü yoktur. Önemli bir hata değildir._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
-                                        '\n*🤖හේතුව:* _IMG හෝ Wiki විධානයන් භාවිතා කිරීම. (Official වට්ස්ඇප් භාවිතය.)_' +
-                                        '\n*🧚‍♂️විසඳුම:* _මෙම දෝෂය සඳහා විසඳුමක් නොමැත. එය fatal error නොවේ.'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Reply Delete Function_' +
+                                        '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
+                                        '\n*Çözümü:* _Bu hatanın çözümü yoktur. Önemli bir hata değildir._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Bailyes Action Error_ ' +
-                                        '\n*🤖හේතුව:* _නිශ්චිත හේතුව නොදනී. විකල්ප එකකට වඩා මෙම දෝෂය ඇති වීමට හේතු විය හැක._' +
-                                        '\n*🧚‍♂️විසඳුම:* _ඔබ එය නැවත භාවිතා කළහොත් එය වැඩිදියුණු විය හැකිය. දෝෂය දිගටම පැවතුනහොත්, ඔබට restart කිරීමට උත්සාහ කළ හැකිය._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Bailyes Action Error_ ' +
+                                        '\n*Nedeni:* _Tam nedeni bilinmiyor. Birden fazla seçenek bu hatayı tetiklemiş olabilir._' +
+                                        '\n*Çözümü:* _Bir kez daha kullanırsanız düzelebilir. Hata devam ediyorsa restart atmayı deneyebilirsiniz._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Cannot Decode Text or Media_' +
-                                        '\n*🤖හේතුව:* _වැරදි ලෙස භාවිතා කිරීම._' +
-                                        '\n*🧚‍♂️විසඳුම:* _විධාන ලැයිස්තුවෙ විස්තර ලියා ඇති පරිදි කරුණාකර විධානයන් භාවිතා කරන්න._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Cannot Decode Text or Media_' +
+                                        '\n*Nedeni:* _Pluginin yanlış kullanımı._' +
+                                        '\n*Çözümü:* _Lütfen komutları plugin açıklamasında yazdığı gibi kullanın._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Word Character Usage_' +
-                                        '\n*🤖හේතුව:* _English හෝඩියේ පිටත TTP, ATTP වැනි විධානයන් භාවිතා කිරීම._' +
-                                        '\n*🧚‍♂️විසඳුම:* _ඔබ English හෝඩියේ විධානය භාවිතා කළහොත් ගැටළුව විසඳනු ඇත._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Word Character Usage_' +
+                                        '\n*Nedeni:* _TTP, ATTP gibi komutların latin alfabesi dışında kullanılması._' +
+                                        '\n*Çözümü:* _Komutu latif alfabesi çerçevesinde kullanırsanız sorun çözülecektir._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ ◁දෝශ වාර්තාව▷ [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ``` 🙇දෝශ විශ්ලේෂනය!``` ==========' +
-                                        '\n\n*🚫ප්‍රධාන දෝෂය:* _Deleting Plugin_' +
-                                        '\n*🤖හේතුව:* ප්ලගීනයෙ නම වැරදියි.._' +
-                                        '\n*🧚‍♂️විසඳුම:* _ප්ලගීනයෙ නමට ඉදිරියෙන් මෙය හොදන්න_ *__* _නැතහොත් නමෙ අගට_ ```?(.*) / $``` _මේවා යොදන්න._'
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [⚙ SLHackers Bot ⚙] ⚕️*' +
+                                        '\n========== ```Hata Okundu!``` ==========' +
+                                        '\n\n*Ana Hata:* _Deleting Plugin_' +
+                                        '\n*Nedeni:* _Silinmek istenen plugin isminin yanlış girilmesi._' +
+                                        '\n*Çözümü:* _Lütfen silmek istediğiniz pluginin başına_ *__* _koymadan deneyin. Hala hata alıyorsanız ismin sonundaki_ ```?(.*) / $``` _gibi ifadeleri eksiksiz girin._'
                                         , MessageType.text
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි AUTO ERROR පද්ධතියට හදුනාගත නොහැකියි! 🙇🏻*' +
-                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයට ලිවීමට.._'
+                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 Maalesef Bu Hatayı Okuyamadım! 🙇🏻*' +
+                                        '\n_Daha fazla yardım için grubumuza yazabilirsiniz._'
                                         , MessageType.text
                                     );
                                 }
                             }
                             else {
-                                await conn.sendMessage(conn.user.jid, '*-- Bot Report [⚙ SLHackers Bot ⚙] --*' +
-                                    '\n*⚙ SLHackers Bot ⚙ Working Perfectly!*' +
-                                    '\n_This is Your LOG Number Dont try Command here.!_' +
-                                    '\n_Also you can Join our Support group.._' +
-                                    '\n_Support group_: https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci' +
-                                    '\n_(saved Messages)._\n\n' +
+                                await conn.sendMessage(conn.user.jid, '*-- Bot වාර්තාව [⚙ SLHackers Bot ⚙] --*' +
+                                    '\n*⚙ SLHackers Bot ⚙ නිසි ලෙස ක්‍රියා කරයි!*' +
+                                    '\n_මෙය LOG අංකයයි.. මෙහි පණිවිඩ පිළිබඳව සැලකිලිමත් වන්න..!_' +
+                                    '\n_ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහයට සම්බන්ධ වන්න.._' +
+                                    '\n_සහය සමූහය_: https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci' +
+                                    '\n_(සුරැකි පණිවිඩ)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, { detectLinks: false }
                                 );
                                 if (error.message.includes('URL')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Only Absolutely URLs Supported_' +
                                         '\n*Reason:* _The usage of media tools (nmedia, sticker..) in the LOG number._' +
                                         '\n*Solution:* _You can use commands in any chat, except the LOG number._'
@@ -831,7 +833,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('conversation')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Deleting Plugin_' +
                                         '\n*Reason:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
                                         '\n*Solution:* _Please try without adding_ *__* _to the plugin you want to delete. If you still get an error, try to add like_ ```?(.*) / $``` _to the end of the name._ '
@@ -840,7 +842,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('split')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Split of Undefined_' +
                                         '\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
                                         '\n*Solution:* _Restarting will be enough._'
@@ -849,7 +851,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('SSL')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _SQL Database Error_' +
                                         '\n*Reason:* _Database corruption._ ' +
                                         '\n*Solution:* _There is no known solution. You can try reinstalling it._'
@@ -858,7 +860,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('Ookla')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Ookla Server Connection_' +
                                         '\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
                                         '\n*Solution:* _If you use it one more time the problem will be solved._'
@@ -867,7 +869,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('params')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Requested Audio Params_' +
                                         '\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
                                         '\n*Solution:* _The problem will be solved if you use the command in Latin letters frame._'
@@ -876,7 +878,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('unlink')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය``` ==========' +
                                         '\n\n*Main Error:* _No Such File or Directory_' +
                                         '\n*Reason:* _Incorrect coding of the plugin._' +
                                         '\n*Solution:* _Please check the your plugin codes._'
@@ -885,7 +887,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('404')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Error 404 HTTPS_' +
                                         '\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
                                         '\n*Solution:* _Wait a while and try again. If you still get the error, perform the transaction on the website.._'
@@ -894,7 +896,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('reply.delete')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n*Reason:* _Using IMG or Wiki commands._' +
                                         '\n*Solution:* _There is no solution for this error. It is not a fatal error._'
@@ -903,7 +905,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('load.delete')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n*Reason:* _Using IMG or Wiki commands._' +
                                         '\n*Solution:* _There is no solution for this error. It is not a fatal error._'
@@ -912,7 +914,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('400')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Bailyes Action Error_ ' +
                                         '\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
                                         '\n*Solution:* _If you use it again, it may improve. If the error continues, you can try to restart._'
@@ -921,7 +923,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('decode')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Cannot Decode Text or Media_' +
                                         '\n*Reason:* _Incorrect use of the plug._' +
                                         '\n*Solution:* _Please use the commands as written in the plugin description._'
@@ -930,7 +932,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('unescaped')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [⚙ SLHackers Bot ⚙] ⚕️*' +
-                                        '\n========== ```🙇ERROR ANALYSIS!``` ==========' +
+                                        '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
                                         '\n\n*Main Error:* _Word Character Usage_' +
                                         '\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
                                         '\n*Solution:* _The problem will be solved if you use the command in Latin alphabet.._'
@@ -938,8 +940,8 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻Sorry, I Couldnt Read This Error!🙇🏻*' +
-                                        '\n_You can write to our support groups for more help..._'
+                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි..! Auto error පද්ධතියට හදුනාගත නොහැකියි..🙇🏻*' +
+                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයන්ට ලියන්න..._'
                                         , MessageType.text
                                     );
                                 }
@@ -956,7 +958,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         await conn.connect();
     } catch {
         if (!nodb) {
-            console.log(chalk.red.bold('Restart Old version...'))
+            console.log(chalk.red.bold('Eski sürüm stringiniz yenileniyor...'))
             conn.loadAuthInfo(Session.deCrypt(config.SESSION));
             try {
                 await conn.connect();

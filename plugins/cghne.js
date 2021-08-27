@@ -41,7 +41,7 @@ _2021/08/12_
 *╠⚙TTS VOICE Updated* 
 *╠⚙Song Upload Error Fixed*
 *╠⚜️Plugging Install Command updated*
-▷New Command: *.install*
+▷New Command: *.pkg*
 ╚═══════════▷
 *⚠️TEMPORARY UNAVAILABLE  COMMAND*
 ╔═══════════▷
