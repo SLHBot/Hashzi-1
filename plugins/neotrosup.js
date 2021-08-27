@@ -9,7 +9,7 @@ const Lang = Language.getString('anime');
 const fs = require("fs")
 const slhb = fs.readFileSync('./media/bot.mp3')
 
-Asena.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (message, match) => {
+Asena.addCommand({ pattern: 'help1', fromMe: true, desc: Lang.AN }, (async (message, match) => {
 
     var r_text = new Array();
 
@@ -103,7 +103,7 @@ Asena.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (messa
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'help', fromMe: false, desc: Lang.AN }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'help1', fromMe: false, desc: Lang.AN }, (async (message, match) => {
 
         var r_text = new Array();
 

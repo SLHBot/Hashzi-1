@@ -5,8 +5,6 @@ const axios = require('axios');
 //language
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
-const fs = require("fs")
-const slhb = fs.readFileSync('./media/bot.mp3')
 
 if (Config.WORKTYPE == 'public') {
     Asena.addCommand({ pattern: 'cnlog', fromMe: false, desc: Lang.UP }, (async (message, match) => {
@@ -14,26 +12,26 @@ if (Config.WORKTYPE == 'public') {
         var r_text = new Array();
 
 
-        r_text[0] = "https://telegra.ph/file/ad6da8cf7b2f61717a4bc.jpg";
-        r_text[1] = "https://telegra.ph/file/497ca2a8c2c767f6f3670.jpg";
-        r_text[2] = "https://telegra.ph/file/2ee7da329678fdf999341.jpg";
-        r_text[3] = "https://telegra.ph/file/ad6da8cf7b2f61717a4bc.jpg";
-        r_text[4] = "https://telegra.ph/file/497ca2a8c2c767f6f3670.jpg";
-        r_text[5] = "https://telegra.ph/file/2ee7da329678fdf999341.jpg";
+        r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+        r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+        r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+        r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+        r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
 
 
         var i = Math.floor(6 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, slhb, MessageType.audio, { mimetype: 'audio/mp4', ptt: true }, { quoted: message.data })
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
-            mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs○▷*
+            mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs ○▷*
 
- *🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.4*
+ *🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.4*
 _2021/08/12_
+
 ◆═════════════⚜
-*SLHackers 5.2.4 UPDATE 🥳*
+*SLHACKERS 5.2.4 UPDATE 🥳*
 ◆═════════════▷
 *💡BUG FIXED*
 ╔════════════▷
@@ -60,7 +58,7 @@ _2021/08/12_
 ▷ Type:  .Admin
 *╠🧚‍♂️Added Update Report System*
 ╚═════════════▷
-*🎭SLHackers Team Bot NEXT UPDATE*
+*🎭SLHACKERS-X NEXT UPDATE*
 ╔═════════════▷
 ╠ 🙇ඔයාලා දන්නවා ඇති Logo Site Maintenance අලුත් features Add කරන්නලු යන්නෙ එයාලා🌝ඒ නිසා Logo pack එක වැඩ නෑ (තාවකාලිකව)
 ║
@@ -70,23 +68,22 @@ _2021/08/12_
 ║
 ╠ 🙇TEXT EDITOR FEATURE එක Beta version එකෙ අයටනම් කලින්ම දීලා තිබුනේ ඒ Feature එක ඔයාලත් දෙනවා🌝
 ╚═════════════▷
-*⁉️HOW TO INSTALL SLHackers Team Bot 5.2.4*
+*⁉️HOW TO INSTALL SLHACKERS 5.2.4*
 ╔═════════════▷
 ╠🧚‍♂️මේ Update Normal Update system එකෙන් Update වෙන්නෙ නැ Bot ආය Deploy කරන්න ඕන.
 කලින් QR SESSION එකම දාලා Deploy කරන්න...ඒක නැත්තන් දැං heroku App එකේ settings ගිහින් ගන්න
+
 _▷ Loging Heroku>Select App>>Click Setting⚙>>> -scroll up- >>>> Click Reveal Config Var_
+
 *▷🐱: github Link: https://github.com/Hirusha21/SLHTBot-X*
+
 ╔═════════════▷
 ╠⚙Update එකේ හෝ Bot සම්බන්ධ ඕනම ගැටලුවක් ADMIN PANEL එකට Inbox කරන්න
 ╚═════════════▷
-*🎭CHMOD〽️L*
-Wa.me/+94755681801
-🔰Hiruha
-Wa.me/+94 75 56 81 782
-🔰Bimsara
-Wa.me/+94 75 56 81 800
-🤍Thank For Using SLHackers Team BOt 🙇 Stay Safe &Stay With Us💌
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
+
+🤍Thank For Using SLHACKERS-X 🙇 Stay Safe &Stay With Us💌
+
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
 _2021/08/08
 
 ◉mmpack updated
@@ -101,7 +98,7 @@ _2021/08/08
 ◉ Added Custom Panel Command
 ( .setvar COMMAND: test )
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.2*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.2*
 _2021/08/01_
 
 ◉Added new Command ( .help)
@@ -111,7 +108,7 @@ _2021/08/01_
 ◉Added fulleva AI CHAT bot
 ( .eva on / .eva off)
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.1*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.1*
 _2021/07/21_
 
 ◉merged: 5.1.6,5.1.7, 2.1.8, 5.1.9, 5.2.0
@@ -124,7 +121,7 @@ _2021/07/21_
 ◉Plugging install Bug fixed
 ◉Antispm Bug fixed
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.1*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.1*
 _2021/07/15_
 
 ◉Bug fixed
@@ -134,7 +131,7 @@ _2021/07/15_
 ◉added console (beta)
 ◉removed Api key and billing details from account section
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.0*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 4.0.0*
 _2021/06/28_
 
 ◉mod apk download 
@@ -143,7 +140,7 @@ _2021/06/28_
 ◉Yt searcher Update 
 ◉video Download Update
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.9.0*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.9.0*
 _2021/06/12_
 
 ◉New Base
@@ -151,7 +148,7 @@ _2021/06/12_
 ◉ imagtosticker update ( .photo)
 ◉mp4audio update ( .mp3)
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.8.0*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.8.0*
 _2021/06/09_
 
 ◉bug fixed
@@ -161,7 +158,7 @@ _2021/06/09_
 ◉ Wiki version 7.0.0 updated
 ◉fixed img Command 
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.7.0*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 3.7.0*
 _2021/06/05_
 
 ◉merged: 3.0.0, 3.1.0, 3.2.0, 3.3.0, 3.4.0, 3.5.0, 3.6.0
@@ -171,7 +168,7 @@ _2021/06/05_
 ◉added Bug Hole VIP ( .bh)
 ◉Added Unlimited Logo Api VIP (.textpro)
 
-*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 2.9.0*
+*🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 2.9.0*
 _2021/05/02_
 
 ◉update songs upload 
@@ -179,12 +176,7 @@ _2021/05/02_
 ◉update covid js
 ◉Added SINHALA command list
 
-_Conz : Lode404_
-🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 is a first Made in sri lanka 🇱🇰chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.
-♦https://youtu.be/mcEeIspWOpY
-◼Github link : https://github.com/Hirusha21/SLHTBot-X
-
-*━⚜SLHACKERS CHANGELOG⚜━*
+*━⚜SLHackers CHANGELOG⚜━*
 `})
 
     }));

@@ -1,8 +1,6 @@
 /* Copyright (C) 2021 Hirusha Dayarathne.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 SLHackers Team Bot - Hirusha Dayarathne
 */
 
@@ -26,9 +24,10 @@ module.exports = {
     CHANNEL: 'https://t.me/remasterplugin',
     SESSION: process.env.SLHACKERS_SESSION === undefined ? '' : process.env.SLHACKERS_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
+    ANTILINKMSG: process.env.ANTILINK_MESSAGE === undefined ? 'Kicked Out This Group 🛸Antilink system' : process.env.ANTILINK_MESSAGE,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
-    LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
+    LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/7645d42ee46a3017ac88f.jpg' : process.env.ALIVE_LOGO,
     WELCOME_LOGO: process.env.WELCOME_LOGO === undefined ? 'https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg' : process.env.WELCOME_LOGO,
@@ -65,6 +64,10 @@ module.exports = {
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*⚙ SLHackers Bot ⚙*' : process.env.CAPTION_KEY,
     HLOCK: process.env.HLOCK === undefined ? 'hadi-api' : process.env.HLOCK,
     BANWORD: process.env.BANWORD === undefined ? 'true' : process.env.BANWORD,
+    BOT_NAME: process.env.BOT_NAME === undefined ? '𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉' : process.env.BOT_NAME,
+    MENU_LOGO: process.env.MENU_LOGO === undefined ? 'https://telegra.ph/file/7645d42ee46a3017ac88f.jpg' : process.env.MENU_LOGO,
+    HACKER: process.env.HACKER === undefined ? 'h4ck3rs404' : process.env.HACKER,
+    A_HACKER: process.env.A_HACKER === undefined ? 'h4ck3rs404-api' : process.env.A_HACKER,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {

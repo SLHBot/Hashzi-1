@@ -1,9 +1,7 @@
-/* Copyright (C) 2021 Hirusha Dayarathne.
-
+/* Copyright (C) 2021 TENUX-SLHackers.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-SLHackers Team Bot - Hirusha Dayarathne
+SLHACKERSX - TEENUHX
 */
 
 const Asena = require('../events');
@@ -18,8 +16,8 @@ const Language = require('../language');
 const Lang = Language.getString('_plugin');
 const NLang = Language.getString('updater');
 
-let msg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*SLHackers වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
-let inmsg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*අනුමත නොකරන ලද ප්ලගීනයක් ඉවත් කරන්න* ❌'
+let msg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*SLHackers වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅' : '*Officialy Approved* ✅'
+let inmsg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*අනුමත නොකරන ලද ප්ලගීනයකි!* ❌' : '*Not Approved* ❌'
 
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
@@ -28,7 +26,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Asena.addCommand({ pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
+Asena.addCommand({ pattern: 'package ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Hirusha21/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
@@ -36,9 +34,9 @@ Asena.addCommand({ pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
         return await message.sendMessage(Lang.INVALID_URL);
     }
 
-    if (url.host === 'gist.github.com') {
-        url.host = 'gist.githubusercontent.com';
-        url = url.toString() + '/raw'
+    if (url.host === 'paste-bin.xyz') {
+        url.host = 'paste-bin.xyz/paste.php?';
+        url = url.toString() + '=xnxcom'
     } else {
         url = url.toString()
     }
@@ -63,14 +61,14 @@ Asena.addCommand({ pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
 
         await Db.installPlugin(url, plugin_name);
         await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text);
-        if (!match[1].includes('Hirusha21')) {
+        if (!match[1].includes('=xnxcom')) {
             await new Promise(r => setTimeout(r, 400));
             await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text);
         }
     }
 }));
 
-Asena.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
+Asena.addCommand({ pattern: 'tnuasgh', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -110,3 +108,4 @@ Asena.addCommand({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE
     }
 
 }));
+

@@ -1,9 +1,7 @@
-/* Copyright (C) 2021 Hirusha Dayarathne.
-
+/* Copyright (C) 2021 TENUX-SLHackers.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
-SLHackers Team Bot - Hirusha Dayarathne
+SLHACKERSX - TEENUHX
 */
 
 const Asena = require('../events');
@@ -18,8 +16,8 @@ const Language = require('../language');
 const Lang = Language.getString('_plugin');
 const NLang = Language.getString('updater');
 
-let msg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Olarak Onaylanmıştır!* ✅' : '*SLHackers වෙතින් අනුමත කරන ලද ප්ලගීනයකි.* ✅'
-let inmsg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*Bu Plugin Resmi Değildir!* ❌' : '*අනුමත නොකරන ලද ප්ලගීනයක් ඉවත් කරන්න* ❌'
+let msg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*අනුමත කරනලද ප්ලගීනයකි..!* ✅' : '*Approved plugin.* ✅'
+let inmsg = Config.LANG == 'EN' || Config.LANG == 'AZ' ? '*අනුමත නොකරණ ලද ප්ලගීනකි..!* ❌' : '*Not Approved Plugin.* ❌'
 
 const heroku = new Heroku({
     token: Config.HEROKU.API_KEY
@@ -28,7 +26,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Asena.addCommand({ pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
+Asena.addCommand({ pattern: 'hiruz ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Hirusha21/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
@@ -48,9 +46,9 @@ Asena.addCommand({ pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
         // plugin adı
         var plugin_name = response.body.match(/addCommand\({.*pattern: ["'](.*)["'].*}/);
         if (plugin_name.length >= 1) {
-            plugin_name = "__" + plugin_name[1];
+            plugin_name = "." + plugin_name[1];
         } else {
-            plugin_name = "__" + Math.random().toString(36).substring(8);
+            plugin_name = "." + Math.random().toString(36).substring(8);
         }
 
         fs.writeFileSync('./plugins/' + plugin_name + '.js', response.body);
@@ -70,8 +68,8 @@ Asena.addCommand({ pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
     }
 }));
 
-Asena.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
-    var mesaj = Lang.INSTALLED_FROM_REMOTE;
+Asena.addCommand({ pattern: 'pluglist', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
+    var mesaj = Lang.PLIST;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
         return await message.sendMessage(Lang.NO_PLUGIN);
@@ -79,16 +77,16 @@ Asena.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (a
         plugins.map(
             (plugin) => {
                 let vf = plugin.dataValues.url.includes('Hirusha21') ? msg : inmsg
-                mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
+                mesaj += '```' + plugin.dataValues.name + '```: ' + '🧚‍♂️ \n' + vf + '\n\n';
             }
         );
         return await message.client.sendMessage(message.jid, mesaj, MessageType.text);
     }
 }));
 
-Asena.addCommand({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC }, (async (message, match) => {
+Asena.addCommand({ pattern: 'hirux(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
-    if (!match[1].startsWith('__')) match[1] = '__' + match[1];
+    if (!match[1].startsWith('.')) match[1] = '.' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: { name: match[1] } });
     if (plugin.length < 1) {
         return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text);
