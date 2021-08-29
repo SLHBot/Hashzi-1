@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
     await message.client.sendMessage(message.jid, XN_D, MessageType.text)
     await axios
-      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=3284f3b96df6`)
+      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=aca83a4354ac`)
       .then(async (response) => {
         const {
           url,
@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'public') {
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
     await message.client.sendMessage(message.jid, XN_D, MessageType.text)
     await axios
-      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=3284f3b96df6`)
+      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=aca83a4354ac`)
       .then(async (response) => {
         const {
           url,
