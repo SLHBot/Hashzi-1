@@ -181,7 +181,7 @@ _2021/05/02_
 
 _Conz : Lode404_
 🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 is a first Made in sri lanka 🇱🇰chat bot for WhatsApp. Makes it easy and fun to use Whatsapp.
-♦https://youtu.be/mcEeIspWOpY
+
 ◼Github link : https://github.com/Hirusha21/SLHTBot-X
 
 *━⚜SLHACKERS CHANGELOG⚜━*
