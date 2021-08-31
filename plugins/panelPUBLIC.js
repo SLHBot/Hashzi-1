@@ -11,13 +11,13 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'EN') {
     if (Config.WORKTYPE == 'public') {
 
-        Asena.addCommand({ pattern: 'slhackers', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        Asena.addCommand({ pattern: 'slhackerslogo', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 
             await message.sendMessage(Buffer.from(image.data), MessageType.image, {
                 mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
-*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
+*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
 *⦁⛨ 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 ⛨⦁*
 .       *╚═❖═▣ ▣═❖══╝*
 

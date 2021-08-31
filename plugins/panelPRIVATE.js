@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'EN') {
     if (Config.NEOY == 'xyz') {
 
-        Asena.addCommand({ pattern: 'slhackers', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        Asena.addCommand({ pattern: 'slhackerslogo', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 

@@ -65,6 +65,9 @@ module.exports = {
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*⚙ SLHackers Bot ⚙*' : process.env.CAPTION_KEY,
     HLOCK: process.env.HLOCK === undefined ? 'hadi-api' : process.env.HLOCK,
     BANWORD: process.env.BANWORD === undefined ? 'true' : process.env.BANWORD,
+    MENU_LOGO: process.env.MENU_LOGO === undefined ? 'https://telegra.ph/file/2ee7da329678fdf999341.jpg' : process.env.MENU_LOGO,
+    HACKER: process.env.HACKER === undefined ? 'h4ck3rs404' : process.env.HACKER,
+    A_HACKER: process.env.A_HACKER === undefined ? 'h4ck3rs404-api' : process.env.A_HACKER,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
