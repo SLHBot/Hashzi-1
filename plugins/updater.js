@@ -43,6 +43,31 @@ Asena.addCommand({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, 
 
         await message.client.sendMessage(
             message.jid,
+            '*මාගේ නිර්මාතෘ ඔබව සමහරක්විට දැන් යාවත්කාලීන කිරීමට පටන් ගනීවි.*', MessageType.text
+        );
+
+        await message.client.sendMessage(
+            message.jid,
+            '*3*', MessageType.text
+        );
+
+        await message.client.sendMessage(
+            message.jid,
+            '*2*', MessageType.text
+        );
+
+        await message.client.sendMessage(
+            message.jid,
+            '*1*', MessageType.text
+        );
+
+        await message.client.sendMessage(
+            message.jid,
+            '*0*', MessageType.text
+        );
+
+        await message.client.sendMessage(
+            message.jid,
             '.update now', MessageType.text
         );
     }
