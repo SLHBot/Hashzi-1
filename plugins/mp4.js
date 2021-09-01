@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
     if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
     await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
     await axios
-      .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&q=${link}`)
+      .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&q=${link}`)
       .then(async (response) => {
         const {
           link,
@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'private') {
         const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.document, { mimetype: Mimetype.mp4, ptt: false })
+        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.document, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, ptt: false })
       })
       .catch(
         async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
@@ -52,7 +52,7 @@ else if (Config.WORKTYPE == 'public') {
     if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
     await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text)
     await axios
-      .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=VI6j4t4wCbwoc6Deh5wgrJL2Kt1&q=${link}`)
+      .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&q=${link}`)
       .then(async (response) => {
         const {
           link,
@@ -61,7 +61,7 @@ else if (Config.WORKTYPE == 'public') {
         const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, YTV_UP, MessageType.text, { quoted: message.data });
-        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.document, { mimetype: Mimetype.mp4, ptt: false })
+        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.document, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, ptt: false })
       })
       .catch(
         async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
