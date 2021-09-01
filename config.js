@@ -62,7 +62,7 @@ module.exports = {
     OWNMSG: process.env.OWN_MESSAGE === undefined ? 'unset' : process.env.OWN_MESSAGE,
     OWNMSG2: process.env.OWN_MESSAGE2 === undefined ? 'unset' : process.env.OWN_MESSAGE2,
     OWNMSG3: process.env.OWN_MESSAGE3 === undefined ? 'unset' : process.env.OWN_MESSAGE3,
-    CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*🍀 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝐵𝑜𝓉 𝒯𝑒𝒶𝓂 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' : process.env.CAPTION_KEY,
+    CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' : process.env.CAPTION_KEY,
     HLOCK: process.env.HLOCK === undefined ? 'hadi-api' : process.env.HLOCK,
     BANWORD: process.env.BANWORD === undefined ? 'true' : process.env.BANWORD,
     MENU_LOGO: process.env.MENU_LOGO === undefined ? 'https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg' : process.env.MENU_LOGO,
