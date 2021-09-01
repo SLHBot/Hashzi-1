@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'EN') {
     if (Config.WORKTYPE == 'public') {
 
-        Asena.addCommand({ pattern: 'slhackerslogo', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        Asena.addCommand({ pattern: 'slhackers', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 
@@ -140,7 +140,7 @@ if (Config.LANG == 'EN') {
 *🚀විස්තරය* : දී ඇති linkයේ website screenshot ගනී
 
 *🌟විධානය* : .github
-*🚀විස්තරය* : දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.⌨️ Example: .github slhackersx
+*🚀විස්තරය* : දී ඇති පරිශීලක නාමයෙන් github තොරතුරු රැස් කරයි.⌨️ Example: .github Hirusha21
 
 *🌟විධානය* : .covid 
 *🚀විස්තරය* : රටවල් කිහිපයක කොරෝනා වාර්ථා පෙන්වයි

@@ -16,7 +16,7 @@
             "NEED_URL": "Please enter a URL! Example:",
             "INVALID_URL": "```Please enter a valid url!```",
             "INVALID_PLUGIN": "*❌ Your plugin is invalid!*\n*Error:*",
-            "INSTALLED": "*✅ Plugin has been successfully installed!🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*",
+            "INSTALLED": "*✅ Plugin has been successfully installed!🔰SLHαcĸerѕ Teαм Boт🔰*",
             "PLUGIN_DESC": "Shows the plugins you have installed.",
             "INSTALLED_FROM_REMOTE": "*Plugins you install externally:*\n",
             "NO_PLUGIN": "*You have not installed any external plugins!*",
@@ -73,9 +73,9 @@
             "MUST_TEXT": "```කරුණාකර ඕනෑම පණිවිඩයකට පිළිතුරු දෙන්න```"
         },
         "heroku": {
-            "RESTART_DESC": "*Restart 🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*",
+            "RESTART_DESC": "*Restart 🔰SLHαcĸerѕ Teαм Boт🔰*",
             "RESTART_MSG": "```♻Restarting...```",
-            "SHUTDOWN_DESC": "*Shutdown 🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*",
+            "SHUTDOWN_DESC": "*Shutdown 🔰SLHαcĸerѕ Teαм Boт🔰*",
             "SHUTDOWN_MSG": "වසා දැමීම ⛔️",
             "DYNO_DESC": "හෙරොකු ඩයිනෝ භාවිතය පරීක්ෂා කරන්න",
             "DYNO_TOTAL": "මුළු කෝටාව",
@@ -218,13 +218,13 @@
         "updater": {
             "UPDATER_DESC": "යාවත්කාලීනය පරීක්ෂා කරයි.",
             "UPDATE": "*ඔබේ බොට් සම්පූර්ණයෙන්ම යාවත්කාලීනවී ඇත!*",
-            "NEW_UPDATE": "*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 ඔබට අලුත් Update එකක් ලැබී ඇත*\n\n යාවත්කාලීන කිරීමට පෙර කරුණාකර සහායක කණ්ඩායමගෙන් විමසන්න. Otherwise chance to get error\n\nChanges:\n```",
+            "NEW_UPDATE": "*🔰SLHαcĸerѕ Teαм Boт🔰 ඔබට අලුත් Update එකක් ලැබී ඇත*\n\n යාවත්කාලීන කිරීමට පෙර කරුණාකර සහායක කණ්ඩායමගෙන් විමසන්න. Otherwise chance to get error\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "එය යාවත්කාලීන කිරීම් කරයි.",
             "UPDATING": "```යාවත්කාලීන කරමින්..🐥```",
             "INVALID_HEROKU": "*❌ ඔබේ හෙරෝකු තොරතුරු වැරදියි!*",
             "UPDATED": "*යාවත්කාලින වීම සම්පුර්ණයි 🤠✅*",
             "UPDATED_LOCAL": "*✅ නිවැරදි ලෙස යාවත්කාලින විය!*",
-            "AFTER_UPDATE": "*🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰 Restarting*",
+            "AFTER_UPDATE": "*🔰SLHαcĸerѕ Teαм Boт🔰 Restarting*",
             "SLHDEL": ".update now"
         },
         "weather": {

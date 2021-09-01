@@ -17,7 +17,7 @@ if (Config.LANG == 'EN') {
 
             await message.sendMessage(Buffer.from(image.data), MessageType.image, {
                 mimetype: Mimetype.png, caption: `*⊰᯽⊱┈──╌❊  ❊╌──┈⊰᯽⊱*
- *═▣══❖⦁⦁⦁👽⦁⦁⦁❖══▣═*
+*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
 
  *🚀SLHackers-x BASIC Help*
 

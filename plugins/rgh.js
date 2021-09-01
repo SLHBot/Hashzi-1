@@ -8,6 +8,6 @@ const { MessageType } = require('@adiwajshing/baileys');
 
 Asena.addCommand({ pattern: 'emergency', fromMe: false }, (async (message, match) => {
 
-    await message.sendMessage(".spam 🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰* *ᴀʟɪᴠᴇ ɴᴏᴡ*");
+    await message.sendMessage(".spam 🔰SLHαcĸerѕ Teαм Boт🔰* *ᴀʟɪᴠᴇ ɴᴏᴡ*");
 
 }));

@@ -63,7 +63,7 @@ if (cn.WORKTYPE == 'private') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰* ',
+            caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰* ',
           })
         })
         .catch(
@@ -148,7 +148,7 @@ else if (cn.WORKTYPE == 'public') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰* ',
+            caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰* ',
           })
         })
         .catch(
@@ -176,7 +176,7 @@ else if (cn.WORKTYPE == 'public') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: '*Made by 𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉* ',
+            caption: '*Produced by* 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅ ',
           })
         })
         .catch(

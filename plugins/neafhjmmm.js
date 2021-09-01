@@ -29,7 +29,7 @@ if (Config.NEOY == 'xyz') {
 *▷🔞XNXX LIST 🔞◁*
 
 *🌜MAIN TITTLE: SRI LANKA*
-◁═══ _powerd By teenuhX_ ═══▷
+◁═══ _powerd By CH-MOD_ ═══▷
 
 *🔞TITLE* : GAMPAHA KALLA
 *✊LINK* : https://www.xnxx.com/video-k8ryl8f/gampha_set_una_kella
@@ -59,7 +59,7 @@ if (Config.NEOY == 'xyz') {
 *✊LINK* :https://www.xnxx.com/video-jz9abad/neighbor_fuck_busty_aunty_while_bathing_full_video_-_http_zo.ee_4ln1l
 
 *🌜MAIN TITTLE: MIA KHALIFA*
-◁═══ _powerd By teenuhX_ ═══▷
+◁═══ _powerd By CH-MOD_ ═══▷
 
 *🔞TITLE* :  MIA KHALIFA HARD FUCK
 *✊LINK* :https://www.xnxx.com/video-st219b6/miakhalifa_-_beautiful_lebanese_pornstar_getting_fucked_hard_and_well
@@ -101,7 +101,7 @@ if (Config.NEOY == 'xyz') {
 ✊LINK:https://www.xnxx.com/video-n8itwf7/bangbros_-_gorgeous_arab_pornstar_mia_khalifa_gets_fucked_passionately
 
 *🌜MAIN TITLE: STEP SISTER*
-◁═══ _powerd By teenuhX_ ═══▷
+◁═══ _powerd By CH-MOD_ ═══▷
 
 🔞TITLE: CUTE SMAILL TITS 
 ✊LINK:https://www.xnxx.com/video-grtn3e8/cute_small_tits_teen_stepsister_pov_fuck
@@ -152,7 +152,7 @@ if (Config.NEOY == 'xyz') {
 *✊LINK* : https://www.xnxx.com/video-xbiy14c/family_fetish_-_sister_and_brother_secrets_affair_-_teen_family_creampie_step_sister_step_brother_taboo_tight_pussy_young_pov_amateur_tattoo_small_boobs_blowjob_cowgirl_piercing_missionary_cum_inside
 
 *🌜MAIN TITTLE: JAPANESE SEX*
-◁═══ _powerd By teenuhX_ ═══▷
+◁═══ _powerd By CH-MOD_ ═══▷
 
 *🔞TITLE* : BIG BOOBS 
 *✊LINK* : https://www.xnxx.com/video-oze7p03/hot_japan_girl_with_big_boobs_miho_tsujii_pose_in_bedroom
@@ -184,7 +184,7 @@ if (Config.NEOY == 'xyz') {
 *🔞TITLE* : JAPAN GIRL MEGUMI
 *✊LINK* : https://www.xnxx.com/video-s7n9ta3/hot_japan_girl_megumi_haruka_in_porn_scene
 
-◁═══ _powerd By teenuhX_ ═══▷
+◁═══ _powerd By CH-MOD_ ═══▷
           ✊ SLHackers NSFW PANEL
 
  

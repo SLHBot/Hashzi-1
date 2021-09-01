@@ -17,13 +17,13 @@
 */
 
 function successfullMessage(msg) {
-    return "✅ *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*:  ```" + msg + "```"
+    return "✅ *🔰SLHαcĸerѕ Teαм Boт🔰*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*:  ```" + msg + "```"
+    return "🛑 *🔰SLHαcĸerѕ Teαм Boт🔰*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*:  ```" + msg + "```"
+    return "⏺️ *🔰SLHαcĸerѕ Teαм Boт🔰*:  ```" + msg + "```"
 }
 
 

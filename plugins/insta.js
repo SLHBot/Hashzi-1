@@ -25,10 +25,10 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (me
     const profileBuffer = await axios.get(resource.url[0], { responseType: 'arraybuffer' })
 
     if (resource.url.is_video[0]) {
-      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
+      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
     }
     else if (!resource.url.is_video[0]) {
-      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
+      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
     }
   }).catch(async (err) => {
     await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))

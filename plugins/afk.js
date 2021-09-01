@@ -1,8 +1,7 @@
-/* Copyright (C) 2021 Hirusha Dayarathne.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
+/*# Exclusively from danuma project 
+# Do not use this fore any commercial thing
+# If you abuse thais bot we wil kick you from bot 
+# Do not edit (Respect to the Devaoloper) 
 SLHackers Team Bot - Hirusha Dayarathne
 Developer & Co-Founder - Hirusha
 */

@@ -97,7 +97,7 @@ if (Config.WORKTYPE == 'private') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
+        await message.sendMessage(Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
 
     }));
 }
@@ -191,7 +191,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by *🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
+        await message.sendMessage(Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
 
     }));
 }

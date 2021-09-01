@@ -22,6 +22,6 @@ Asena.addCommand({ pattern: 'ytchannel ?(.*)', fromMe: true, dontAddCommandList:
 
     var webimage = await axios.get(`http://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by ⚡🔰𝒮𝐿𝐻𝒶𝒸𝓀𝑒𝓇𝓈 𝒯𝑒𝒶𝓂 𝐵❁𝓉🔰*' })
+    await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰*' })
 
 }));
