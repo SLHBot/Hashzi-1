@@ -19,7 +19,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v5.2.4 Global Stable',
+    VERSION: 'v5.5.4 Global Stable',
     HNLOCK: 'hadi-api',
     ZLOCK: 'zeks',
     ZNLOCK: 'zenzapi.xyz',
