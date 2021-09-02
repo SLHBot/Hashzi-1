@@ -1,6 +1,6 @@
 /*Codded by RAMIYA
 Telegram: t.me/Ramilka_Rodrigo 
-Official Release for SLHackersX */
+Official Release for SLHackers */
 
 const Asena = require('../events');
 const Config = require('../config');
@@ -188,4 +188,4 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
 
 /*Codded by RAMIYA
 Telegram: t.me/Ramilka_Rodrigo
-Official Release for SLHackersX */
+Official Release for SLHackers */

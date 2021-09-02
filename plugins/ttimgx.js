@@ -202,7 +202,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/emoji-image?apikey=1hroZ3ju94h0PBjCNKsfhYaSuLs&emoji=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/emoji-image?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&emoji=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```Made by Eva```' })
 
@@ -353,13 +353,13 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'lovemsg ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'lovemsg ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-    var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://videfikri.com/api/textmaker/lovemsg/?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: 'Made by Eva'})
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by Eva' })
 
     }));
 
@@ -407,7 +407,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -427,7 +427,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=fHZpP3j61LgH80BzanBm92jch1Q&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -484,7 +484,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=odsMYXx67ZhT38w5hp5mgRKO8En&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
 
@@ -554,7 +554,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=2270813be0bf2e3fbf0415cc&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=03ffdf45513a71ed7e669db1&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰*' })
 

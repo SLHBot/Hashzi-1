@@ -17,7 +17,7 @@ const EEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:05*\n*📂TYPE:* *video
 const EEEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:06*\n*📂TYPE:* *video*\n*Uploading..🎦*"
 const EEEEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:07*\n*📂TYPE:* *video*\n*Uploading..🎦*"
 
-if (Config.NEOA == 'aca83a4354ac') {
+if (Config.NEOA == 'bimsaraapi') {
 
     Asena.addCommand({ pattern: '1motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 

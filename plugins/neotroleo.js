@@ -6,7 +6,7 @@ const axios = require('axios');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
-if (Config.NEOA == 'aca83a4354ac') {
+if (Config.NEOA == 'bimsaraapi') {
     Asena.addCommand({ pattern: 'nsfw', fromMe: true, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();

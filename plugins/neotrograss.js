@@ -20,7 +20,7 @@ Asena.addCommand({ pattern: 'grass ?(.*)', fromMe: false, dontAddCommandList: tr
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-    var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/greenbush?apikey=f5074eacc49a6f41c34ee1e9&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/greenbush?apikey=03ffdf45513a71ed7e669db1&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by ⚡Hirusha*' })
 

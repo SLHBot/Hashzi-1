@@ -203,9 +203,9 @@
             "IMG": "```සෙවූ චායරුප``` *{}* ```ක් ``` *{}* ඔබවෙත එවමින්..."
         },
         "sticker": {
-            "STICKER_DESC": "It converts your replied photo or video to sticker.",
-            "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```⚡SLHackers Created sticker```"
+            "STICKER_DESC": "එය ඔබ පිළිතුරු දුන් ඡායාරූපය හෝ වීඩියෝ පටය ස්ටිකරයක් බවට පත් කරයි.",
+            "NEED_REPLY": "*ඡායාරූපයකට හෝ වීඩියෝ පටයකට පිළිතුරු දෙන්න!*",
+            "DOWNLOADING": "```⚡SLHackers විසින් ස්ටිකරයක් සාදන ලදි```"
         },
         "system_stats": {
             "ALIVE_DESC": "බොට් වැඩ කරනවාද??",

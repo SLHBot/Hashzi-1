@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
     await message.client.sendMessage(message.jid, Lang.SPO_DOWN, MessageType.text)
 
     await axios
-      .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=e1ee2b3d3b00e58f2511ad95&url=${link}`)
+      .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=03ffdf45513a71ed7e669db1&url=${link}`)
       .then(async (response) => {
         const {
           link,
@@ -50,7 +50,7 @@ else if (Config.WORKTYPE == 'public') {
     await message.client.sendMessage(message.jid, Lang.SPO_DOWN, MessageType.text, { quoted: message.data })
 
     await axios
-      .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=e1ee2b3d3b00e58f2511ad95&url=${link}`)
+      .get(`https://lolhuman.herokuapp.com/api/spotify?apikey=03ffdf45513a71ed7e669db1&url=${link}`)
       .then(async (response) => {
         const {
           link,

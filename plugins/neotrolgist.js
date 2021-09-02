@@ -23,7 +23,7 @@ const EEEEEEXN_UP = "*TITLE:* *🔞පට්ටන්දර - සම්පූර
 const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
 const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ යුතුය*"
 
-if (Config.NEOA == 'aca83a4354ac') {
+if (Config.NEOA == 'bimsaraapi') {
 
       Asena.addCommand({ pattern: '1xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
