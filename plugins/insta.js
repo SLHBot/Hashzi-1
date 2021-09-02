@@ -25,10 +25,10 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (me
     const profileBuffer = await axios.get(resource.url[0], { responseType: 'arraybuffer' })
 
     if (resource.url.is_video[0]) {
-      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
+      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, { caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
     }
     else if (!resource.url.is_video[0]) {
-      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰*' })
+      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, { caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
     }
   }).catch(async (err) => {
     await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))
@@ -108,7 +108,7 @@ Asena.addCommand({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DESC }, (a
   if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
   if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
 
-  let urls = `https://api.xteam.xyz/dl/igstalk?url=${match[1]}&APIKEY=82d4dc815ab1fd4c`
+  let urls = `https://api.xteam.xyz/dl/igstalk?url=${match[1]}&APIKEY=1d372151fb9f8bc5`
   var response = await got(urls)
   const json = JSON.parse(response.body);
 

@@ -20,7 +20,7 @@ if (cn.WORKTYPE == 'private') {
     if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
     if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
 
-    let urls = `https://api.xteam.xyz/dl/ig?url=${match[1]}&APIKEY=ab9942f95c09ca89`
+    let urls = `https://api.xteam.xyz/dl/ig?url=${match[1]}&APIKEY=1d372151fb9f8bc5`
     let response
     try { response = await got(urls) } catch {
       return await message.client.sendMessage(message.jid, Lang.FİX, MessageType.text, { quoted: message.data });
@@ -63,7 +63,7 @@ if (cn.WORKTYPE == 'private') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰* ',
+            caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰* ',
           })
         })
         .catch(
@@ -80,7 +80,7 @@ else if (cn.WORKTYPE == 'public') {
     if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
     if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
 
-    let urls = `https://api.xteam.xyz/dl/ig?url=${match[1]}&APIKEY=ab9942f95c09ca89`
+    let urls = `https://api.xteam.xyz/dl/ig?url=${match[1]}&APIKEY=1d372151fb9f8bc5`
     let response
     try { response = await got(urls) } catch {
       return await message.client.sendMessage(message.jid, Lang.FİX, MessageType.text, { quoted: message.data });
@@ -106,7 +106,7 @@ else if (cn.WORKTYPE == 'public') {
     if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
     if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
 
-    let urls = `https://api.xteam.xyz/dl/ig?url=${match[1]}&APIKEY=ab9942f95c09ca89`
+    let urls = `https://api.xteam.xyz/dl/ig?url=${match[1]}&APIKEY=1d372151fb9f8bc5`
     let response
     try { response = await got(urls) } catch {
       return await message.client.sendMessage(message.jid, Lang.FİX, MessageType.text, { quoted: message.data });
@@ -137,7 +137,7 @@ else if (cn.WORKTYPE == 'public') {
       await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
 
       await axios
-        .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=ab9942f95c09ca89`)
+        .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=1d372151fb9f8bc5`)
         .then(async (response) => {
           const {
             server_1,
@@ -148,7 +148,7 @@ else if (cn.WORKTYPE == 'public') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: 'Made by *🔰SLHαcĸerѕ Teαм Boт🔰* ',
+            caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰* ',
           })
         })
         .catch(

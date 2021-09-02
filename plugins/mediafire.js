@@ -14,46 +14,46 @@ const Lang = Language.getString('instagram')
 
 const Tlang = Language.getString('mediafire')
 
-Asena.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommandList: true}, async (message, match) => {
+Asena.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommandList: true }, async (message, match) => {
 
-        const userName = match[1]
+  const userName = match[1]
 
-        if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
+  if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
 
-        await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
+  await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
 
-        await axios
+  await axios
 
-          .get(`https://api.xteam.xyz/dl/mediafire?url=${userName}&APIKEY=dece97b8c1307c7f`)
+    .get(`https://api.xteam.xyz/dl/mediafire?url=${userName}&APIKEY=1d372151fb9f8bc5`)
 
-          .then(async (response) => {
+    .then(async (response) => {
 
-            const {
+      const {
 
-              server_1,
+        server_1,
 
-            } = response.data
+      } = response.data
 
-            const profileBuffer = await axios.get(server_1, {
+      const profileBuffer = await axios.get(server_1, {
 
-              responseType: 'arraybuffer',
+        responseType: 'arraybuffer',
 
-            })
+      })
 
-            await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.png, {
+      await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.png, {
 
-              caption: 'apk downloader\n SLHackers Team Bot| ©2021❤️',
+        caption: 'apk downloader\n SLHackers Team Bot| ©2021❤️',
 
-            })
+      })
 
-          })
+    })
 
-          .catch(
+    .catch(
 
-            async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
-
-          )
-
-      },
+      async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
 
     )
+
+},
+
+)
