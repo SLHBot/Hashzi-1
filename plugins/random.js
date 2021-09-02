@@ -61,7 +61,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'random ?(.*)', fromMe: true, desc: 'word image'  dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'random ?(.*)', fromMe: true, desc: 'word image' }, (async (message, match) => {
 
         var r_text = new Array();
 

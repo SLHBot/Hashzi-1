@@ -224,16 +224,6 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'vtext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
-
-        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
-
-        var webimage = await axios.get(`https://xteam.xyz/videomaker/retro?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
-
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
-
-    }));
-
     Asena.addCommand({ pattern: 'ptext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
@@ -626,7 +616,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'rock ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'rock ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -670,6 +660,174 @@ if (Config.WORKTYPE == 'public') {
         var webimage = await axios.get(`https://api.xteam.xyz/textpro/denim?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'rph ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var topText, bottomText;
+        if (match[1].includes('/')) {
+            var split = match[1].split('/');
+            bottomText = split[1];
+            topText = split[0];
+        }
+
+        var webimage = await axios.get(`https://api.xteam.xyz/quotemaker?text=${topText}&wm=${bottomText}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```Produced by :```\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var topText, bottomText, thirdText;
+        if (match[1].includes('/')) {
+            var split = match[1].split('/');
+            thirdText = split[2];
+            bottomText = split[1];
+            topText = split[0];
+        }
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis?nama=${topText}&kelas=${bottomText}&text=${thirdText}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '```Produced by :```\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis1?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis2?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis3?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis4?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write5 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis5?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'write6 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://api.xteam.xyz/magernulis6?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
+
+    }));
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++My Video+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+    Asena.addCommand({ pattern: 'vtext1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/shaunthesheep?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'vtext2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/poly?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'vtext3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/bold?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'vtext4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/glowing?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'vtext5 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/colorful?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'vtext6 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/army?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
+
+    Asena.addCommand({ pattern: 'vtext7 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`https://xteam.xyz/videomaker/retro?text=${match[1]}&APIKEY=d9f297dbf7b0bbf4`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
 
     }));
 
