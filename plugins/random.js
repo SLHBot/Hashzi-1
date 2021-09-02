@@ -5,7 +5,7 @@ const axios = require('axios');
 const NEED_WORD = "*Must Enter some Words*"
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({ pattern: 'random ?(.*)', fromMe: false, desc: 'word image' }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'random ?(.*)', fromMe: true, desc: 'word image' }, (async (message, match) => {
 
         var r_text = new Array();
 
