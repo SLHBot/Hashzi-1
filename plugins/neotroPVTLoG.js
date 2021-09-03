@@ -9,7 +9,7 @@ const fs = require("fs")
 const slhb = fs.readFileSync('./media/logo.mp3')
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({ pattern: 'textimg', fromMe: true, desc: Lang.UP }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'imgtext', fromMe: true, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 
