@@ -16,11 +16,10 @@ if (Config.WORKTYPE == 'private') {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
 			if (response.statusCode === 200) return await message.client.sendMessage(message.jid,
-				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n\n\n' +
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
+				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
-				'*📘 ' + Lang.SIZE + '* ```' + json.result[0].size + '```\n\n\n' +
-				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n', MessageType.text);
+				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text);
 		} catch {
 			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
 		}
@@ -35,11 +34,10 @@ else if (Config.WORKTYPE == 'public') {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
 			if (response.statusCode === 200) return await message.client.sendMessage(message.jid,
-				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n\n\n' +
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
+				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
-				'*📘 ' + Lang.SIZE + '* ```' + json.result[0].size + '```\n\n\n' +
-				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n', MessageType.text);
+				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text);
 		} catch {
 			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
 		}
@@ -52,11 +50,10 @@ else if (Config.WORKTYPE == 'public') {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
 			if (response.statusCode === 200) return await message.client.sendMessage(message.jid,
-				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n\n\n' +
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
+				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
-				'*📘 ' + Lang.SIZE + '* ```' + json.result[0].size + '```\n\n\n' +
-				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n', MessageType.text);
+				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text);
 		} catch {
 			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
 		}
