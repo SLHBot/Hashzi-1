@@ -21,7 +21,7 @@ if (Config.WORKTYPE == 'public') {
             topText = split[0];
         }
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/gtext?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/gtext?apikey=${Config.ASENA_PLUG}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -31,7 +31,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/epep?apikeyqzXRlER89xXLoOvXH8VPmVCh5ye=&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/epep?apikey${Config.ASENA_PLUG}=&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/crosslogo?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/crosslogo?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -51,7 +51,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/tlight?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/tlight?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -61,7 +61,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/cslogo?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/cslogo?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -71,7 +71,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/text3dbox?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -91,7 +91,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/logobp?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -118,7 +118,7 @@ if (Config.WORKTYPE == 'public') {
             topText = split[0];
         }
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/phlogo?apikey=${Config.ASENA_PLUG}&text1=${topText}&text2=${bottomText}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
 
@@ -148,7 +148,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
 
@@ -168,7 +168,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/glowtext?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/glowtext?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -178,7 +178,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/leavest?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/leavest?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -188,7 +188,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/skytext?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/skytext?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -198,7 +198,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/gplaybutton?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/gplaybutton?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -208,7 +208,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/breakwall?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.zeks.xyz/api/breakwall?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 
@@ -218,7 +218,7 @@ if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=03ffdf45513a71ed7e669db1&text=${match[1]}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/anonymhacker?apikey=${Config.LLHAPI}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by*:\n⚡𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅⚡' })
 
@@ -250,7 +250,7 @@ if (Config.WORKTYPE == 'public') {
 
         var uri = encodeURI(match[1])
 
-        var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=qzXRlER89xXLoOvXH8VPmVCh5ye&emoji=' + uri, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get('https://api.zeks.xyz/api/emoji-image?apikey=${Config.ASENA_PLUG}&emoji=' + uri, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' })
 

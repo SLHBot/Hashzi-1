@@ -55,6 +55,8 @@ module.exports = {
     NEOA: process.env.NEOA === undefined ? 'bimsaraapi' : process.env.NEOA,
     NEOS: process.env.NEOS === undefined ? 'zenzapi' : process.env.NEOS,
     NEOY: process.env.NEOY === undefined ? 'xyz' : process.env.NEOY,
+    LLHAPI: process.env.LLHAPI === undefined ? 'https://github.com/BlackAmda' : process.env.LLHAPI,
+    LLHMYAPI: process.env.LLHMYAPI === undefined ? '03ffdf45513a71ed7e669db1' : process.env.LLMHHAPI,
     NY: process.env.NY === undefined ? 'xyz' : process.env.NY,
     NA: process.env.NA === undefined ? 'bimsaraapi' : process.env.NA,
     NS: process.env.NS === undefined ? 'zenzapi' : process.env.NS,

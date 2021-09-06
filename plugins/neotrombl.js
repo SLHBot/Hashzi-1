@@ -20,7 +20,7 @@ Asena.addCommand({ pattern: 'legend ?(.*)', fromMe: false, dontAddCommandList: t
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
-    var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=03ffdf45513a71ed7e669db1&text=${match[1]}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`http://lolhuman.herokuapp.com/api/ephoto1/mlwall?apikey=${Config.LLHAPI}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
     await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by*:\n⚡𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅⚡' })
 
