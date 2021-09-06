@@ -71,7 +71,6 @@ module.exports = {
 
     //My Updates For SLHTBOT-X
     BOT_NAME: process.env.BOT_NAME === undefined ? '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' : process.env.BOT_NAME,
-    BIO_CP: process.env.BIO_CP === undefined ? '🎲S͓̽L͓̽H͓̽a͓̽c͓̽k͓̽e͓̽r͓̽s͓̽ සාමාජිකයෙකි🎲' : process.env.BIO_CP,
 
     //Normal
     LLHAPI: process.env.LLHAPI === undefined ? 'https://github.com/BlackAmda' : process.env.LLHAPI,
