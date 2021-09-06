@@ -44,9 +44,9 @@ if (Config.WORKTYPE == 'private') {
 
 
 
-        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&full_page=true&output=image&file_type=jpg&block_ads=true&no_cookie_banners=true=true&wait_for_event=load`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'speed capt. by :\n *🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' })
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' })
 
     }));
 }
@@ -80,9 +80,9 @@ else if (Config.WORKTYPE == 'public') {
 
 
 
-        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&full_page=true&output=image&file_type=jpg&block_ads=true&no_cookie_banners=true=true&wait_for_event=load`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'speed capt. by :\n *🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' })
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' })
 
     }));
     Asena.addCommand({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontAddCommandList: true }, (async (message, match) => {
@@ -113,9 +113,9 @@ else if (Config.WORKTYPE == 'public') {
 
 
 
-        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&full_page=true&output=image&file_type=jpg&block_ads=true&no_cookie_banners=true=true&wait_for_event=load`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.png, caption: 'speed capt. by :\n *🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' })
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' })
 
     }));
 }
