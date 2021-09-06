@@ -63,16 +63,16 @@ Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC }, async (mes
   await message.sendMessage(infoMessage(LOADING))
 
   await axios
-    .get(`https://videfikri.com/api/fbdl/?urlfb=${userName}`)
+    .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${userName}`)
     .then(async (response) => {
       const {
-        url,
-        judul,
+        result,
+        message,
       } = response.data.result
 
-      const profileBuffer = await axios.get(url, { responseType: 'arraybuffer' })
+      const profileBuffer = await axios.get(result, { responseType: 'arraybuffer' })
 
-      const msg = `*${CAPTION}*: ${judul}`
+      const msg = `*${CAPTION}*: ${message}`
 
       await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
         caption: "Made By :\n*🔰SLHαcĸerѕ Teαм Boт🔰*"
