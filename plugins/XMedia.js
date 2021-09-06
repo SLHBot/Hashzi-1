@@ -118,7 +118,91 @@ if (Config.WORKTYPE == 'private') {
 
     Asena.addCommand({ pattern: 'nmedia', fromMe: true, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
 
-        await message.sendMessage('💻Usage: *.mp4enhance*\nℹ️Desc: Enhance video’s quality.\n\n💻Usage: *.interp*\nℹ️Desc: Increases the FPS of the video.\n\n💻Usage: *.mp4slowmo*\nℹ️Desc: Applies true-slowmo to non-slow motion videos.\n\n💻Usage: *.x4mp4*\nℹ️Desc: Reduce video’s quality by 75%.\n\n💻Usage: *.x2mp4*\nℹ️Desc: Reduce video’s quality by 50%.\n\n💻Usage: *.gif*\nℹ️Desc: Converts video to gif.\n\n💻Usage: *.agif*\nℹ️Desc: Converts video to voiced gif.\n\n💻Usage: *.mp4blur*\nℹ️Desc: Blurs the background of the video.\n\n💻Usage: *.mp4stab*\nℹ️Desc: Decreases the vibration of the video.\n\n💻Usage: *.mp4rainbow*\nℹ️Desc: Applies a rainbow effect to video.\n\n💻Usage: *.mp4color*\nℹ️Desc: Makes the colors of the video more vivid and beautiful.\n\n💻Usage: *.mp4art*\nℹ️Desc: Applies a art effect to the video.\n\n💻Usage: *.mp4negative*\nℹ️Desc: Applies a negative color filter to the video.\n\n💻Usage: *.mp4vintage*\nℹ️Desc: Applies a nostalgic effect to video.\n\n💻Usage: *.mp4bw*\nℹ️Desc: Applies a monochrome effect to video.\n\n💻Usage: *.mp4reverse*\nℹ️Desc: Plays the video in reverse.\n\n💻Usage: *.mp4edge*\nℹ️Desc: Applies a edge effect to the video.\n\n💻Usage: *.mp4image*\nℹ️Desc: Converts photo to 5 sec video.\n\n💻Usage: *.spectrum*\nℹ️Desc: Converts the spectrum of sound into video.\n\n💻Usage: *.waves*\nℹ️Desc: Converts the wave range of sound to video.\n\n💻Usage: *.frequency*\nℹ️Desc: Converts the frequency range of sound to video.\n\n💻Usage: *.avec*\nℹ️Desc: Converts the histogram of sound to video.\n\n💻Usage: *.volumeaudio*\nℹ️Desc: Converts the decibel value of the sound into video.\n\n💻Usage: *.cqtaudio*\nℹ️Desc: Converts the CQT value of audio to video.\n\n💻Usage: *.mp3eq*\nℹ️Desc: Adjusts the sound to a crystal clear level.\n\n💻Usage: *.mp3crusher*\nℹ️Desc: Distorts the sound, makes ridiculous.\n\n💻Usage: *.mp3reverse*\nℹ️Desc: Plays the sound in reverse.\n\n💻Usage: *.mp3pitch*\nℹ️Desc: Makes the sound thinner and faster.\n\n💻Usage *.mp3low*\nℹ️Desc: Makes the sound deep and slower.\n\n💻Usage: *.x2mp3*\nℹ️Desc: Makes the sound twice as fast.\n\n💻Usage: *.mp3volume*\nℹ️Desc: Increase sound level so much.\n\n💻Usage: *.bwimage*\nℹ️Desc: Applies a monochrome effect to image.\n\n💻Usage: *.vintageimage*\nℹ️Desc: Applies a vinatge effect to video.\n\n💻Usage: *.edgeimage*\nℹ️Desc: Applies a edge effect to the photo.\n\n💻Usage: *.enhanceimage*\nℹ️Desc: Makes the photo clearer.\n\n💻Usage: *.blurimage*\nℹ️Desc: Blurs the background of the photo.\n\n💻Usage: *.grenimage*\nℹ️Desc: Applies grain effect to the photo.\n\n💻Usage: *.negativeimage*\nℹ️Desc: Applies a negative color filter to the photo.\n\n💻Usage: *.rainbowimage*\nℹ️Desc: Applies rainbow effect to the photo.\n\n💻Usage: *.colorimage*\nℹ️Desc: It makes the colors of the photo more vivid and attractive.\n\n💻Usage: *.artimage*\nℹ️Desc: Applies a art effect to the photo.');
+        await message.sendMessage('💠🔮 *මාධ්‍ය සංස්කාරක* 🔮💠\n\n' +
+            '🔮 විධානය : *.mp4enhance*\n' +
+            '💠🔮 * මාධ්ය සංස්කාරක* 🔮💠\n\n' +
+            '🔮 විධානය : *.mp4enhance*\n' +
+            '📄 විස්තර : වීඩියෝ ගුණාත්මකභාවය වැඩි දියුණු කරන්න.\n\n' +
+            '🔮 විධානය : *.interp*\n' +
+            '📄 විස්තර : වීඩියෝවේ FPS වැඩි කරයි.\n\n' +
+            '🔮 විධානය : *.mp4slowmo*\n' +
+            '📄 විස්තර : වීඩියෝ සඳහා slow-motion සාදනු ඇත.\n\n' +
+            '🔮 විධානය : *.x4mp4*\n' +
+            '📄 විස්තර : වීඩියෝ ගුණාත්මකභාවය 75%කින් අඩු කරන්න.\n\n' +
+            '🔮 විධානය : *.x2mp4*\n' +
+            '📄 විස්තර : වීඩියෝ ගුණාත්මකභාවය 50%කින් අඩු කරන්න.\n\n' +
+            '🔮 විධානය : *.gif*\n' +
+            '📄 විස්තර : වීඩියෝව gif බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.agif*\n' +
+            '📄 විස්තර : වීඩියෝව voiced gif බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.mp4blur*\n' +
+            '📄 විස්තර : වීඩියෝ පටයේ පසුබිම බොඳ කරයි.\n\n' +
+            '🔮 විධානය : *.mp4stab*\n' +
+            '📄 විස්තර : වීඩියෝවේ කම්පනය අඩු කරයි.\n\n' +
+            '🔮 විධානය : *.mp4rainbow*\n' +
+            '📄 විස්තර : දේදුනු බලපෑමක් වීඩියෝ පටයට යොදයි.\n\n' +
+            '🔮 විධානය : *.mp4color*\n' +
+            '📄 විස්තර : වීඩියෝවේ වර්ණ වඩාත් විචිත්ර හා ලස්සන කරයි.\n\n' +
+            '🔮 විධානය : *.mp4art*\n' +
+            '📄 විස්තර : වීඩියෝව සඳහා කලාත්මක බලපෑමක් යොදයි.\n\n' +
+            '🔮 විධානය : *.mp4negative*\n' +
+            '📄 විස්තර : වීඩියෝවට සෘණ වර්ණ filter යොදයි.\n\n' +
+            '🔮 විධානය : *.mp4vintage*\n' +
+            '📄 විස්තර : වීඩියෝ පටයට විකාර හැඟීමක් යෙදේ.\n\n' +
+            '🔮 විධානය : *.mp4bw*\n' +
+            '📄 විස්තර : වීඩියෝ සඳහා black and white effect යොදයි.\n\n' +
+            '🔮 විධානය : *.mp4reverse*\n' +
+            '📄 විස්තර : වීඩියෝව reverse කරන්න.\n\n' +
+            '🔮 විධානය : *.mp4edge*\n' +
+            '📄 විස්තර : වීඩියෝ පටයට edge effect යොදයි.\n\n' +
+            '🔮 විධානය : *.mp4image*\n' +
+            '📄 විස්තර : ඡායාරූපය තත්පර 5 ක වීඩියෝවක් බවට පරිවර්තනය කරන්න.\n\n' +
+            '🔮 විධානය : *.spectrum*\n' +
+            '📄 විස්තර : ශබ්ද වල වර්ණාවලිය වීඩියෝ බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.waves*\n' +
+            '📄 විස්තර : ශබ්දයේ තරංග පරාසය වීඩියෝ බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.frequency*\n' +
+            '📄 විස්තර : ශබ්දයේ සංඛ්යාත පරාසය වීඩියෝ බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.avec*\n' +
+            '📄 විස්තර : ශබ්දයේ හිස්ටෝග්රෑම් වීඩියෝ බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.volumeaudio*\n' +
+            '📄 විස්තර : ශබ්දයේ ඩෙසිබල් අගය වීඩියෝ බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.cqtaudio*\n' +
+            '📄 විස්තර : CQT අගය වීඩියෝ පටයක් බවට පරිවර්තනය කරයි.\n\n' +
+            '🔮 විධානය : *.mp3eq*\n' +
+            '📄 විස්තර : ශබ්දය පැහැදිලි පැහැදිලි මට්ටමකට සකසන්න.\n\n' +
+            '🔮 විධානය : *.mp3crusher*\n' +
+            '📄 විස්තර : ශබ්දය විකෘති කරයි, හාස්ය උපදවයි.\n\n' +
+            '🔮 විධානය : *.mp3reverse*\n' +
+            '📄 විස්තර : ශබ්දය reverse වාදනය කරයි.\n\n' +
+            '🔮 විධානය : *.mp3pitch*\n' +
+            '📄 විස්තර : ශබ්දය තුනී හා වේගවත් කරයි.\n\n' +
+            '🔮 විධානය  *.mp3low*\n' +
+            '📄 විස්තර : ශබ්දය ගැඹුරු හා මන්දගාමී කරයි.\n\n' +
+            '🔮 විධානය : *.x2mp3*\n' +
+            '📄 විස්තර : ශබ්දය මෙන් දෙගුණයක් වේගවත් කරයි.\n\n' +
+            '🔮 විධානය : *.mp3volume*\n' +
+            '📄 විස්තර : ශබ්ද මට්ටම එතරම් වැඩි කරන්න.\n\n' +
+            '🔮 විධානය : *.bwimage*\n' +
+            '📄 විස්තර : රූපයට black and white effect යොදයි.\n\n' +
+            '🔮 විධානය : *.vintageimage*\n' +
+            '📄 විස්තර : වීඩියෝ පටයට vintage effect යොදයි.\n\n' +
+            '🔮 විධානය : *.edgeimage*\n' +
+            '📄 විස්තර : ඡායාරූපයෙහි edge effect යොදයි.\n\n' +
+            '🔮 විධානය : *.enhanceimage*\n' +
+            '📄 විස්තර : ඡායාරූපය වඩාත් පැහැදිලි කරයි.\n\n' +
+            '🔮 විධානය : *.blurimage*\n' +
+            '📄 විස්තර : ඡායාරූපයේ පසුබිම බොඳ කරයි.\n\n' +
+            '🔮 විධානය : *.grenimage*\n' +
+            '📄 විස්තර : ඡායාරූපය සඳහා grain effect යොදයි.\n\n' +
+            '🔮 විධානය : *.negativeimage*\n' +
+            '📄 විස්තර : ඡායාරූපය සඳහා සෘණ වර්ණ filter යොදන්න.\n\n' +
+            '🔮 විධානය : *.rainbowimage*\n' +
+            '📄 විස්තර : ඡායාරූපය සඳහා දේදුන්න filter යොදයි.\n\n' +
+            '🔮 විධානය : *.colorimage*\n' +
+            '📄 විස්තර : එමඟින් ඡායාරූපයේ වර්ණ වඩාත් විචිත්ර හා ආකර්ෂණීය කරයි.\n\n' +
+            '🔮 විධානය : *.artimage*\n' +
+            '📄 විස්තර : ඡායාරූපය සඳහා art effect යොදයි.');
 
     }));
 
@@ -139,7 +223,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -161,7 +245,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -185,7 +269,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -206,7 +290,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showspectrum=s=720x1280,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -227,7 +311,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showwaves=s=720x1280:mode=cline:rate=25,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -248,7 +332,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showfreqs=s=720x1280:mode=cline:fscale=log,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -269,7 +353,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter_complex", "[0:a]avectorscope=s=720x1280:rf=5:gf=25:bf=5:draw=line,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -290,7 +374,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showvolume=f=1:b=4:w=720:h=68,format=yuv420p[vid]", "-map", "[vid]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -311,7 +395,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showcqt=s=1280x720,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -396,7 +480,7 @@ if (Config.WORKTYPE == 'private') {
             .fps(22)
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -419,7 +503,7 @@ if (Config.WORKTYPE == 'private') {
             .fps(22)
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -441,7 +525,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -462,7 +546,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "hue=s=0"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -483,7 +567,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "curves=vintage"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -505,7 +589,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -526,7 +610,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "split[original][copy];[copy]scale=ih*16/9:-1,crop=h=iw*9/16,gblur=sigma=20[blurred];[blurred][original]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -547,7 +631,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "split[original][copy];[copy]scale=ih*16/9:-1,crop=h=iw*9/16,gblur=sigma=20[blurred];[blurred][original]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -590,7 +674,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -653,7 +737,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-filter:v", "edgedetect=low=0.9:high=0.2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -674,7 +758,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "unsharp=3:3:1.5"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -718,7 +802,7 @@ if (Config.WORKTYPE == 'private') {
             .videoBitrate(500)
             .save('output_gif.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -740,7 +824,7 @@ if (Config.WORKTYPE == 'private') {
             .videoBitrate(500)
             .save('output_gif.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -761,7 +845,7 @@ if (Config.WORKTYPE == 'private') {
             .videoFilters('noise=alls=100:allf=t+u')
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -809,7 +893,7 @@ if (Config.WORKTYPE == 'private') {
             .videoFilters('eq=brightness=0.5')
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -831,7 +915,7 @@ if (Config.WORKTYPE == 'private') {
             .videoFilters('eq=brightness=0.5')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -852,7 +936,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "curves=color_negative"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -874,7 +958,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -896,7 +980,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -917,7 +1001,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "convolution=-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -939,7 +1023,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -961,7 +1045,7 @@ if (Config.WORKTYPE == 'private') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -982,7 +1066,7 @@ if (Config.WORKTYPE == 'private') {
             .outputOptions(["-y", "-vf", "eq=contrast=1.3:saturation=1.5:brightness=-0.1"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1038,7 +1122,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1060,7 +1144,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1084,7 +1168,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1105,7 +1189,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showspectrum=s=720x1280,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1126,7 +1210,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showwaves=s=720x1280:mode=cline:rate=25,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1147,7 +1231,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showfreqs=s=720x1280:mode=cline:fscale=log,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1168,7 +1252,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter_complex", "[0:a]avectorscope=s=720x1280:rf=5:gf=25:bf=5:draw=line,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1189,7 +1273,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showvolume=f=1:b=4:w=720:h=68,format=yuv420p[vid]", "-map", "[vid]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1210,7 +1294,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter_complex", "[0:a]showcqt=s=1280x720,format=yuv420p[v]", "-map", "[v]", "-map 0:a"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1295,7 +1379,7 @@ else if (Config.WORKTYPE == 'public') {
             .fps(22)
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1318,7 +1402,7 @@ else if (Config.WORKTYPE == 'public') {
             .fps(22)
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1340,7 +1424,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1361,7 +1445,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "hue=s=0"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1382,7 +1466,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "curves=vintage"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1404,7 +1488,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1425,7 +1509,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "split[original][copy];[copy]scale=ih*16/9:-1,crop=h=iw*9/16,gblur=sigma=20[blurred];[blurred][original]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1446,7 +1530,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "split[original][copy];[copy]scale=ih*16/9:-1,crop=h=iw*9/16,gblur=sigma=20[blurred];[blurred][original]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2"])
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1489,7 +1573,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1552,7 +1636,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-filter:v", "edgedetect=low=0.9:high=0.2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1573,7 +1657,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "unsharp=3:3:1.5"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1617,7 +1701,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoBitrate(500)
             .save('output_gif.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1639,7 +1723,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoBitrate(500)
             .save('output_gif.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output_gif.mp4'), MessageType.video, { mimetype: Mimetype.gif, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1660,7 +1744,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('noise=alls=100:allf=t+u')
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1708,7 +1792,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('eq=brightness=0.5')
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1730,7 +1814,7 @@ else if (Config.WORKTYPE == 'public') {
             .videoFilters('eq=brightness=0.5')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1751,7 +1835,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "curves=color_negative"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1773,7 +1857,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1795,7 +1879,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1816,7 +1900,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "convolution=-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2:-2 -1 0 -1 1 1 0 1 2"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1838,7 +1922,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1860,7 +1944,7 @@ else if (Config.WORKTYPE == 'public') {
             .format('mp4')
             .save('output.mp4')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.mp4'), MessageType.video, { mimetype: Mimetype.mpeg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
@@ -1881,7 +1965,7 @@ else if (Config.WORKTYPE == 'public') {
             .outputOptions(["-y", "-vf", "eq=contrast=1.3:saturation=1.5:brightness=-0.1"])
             .save('output.jpg')
             .on('end', async () => {
-                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' });
+                await message.sendMessage(fs.readFileSync('output.jpg'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME });
             });
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));

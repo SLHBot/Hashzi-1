@@ -19,7 +19,7 @@ if (Config.WORKTYPE == 'private') {
 
         var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/cartoongravity?apikey=${Config.LLHAPI}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n SLHackers Team Bot' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAME })
 
     }));
 }
@@ -32,7 +32,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var ttinullimage = await axios.get(`https://api.lolhuman.xyz/api/ephoto1/cartoongravity?apikey=${Config.LLHAPI}&text=${encodeURIComponent(match[1])}`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n SLHackers Team Bot' })
+        await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAME })
 
     }));
 
