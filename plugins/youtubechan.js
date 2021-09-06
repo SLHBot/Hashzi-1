@@ -25,6 +25,15 @@ if (Config.WORKTYPE == 'private') {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
     });
+    Asena.addCommand({ pattern: 'vfb ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
+
+    }));
 }
 
 else if (Config.WORKTYPE == 'public') {
@@ -44,6 +53,15 @@ else if (Config.WORKTYPE == 'public') {
     Asena.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {
 
         await message.sendMessage('*CMND* \n .device\n *DESC* \n know details of a mobilephone\n *example:* .device rog 5\n\n *CMND* \n .rdmore\n *DESC* \n add readmore after give text\n *example:* .rdmore SLHackers\n\n *CMND* \n.brdmore\n *DESC* \n add readmore before given text\n *example:* .brdmore SLHackers\n\n *CMND* \n.bgm one \n .bgm two \n *DESC* \n will change the type of reply bgm \n *example:* .bgm one (.bgm one \n is the default bgm mode - to change that use .bgm two ) ', MessageType.text, { quoted: message.data });
+
+    }));
+    Asena.addCommand({ pattern: 'vfb ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
+
+        var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '```Made by ⚡🔰SLHαcĸerѕ Teαм Boт🔰```' })
 
     }));
 }
