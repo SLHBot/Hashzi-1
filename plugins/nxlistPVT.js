@@ -12,12 +12,12 @@ if (Config.NEOY == 'xyz') {
         var r_text = new Array();
 
 
-        r_text[0] = "https://telegra.ph/file/ce8b81a40c5173cf94cb9.jpg";
-        r_text[1] = "https://telegra.ph/file/ce8b81a40c5173cf94cb9.jpg";
-        r_text[2] = "https://telegra.ph/file/ce8b81a40c5173cf94cb9.jpg";
-        r_text[3] = "https://telegra.ph/file/ce8b81a40c5173cf94cb9.jpg";
-        r_text[4] = "https://telegra.ph/file/ce8b81a40c5173cf94cb9.jpg";
-        r_text[5] = "https://telegra.ph/file/ce8b81a40c5173cf94cb9.jpg";
+        r_text[0] = "https://telegra.ph/file/40ed93cc5bbd6ebc35934.jpg";
+        r_text[1] = "https://telegra.ph/file/c093e9374836bf02a59ed.jpg";
+        r_text[2] = "https://telegra.ph/file/cbb3a24bcf9ad259c7715.jpg";
+        r_text[3] = "https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg";
+        r_text[4] = "https://telegra.ph/file/5e0561d3cbb9cda856d5b.jpg";
+        r_text[5] = "https://telegra.ph/file/7645d42ee46a3017ac88f.jpg";
 
 
         var i = Math.floor(6 * Math.random())
