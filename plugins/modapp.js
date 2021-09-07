@@ -19,26 +19,26 @@ if (Config.WORKTYPE == 'private') {
             const response = await got(url);
             const json = JSON.parse(response.body);
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📁 ' + Lang.CATEGORY + ':* ```' + match[1] + '```\n\n\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[0].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[0].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[0].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[1].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[1].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[1].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[1].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[2].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[2].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[2].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[2].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[3].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[3].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[3].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[3].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[4].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[4].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[4].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[4].thumb + '```\n', MessageType.text);
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[0].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[0].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[0].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[0].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[1].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[1].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[1].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[1].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[2].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[2].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[2].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[2].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[3].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[3].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[3].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[3].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[4].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[4].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[4].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[4].thumb + '```\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
@@ -55,26 +55,26 @@ else if (Config.WORKTYPE == 'public') {
             const json = JSON.parse(response.body);
 
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📁 ' + Lang.CATEGORY + ':* ```' + match[1] + '```\n\n\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[0].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[0].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[0].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[1].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[1].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[1].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[1].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[2].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[2].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[2].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[2].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[3].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[3].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[3].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[3].thumb + '```\n' +
-                '*📕 ' + Lang.NAME + ':* ```' + json.result[4].title + '```\n' +
-                '*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[4].url + '```\n' +
-                '*📘 ' + Lang.RATING + ':* ```' + json.result[4].rating + '```\n' +
-                '*📘 ' + Lang.IMAGE + ':* ```' + json.result[4].thumb + '```\n', MessageType.text);
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[0].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[0].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[0].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[0].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[1].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[1].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[1].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[1].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[2].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[2].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[2].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[2].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[3].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[3].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[3].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[3].thumb + '```\n' +
+                '*📕 ' + Lang.PHEAD + ':* ```' + json.result[4].title + '```\n' +
+                '*📗 ' + Lang.LINK + ':* ```' + json.result[4].url + '```\n' +
+                '*📘 ' + Lang.VIEWS + ':* ```' + json.result[4].VIEWS + '```\n' +
+                '*📘 ' + Lang.PICT + ':* ```' + json.result[4].thumb + '```\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
