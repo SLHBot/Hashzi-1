@@ -21,6 +21,7 @@ if (Config.WORKTYPE == 'private') {
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📁 ' + Lang.CATEGORY + ':* ```' + match[1] + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[0].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[0].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[0].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[0].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[0].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[0].views + '```\n' +
@@ -28,6 +29,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[0].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[1].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[1].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[1].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[1].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[1].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[1].views + '```\n' +
@@ -35,6 +37,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[1].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[2].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[2].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[2].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[2].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[2].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[2].views + '```\n' +
@@ -42,6 +45,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[2].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[3].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[3].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[3].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[3].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[3].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[3].views + '```\n' +
@@ -49,6 +53,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[3].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[4].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[4].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[4].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[4].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[4].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[4].views + '```\n' +
@@ -56,6 +61,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[4].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[5].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[5].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[5].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[5].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[5].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[5].views + '```\n' +
@@ -63,6 +69,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[5].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[6].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[6].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[6].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[6].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[6].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[6].views + '```\n' +
@@ -70,6 +77,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[6].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[7].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[7].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[7].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[7].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[7].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[7].views + '```\n' +
@@ -77,6 +85,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[7].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[8].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[8].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[8].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[8].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[8].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[8].views + '```\n' +
@@ -84,6 +93,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[9].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[9].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[9].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[9].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[9].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[9].views + '```\n' +
@@ -91,6 +101,7 @@ if (Config.WORKTYPE == 'private') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[9].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[10].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[10].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[10].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[10].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[10].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[10].views + '```\n' +
@@ -114,6 +125,7 @@ else if (Config.WORKTYPE == 'public') {
             if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*📁 ' + Lang.CATEGORY + ':* ```' + match[1] + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[0].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[0].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[0].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[0].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[0].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[0].views + '```\n' +
@@ -121,6 +133,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[0].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[1].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[1].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[1].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[1].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[1].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[1].views + '```\n' +
@@ -128,6 +141,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[1].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[2].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[2].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[2].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[2].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[2].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[2].views + '```\n' +
@@ -135,6 +149,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[2].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[3].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[3].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[3].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[3].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[3].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[3].views + '```\n' +
@@ -142,6 +157,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[3].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[4].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[4].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[4].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[4].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[4].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[4].views + '```\n' +
@@ -149,6 +165,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[4].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[5].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[5].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[5].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[5].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[5].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[5].views + '```\n' +
@@ -156,6 +173,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[5].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[6].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[6].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[6].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[6].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[6].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[6].views + '```\n' +
@@ -163,6 +181,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[6].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[7].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[7].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[7].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[7].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[7].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[7].views + '```\n' +
@@ -170,6 +189,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[7].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[8].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[8].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[8].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[8].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[8].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[8].views + '```\n' +
@@ -177,6 +197,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[9].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[9].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[9].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[9].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[9].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[9].views + '```\n' +
@@ -184,6 +205,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[9].added + '```\n\n\n' +
                 '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[10].title + '```\n' +
                 '*🔗 ' + Lang.LINK + ':* ```' + json.result[10].link + '```\n' +
+                '*📷 ' + Lang.PICT + ':* ```' + json.result[10].thumbnail + '```\n' +
                 '*🚉 ' + Lang.DURAT + ':* ```' + json.result[10].duration + '```\n' +
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[10].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[10].views + '```\n' +
