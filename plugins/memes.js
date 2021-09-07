@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 Coded by @KursadHD
 */
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             bottomText: bottomText,
         }, async function (err) {
             if (err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' });
+            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: Config.BOT_NAAAAAME });
             await info.delete();
         });
     }));
@@ -87,7 +87,7 @@ else if (Config.WORKTYPE == 'public') {
             bottomText: bottomText,
         }, async function (err) {
             if (err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' });
+            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: Config.BOT_NAAAAAME });
             await info.delete();
         });
     }));
@@ -122,7 +122,7 @@ else if (Config.WORKTYPE == 'public') {
             bottomText: bottomText,
         }, async function (err) {
             if (err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' });
+            await message.client.sendMessage(message.jid, fs.readFileSync('asena-meme.png'), MessageType.image, { filename: 'asena-meme.png', mimetype: Mimetype.png, caption: Config.BOT_NAAAAAME });
             await info.delete();
         });
     }));

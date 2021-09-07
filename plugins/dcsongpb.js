@@ -3,11 +3,11 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
 const Asena = require('../events');
-const {MessageType,Mimetype} = require('@adiwajshing/baileys');
+const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
 const LanguageDetect = require('languagedetect');
@@ -20,7 +20,7 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
 //============================== LYRICS =============================================
 const axios = require('axios');
 const { requestLyricsFor, requestAuthorFor, requestTitleFor, requestIconFor } = require("solenolyrics");
-const solenolyrics= require("solenolyrics"); 
+const solenolyrics = require("solenolyrics");
 //============================== CURRENCY =============================================
 const { exchangeRates } = require('exchange-rates-api');
 const ExchangeRatesError = require('exchange-rates-api/src/exchange-rates-error.js')
@@ -32,7 +32,7 @@ const googleTTS = require('google-translate-tts');
 //============================== YOUTUBE ==============================================
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
-const yts = require( 'yt-search' )
+const yts = require('yt-search')
 const got = require("got");
 const ID3Writer = require('browser-id3-writer');
 const SpotifyWebApi = require('spotify-web-api-node');
@@ -133,19 +133,19 @@ if (config.LANG == 'RU') {
 
 if (config.WORKTYPE == 'public') {
 
-Asena.addCommand({pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC}, (async (message, match) => { 
+    Asena.addCommand({ pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_TEXT_SONG,MessageType.text);    
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text);
         let arama = await yts(match[1]);
         arama = arama.all;
-        if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text);
-        var reply = await message.client.sendMessage(message.jid,Lang.DOWNLOADING_SONG,MessageType.text, {quoted: message.data});
+        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
+        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_SONG, MessageType.text, { quoted: message.data });
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
             quality: 'highestaudio',
         });
-    
+
         got.stream(arama[0].image).pipe(fs.createWriteStream(title + '.jpg'));
         ffmpeg(stream)
             .audioBitrate(320)
@@ -161,8 +161,8 @@ Asena.addCommand({pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC},
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid,Lang.UPLOADING_SONG,MessageType.text, {quoted: message.data});
-                await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', quoted: message.data});
+                reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_SONG, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, Buffer.from(writer.arrayBuffer), MessageType.document, { filename: title + '.mp3', mimetype: 'audio/mpeg', quoted: message.data });
             });
     }));
 

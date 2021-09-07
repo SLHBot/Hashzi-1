@@ -60,7 +60,7 @@ _2021/08/12_
 ▷ Type:  .Admin
 *╠🧚‍♂️Added Update Report System*
 ╚═════════════▷
-*🎭SLHackers Team Bot NEXT UPDATE*
+*🎭𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 NEXT UPDATE*
 ╔═════════════▷
 ╠ 🙇ඔයාලා දන්නවා ඇති Logo Site Maintenance අලුත් features Add කරන්නලු යන්නෙ එයාලා🌝ඒ නිසා Logo pack එක වැඩ නෑ (තාවකාලිකව)
 ║
@@ -70,7 +70,7 @@ _2021/08/12_
 ║
 ╠ 🙇TEXT EDITOR FEATURE එක Beta version එකෙ අයටනම් කලින්ම දීලා තිබුනේ ඒ Feature එක ඔයාලත් දෙනවා🌝
 ╚═════════════▷
-*⁉️HOW TO INSTALL SLHackers Team Bot 5.2.4*
+*⁉️HOW TO INSTALL 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 5.2.4*
 ╔═════════════▷
 ╠🧚‍♂️මේ Update Normal Update system එකෙන් Update වෙන්නෙ නැ Bot ආය Deploy කරන්න ඕන.
 කලින් QR SESSION එකම දාලා Deploy කරන්න...ඒක නැත්තන් දැං heroku App එකේ settings ගිහින් ගන්න
@@ -85,7 +85,7 @@ Wa.me/+94755681801
 Wa.me/+94 75 56 81 782
 🔰Bimsara
 Wa.me/+94 75 56 81 800
-🤍Thank For Using SLHackers Team BOt 🙇 Stay Safe &Stay With Us💌
+🤍Thank For Using 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 🙇 Stay Safe &Stay With Us💌
 *🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
 _2021/08/08
 

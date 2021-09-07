@@ -294,7 +294,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://api.xteam.xyz/textpro/ph?text=${topText}&text2=${bottomText}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAAAAME })
 
     }));
 
@@ -304,7 +304,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://api.xteam.xyz/textpro/bloodontheroastedglass?text=${match[1]}&APIKEY=1d372151fb9f8bc5`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAAAAME })
 
     }));
 
@@ -314,7 +314,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/text3d?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAAAAME })
 
     }));
 
@@ -324,7 +324,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://api.zeks.xyz/api/tfire?apikey=${Config.ASENA_PLUG}&text=${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAAAAME })
 
     }));
 
@@ -334,7 +334,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://docs-jojo.herokuapp.com/api/gaming?text=${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAAAAME })
 
     }));
 

@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
 const { Sequelize } = require('sequelize');
@@ -75,9 +75,10 @@ module.exports = {
     //Normal
     LLHAPI: process.env.LLHAPI === undefined ? 'https://github.com/BlackAmda' : process.env.LLHAPI,
     LLHMYAPI: process.env.LLHMYAPI === undefined ? '03ffdf45513a71ed7e669db1' : process.env.LLMHHAPI,
-    BOT_NAAME: process.env.BOT_NAAME === undefined ? 'Made by :\n SLHackers Team Bot' : process.env.BOT_NAAME,
+    BOT_NAAME: process.env.BOT_NAAME === undefined ? 'Made by :\n 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAME,
     BOT_NAAAME: process.env.BOT_NAAAME === undefined ? 'Made by :\n SLHαcĸerѕ Teαм Boт' : process.env.BOT_NAAAME,
-    BOT_NAAAAME: process.env.BOT_NAAAAME === undefined ? 'Copyright © 2021 | SLHackers Team Bot' : process.env.BOT_NAAAAME,
+    BOT_NAAAAME: process.env.BOT_NAAAAME === undefined ? 'Copyright © 2021 | 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAAAME,
+    BOT_NAAAAAME: process.env.BOT_NAAAAAME === undefined ? 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' : process.env.BOT_NAAAAAME,
     //==============================================================================================================================
 
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),

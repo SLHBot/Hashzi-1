@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 
 
 const Asena = require('../events');
@@ -13,7 +13,7 @@ const fs = require('fs')
 const Language = require('../language');
 const Lang = Language.getString('up_down');
 
-Asena.addCommand({pattern: 'download ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, usage: 'meme top;bottom'}, (async (message, match) => {    
+Asena.addCommand({pattern: 'download ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, usage: 'meme top;bottom'}, (async (message, match) => {
     if (message.reply_message === false) return await message.sendMessage(Lang.NEED_REPLY);
 
 }));

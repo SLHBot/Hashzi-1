@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
 const config = require('../../config');
@@ -11,8 +11,8 @@ const { DataTypes } = require('sequelize');
 
 const FiltersDB = config.DATABASE.define('filter', {
     chat: {
-      type: DataTypes.STRING,
-      allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false
     },
     pattern: {
         type: DataTypes.TEXT,
@@ -28,8 +28,8 @@ const FiltersDB = config.DATABASE.define('filter', {
 });
 
 async function getFilter(jid = null, filter = null) {
-    var Wher = {chat: jid};
-    if (filter !== null) Wher.push({pattern: filter});
+    var Wher = { chat: jid };
+    if (filter !== null) Wher.push({ pattern: filter });
     var Msg = await FiltersDB.findAll({
         where: Wher
     });

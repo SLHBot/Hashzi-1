@@ -2,7 +2,7 @@
 # Do not use this fore any commercial thing
 # If you abuse thais bot we wil kick you from bot 
 # Do not edit (Respect to the Devaoloper) 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 Developer & Co-Founder - Hirusha
 */
 

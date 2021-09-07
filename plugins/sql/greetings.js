@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
 const config = require('../../config');
@@ -11,8 +11,8 @@ const { DataTypes } = require('sequelize');
 
 const GreetingsDB = config.DATABASE.define('Greeting', {
     chat: {
-      type: DataTypes.STRING,
-      allowNull: false
+        type: DataTypes.STRING,
+        allowNull: false
     },
     type: {
         type: DataTypes.STRING,
@@ -48,9 +48,9 @@ async function setMessage(jid = null, tip = 'welcome', text = null) {
     });
 
     if (Msg.length < 1) {
-        return await GreetingsDB.create({ chat: jid, type: tip, message:text });
+        return await GreetingsDB.create({ chat: jid, type: tip, message: text });
     } else {
-        return await Msg[0].update({ chat: jid, type: tip, message:text });
+        return await Msg[0].update({ chat: jid, type: tip, message: text });
     }
 }
 

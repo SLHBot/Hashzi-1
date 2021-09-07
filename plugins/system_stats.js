@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
 
             var image = await axios.get(Config.ALIVE_LOGO, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, { mimetype: Mimetype.png, caption: "                 ⚙ *SLHackers Team Bot* ⚙ \n     *Bang!! Bang!! Im Alive Now*\n\n*◈Version* ● ▷5.4.0 Global Stable\n*◈Branch* ● ▷ Vancino\n*◈About* ● ▷ *🎭🔰SLHαcĸerѕ Teαм Boт🔰🔰is an easy used WhatsApp robot.*\n*◯Owner* ▷ ▸https://Wa.me/+94755681782◂\n*Moders* ●▷\n◼ Hirusha\n\n■ Bimsara\n■Chmod\n\n*◈Main Group* ▷https://chat.whatsapp.com\n*◈Support group* ▷https://chat.whatsapp.com\n\n*ᴛʜᴀɴᴋ ꜰᴏʀ ᴜꜱɪɴɢ SLHαƈƙҽɾʂ Tҽαɱ Bσƚ🔰🎭*" })
+            await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, { mimetype: Mimetype.png, caption: "                 ⚙ *𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭* ⚙ \n     *Bang!! Bang!! Im Alive Now*\n\n*◈Version* ● ▷5.4.0 Global Stable\n*◈Branch* ● ▷ Vancino\n*◈About* ● ▷ *🎭🔰SLHαcĸerѕ Teαм Boт🔰🔰is an easy used WhatsApp robot.*\n*◯Owner* ▷ ▸https://Wa.me/+94755681782◂\n*Moders* ●▷\n◼ Hirusha\n\n■ Bimsara\n■Chmod\n\n*◈Main Group* ▷https://chat.whatsapp.com\n*◈Support group* ▷https://chat.whatsapp.com\n\n*ᴛʜᴀɴᴋ ꜰᴏʀ ᴜꜱɪɴɢ SLHαƈƙҽɾʂ Tҽαɱ Bσƚ🔰🎭*" })
 
         }
         else {
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
 
             var image = await axios.get(Config.ALIVE_LOGO, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, { mimetype: Mimetype.png, caption: "                 ⚙ *SLHackers Team Bot* ⚙ \n     *Bang!! Bang!! Im Alive Now*\n\n*◈Version* ● ▷5.4.0 Global Stable\n*◈Branch* ● ▷ Vancino\n*◈About* ● ▷ *🎭🔰SLHαcĸerѕ Teαм Boт🔰🔰is an easy used WhatsApp robot.*\n*◯Owner* ▷ ▸https://Wa.me/+94755681782◂\n*Moders* ●▷\n◼ Hirusha\n\n■ Bimsara\n■Chmod\n\n*◈Main Group* ▷https://chat.whatsapp.com\n*◈Support group* ▷https://chat.whatsapp.com\n\n*ᴛʜᴀɴᴋ ꜰᴏʀ ᴜꜱɪɴɢ SLHαƈƙҽɾʂ Tҽαɱ Bσƚ🔰🎭*" })
+            await message.client.sendMessage(message.jid, Buffer.from(image.data), MessageType.image, { mimetype: Mimetype.png, caption: "                 ⚙ *𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭* ⚙ \n     *Bang!! Bang!! Im Alive Now*\n\n*◈Version* ● ▷5.4.0 Global Stable\n*◈Branch* ● ▷ Vancino\n*◈About* ● ▷ *🎭🔰SLHαcĸerѕ Teαм Boт🔰🔰is an easy used WhatsApp robot.*\n*◯Owner* ▷ ▸https://Wa.me/+94755681782◂\n*Moders* ●▷\n◼ Hirusha\n\n■ Bimsara\n■Chmod\n\n*◈Main Group* ▷https://chat.whatsapp.com\n*◈Support group* ▷https://chat.whatsapp.com\n\n*ᴛʜᴀɴᴋ ꜰᴏʀ ᴜꜱɪɴɢ SLHαƈƙҽɾʂ Tҽαɱ Bσƚ🔰🎭*" })
 
         }
         else {

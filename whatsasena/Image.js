@@ -3,10 +3,10 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
-const {MessageType, Presence, MessageOptions} = require('@adiwajshing/baileys');
+const { MessageType, Presence, MessageOptions } = require('@adiwajshing/baileys');
 const Base = require('./Base');
 const Message = require('./Message');
 const ReplyMessage = require('./ReplyMessage');
@@ -23,28 +23,29 @@ class Image extends Base {
         this.fromMe = data.key.fromMe;
         this.caption = data.message.imageMessage.caption === null ? data.message.imageMessage.caption : '';
         this.url = data.message.imageMessage.url;
-        this.timestamp = typeof(data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
+        this.timestamp = typeof (data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
         this.mimetype = data.message.imageMessage.mimetype;
         this.height = data.message.imageMessage.height;
         this.width = data.message.imageMessage.width;
         this.mediaKey = data.message.imageMessage.mediaKey;
         this.data = data;
-        
-        if (data.message.imageMessage.hasOwnProperty('contextInfo') && data.message.contextInfo.quotedMessage) { 
-            this.reply_message = new ReplyMessage(this.client, data.message.imageMessage.contextInfo); }
+
+        if (data.message.imageMessage.hasOwnProperty('contextInfo') && data.message.contextInfo.quotedMessage) {
+            this.reply_message = new ReplyMessage(this.client, data.message.imageMessage.contextInfo);
+        }
         else {
             this.reply_message = false;
         }
-        
+
         return super._patch(data);
     }
 
     async delete() {
-        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromMe: true})
+        return await this.client.deleteMessage(this.jid, { id: this.id, remoteJid: this.jid, fromMe: true })
     }
 
     async reply(text) {
-        var message = await this.client.sendMessage(this.jid, text, MessageType.text, {quoted: this.data})
+        var message = await this.client.sendMessage(this.jid, text, MessageType.text, { quoted: this.data })
         return new Message(this.client, message)
     }
 
@@ -53,7 +54,7 @@ class Image extends Base {
     }
 
     async sendTyping() {
-        return await this.client.updatePresence(this.jid, Presence.composing) ;
+        return await this.client.updatePresence(this.jid, Presence.composing);
     }
 
     async sendRead() {

@@ -3,10 +3,10 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
-const {MessageType, Presence, MessageOptions} = require('@adiwajshing/baileys');
+const { MessageType, Presence, MessageOptions } = require('@adiwajshing/baileys');
 const Base = require('./Base');
 const Image = require('./Image');
 
@@ -46,16 +46,16 @@ class ReplyMessage extends Base {
         }
 
         this.data = data;
-                
+
         return super._patch(data);
     }
 
     async delete() {
-        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromMe: true});
+        return await this.client.deleteMessage(this.jid, { id: this.id, remoteJid: this.jid, fromMe: true });
     }
 
     async reply(text) {
-        var message = await this.client.sendMessage(this.jid, text, MessageType.text, {quoted: this.data});
+        var message = await this.client.sendMessage(this.jid, text, MessageType.text, { quoted: this.data });
         return new Message(this.client, message)
     }
 
@@ -70,7 +70,7 @@ class ReplyMessage extends Base {
     async download(location = this.id) {
         if (this.image) {
             await this.client.downloadAndSaveMediaMessage(this.data.quotedMessage.imageMessage, location);
-            return this.id + '.' + this.mimetype.split('/')[1];    
+            return this.id + '.' + this.mimetype.split('/')[1];
         } else {
             return false;
         }

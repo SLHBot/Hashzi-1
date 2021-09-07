@@ -42,7 +42,7 @@ Asena.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommandList
 
       await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.png, {
 
-        caption: 'apk downloader\n SLHackers Team Bot| ©2021❤️',
+        caption: 'apk downloader\n 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭| ©2021❤️',
 
       })
 

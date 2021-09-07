@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
 const config = require('../../config');
@@ -22,7 +22,7 @@ const PluginDB = config.DATABASE.define('Plugin', {
 
 async function installPlugin(adres, file) {
     var Plugin = await PluginDB.findAll({
-        where: {url: adres}
+        where: { url: adres }
     });
 
     if (Plugin.length >= 1) {

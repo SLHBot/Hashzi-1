@@ -3,10 +3,10 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
-const {MessageType, Presence, MessageOptions} = require('@adiwajshing/baileys');
+const { MessageType, Presence, MessageOptions } = require('@adiwajshing/baileys');
 const Base = require('./Base');
 const ReplyMessage = require('./ReplyMessage');
 
@@ -22,29 +22,30 @@ class Message extends Base {
         this.fromMe = data.key.fromMe;
         this.message = data.message.extendedTextMessage === null ? data.message.conversation : data.message.extendedTextMessage.text;
         this.unreadCount = data.unreadCount;
-        this.timestamp = typeof(data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
+        this.timestamp = typeof (data.messageTimestamp) === 'object' ? data.messageTimestamp.low : data.messageTimestamp;
         this.data = data;
-        
+
         if (data.message.hasOwnProperty('extendedTextMessage') &&
-                data.message.extendedTextMessage.hasOwnProperty('contextInfo') === true && 
-                data.message.extendedTextMessage.contextInfo.hasOwnProperty('quotedMessage')) { 
-            this.reply_message = new ReplyMessage(this.client, data.message.extendedTextMessage.contextInfo); } else {
-                this.reply_message = false;
-            }
-        
+            data.message.extendedTextMessage.hasOwnProperty('contextInfo') === true &&
+            data.message.extendedTextMessage.contextInfo.hasOwnProperty('quotedMessage')) {
+            this.reply_message = new ReplyMessage(this.client, data.message.extendedTextMessage.contextInfo);
+        } else {
+            this.reply_message = false;
+        }
+
         if (data.message.hasOwnProperty('extendedTextMessage') &&
-        data.message.extendedTextMessage.hasOwnProperty('contextInfo') === true && 
-        data.message.extendedTextMessage.contextInfo.hasOwnProperty('mentionedJid')) {
+            data.message.extendedTextMessage.hasOwnProperty('contextInfo') === true &&
+            data.message.extendedTextMessage.contextInfo.hasOwnProperty('mentionedJid')) {
             this.mention = data.message.extendedTextMessage.contextInfo.mentionedJid;
         } else {
             this.mention = false;
         }
-        
+
         return super._patch(data);
     }
 
     async delete() {
-        return await this.client.deleteMessage(this.jid, {id: this.id, remoteJid: this.jid, fromMe: true})
+        return await this.client.deleteMessage(this.jid, { id: this.id, remoteJid: this.jid, fromMe: true })
     }
 
     async reply(text) {
@@ -57,7 +58,7 @@ class Message extends Base {
     }
 
     async sendTyping() {
-        return await this.client.updatePresence(this.jid, Presence.composing) ;
+        return await this.client.updatePresence(this.jid, Presence.composing);
     }
 
     async sendRead() {

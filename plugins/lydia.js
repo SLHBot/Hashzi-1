@@ -3,7 +3,7 @@
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 
-SLHackers Team Bot - Hirusha Dayarathne
+𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
 /*
@@ -69,7 +69,7 @@ Asena.addCommand({pattern: 'rmlydia$', fromMe: true, desc: Lang.RMLYDIA_DESC}, (
     return await message.reply(Lang.DISABLED);
 }));
 
-Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {   
+Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (message, match) => {
     if (Config.COFFEEHOUSE_API_KEY === false) return;
     var unix = Date.now() / 1000 | 0;
 
@@ -94,7 +94,7 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
         } else {
             session = await lydia.getSession(veriler[0].dataValues.session_id);
         }
-        
+
         var isLydiaEnabled = false;
         if (veriler[0].users.includes(',')) {
             veriler[0].users.split(',').map((user) => {
