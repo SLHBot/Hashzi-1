@@ -88,7 +88,7 @@
             "GETVAR_DESC": "Get heroku config var",
             "DELVAR_DESC": "Delete heroku config var",
             "DEL_SUCCESS": "```{} vijayagaramaayi delete cheythu```",
-            "NOT_FOUND": "```ee keykk result onnum kandethaan aayilla```"           
+            "NOT_FOUND": "```ee keykk result onnum kandethaan aayilla```"
         },
         "filters": {
             "FILTER_DESC": "filter add cheyyum. aarellum ningallude filter type cheythaal, marpadi nelgum. .filter enn mathram adichaal, motham filter listlum kaanikkum.",
@@ -223,7 +223,7 @@
             "INVALID_HEROKU": "*❌ ningal thanna Heroku information thett aan !*",
             "UPDATED": "*Updated 🤠✅*",
             "UPDATED_LOCAL": "*✅ vijayagaramayi Update cheythu!*",
-            "AFTER_UPDATE": "*👰 julieMwol Restarting ?*"
+            "AFTER_UPDATE": "*🙆‍♂️ julieMwol Restarting ?*"
         },
         "weather": {
             "WEATHER_DESC": "ningal therrunna sthalathe kaalavastha kaanikkum.",
@@ -272,14 +272,14 @@
             "RMLINK": "Read More",
             "NEWS": "News ulladakkam",
             "NEWST": "News Title",
-             "NOT_FOUND": "```eee perril category kittiylla. 😖```",
+            "NOT_FOUND": "```eee perril category kittiylla. 😖```",
             "SONG": "Song",
             "ALBUM": "Album",
             "TITLE": "Title",
             "PUBLICATION": "Publication",
             "SONGL": "Link",
             "NEED_SONG": "Song name para nenba 🥲.",
-            "NOT_FOUNDS" : "angane oru paatt kittiyilla!",
+            "NOT_FOUNDS": "angane oru paatt kittiyilla!",
             "JOOX_DESC": "paattinte detailsum linkum therum.",
             "LYRICS_DESC": "paattinte lyrics ayach therum.",
             "SONGLI": "Lyrics",
@@ -287,21 +287,19 @@
             "BIT_DESC": " link bitly vech neelam cheruthakkaan.",
             "NOT_FOUNDLI": "Lyrics kittiylla",
             "SLINK": "Link",
-            "NEED_LINK":"link thaa",
-            "IGTVDESC":"\n IGTV linkill nin video download cheyyum \n",
-            "NEED_WORDIGTV":"IGTV link thaa",
-            "LOADINGTV":"Loading...",
-             "NOT_FOUNDIG":"Insta video kand ethiyyilla",
-             "USERNAME":"Username",
-            "CAPTION":"Caption",
-             "VID":"Video",
-             "NEED_WORDIG":" IG linkil nin video download cheyyaan",
-            "IGDESC":"IG linkil nin video download cheyyaan \n Reels aanengill linkill ninn 'reels' change aakki 'p' aakkuga.",
-            "FBDESC":"Download videos from fb link",
-            "NEED_WORDFB":"fb linkil nin download cheyyaan",
-            "NOT_FOUNDFB":"Fb video kand ethaan aayilla"
-            
-            
+            "NEED_LINK": "link thaa",
+            "IGTVDESC": "\n IGTV linkill nin video download cheyyum \n",
+            "NEED_WORDIGTV": "IGTV link thaa",
+            "LOADINGTV": "Loading...",
+            "NOT_FOUNDIG": "Insta video kand ethiyyilla",
+            "USERNAME": "Username",
+            "CAPTION": "Caption",
+            "VID": "Video",
+            "NEED_WORDIG": " IG linkil nin video download cheyyaan",
+            "IGDESC": "IG linkil nin video download cheyyaan \n Reels aanengill linkill ninn 'reels' change aakki 'p' aakkuga.",
+            "FBDESC": "Download videos from fb link",
+            "NEED_WORDFB": "fb linkil nin download cheyyaan",
+            "NOT_FOUNDFB": "Fb video kand ethaan aayilla"
         },
         "web": {
             "SPEEDTEST_DESC": "Measures Download and Upload speed.",
@@ -322,7 +320,7 @@
             "XMEDİA_DESC": "25 media tools ulla oru plugin .",
             "T_FALSE": "```❌ thettaaya Blend Effect aan thannath!```\n```🔎 Existing Commands:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
             "T_NOT": "```💭 eathellum oru Blend Effects type cheyanam!\n```🔎 Existing Commands:```\n\n*$dodge* - Applies a pink color filter to the video.\n*$multiply* - Applies a green color filter to the video.\n*$grainmerge* - Increases the contrast of the video.\n*$and* - Applies black lightning effect according to the speed of the video.\n*$or* - Applies a white lightning effect according to the speed of the video.\n*$burn* - Applies green contrast to video.\n*$difference* - Shows the differences by applying green relief to the video.\n*$grainextract* - Shows the differences by applying gray relief to the video.\n*$divide* - Demonstrates the differences by applying a pink relief to the video.\n*$xor* - Applies both green relief and lightning effect to video.\n*$hardmix* - Mixes the colors of the video into a yellow and red tone.\n*$negation* - Turns the dynamics of the video to pink.",
-            "T_DESC": "tblend effect videoyill add cheyaan." 
+            "T_DESC": "tblend effect videoyill add cheyaan."
         },
         "mute": {
             "1MUTE": "*The group was silenced for 1 minute!*",
@@ -446,8 +444,8 @@
             "ANIME_DESC": "penkutti kayyil pidikunna banaril ningal thanna text eythunnu",
             "TRUMP_DESC": "Trumpinte  tweetillek ningall thanna message aakunnu .",
             "CHANGE_DESC": "Turns the text into the change my mind poster."
-       },
-       "anime": { 
+        },
+        "anime": {
             "AN": "random anime pic ayakkunu."
         },
         "wallpaper": {
@@ -459,7 +457,7 @@
         },
         "voicy": {
             "NEED_REPLY": "```oru messagin reply theru!```",
-            "ONLY_AUDIO":"```audio file mathram madhi.```",
+            "ONLY_AUDIO": "```audio file mathram madhi.```",
             "USAGE": "audio text aakkum.",
             "TEXT": "*ithan njan kettath!:* \n\n"
         },
@@ -487,12 +485,11 @@
             "ACCOUNT": "Account privacy",
             "PUBLIC": "Public",
             "HIDDEN": "Hidden",
-            "NOT_FOUND":"Usere kittiyilla: "
+            "NOT_FOUND": "Usere kittiyilla: "
         },
         "qrgenerator": {
-             "TEXT": "text enter cheyanam!",
+            "TEXT": "text enter cheyanam!",
             "QR_DESC": "text qr code aaki maattunu."
-            
         },
         "whois": {
             "PL_DESC": "alude alenkill groupinte meta data kaanikkunu.",

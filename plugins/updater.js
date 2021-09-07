@@ -48,22 +48,22 @@ Asena.addCommand({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, 
 
         await message.client.sendMessage(
             message.jid,
-            '*3*', MessageType.text
+            '*3️⃣*', MessageType.text
         );
 
         await message.client.sendMessage(
             message.jid,
-            '*2*', MessageType.text
+            '*2️⃣*', MessageType.text
         );
 
         await message.client.sendMessage(
             message.jid,
-            '*1*', MessageType.text
+            '*1️⃣*', MessageType.text
         );
 
         await message.client.sendMessage(
             message.jid,
-            '*0*', MessageType.text
+            '*0️⃣*', MessageType.text
         );
 
         await message.client.sendMessage(
