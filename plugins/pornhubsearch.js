@@ -90,23 +90,7 @@ if (Config.WORKTYPE == 'private') {
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[8].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[8].views + '```\n' +
                 '*💹 ' + Lang.RATING + ':* ```' + json.result[8].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n' +
-                '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[9].title + '```\n' +
-                '*🔗 ' + Lang.LINK + ':* ```' + json.result[9].link + '```\n' +
-                '*📷 ' + Lang.PICT + ':* ```' + json.result[9].thumbnail + '```\n' +
-                '*🚉 ' + Lang.DURAT + ':* ```' + json.result[9].duration + '```\n' +
-                '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[9].uploader + '```\n' +
-                '*📺 ' + Lang.VIEWS + ':* ```' + json.result[9].views + '```\n' +
-                '*💹 ' + Lang.RATING + ':* ```' + json.result[9].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[9].added + '```\n\n\n' +
-                '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[10].title + '```\n' +
-                '*🔗 ' + Lang.LINK + ':* ```' + json.result[10].link + '```\n' +
-                '*📷 ' + Lang.PICT + ':* ```' + json.result[10].thumbnail + '```\n' +
-                '*🚉 ' + Lang.DURAT + ':* ```' + json.result[10].duration + '```\n' +
-                '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[10].uploader + '```\n' +
-                '*📺 ' + Lang.VIEWS + ':* ```' + json.result[10].views + '```\n' +
-                '*💹 ' + Lang.RATING + ':* ```' + json.result[10].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[10].added + '```\n\n\n', MessageType.text);
+                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
@@ -194,23 +178,7 @@ else if (Config.WORKTYPE == 'public') {
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[8].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[8].views + '```\n' +
                 '*💹 ' + Lang.RATING + ':* ```' + json.result[8].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n' +
-                '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[9].title + '```\n' +
-                '*🔗 ' + Lang.LINK + ':* ```' + json.result[9].link + '```\n' +
-                '*📷 ' + Lang.PICT + ':* ```' + json.result[9].thumbnail + '```\n' +
-                '*🚉 ' + Lang.DURAT + ':* ```' + json.result[9].duration + '```\n' +
-                '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[9].uploader + '```\n' +
-                '*📺 ' + Lang.VIEWS + ':* ```' + json.result[9].views + '```\n' +
-                '*💹 ' + Lang.RATING + ':* ```' + json.result[9].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[9].added + '```\n\n\n' +
-                '*🔘 ' + Lang.PHEAD + ':* ```' + json.result[10].title + '```\n' +
-                '*🔗 ' + Lang.LINK + ':* ```' + json.result[10].link + '```\n' +
-                '*📷 ' + Lang.PICT + ':* ```' + json.result[10].thumbnail + '```\n' +
-                '*🚉 ' + Lang.DURAT + ':* ```' + json.result[10].duration + '```\n' +
-                '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[10].uploader + '```\n' +
-                '*📺 ' + Lang.VIEWS + ':* ```' + json.result[10].views + '```\n' +
-                '*💹 ' + Lang.RATING + ':* ```' + json.result[10].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[10].added + '```\n\n\n', MessageType.text);
+                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n', MessageType.text);
         } catch {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
