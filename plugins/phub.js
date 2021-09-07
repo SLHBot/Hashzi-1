@@ -40,14 +40,14 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'phub ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
+    Asena.addCommand({ pattern: 'phub ?(.*)', fromMe: false, desc: PB_DESC }, async (message, match) => {
 
         const link = match[1]
 
         if (!link) return await message.client.sendMessage(message.jid, PB_NEED, MessageType.text, { quoted: message.data })
         await message.client.sendMessage(message.jid, PB_D, MessageType.text)
         await axios
-            .get(`https://api.lolhuman.xyz/api/pornhub?apikey=${Config.LLHAPI}&url=${link}`)
+            .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
                 const {
                     result,
