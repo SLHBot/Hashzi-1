@@ -18,7 +18,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     Asena.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-        if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+        if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
         var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
 
