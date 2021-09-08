@@ -21,7 +21,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XN_N, MessageType.text);
+        await message.client.sendMessage(message.jid, XN_N, MessageType.text, { quoted: message.data });
 
         await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
 

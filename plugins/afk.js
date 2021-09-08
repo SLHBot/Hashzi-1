@@ -100,7 +100,7 @@ Asena.addCommand({ pattern: 'afk ?(.*)', fromMe: true, deleteCommand: false, des
         if (match[1] !== '') { AFK.reason = match[1]; }
         AFK.isAfk = true;
 
-        await message.client.sendMessage(message.jid, Lang.IM_AFK + (AFK.reason !== false ? ('\n*' + Lang.REASON + ':* ```' + AFK.reason + '```') : ''), MessageType.text);
+        await message.client.sendMessage(message.jid, Lang.IM_AFK + (AFK.reason !== false ? ('\n*' + Lang.REASON + ':* ```' + AFK.reason + '```') : ''), MessageType.text, { quoted: message.data });
     }
 }));
 
