@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'private') {
         const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { caption: '*' + Tlang.USERNAME + '* ' + json.result.title + '\n*' + Tlang.LİNK + '* ' + 'http://instagram.com/' + json.result.size + '\n*' + Tlang.CAPTİON + '* ' + json.result.duration });
+        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.document, { filename: 'SLHackers VideoHub', mimetype: Mimetype.mp4, ptt: false })
       })
       .catch(
         async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
