@@ -31,7 +31,7 @@ Asena.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (me
     if (Config.LANG == 'ES') ldc = '*Enlace Detectado!*'
     if (antilink_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
-        let regex2 = new RegExp('https://')
+        let regex2 = new RegExp('https://gagana.lk')
         if (regex1.test(message.message)) {
             await message.client.sendMessage(message.jid, ldc, MessageType.text, { quoted: message.data })
         }
