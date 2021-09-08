@@ -25,25 +25,17 @@ if (Config.WORKTYPE == 'private') {
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
         await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
-        let url = await axios
+        await axios
             .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
                 const {
                     link,
                 } = response.data.result.link
 
-                const response = await got(url);
-                const json = JSON.parse(response.body);
-                if (json.message != 'success') return await message.client.sendMessage(message.jid, '*Not found.*', MessageType.text, { quoted: message.data });
-                let msg = '';
-                msg += '*🎞Title*\n' + '```' + json.result.title + '```' + '\n\n';
-                msg += '*🏷Year*\n' + '```' + json.result.uploader + '```' + '\n\n';
-                msg += '*⭐️Rated*\n' + '```' + json.result.view + '```' + '\n\n';
-
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
                 await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
