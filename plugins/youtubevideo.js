@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
         await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
         await axios
-            .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=https://github.com/BlackAmda&url==${link}`)
+            .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=https://github.com/BlackAmda&url=${link}`)
             .then(async (response) => {
                 const {
                     link,
