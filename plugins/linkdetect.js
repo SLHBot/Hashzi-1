@@ -29,6 +29,7 @@ Asena.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (me
         let regex3 = new RegExp('https://meemassoo.lk')
         let regex4 = new RegExp('https://slbreakingnews.com')
         let regex5 = new RegExp('https://dailymirror.lk')
+        let regex6 = new RegExp('හමු')
         if (regex1.test(message.message)) {
             await message.client.sendMessage(message.jid, ldc, MessageType.text, { quoted: message.data })
         }
@@ -42,6 +43,9 @@ Asena.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (me
             await message.client.sendMessage(message.jid, ldc, MessageType.text, { quoted: message.data })
         }
         else if (regex5.test(message.message)) {
+            await message.client.sendMessage(message.jid, ldc, MessageType.text, { quoted: message.data })
+        }
+        else if (regex6.test(message.message)) {
             await message.client.sendMessage(message.jid, ldc, MessageType.text, { quoted: message.data })
         }
         else if (message.message.match(/((?:[.]com)\b)/i)) {
