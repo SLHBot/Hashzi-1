@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const got = require('got');
 const Config = require('../config');
@@ -7,7 +7,7 @@ const fs = require('fs')
 //LyFE
 
 if (Config.WORKTYPE == 'private') {
-	Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: true, desc: "Shows movie info." }, (async (message, match) => {
+	SlHackers.addCommand({ pattern: 'movie ?(.*)', fromMe: true, desc: "Shows movie info." }, (async (message, match) => {
 		if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
 		let url = `http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`
 		const response = await got(url);
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-	Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie info." }, (async (message, match) => {
+	SlHackers.addCommand({ pattern: 'movie ?(.*)', fromMe: false, desc: "Shows movie info." }, (async (message, match) => {
 		if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
 		let url = `http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`
 		const response = await got(url);
@@ -71,7 +71,7 @@ else if (Config.WORKTYPE == 'public') {
 	}));
 
 
-	Asena.addCommand({ pattern: 'movie ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+	SlHackers.addCommand({ pattern: 'movie ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 		if (match[1] === '') return await message.client.sendMessage(message.jid, '```Give me a name.```', MessageType.text, { quoted: message.data });
 		let url = `http://www.omdbapi.com/?apikey=742b2d09&t=${match[1]}&plot=full`
 		const response = await got(url);

@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, mimetype, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -8,7 +8,7 @@ const capt = "🎭 *SLHackers Mediafire Downloader* 🕊\n    🌀  ```CODED BY 
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'bimsara ?(.*)', fromMe: false }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'bimsara ?(.*)', fromMe: false }, async (message, match) => {
 
         const link = match[1]
 
@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'public') {
 
     }) //pattern close
 
-    Asena.addCommand({ pattern: 'bimsara ?(.*)', fromMe: true }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'bimsara ?(.*)', fromMe: true }, async (message, match) => {
 
         const link = match[1]
 
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'public') {
 
 else if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'bimsara ?(.*)', fromMe: true }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'bimsara ?(.*)', fromMe: true }, async (message, match) => {
 
         const link = match[1]
 

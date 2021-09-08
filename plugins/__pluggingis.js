@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 SLHACKERSX - CH-MOD
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Heroku = require('heroku-client');
 const Config = require('../config');
 const { MessageType } = require('@adiwajshing/baileys');
@@ -26,7 +26,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Asena.addCommand({ pattern: 'package ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'package ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Hirusha21/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
@@ -68,7 +68,7 @@ Asena.addCommand({ pattern: 'package ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
     }
 }));
 
-Asena.addCommand({ pattern: 'tnuasgh', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'tnuasgh', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -84,7 +84,7 @@ Asena.addCommand({ pattern: 'tnuasgh', fromMe: true, desc: Lang.PLUGIN_DESC }, (
     }
 }));
 
-Asena.addCommand({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: { name: match[1] } });

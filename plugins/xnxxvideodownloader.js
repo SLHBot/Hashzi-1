@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { errorMessage, infoMessage } = require('../helpers');
@@ -13,7 +13,7 @@ const XN_NO = "*කණගාටුයි හමු නොවීය...*"
 
 if (Config.WORKTYPE == 'private') {
 
-  Asena.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
 
     const link = match[1]
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-  Asena.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
 
     const link = match[1]
 

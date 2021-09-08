@@ -1,5 +1,5 @@
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -9,7 +9,7 @@ const Lang = Language.getString('anime');
 const fs = require("fs")
 const slhb = fs.readFileSync('./media/bot.mp3')
 
-Asena.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (message, match) => {
 
     var r_text = new Array();
 
@@ -103,7 +103,7 @@ Asena.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (messa
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'help', fromMe: false, desc: Lang.AN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'help', fromMe: false, desc: Lang.AN }, (async (message, match) => {
 
         var r_text = new Array();
 

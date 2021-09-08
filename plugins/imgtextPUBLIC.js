@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
@@ -9,7 +9,7 @@ const fs = require("fs")
 const slhb = fs.readFileSync('./media/logo.mp3')
 
 if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({ pattern: 'imgtext', fromMe: false, desc: Lang.UP }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'imgtext', fromMe: false, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 

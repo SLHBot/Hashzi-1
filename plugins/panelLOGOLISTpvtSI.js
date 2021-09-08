@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const { spawnSync } = require('child_process');
 const Config = require('../config');
@@ -13,7 +13,7 @@ const slhb = fs.readFileSync('./media/logo.mp3')
 if (Config.LANG == 'EN') {
     if (Config.NEOY == 'xyz') {
 
-        Asena.addCommand({ pattern: 'textimg', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'textimg', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 

@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 usufustha-asena
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const { errorMessage, infoMessage } = require('../helpers');
@@ -16,7 +16,7 @@ const Lang = Language.getString('spotify');
 
 if (Config.WORKTYPE == 'private') {
 
-  Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: true, desc: Lang.SPO_DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'spotify ?(.*)', fromMe: true, desc: Lang.SPO_DESC }, async (message, match) => {
 
     const link = match[1]
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-  Asena.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: Lang.SPO_DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: Lang.SPO_DESC }, async (message, match) => {
 
     const link = match[1]
 

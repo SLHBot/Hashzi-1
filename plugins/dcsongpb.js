@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 const translatte = require('translatte');
 const config = require('../config');
@@ -133,7 +133,7 @@ if (config.LANG == 'RU') {
 
 if (config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text);
         let arama = await yts(match[1]);

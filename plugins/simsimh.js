@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 SLHackers team Bot
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const Heroku = require('heroku-client');
 const got = require('got');
@@ -21,7 +21,7 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 if (Config.AI_BOT == 'true') {
 	if (Config.WORKTYPE == 'private') {
-		Asena.addCommand({ pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC }, async (message, match) => {
+		SlHackers.addCommand({ pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC }, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -35,7 +35,7 @@ if (Config.AI_BOT == 'true') {
 	}
 
 	else if (Config.WORKTYPE == 'public') {
-		Asena.addCommand({ pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC }, async (message, match) => {
+		SlHackers.addCommand({ pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC }, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -51,7 +51,7 @@ if (Config.AI_BOT == 'true') {
 
 else if (Config.AI_BOT == 'false') {
 	if (Config.WORKTYPE == 'private') {
-		Asena.addCommand({ pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC }, async (message, match) => {
+		SlHackers.addCommand({ pattern: 'bot ?(.*)', fromMe: true, desc: Lang.BOT_DESC }, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -65,7 +65,7 @@ else if (Config.AI_BOT == 'false') {
 	}
 
 	else if (Config.WORKTYPE == 'public') {
-		Asena.addCommand({ pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC }, async (message, match) => {
+		SlHackers.addCommand({ pattern: 'bot ?(.*)', fromMe: false, desc: Lang.BOT_DESC }, async (message, match) => {
 			if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 			const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 			try {
@@ -79,7 +79,7 @@ else if (Config.AI_BOT == 'false') {
 	}
 }
 
-Asena.addCommand({ pattern: 'adon ?(.*)', fromMe: true, desc: Lang.ADON_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'adon ?(.*)', fromMe: true, desc: Lang.ADON_DESC }, (async (message, match) => {
 
 	if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.ADON_MISSING, MessageType.text);
 	if ((varKey = match[1].split(':')[0]) && (varValue = match[1].split(':')[1])) {

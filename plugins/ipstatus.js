@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
@@ -22,7 +22,7 @@ const NOT_FOUNDIP = "```Sorry,I could not your IP 😖```"
 
 if (Config.WORKTYPE == 'private') {
 
-  Asena.addCommand({ pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP', fromMe: true }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP', fromMe: true }, async (message, match) => {
 
     if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -54,7 +54,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-  Asena.addCommand({ pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP', fromMe: false }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'ip ?(.*)', desc: 'gives you the detail of your IP', fromMe: false }, async (message, match) => {
 
     if (message.jid === '905524317852-1612300121@g.us') {
 

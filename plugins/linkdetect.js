@@ -3,14 +3,14 @@ Codded BY Hirusha Dayarathne
 Wa.me/+94755681782
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('conventer');
 
 
-Asena.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
     var link_finder = 'true'
 
     var adc = ''

@@ -1,4 +1,4 @@
-const Asena = require('../events')
+const SlHackers = require('../events')
 const { MessageType, Mimetype } = require('@adiwajshing/baileys')
 const axios = require('axios')
 const sd = "Instagram video dowloads."
@@ -12,7 +12,7 @@ const Language = require('../language');
 const Lang = Language.getString('instagram')
 
 
-Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (message, match) => {
 
   const userName = match[1]
 
@@ -34,7 +34,7 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (me
     await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))
   })
 });
-Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (message, match) => {
 
   const userName = match[1]
 
@@ -67,7 +67,7 @@ Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (me
 },
 )
 
-Asena.addCommand({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (message, match) => {
 
   const userName = match[1]
 
@@ -103,7 +103,7 @@ Asena.addCommand({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (me
     )
 },
 )
-Asena.addCommand({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
   if (match[0].includes('install')) return;
   if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
   if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });

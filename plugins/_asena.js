@@ -6,7 +6,7 @@ you may not use this file except in compliance with the License.
 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType } = require('@adiwajshing/baileys');
 
@@ -15,7 +15,7 @@ const Lang = Language.getString('_asena');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'tenu862 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'tenu862 ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
@@ -80,7 +80,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 
     /*slf*/
-    Asena.addCommand({ pattern: 'sup ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sup ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
@@ -146,7 +146,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'tenuh862 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'tenuh862 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
@@ -212,7 +212,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
     /*slf*/
-    Asena.addCommand({ pattern: 'sup ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sup ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(

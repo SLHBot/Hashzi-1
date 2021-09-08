@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
 const Config = require('../config');
@@ -9,7 +9,7 @@ const Lang = Language.getString('weather');
 
 if (Config.WORKTYPE == 'private') {
 
-	Asena.addCommand({ pattern: 'happymod ?(.*)', fromMe: true, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
+	SlHackers.addCommand({ pattern: 'happymod ?(.*)', fromMe: true, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
 		if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
 		const url = `https://api.zeks.me/api/happymod?apikey=${Config.ASENA_PLUG}&q=${match[1]}`;
 		try {
@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-	Asena.addCommand({ pattern: 'happymod ?(.*)', fromMe: false, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
+	SlHackers.addCommand({ pattern: 'happymod ?(.*)', fromMe: false, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
 		if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
 		const url = `https://api.zeks.me/api/happymod?apikey=${Config.ASENA_PLUG}&q=${match[1]}`;
 		try {
@@ -43,7 +43,7 @@ else if (Config.WORKTYPE == 'public') {
 		}
 	});
 
-	Asena.addCommand({ pattern: 'happymod ?(.*)', fromMe: true, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
+	SlHackers.addCommand({ pattern: 'happymod ?(.*)', fromMe: true, desc: Lang.HMODD_DESC, dontAddCommandList: true }, async (message, match) => {
 		if (match[1] === '') return await message.reply(Lang.NEED_APPNAME);
 		const url = `https://api.zeks.me/api/happymod?apikey=${Config.ASENA_PLUG}&q=${match[1]}`;
 		try {

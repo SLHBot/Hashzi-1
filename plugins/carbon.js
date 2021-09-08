@@ -3,7 +3,7 @@ Telegram: t.me/phaticusthiccy
 Instagram: www.instagram.com/kyrie.baran
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -14,7 +14,7 @@ const Lang = Language.getString('carbon');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.CARBON_NEEDWORD, MessageType.text);
 
@@ -38,7 +38,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'carbon ?(.*)', fromMe: false, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'carbon ?(.*)', fromMe: false, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.CARBON_NEEDWORD, MessageType.text);
 
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: dd })
 
     }));
-    Asena.addCommand({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.CARBON_NEEDWORD, MessageType.text);
 

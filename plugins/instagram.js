@@ -3,20 +3,20 @@
 */
 
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
 
 const Language = require('../language');
 const { errorMessage, infoMessage } = require('../helpers');
-const Lang = Language.getString('instagram') ;
+const Lang = Language.getString('instagram');
 
 
 
 if (Config.WORKTYPE == 'private') {
 
-Asena.addCommand({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     const userName = match[1]
 
@@ -35,7 +35,7 @@ Asena.addCommand({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, 
           following,
         } = response.data
 
-        const profileBuffer = await axios.get(pic, {responseType: 'arraybuffer'})
+        const profileBuffer = await axios.get(pic, { responseType: 'arraybuffer' })
 
         const msg = `
         *${Lang.USERNAME}*: ${username}    
@@ -52,11 +52,11 @@ Asena.addCommand({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, 
       )
   },
 
- )
+  )
 }
 else if (Config.WORKTYPE == 'public') {
 
-Asena.addCommand({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     const userName = match[1]
 
@@ -75,7 +75,7 @@ Asena.addCommand({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE,
           following,
         } = response.data
 
-        const profileBuffer = await axios.get(pic, {responseType: 'arraybuffer'})
+        const profileBuffer = await axios.get(pic, { responseType: 'arraybuffer' })
 
         const msg = `
         *${Lang.USERNAME}*: ${username}    
@@ -92,5 +92,5 @@ Asena.addCommand({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE,
       )
   },
 
- )
+  )
 }

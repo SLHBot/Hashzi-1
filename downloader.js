@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
@@ -11,7 +11,7 @@ const LOADING = "©Downloading the Video..."
 const NOT_FOUNDFB = "🙇Video Not Found"
 const CAPTION = "Caption"
 
-Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC }, async (message, match) => {
 
   const userName = match[1]
 
@@ -54,7 +54,7 @@ Asena.addCommand({ pattern: 'ig ?(.*)', fromMe: true, desc: IG_DESC }, async (me
 
 
 
-Asena.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'fb ?(.*)', fromMe: true, desc: FBDESC }, async (message, match) => {
 
   const userName = match[1]
 

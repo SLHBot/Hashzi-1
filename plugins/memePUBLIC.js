@@ -1,7 +1,7 @@
 /* SLHTBot-X 
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -12,7 +12,7 @@ const code = "*╔═════◉sʟʜᴀᴄᴋᴇʀs ᴛᴇᴀᴍ ʙᴏᴛ�
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'nop45', fromMe: false, desc: Ln, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nop45', fromMe: false, desc: Ln, }, (async (message, match) => {
 
         await message.client.sendMessage(
 
@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'my3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'my3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'fuck ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'fuck ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'hii ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hii ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -50,7 +50,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'sir ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sir ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -60,7 +60,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'yasai ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'yasai ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -70,7 +70,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'hapoi ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hapoi ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -80,7 +80,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'uddika ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'uddika ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -90,7 +90,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'aah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'aah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -100,7 +100,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -110,7 +110,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'wow ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'wow ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -120,7 +120,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'hapo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hapo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -130,7 +130,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'anura ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'anura ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -140,7 +140,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'macn ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'macn ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -150,7 +150,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'babah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'babah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -160,7 +160,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'gemba ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gemba ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -170,7 +170,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'nah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nah ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -180,7 +180,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({ pattern: 'kaluhutta ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'kaluhutta ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 

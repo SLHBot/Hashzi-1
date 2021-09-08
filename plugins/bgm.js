@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 SLHackers Team Bot - Hirusha
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const config = require('../config');
 const Heroku = require('heroku-client');
 const heroku = new Heroku({
@@ -80,7 +80,7 @@ if (config.LANG == 'ID') {
     BGM_on = 'bgm option turned on'
     BGM_off = 'bgm option turned off'
 }
-Asena.addCommand({ pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
     if (match[1] == 'off') {
         await heroku.patch(baseURI + '/config-vars', {
             body: {

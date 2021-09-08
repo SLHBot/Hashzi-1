@@ -3,7 +3,7 @@ Codded BY Hirusha Dayarathne
 Wa.me/+94755681782
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -15,7 +15,7 @@ const NEED_WORD = "*ඔබ 📥වීඩියෝවක URL ඇතුළත් �
 
 if (Config.NEOA == 'bimsaraapi') {
 
-    Asena.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         await message.client.sendMessage(message.jid, XN_N, MessageType.text, { quoted: message.data });
 

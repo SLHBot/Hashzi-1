@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
 
 const fs = require('fs');
@@ -8,7 +8,7 @@ const ffmpeg = require('fluent-ffmpeg');
 
 const FIND_DESC = "Finds the Song"
 
-Asena.addCommand({ pattern: 'search', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'search', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
     if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*අනිවාර්යයෙන් ඔබ mp3 එකකට reply දැමිය යුතුයි⚡SLHackers!*', MessageType.text);
     var filePath = await message.client.downloadAndSaveMediaMessage({
         key: {

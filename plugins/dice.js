@@ -1,5 +1,5 @@
-const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const SlHackers = require('../events');
+const { MessageType } = require('@adiwajshing/baileys');
 const con = require('../config');
 
 // Descriptions
@@ -22,13 +22,13 @@ if (con.LANG === 'TR' || 'az') {
 
     if (con.WORKTYPE === 'private') {
 
-        Asena.addCommand({pattern: 'roll', fromMe: true, desc: ENZAR}, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
-            var r_text = new Array ();
+            var r_text = new Array();
             r_text[0] = "🎲 *1* 🎲";
             r_text[1] = "🎲 *2* 🎲";
             r_text[2] = "🎲 *3* 🎲";
@@ -36,7 +36,7 @@ if (con.LANG === 'TR' || 'az') {
             r_text[4] = "🎲 *5* 🎲";
             r_text[5] = "🎲 *6* 🎲";
 
-            var i = Math.floor(6*Math.random())
+            var i = Math.floor(6 * Math.random())
 
             await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
 
@@ -44,13 +44,13 @@ if (con.LANG === 'TR' || 'az') {
     }
     else if (con.WORKTYPE === 'public') {
 
-        Asena.addCommand({pattern: 'roll', fromMe: false, desc: ENZAR}, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
-            var r_text = new Array ();
+            var r_text = new Array();
             r_text[0] = "🎲 *1* 🎲";
             r_text[1] = "🎲 *2* 🎲";
             r_text[2] = "🎲 *3* 🎲";
@@ -58,7 +58,7 @@ if (con.LANG === 'TR' || 'az') {
             r_text[4] = "🎲 *5* 🎲";
             r_text[5] = "🎲 *6* 🎲";
 
-            var i = Math.floor(6*Math.random())
+            var i = Math.floor(6 * Math.random())
 
             await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
 
@@ -69,13 +69,13 @@ else if (con.LANG === 'HI') {
 
     if (con.WORKTYPE === 'private') {
 
-        Asena.addCommand({pattern: 'roll', fromMe: true, desc: ENZAR}, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
-            var r_text = new Array ();
+            var r_text = new Array();
             r_text[0] = "🎲 *1* 🎲";
             r_text[1] = "🎲 *2* 🎲";
             r_text[2] = "🎲 *3* 🎲";
@@ -83,7 +83,7 @@ else if (con.LANG === 'HI') {
             r_text[4] = "🎲 *5* 🎲";
             r_text[5] = "🎲 *6* 🎲";
 
-            var i = Math.floor(6*Math.random())
+            var i = Math.floor(6 * Math.random())
 
             await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
 
@@ -91,13 +91,13 @@ else if (con.LANG === 'HI') {
     }
     else if (con.WORKTYPE === 'public') {
 
-        Asena.addCommand({pattern: 'roll', fromMe: false, desc: ENZAR}, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
-            var r_text = new Array ();
+            var r_text = new Array();
             r_text[0] = "🎲 *1* 🎲";
             r_text[1] = "🎲 *2* 🎲";
             r_text[2] = "🎲 *3* 🎲";
@@ -105,7 +105,7 @@ else if (con.LANG === 'HI') {
             r_text[4] = "🎲 *5* 🎲";
             r_text[5] = "🎲 *6* 🎲";
 
-            var i = Math.floor(6*Math.random())
+            var i = Math.floor(6 * Math.random())
 
             await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
 
@@ -116,13 +116,13 @@ else {
 
     if (con.WORKTYPE === 'private') {
 
-        Asena.addCommand({pattern: 'roll', fromMe: true, desc: ENZAR}, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
-            var r_text = new Array ();
+            var r_text = new Array();
             r_text[0] = "🎲 *1* 🎲";
             r_text[1] = "🎲 *2* 🎲";
             r_text[2] = "🎲 *3* 🎲";
@@ -130,7 +130,7 @@ else {
             r_text[4] = "🎲 *5* 🎲";
             r_text[5] = "🎲 *6* 🎲";
 
-            var i = Math.floor(6*Math.random())
+            var i = Math.floor(6 * Math.random())
 
             await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
 
@@ -138,13 +138,13 @@ else {
     }
     else if (con.WORKTYPE === 'public') {
 
-        Asena.addCommand({pattern: 'roll', fromMe: false, desc: ENZAR}, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
-            var r_text = new Array ();
+            var r_text = new Array();
             r_text[0] = "🎲 *1* 🎲";
             r_text[1] = "🎲 *2* 🎲";
             r_text[2] = "🎲 *3* 🎲";
@@ -152,7 +152,7 @@ else {
             r_text[4] = "🎲 *5* 🎲";
             r_text[5] = "🎲 *6* 🎲";
 
-            var i = Math.floor(6*Math.random())
+            var i = Math.floor(6 * Math.random())
 
             await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
 

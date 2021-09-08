@@ -3,7 +3,7 @@ Codded BY Hirusha Dayarathne
 Wa.me/+94755681782
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -15,7 +15,7 @@ const NEED_WORD = "*ඔබ PDF URL ඇතුළත් කළ යුතුය*"
 
 if (Config.NEOA == 'bimsaraapi') {
 
-    Asena.addCommand({ pattern: 'pdf ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'pdf ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(NEED_WORD);
 

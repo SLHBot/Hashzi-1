@@ -5,7 +5,7 @@ you may not use this file except in compliance with the License.
 SLHackersTeamBot - HIRUSHA
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -16,7 +16,7 @@ const got = require("got");
 const QR_DESC = "It Converts Text to Ninja Logo"
 const NEED_TEXT = "*🪐Must Enter Some Words*"
 
-Asena.addCommand({ pattern: 'grass ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'grass ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 

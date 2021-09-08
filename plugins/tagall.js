@@ -4,7 +4,7 @@ you may not use this file except in compliance with the License.
 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 - Hirusha Dayarathne
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const Config = require('../config');
 
@@ -19,7 +19,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({ pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.ADMİN, MessageType.text);

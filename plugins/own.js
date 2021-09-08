@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
 const { MessageType, Mimetype } = require('@adiwajshing/baileys');
@@ -19,7 +19,7 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 if (Config.WORKTYPE == 'public') {  /* Public open */
 
-    Asena.addCommand({ pattern: 'setown ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, deleteCommand: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'setown ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, deleteCommand: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
 
@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
         }
     }));
 
-    Asena.addCommand({ pattern: 'owner', fromMe: false }, (async (message, match) => {   /* OWNER open */
+    SlHackers.addCommand({ pattern: 'owner', fromMe: false }, (async (message, match) => {   /* OWNER open */
 
         if (Config.OWNMSG === 'unset') return await message.sendMessage(need);
 
@@ -78,7 +78,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
     })); /* owner close */
 
 
-    Asena.addCommand({ pattern: 'owner', fromMe: true }, (async (message, match) => {   /* OWNER open */
+    SlHackers.addCommand({ pattern: 'owner', fromMe: true }, (async (message, match) => {   /* OWNER open */
 
         if (Config.OWNMSG === 'unset') return await message.sendMessage(need);
 
@@ -122,7 +122,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
 
 else if (Config.WORKTYPE == 'private') {  /* private open */
 
-    Asena.addCommand({ pattern: 'owner', fromMe: true }, (async (message, match) => {   /* OWNER open */
+    SlHackers.addCommand({ pattern: 'owner', fromMe: true }, (async (message, match) => {   /* OWNER open */
 
         if (Config.OWNMSG === 'unset') return await message.sendMessage(need);
 
@@ -163,7 +163,7 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
     })); /* owner close */
 
 
-    Asena.addCommand({ pattern: 'setown ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, deleteCommand: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'setown ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, deleteCommand: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
 

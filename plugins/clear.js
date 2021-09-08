@@ -1,5 +1,5 @@
-const {MessageType, GroupSettingChange, ChatModification, WAConnectionTest} = require('@adiwajshing/baileys');
-const Asena = require('../events');
+const { MessageType, GroupSettingChange, ChatModification, WAConnectionTest } = require('@adiwajshing/baileys');
+const SlHackers = require('../events');
 const Config = require('../config');
 
 const Language = require('../language');
@@ -15,9 +15,9 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'clear', fromMe: true, desc: END, dontAddCommandList: true}, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'clear', fromMe: true, desc: END, dontAddCommandList: true }, (async (message, match) => {
 
     await message.sendMessage('```Chat clearing...```');
-    await message.client.modifyChat (message.jid, ChatModification.delete);
+    await message.client.modifyChat(message.jid, ChatModification.delete);
     await message.sendMessage('```🚮 Chat cleared```');
 }));

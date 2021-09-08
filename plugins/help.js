@@ -3,7 +3,7 @@ Telegram: t.me/phaticusthiccy
 Instagram: www.instagram.com/kyrie.baran
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions } = require('@adiwajshing/baileys');
 const Config = require('../config');
 
@@ -28,7 +28,7 @@ const sudoEN = "SUDO, Shares your bot to the user you choose with all its powers
 
 if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
 
-    Asena.addCommand({ pattern: 'nsup ?(.*)', fromMe: true, desc: h_Des }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nsup ?(.*)', fromMe: true, desc: h_Des }, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(
@@ -76,7 +76,7 @@ if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
 }
 else {
 
-    Asena.addCommand({ pattern: 'nsup ?(.*)', fromMe: true, desc: h_DedEN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nsup ?(.*)', fromMe: true, desc: h_DedEN }, (async (message, match) => {
 
         if (match[1] === '') {
             return await message.client.sendMessage(

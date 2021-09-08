@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -7,7 +7,7 @@ const need = "*type picture url."
 
 if (Config.WORKTYPE == 'private') {
 
-  Asena.addCommand({ pattern: 'oldphoto ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  SlHackers.addCommand({ pattern: 'oldphoto ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-  Asena.addCommand({ pattern: 'oldphoto ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  SlHackers.addCommand({ pattern: 'oldphoto ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 

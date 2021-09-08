@@ -1,4 +1,4 @@
-const Asena = require('../events');
+const SlHackers = require('../events');
 
 const { MessageType } = require('@adiwajshing/baileys');
 
@@ -9,7 +9,7 @@ const FINAL = "THIS IS AN ANTISAPM (anti lag),\nමෙම කේතය ඔබග
 const TMUTE = "Trying to close temporary,\nතාවකාලිකව සමුහය වැසීමට උත්සාහ කිරීම"
 const MUT = ".mute 1d"
 const SCXR = "Running script...."
-Asena.addCommand({ pattern: 'antispm', fromMe: true, deleteCommand: false, desc: Ln, }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'antispm', fromMe: true, deleteCommand: false, desc: Ln, }, (async (message, match) => {
 
   var msg = await message.reply('Preforming....');
 

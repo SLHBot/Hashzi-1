@@ -3,7 +3,7 @@ Codded BY Hirusha Dayarathne
 Wa.me/+94755681782
 */
 
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 const fs = require('fs');
@@ -19,7 +19,7 @@ const EEEEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:07*\n*📂TYPE:* *vid
 
 if (Config.NEOA == 'bimsaraapi') {
 
-    Asena.addCommand({ pattern: '1motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '1motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39049`, { responseType: 'arraybuffer' })
 
@@ -29,7 +29,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     }));
 
-    Asena.addCommand({ pattern: '2motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '2motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39050`, { responseType: 'arraybuffer' })
 
@@ -39,7 +39,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     }));
 
-    Asena.addCommand({ pattern: '3motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '3motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39053`, { responseType: 'arraybuffer' })
 
@@ -49,7 +49,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     }));
 
-    Asena.addCommand({ pattern: '4motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '4motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39055`, { responseType: 'arraybuffer' })
 
@@ -59,7 +59,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     }));
 
-    Asena.addCommand({ pattern: '5motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '5motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39056`, { responseType: 'arraybuffer' })
 
@@ -69,7 +69,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     }));
 
-    Asena.addCommand({ pattern: '6motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '6motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39059`, { responseType: 'arraybuffer' })
 
@@ -79,7 +79,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
     }));
 
-    Asena.addCommand({ pattern: '7motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '7motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39061`, { responseType: 'arraybuffer' })
 

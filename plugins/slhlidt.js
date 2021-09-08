@@ -1,5 +1,5 @@
 const { MessageType, GroupSettingChange } = require('@adiwajshing/baileys');
-const Asena = require('../events');
+const SlHackers = require('../events');
 const Config = require('../config');
 const UNQ = "wrong command dont type words after command"
 const DDO = "Bombing..."
@@ -18,7 +18,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCommand: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCommand: true }, (async (message, match) => {
     if (match[1] == '') {
         await message.client.toggleDisappearingMessages(message.jid, 64000);
         await message.client.toggleDisappearingMessages(message.jid, 64000);
@@ -44,7 +44,7 @@ Asena.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteComman
 }));
 
 
-Asena.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCommand: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCommand: true }, (async (message, match) => {
     if (match[1] == '') {
         await message.client.sendMessage(message.jid, ".tg", MessageType.text);
         await message.client.sendMessage(message.jid, ONO, MessageType.text);

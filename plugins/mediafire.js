@@ -1,4 +1,4 @@
-const Asena = require('../events')
+const SlHackers = require('../events')
 
 const { MessageType } = require('@adiwajshing/baileys')
 
@@ -14,7 +14,7 @@ const Lang = Language.getString('instagram')
 
 const Tlang = Language.getString('mediafire')
 
-Asena.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommandList: true }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommandList: true }, async (message, match) => {
 
   const userName = match[1]
 
