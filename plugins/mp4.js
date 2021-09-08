@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'private') {
         const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, YTV_UP, MessageType.text, { quoted: message.data });
-        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
+        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: json.result.title, ptt: false })
       })
       .catch(
         async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
