@@ -1,4 +1,4 @@
-/* Copyright (C) 2021 whatsasena
+/* Copyright (C) 2021 SLHackers
 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
@@ -7,14 +7,14 @@ usufusta
 */
 
 const Asena = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
+const { MessageType } = require('@adiwajshing/baileys');
 const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN }, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
@@ -24,11 +24,11 @@ if (Config.WORKTYPE == 'private') {
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
             }
         });
-        await message.client.sendMessage(message.jid,mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid, mesaj, MessageType.extendedText, { contextInfo: { mentionedJid: jids }, previewType: 0 })
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN}, (async (message, match) => {
+    Asena.addCommand({ pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN }, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
@@ -38,6 +38,6 @@ else if (Config.WORKTYPE == 'public') {
                 jids.push(uye.id.replace('c.us', 's.whatsapp.net'));
             }
         });
-        await message.client.sendMessage(message.jid,mesaj, MessageType.extendedText, {contextInfo: {mentionedJid: jids}, previewType: 0})
+        await message.client.sendMessage(message.jid, mesaj, MessageType.extendedText, { contextInfo: { mentionedJid: jids }, previewType: 0 })
     }));
 }

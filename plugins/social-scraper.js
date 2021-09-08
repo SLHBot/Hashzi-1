@@ -63,7 +63,7 @@ if (cn.WORKTYPE == 'private') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰* ',
+            caption: Config.BOT_NAAAAAME,
           })
         })
         .catch(
@@ -148,7 +148,7 @@ else if (cn.WORKTYPE == 'public') {
           })
 
           await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-            caption: 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰* ',
+            caption: Config.BOT_NAAAAAME,
           })
         })
         .catch(

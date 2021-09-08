@@ -11,12 +11,12 @@ const axios = require('axios');
 const Language = require('../language');
 const XN_DESC = "NSFU වීඩියෝ බාගත කරයි"
 const XN_NEED = "*Link අවශ්‍යයි!*"
-const XN_D = "*🙇Downloading Your Video*"
+const XN_D = "*🙇Downloading Your Ziper File*"
 const NEED_WORD = "*ඔබ URL ඇතුළත් කළ යුතුය*"
 
 if (Config.NEOA == 'bimsaraapi') {
 
-    Asena.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'ziper ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
@@ -24,7 +24,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { filename: 'SLHackers.zip', mimetype: Mimetype.zip })
 
     }));
 

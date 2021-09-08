@@ -1,11 +1,11 @@
-/* Copyright (C) 2020 TOXIC DEVIL
+/* Copyright (C) 2020 2021 Hirusha Dayarathne
 
-CODDED BY TOXIC DEVIL
+CODDED BY 2021 Hirusha Dayarathne
 
 Licensed under the  GPL-3.0 License;
 
 you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
+SLHackersTeamBot - 2021 Hirusha Dayarathne
 */
 
 const Asena = require('../events');
