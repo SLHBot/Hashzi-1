@@ -81,6 +81,7 @@ module.exports = {
     BOT_NAAAAAME: process.env.BOT_NAAAAAME === undefined ? 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' : process.env.BOT_NAAAAAME,
     BOT_NAAAAAAME: process.env.BOT_NAAAAAAME === undefined ? '*Made by* ⚡\n🔰SLHαcĸerѕ Teαм Boт🔰' : process.env.BOT_NAAAAAAME,
     BOT_NAAAAAAAME: process.env.BOT_NAAAAAAAME === undefined ? '🚀Made by :\n*SLHαcĸerѕ Teαм Boт*' : process.env.BOT_NAAAAAAAME,
+    BOT_NAAAAAAAAME: process.env.BOT_NAAAAAAAAME === undefined ? '_Made by_\n*හිරුෂ දයාරත්න*' : process.env.BOT_NAAAAAAAAME,
     //==============================================================================================================================
 
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),

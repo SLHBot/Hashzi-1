@@ -25,7 +25,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -35,7 +35,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -45,7 +45,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -55,7 +55,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -65,7 +65,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -75,7 +75,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -85,7 +85,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
         await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: '_Made by_\n*හිරුෂ දයාරත්න*' })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 

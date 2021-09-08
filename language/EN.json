@@ -564,6 +564,21 @@
             "ADON_INVALID": "```විධානය අවලංගුය.```",
             "NOT_AVAILABLE": "⛔丂Ĺн𝕒Č𝓴𝕖ʳ𝓼 𝓉ẸⒶ𝐦 乃𝕆𝓽 chat bot අක්‍රිය කර ඇත."
         },
+        "tiktok": {
+            "TİKTOK": "Tiktok-dan video yükləyir.",
+            "NEED": "```Hər hansı bir Tiktok Linki daxil etməlisiniz!``` \n*Nümunə:* ```.tiktok https://vm.tiktok.com/ZSJY27ExT/```",
+            "DOWN": "```Medya yüklənir..```",
+            "CAPTİON": "link:",
+            "USERNAME": "title:",
+            "NAME": "Ad:",
+            "LİKE": "channel:",
+            "COMM": "Şərhlərin sayı:",
+            "VİEW": "Baxış sayı:",
+            "LİNK": "İstifadəçi bağlantısı:",
+            "SHARE": "Səhmlərin sayı:",
+            "MUSİC": "Musiqi:",
+            "M_AUT": "Musiqi sahibi:"
+        },
         "AsenaPlug": {
             "DELETING": "🔰messages deleting",
             "UP": "🔰",
