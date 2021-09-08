@@ -13,30 +13,34 @@ const XN_NO = "*කණගාටුයි හමු නොවීය...*"
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'alvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-        if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+        if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-        var webimage = await axios.get(`https://duckduckgo.com/?q=${match[1]}&atb=v284-2`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XN_D, MessageType.text);
+        await message.client.sendMessage(message.jid, XN_N, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4 })
+        await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
 
     }));
 }
 
 if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    Asena.addCommand({ pattern: 'alvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
-        if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+        if (match[1] === '') return await message.sendMessage(NEED_WORD);
 
-        var webimage = await axios.get(`https://duckduckgo.com/?q=${match[1]}&atb=v284-2`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XN_D, MessageType.text);
+        await message.client.sendMessage(message.jid, XN_N, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4 })
+        await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
 
     }));
 }
