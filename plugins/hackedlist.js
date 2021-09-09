@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
             mimetype: Mimetype.png, caption: `*◁○SLHackers ⚜ pro ○▷*
 
-*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
+*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
 *⦁⛨ 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 ⛨⦁*
 .       *╚═❖═▣ ▣═❖══╝*
 

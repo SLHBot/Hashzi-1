@@ -16,7 +16,7 @@ if (Config.LANG == 'EN') {
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 
             await message.sendMessage(Buffer.from(image.data), MessageType.image, {
-                mimetype: Mimetype.png, caption: `*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
+                mimetype: Mimetype.png, caption: `*⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍⚍*
 *⦁⛨ 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 ⛨⦁*
 .       *╚═❖═▣ ▣═❖══╝*
 
