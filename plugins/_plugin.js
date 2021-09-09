@@ -62,10 +62,10 @@ SlHackers.addCommand({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
         }
 
         await Db.installPlugin(url, plugin_name);
-        await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text);
+        await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text, { quoted: message.data });
         if (!match[1].includes('Hirusha21')) {
             await new Promise(r => setTimeout(r, 400));
-            await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text);
+            await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text, { quoted: message.data });
         }
     }
 }));
@@ -82,7 +82,7 @@ SlHackers.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );
-        return await message.client.sendMessage(message.jid, mesaj, MessageType.text);
+        return await message.client.sendMessage(message.jid, mesaj, MessageType.text, { quoted: message.data });
     }
 }));
 
@@ -91,12 +91,12 @@ SlHackers.addCommand({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.RE
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: { name: match[1] } });
     if (plugin.length < 1) {
-        return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text);
+        return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text, { quoted: message.data });
     } else {
         await plugin[0].destroy();
         delete require.cache[require.resolve('./' + match[1] + '.js')]
         fs.unlinkSync('./plugins/' + match[1] + '.js');
-        await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text);
+        await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text, { quoted: message.data });
 
         await new Promise(r => setTimeout(r, 1000));
 

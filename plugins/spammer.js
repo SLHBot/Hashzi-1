@@ -20,11 +20,11 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 SlHackers.addCommand({ pattern: 'killspam', fromMe: true, desc: Lang.STOP_SPAMDESC }, (async (message, match) => {
 
-    await message.client.sendMessage(message.jid, Lang.STOP_SPAM, MessageType.text);
+    await message.client.sendMessage(message.jid, Lang.STOP_SPAM, MessageType.text, { quoted: message.data });
 
     console.log(baseURI);
     await heroku.delete(baseURI + '/dynos').catch(async (error) => {
-        await message.client.sendMessage(message.jid, error.message, MessageType.text);
+        await message.client.sendMessage(message.jid, error.message, MessageType.text, { quoted: message.data });
 
     });
 }));
@@ -41,2531 +41,2531 @@ SlHackers.addCommand({ pattern: 'spam ?(.*)', fromMe: true, desc: Lang.SPAM_DESC
     var spam = `${match[1]}`
     var fin = spam.replace(/#/g, "\n");
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 
-    await message.client.sendMessage(message.jid, fin, MessageType.text);
+    await message.client.sendMessage(message.jid, fin, MessageType.text, { quoted: message.data });
 }));

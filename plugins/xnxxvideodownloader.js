@@ -18,7 +18,7 @@ if (Config.WORKTYPE == 'private') {
     const link = match[1]
 
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
-    await message.client.sendMessage(message.jid, XN_D, MessageType.text)
+    await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data })
     await axios
       .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=bimsaraapi`)
       .then(async (response) => {
@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
         const videoBuffer = await axios.get(url, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, XN_UP, MessageType.text, { quoted: message.data });
-        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { mimetype: Mimetype.mp4, ptt: false })
+        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, ptt: false })
       })
       .catch(
         async (err) => await message.client.sendMessage(message.jid, XN_NO, MessageType.text, { quoted: message.data }),
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'public') {
     const link = match[1]
 
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
-    await message.client.sendMessage(message.jid, XN_D, MessageType.text)
+    await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data })
     await axios
       .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=bimsaraapi`)
       .then(async (response) => {
@@ -56,7 +56,7 @@ if (Config.WORKTYPE == 'public') {
         const videoBuffer = await axios.get(url, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, XN_UP, MessageType.text, { quoted: message.data });
-        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { mimetype: Mimetype.mp4, ptt: false })
+        await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, ptt: false })
       })
       .catch(
         async (err) => await message.client.sendMessage(message.jid, XN_NO, MessageType.text, { quoted: message.data }),

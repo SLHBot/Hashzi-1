@@ -19,6 +19,6 @@ SlHackers.addCommand({ pattern: 'wame ?(.*)', fromMe: false, desc: WAME_DESC }, 
             });
         });
     } else {
-        await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text);
+        await message.client.sendMessage(message.jid, NEED_UWONG, MessageType.text, { quoted: message.data });
     }
 }));

@@ -19,9 +19,9 @@ if (Config.WORKTYPE == 'private') {
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
 				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
-				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text);
+				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 }
@@ -37,9 +37,9 @@ else if (Config.WORKTYPE == 'public') {
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
 				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
-				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text);
+				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 
@@ -53,9 +53,9 @@ else if (Config.WORKTYPE == 'public') {
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
 				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
-				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text);
+				'*📘 ' + Lang.IMAGE + '* ```' + json.result[0].thumb + '```\n', MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 }

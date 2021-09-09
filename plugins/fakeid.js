@@ -15,9 +15,9 @@ if (Config.WORKTYPE == 'private') {
 
 			const json = JSON.parse(response.body);
 
-			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME  :' + json.name + '\n' + 'GENDER :' + json.gender + 'AGE  :' + json.age + '\n' + 'BDAY :' + json.birtday + 'JOB  :' + json.occupation + '\n' + 'ADDRESS :' + json.address + 'PIN  :' + json.zip_code + '\n' + 'PLACE :' + json.state + 'COUNTRY  :' + json.country + '\n' + 'PHONE :' + json.phone, MessageType.text);
+			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME  :' + json.name + '\n' + 'GENDER :' + json.gender + 'AGE  :' + json.age + '\n' + 'BDAY :' + json.birtday + 'JOB  :' + json.occupation + '\n' + 'ADDRESS :' + json.address + 'PIN  :' + json.zip_code + '\n' + 'PLACE :' + json.state + 'COUNTRY  :' + json.country + '\n' + 'PHONE :' + json.phone, MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 }
@@ -32,9 +32,9 @@ else if (Config.WORKTYPE == 'public') {
 
 			const json = JSON.parse(response.body);
 
-			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME  :' + json.name + '\n' + 'GENDER :' + json.gender + 'AGE  :' + json.age + '\n' + 'BDAY :' + json.birtday + 'JOB  :' + json.occupation + '\n' + 'ADDRESS :' + json.address + 'PIN  :' + json.zip_code + '\n' + 'PLACE :' + json.state + 'COUNTRY  :' + json.country + '\n' + 'PHONE :' + json.phone, MessageType.text);
+			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME  :' + json.name + '\n' + 'GENDER :' + json.gender + 'AGE  :' + json.age + '\n' + 'BDAY :' + json.birtday + 'JOB  :' + json.occupation + '\n' + 'ADDRESS :' + json.address + 'PIN  :' + json.zip_code + '\n' + 'PLACE :' + json.state + 'COUNTRY  :' + json.country + '\n' + 'PHONE :' + json.phone, MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 }

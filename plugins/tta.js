@@ -23,8 +23,8 @@ SlHackers.addCommand({ pattern: 'unaudio', fromMe: true, desc: UA_DESC }, (async
         return;
     }
 
-    if (message.reply_message === false) return await message.client.sendMessage(message.jid, UA_NEEDREPLY, MessageType.text);
-    var downloading = await message.client.sendMessage(message.jid, UA_PROC, MessageType.text);
+    if (message.reply_message === false) return await message.client.sendMessage(message.jid, UA_NEEDREPLY, MessageType.text, { quoted: message.data });
+    var downloading = await message.client.sendMessage(message.jid, UA_PROC, MessageType.text, { quoted: message.data });
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,

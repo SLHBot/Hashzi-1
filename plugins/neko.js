@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
             neko_url = 'https://nekobin.com/' + json.result.key;
             await message.reply(neko_url);
         } catch (err) {
-            await message.reply(err.message, MessageType.text);
+            await message.reply(err.message, MessageType.text, { quoted: message.data });
             console.log(err.message);
         }
 
@@ -47,7 +47,7 @@ else if (Config.WORKTYPE == 'public') {
             neko_url = 'https://nekobin.com/' + json.result.key;
             await message.reply(neko_url);
         } catch (err) {
-            await message.reply(err.message, MessageType.text);
+            await message.reply(err.message, MessageType.text, { quoted: message.data });
             console.log(err.message);
         }
 
@@ -63,7 +63,7 @@ else if (Config.WORKTYPE == 'public') {
             neko_url = 'https://nekobin.com/' + json.result.key;
             await message.reply(neko_url);
         } catch (err) {
-            await message.reply(err.message, MessageType.text);
+            await message.reply(err.message, MessageType.text, { quoted: message.data });
             console.log(err.message);
         }
 

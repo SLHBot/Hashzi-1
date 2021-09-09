@@ -27,8 +27,8 @@ if (Config.WORKTYPE == 'private') {
             return;
         }
 
-        if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid, Lang.NEED_PHOTO, MessageType.text);
-        if (Config.RBG_API_KEY === false) return await message.client.sendMessage(message.jid, Lang.NO_API_KEY, MessageType.text);
+        if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid, Lang.NEED_PHOTO, MessageType.text, { quoted: message.data });
+        if (Config.RBG_API_KEY === false) return await message.client.sendMessage(message.jid, Lang.NO_API_KEY, MessageType.text, { quoted: message.data });
 
         var load = await message.reply(Lang.RBGING);
         var location = await message.client.downloadAndSaveMediaMessage({
@@ -68,8 +68,8 @@ else if (Config.WORKTYPE == 'public') {
             return;
         }
 
-        if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid, Lang.NEED_PHOTO, MessageType.text);
-        if (Config.RBG_API_KEY === false) return await message.client.sendMessage(message.jid, Lang.NO_API_KEY, MessageType.text);
+        if (message.reply_message === false || message.reply_message.image === false) return await message.client.sendMessage(message.jid, Lang.NEED_PHOTO, MessageType.text, { quoted: message.data });
+        if (Config.RBG_API_KEY === false) return await message.client.sendMessage(message.jid, Lang.NO_API_KEY, MessageType.text, { quoted: message.data });
 
         var load = await message.reply(Lang.RBGING);
         var location = await message.client.downloadAndSaveMediaMessage({

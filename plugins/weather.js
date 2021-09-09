@@ -29,9 +29,9 @@ if (Config.WORKTYPE == 'private') {
 				'*ℹ ' + Lang.DESC + ':* ```' + json.weather[0].description + '```\n' +
 				'*☀ ' + Lang.HUMI + ':* ```%' + json.main.humidity + '```\n' +
 				'*💨 ' + Lang.WIND + ':* ```' + json.wind.speed + 'm/s```\n' +
-				'*☁ ' + Lang.CLOUD + ':* ```%' + json.clouds.all + '```\n', MessageType.text);
+				'*☁ ' + Lang.CLOUD + ':* ```%' + json.clouds.all + '```\n', MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
 		}
 	});
 }
@@ -49,9 +49,9 @@ if (Config.WORKTYPE == 'public') {
 				'*ℹ ' + Lang.DESC + ':* ```' + json.weather[0].description + '```\n' +
 				'*☀ ' + Lang.HUMI + ':* ```%' + json.main.humidity + '```\n' +
 				'*💨 ' + Lang.WIND + ':* ```' + json.wind.speed + 'm/s```\n' +
-				'*☁ ' + Lang.CLOUD + ':* ```%' + json.clouds.all + '```\n', MessageType.text);
+				'*☁ ' + Lang.CLOUD + ':* ```%' + json.clouds.all + '```\n', MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
 		}
 	});
 	SlHackers.addCommand({ pattern: 'weather ?(.*)', desc: Lang.WEATHER_DESC, fromMe: false, dontAddCommandList: true }, async (message, match) => {
@@ -66,9 +66,9 @@ if (Config.WORKTYPE == 'public') {
 				'*ℹ ' + Lang.DESC + ':* ```' + json.weather[0].description + '```\n' +
 				'*☀ ' + Lang.HUMI + ':* ```%' + json.main.humidity + '```\n' +
 				'*💨 ' + Lang.WIND + ':* ```' + json.wind.speed + 'm/s```\n' +
-				'*☁ ' + Lang.CLOUD + ':* ```%' + json.clouds.all + '```\n', MessageType.text);
+				'*☁ ' + Lang.CLOUD + ':* ```%' + json.clouds.all + '```\n', MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
 		}
 	});
 

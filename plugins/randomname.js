@@ -20,9 +20,9 @@ if (Config.WORKTYPE == 'private') {
 
       const json = JSON.parse(response.body);
 
-      if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'Random Name   :' + json.result, MessageType.text);
+      if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'Random Name   :' + json.result, MessageType.text, { quoted: message.data });
     } catch {
-      return await message.client.sendMessage(message.jid, 'Use Gender   :' + json.message, MessageType.text);
+      return await message.client.sendMessage(message.jid, 'Use Gender   :' + json.message, MessageType.text, { quoted: message.data });
     }
   });
 }
@@ -36,9 +36,9 @@ else if (Config.WORKTYPE == 'public') {
 
       const json = JSON.parse(response.body);
 
-      if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '``` Random Name      : *' + json.result + '```', MessageType.text);
+      if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '``` Random Name      : *' + json.result + '```', MessageType.text, { quoted: message.data });
     } catch {
-      return await message.client.sendMessage(message.jid, 'Use Gender   :' + json.message, MessageType.text);
+      return await message.client.sendMessage(message.jid, 'Use Gender   :' + json.message, MessageType.text, { quoted: message.data });
     }
   });
   SlHackers.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {

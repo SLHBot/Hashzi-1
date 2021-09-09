@@ -10,7 +10,7 @@ const Lang = Language.getString('spammer');
 
 SlHackers.addCommand({ pattern: 'foto spam$', fromMe: true, desc: Lang.FOTO_DESC }, (async (message, match) => {
 
-    if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.FOTO_FOT, MessageType.text);
+    if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.FOTO_FOT, MessageType.text, { quoted: message.data });
 
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {

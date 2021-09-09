@@ -137,7 +137,7 @@ if (config.WORKTYPE == 'private') {
     SlHackers.addCommand({ pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true }, (async (message, match) => {
 
         if (!message.reply_message) {
-            return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data });
         }
 
         ceviri = await translatte(message.reply_message.message, { from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2] });
@@ -146,7 +146,7 @@ if (config.WORKTYPE == 'private') {
                 + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
                 + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
-            return await message.client.sendMessage(message.jid, Lang.TRANSLATE_ERROR, MessageType.text)
+            return await message.client.sendMessage(message.jid, Lang.TRANSLATE_ERROR, MessageType.text, { quoted: message.data })
         }
     }));
     var l_dsc = ''
@@ -221,7 +221,7 @@ if (config.WORKTYPE == 'private') {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
             if (anti_status == 'true') {
-                return await message.client.sendMessage(message.jid, '*' + alr_on + '*', MessageType.text)
+                return await message.client.sendMessage(message.jid, '*' + alr_on + '*', MessageType.text, { quoted: message.data })
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', {
@@ -229,12 +229,12 @@ if (config.WORKTYPE == 'private') {
                         ['ANTİ_LİNK']: 'true'
                     }
                 });
-                await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
+                await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] == 'off') {
             if (anti_status !== 'true') {
-                return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text)
+                return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text, { quoted: message.data })
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', {
@@ -242,7 +242,7 @@ if (config.WORKTYPE == 'private') {
                         ['ANTİ_LİNK']: 'false'
                     }
                 });
-                await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
+                await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text, { quoted: message.data })
             }
         }
     }));
@@ -318,7 +318,7 @@ if (config.WORKTYPE == 'private') {
         const bio_status = `${config.AUTOBİO}`
         if (match[1] == 'on') {
             if (bio_status == 'true') {
-                return await message.client.sendMessage(message.jid, '*' + alr_on_bio + '*', MessageType.text)
+                return await message.client.sendMessage(message.jid, '*' + alr_on_bio + '*', MessageType.text, { quoted: message.data })
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', {
@@ -326,12 +326,12 @@ if (config.WORKTYPE == 'private') {
                         ['AUTO_BİO']: 'true'
                     }
                 });
-                await message.client.sendMessage(message.jid, '*' + succ_on_bio + '*', MessageType.text)
+                await message.client.sendMessage(message.jid, '*' + succ_on_bio + '*', MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] == 'off') {
             if (bio_status !== 'true') {
-                return await message.client.sendMessage(message.jid, '*' + alr_off_bio + '*', MessageType.text)
+                return await message.client.sendMessage(message.jid, '*' + alr_off_bio + '*', MessageType.text, { quoted: message.data })
             }
             else {
                 await heroku.patch(baseURI + '/config-vars', {
@@ -339,13 +339,13 @@ if (config.WORKTYPE == 'private') {
                         ['AUTO_BİO']: 'false'
                     }
                 });
-                await message.client.sendMessage(message.jid, '*' + succ_off_bio + '*', MessageType.text)
+                await message.client.sendMessage(message.jid, '*' + succ_off_bio + '*', MessageType.text, { quoted: message.data })
             }
         }
     }));
     SlHackers.addCommand({ pattern: 'detectlang$', fromMe: true, desc: dlang_dsc }, (async (message, match) => {
 
-        if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
+        if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data })
         const msg = message.reply_message.text
         var ldet = lngDetector.detect(msg)
         async function upperfirstLetter(letter) {
@@ -366,12 +366,12 @@ if (config.WORKTYPE == 'private') {
         const res_5 = '#3 *' + dlang_lang + '* ' + '_' + cls5 + '_\n*' + dlang_similarity + '* ' + '_' + cls6 + '_ \n'
         const res_6 = '#4 *' + dlang_lang + '* ' + '_' + cls7 + '_\n*' + dlang_similarity + '* ' + '_' + cls8 + '_'
         const rep_7 = res_1 + res_2 + res_3 + res_4 + res_5 + res_6
-        await message.client.sendMessage(message.jid, rep_7, MessageType.text);
+        await message.client.sendMessage(message.jid, rep_7, MessageType.text, { quoted: message.data });
     }));
     SlHackers.addCommand({ pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: true }, (async (message, match) => {
 
         if (match[1] === undefined || match[2] == undefined || match[3] == undefined) {
-            return await message.client.sendMessage(message.jid, Lang.CURRENCY_ERROR, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.CURRENCY_ERROR, MessageType.text, { quoted: message.data });
         }
         let opts = {
             amount: parseFloat(match[1]).toFixed(2).replace(/\.0+$/, ''),
@@ -385,9 +385,9 @@ if (config.WORKTYPE == 'private') {
         }
         catch (err) {
             if (err instanceof ExchangeRatesError)
-                await message.client.sendMessage(message.jid, Lang.INVALID_CURRENCY, MessageType.text)
+                await message.client.sendMessage(message.jid, Lang.INVALID_CURRENCY, MessageType.text, { quoted: message.data })
             else {
-                await message.client.sendMessage(message.jid, Lang.UNKNOWN_ERROR, MessageType.text)
+                await message.client.sendMessage(message.jid, Lang.UNKNOWN_ERROR, MessageType.text, { quoted: message.data })
                 console.log(err)
             }
         }
@@ -450,11 +450,11 @@ if (config.WORKTYPE == 'private') {
     }
     SlHackers.addCommand({ pattern: 'song ?(.*)', fromMe: true, deleteCommand: true, desc: Lang.SONG_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text, { quoted: message.data });
         let arama = await yts(match[1]);
         arama = arama.all;
-        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
-        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_SONG, MessageType.text);
+        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
+        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_SONG, MessageType.text, { quoted: message.data });
 
         let title = arama[0].title.replace(' ', '+');
         let stream = ytdl(arama[0].videoId, {
@@ -476,14 +476,14 @@ if (config.WORKTYPE == 'private') {
                     });
                 writer.addTag();
 
-                reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_SONG, MessageType.text);
+                reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_SONG, MessageType.text, { quoted: message.data });
                 await message.client.sendMessage(message.jid, Buffer.from(writer.arrayBuffer), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: false });
             });
     }));
 
     SlHackers.addCommand({ pattern: 'video ?(.*)', fromMe: true, desc: Lang.VIDEO_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_VIDEO, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_VIDEO, MessageType.text, { quoted: message.data });
 
         var VID = '';
         try {
@@ -495,28 +495,28 @@ if (config.WORKTYPE == 'private') {
                 VID = match[1].split('/')[3]
             }
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
         }
-        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_VIDEO, MessageType.text);
+        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_VIDEO, MessageType.text, { quoted: message.data });
 
         var yt = ytdl(VID, { filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true) });
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
+            reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text, { quoted: message.data });
             await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link : https://youtu.be/" + VID + "*\n\n*සැ.යු :* මෙම Videoව ඔබ whatsapp package එකක් දාලා තිබේනම් ඔබට පහසුවෙන්ම මෙහිදී කිසිදු අමතර data ගාස්තුවක් නොමැතිව බලාගත හැක. නමුදු ඔබ whatsapp package එකක් දමා නොමැතිනම් හෝ ඔබේ කැමැත්ත මත, ඉහළ ලින්ක් එකෙන් මෙම Videoව YouTube ඔස්සේ නැරඹිය හැක." });
         });
     }));
 
     SlHackers.addCommand({ pattern: 'yt ?(.*)', fromMe: true, desc: Lang.YT_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
-        var reply = await message.client.sendMessage(message.jid, Lang.GETTING_VIDEOS, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text, { quoted: message.data });
+        var reply = await message.client.sendMessage(message.jid, Lang.GETTING_VIDEOS, MessageType.text, { quoted: message.data });
 
         try {
             var arama = await yts(match[1]);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
         }
 
         var mesaj = '';
@@ -524,26 +524,26 @@ if (config.WORKTYPE == 'private') {
             mesaj += '*🦹 ' + video.title + '* - \n⏰ Duration :- ' + video.duration + '\n' + video.url + '\n\n'
         });
 
-        await message.client.sendMessage(message.jid, mesaj, MessageType.text);
+        await message.client.sendMessage(message.jid, mesaj, MessageType.text, { quoted: message.data });
         await reply.delete();
     }));
 
     SlHackers.addCommand({ pattern: 'wiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
-        var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text, { quoted: message.data });
+        var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text, { quoted: message.data });
 
         var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
-        await message.client.sendMessage(message.jid, info, MessageType.text);
+        await message.client.sendMessage(message.jid, info, MessageType.text, { quoted: message.data });
         await reply.delete();
     }));
 
     SlHackers.addCommand({ pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text, { quoted: message.data });
         gis(match[1], async (error, result) => {
             for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
                 var get = got(result[i].url, { https: { rejectUnauthorized: false } });
@@ -562,7 +562,7 @@ if (config.WORKTYPE == 'private') {
 
         const userName = match[1]
 
-        if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
+        if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text, { quoted: message.data })
 
         await axios
             .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${userName}`)
@@ -599,14 +599,14 @@ if (config.WORKTYPE == 'private') {
                 })
             })
             .catch(
-                async (err) => await message.client.sendMessage(message.jid, Glang.NOT, MessageType.text),
+                async (err) => await message.client.sendMessage(message.jid, Glang.NOT, MessageType.text, { quoted: message.data }),
             )
     },
     )
 
     SlHackers.addCommand({ pattern: 'lyric ?(.*)', fromMe: true, desc: Slang.LY_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text, { quoted: message.data });
 
         var aut = await solenolyrics.requestLyricsFor(`${match[1]}`);
         var son = await solenolyrics.requestAuthorFor(`${match[1]}`);
@@ -630,7 +630,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error :\n${err.message}`, MessageType.text)
+                await message.reply(`Error :\n${err.message}`, MessageType.text, { quoted: message.data })
             }
 
         }
@@ -641,7 +641,7 @@ if (config.WORKTYPE == 'private') {
                     await message.reply(`🇹🇷 *Türkiye İçin Sonuçlar:*\n😷 *Toplam Vaka:* ${resp.cases}\n🏥 *Günlük Hasta:* ${resp.todayCases}\n⚰️ *Toplam Ölü:* ${resp.deaths}\n☠️ *Günlük Ölü:* ${resp.todayDeaths}\n💊 *Toplam İyileşen:* ${resp.recovered}\n😷 *Aktif Vaka:* ${resp.active}\n🆘 *Ağır Hasta:* ${resp.critical}\n🧪 *Toplam Test:* ${resp.totalTests}`);
                 });
             } catch (err) {
-                await message.reply(`Bir Hata Oluştu, İşte Hata : \n${err.message}`, MessageType.text)
+                await message.reply(`Bir Hata Oluştu, İşte Hata : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
 
         }
@@ -654,7 +654,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "de" || match[1] === "De" || match[1] === "DE" || match[1] === "Germany" || match[1] === "germany" || match[1].includes('deutschland')) {
@@ -666,7 +666,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "sl" || match[1] === "srilanka" || match[1] === "Sri lanka" || match[1] === "lk" || match[1] === "LK" || match[1].includes('srilanka')) {
@@ -678,7 +678,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "uk" || match[1] === "Uk" || match[1] === "UK" || match[1] === "United" || match[1].includes('kingdom')) {
@@ -690,7 +690,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "in" || match[1] === "ın" || match[1] === "In" || match[1] === "İn" || match[1] === "IN" || match[1] === "İN" || match[1] === "india" || match[1] === "India" || match[1].includes('indian')) {
@@ -702,7 +702,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "cn" || match[1] === "Cn" || match[1] === "CN" || match[1].includes('china')) {
@@ -714,7 +714,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "gr" || match[1] === "Gr" || match[1] === "GR" || match[1].includes('greek')) {
@@ -726,7 +726,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "fr" || match[1] === "Fr" || match[1] === "FR" || match[1].includes('france')) {
@@ -738,7 +738,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "jp" || match[1] === "Jp" || match[1] === "JP" || match[1].includes('japan')) {
@@ -750,7 +750,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "kz" || match[1] === "Kz" || match[1] === "KZ" || match[1].includes('kazakistan')) {
@@ -762,7 +762,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "pk" || match[1] === "Pk" || match[1] === "PK" || match[1].includes('pakistan')) {
@@ -774,7 +774,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "ru" || match[1] === "Ru" || match[1] === "RU" || match[1].includes('russia')) {
@@ -786,7 +786,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "id" || match[1] === "İd" || match[1] === "İD" || match[1] === "ıd" || match[1] === "Id" || match[1] === "ID" || match[1].includes('ındonesia')) {
@@ -798,7 +798,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "nl" || match[1] === "Nl" || match[1] === "NL" || match[1].includes('netherland')) {
@@ -810,7 +810,7 @@ if (config.WORKTYPE == 'private') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else {
@@ -828,7 +828,7 @@ else if (config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'trt(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false }, (async (message, match) => {
 
         if (!message.reply_message) {
-            return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data });
         }
 
         ceviri = await translatte(message.reply_message.message, { from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2] });
@@ -837,12 +837,12 @@ else if (config.WORKTYPE == 'public') {
                 + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
                 + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
-            return await message.client.sendMessage(message.jid, Lang.TRANSLATE_ERROR, MessageType.text)
+            return await message.client.sendMessage(message.jid, Lang.TRANSLATE_ERROR, MessageType.text, { quoted: message.data })
         }
     }));
     SlHackers.addCommand({ pattern: 'detectlang$', fromMe: false, desc: dlang_dsc }, (async (message, match) => {
 
-        if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
+        if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data })
         const msg = message.reply_message.text
         var ldet = lngDetector.detect(msg)
         async function upperfirstLetter(letter) {
@@ -868,7 +868,7 @@ else if (config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'currency(?: ([0-9.]+) ([a-zA-Z]+) ([a-zA-Z]+)|$|(.*))', fromMe: false }, (async (message, match) => {
 
         if (match[1] === undefined || match[2] == undefined || match[3] == undefined) {
-            return await message.client.sendMessage(message.jid, Lang.CURRENCY_ERROR, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.CURRENCY_ERROR, MessageType.text, { quoted: message.data });
         }
         let opts = {
             amount: parseFloat(match[1]).toFixed(2).replace(/\.0+$/, ''),
@@ -882,9 +882,9 @@ else if (config.WORKTYPE == 'public') {
         }
         catch (err) {
             if (err instanceof ExchangeRatesError)
-                await message.client.sendMessage(message.jid, Lang.INVALID_CURRENCY, MessageType.text)
+                await message.client.sendMessage(message.jid, Lang.INVALID_CURRENCY, MessageType.text, { quoted: message.data })
             else {
-                await message.client.sendMessage(message.jid, Lang.UNKNOWN_ERROR, MessageType.text)
+                await message.client.sendMessage(message.jid, Lang.UNKNOWN_ERROR, MessageType.text, { quoted: message.data })
                 console.log(err)
             }
         }
@@ -918,10 +918,10 @@ else if (config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'song ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text, { quoted: message.data });
         let arama = await yts(match[1]);
         arama = arama.all;
-        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
+        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
         var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_SONG, MessageType.text, { quoted: message.data });
 
         let title = arama[0].title.replace(' ', '+');
@@ -951,7 +951,7 @@ else if (config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'video ?(.*)', fromMe: false, desc: Lang.VIDEO_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_VIDEO, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_VIDEO, MessageType.text, { quoted: message.data });
 
         var VID = '';
         try {
@@ -963,28 +963,28 @@ else if (config.WORKTYPE == 'public') {
                 VID = match[1].split('/')[3]
             }
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
         }
-        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_VIDEO, MessageType.text);
+        var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_VIDEO, MessageType.text, { quoted: message.data });
 
         var yt = ytdl(VID, { filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true) });
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text);
+            reply = await message.client.sendMessage(message.jid, Lang.UPLOADING_VIDEO, MessageType.text, { quoted: message.data });
             await message.client.sendMessage(message.jid, fs.readFileSync('./' + VID + '.mp4'), MessageType.video, { mimetype: Mimetype.mp4, caption: "*YOUTUBE Link : https://youtu.be/" + VID + "*\n\n*සැ.යු :* මෙම Videoව ඔබ whatsapp package එකක් දාලා තිබේනම් ඔබට පහසුවෙන්ම මෙහිදී කිසිදු අමතර data ගාස්තුවක් නොමැතිව බලාගත හැක. නමුදු ඔබ whatsapp package එකක් දමා නොමැතිනම් හෝ ඔබේ කැමැත්ත මත, ඉහළ ලින්ක් එකෙන් මෙම Videoව YouTube ඔස්සේ නැරඹිය හැක." });
         });
     }));
 
     SlHackers.addCommand({ pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
-        var reply = await message.client.sendMessage(message.jid, Lang.GETTING_VIDEOS, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text, { quoted: message.data });
+        var reply = await message.client.sendMessage(message.jid, Lang.GETTING_VIDEOS, MessageType.text, { quoted: message.data });
 
         try {
             var arama = await yts(match[1]);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
         }
 
         var mesaj = '';
@@ -992,26 +992,26 @@ else if (config.WORKTYPE == 'public') {
             mesaj += '*🦹 ' + video.title + '* - \n⏰ Duration :- ' + video.duration + '\n' + video.url + '\n\n'
         });
 
-        await message.client.sendMessage(message.jid, mesaj, MessageType.text);
+        await message.client.sendMessage(message.jid, mesaj, MessageType.text, { quoted: message.data });
         await reply.delete();
     }));
 
     SlHackers.addCommand({ pattern: 'wiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
-        var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text, { quoted: message.data });
+        var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text, { quoted: message.data });
 
         var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
-        await message.client.sendMessage(message.jid, info, MessageType.text);
+        await message.client.sendMessage(message.jid, info, MessageType.text, { quoted: message.data });
         await reply.delete();
     }));
 
     SlHackers.addCommand({ pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text, { quoted: message.data });
         gis(match[1], async (error, result) => {
             for (var i = 0; i < (result.length < 5 ? result.length : 5); i++) {
                 var get = got(result[i].url, { https: { rejectUnauthorized: false } });
@@ -1030,7 +1030,7 @@ else if (config.WORKTYPE == 'public') {
 
         const userName = match[1]
 
-        if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text)
+        if (userName === '') return await message.client.sendMessage(message.jid, Glang.REPLY, MessageType.text, { quoted: message.data })
 
         await axios
             .get(`https://hadi-api.herokuapp.com/api/githubstalk?username=${userName}`)
@@ -1067,14 +1067,14 @@ else if (config.WORKTYPE == 'public') {
                 })
             })
             .catch(
-                async (err) => await message.client.sendMessage(message.jid, Glang.NOT, MessageType.text),
+                async (err) => await message.client.sendMessage(message.jid, Glang.NOT, MessageType.text, { quoted: message.data }),
             )
     },
     )
 
     SlHackers.addCommand({ pattern: 'lyric ?(.*)', fromMe: false, desc: Slang.LY_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Slang.NEED, MessageType.text, { quoted: message.data });
 
         var aut = await solenolyrics.requestLyricsFor(`${match[1]}`);
         var son = await solenolyrics.requestAuthorFor(`${match[1]}`);
@@ -1098,7 +1098,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error :\n${err.message}`, MessageType.text)
+                await message.reply(`Error :\n${err.message}`, MessageType.text, { quoted: message.data })
             }
 
         }
@@ -1109,7 +1109,7 @@ else if (config.WORKTYPE == 'public') {
                     await message.reply(`🇹🇷 *Türkiye İçin Sonuçlar:*\n😷 *Toplam Vaka:* ${resp.cases}\n🏥 *Günlük Hasta:* ${resp.todayCases}\n⚰️ *Toplam Ölü:* ${resp.deaths}\n☠️ *Günlük Ölü:* ${resp.todayDeaths}\n💊 *Toplam İyileşen:* ${resp.recovered}\n😷 *Aktif Vaka:* ${resp.active}\n🆘 *Ağır Hasta:* ${resp.critical}\n🧪 *Toplam Test:* ${resp.totalTests}`);
                 });
             } catch (err) {
-                await message.reply(`Bir Hata Oluştu, İşte Hata : \n${err.message}`, MessageType.text)
+                await message.reply(`Bir Hata Oluştu, İşte Hata : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
 
         }
@@ -1122,7 +1122,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "de" || match[1] === "De" || match[1] === "DE" || match[1] === "Germany" || match[1] === "germany" || match[1].includes('deutschland')) {
@@ -1134,7 +1134,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "sl" || match[1] === "srilanka" || match[1] === "Sri lanka" || match[1] === "lk" || match[1] === "LK" || match[1].includes('srilanka')) {
@@ -1146,7 +1146,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "uk" || match[1] === "Uk" || match[1] === "UK" || match[1] === "United" || match[1].includes('kingdom')) {
@@ -1158,7 +1158,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "in" || match[1] === "ın" || match[1] === "In" || match[1] === "İn" || match[1] === "İN" || match[1] === "IN" || match[1] === "india" || match[1] === "India" || match[1].includes('indian')) {
@@ -1170,7 +1170,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "cn" || match[1] === "Cn" || match[1] === "CN" || match[1].includes('china')) {
@@ -1182,7 +1182,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "gr" || match[1] === "Gr" || match[1] === "GR" || match[1].includes('greek')) {
@@ -1194,7 +1194,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "fr" || match[1] === "Fr" || match[1] === "FR" || match[1].includes('france')) {
@@ -1206,7 +1206,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "jp" || match[1] === "Jp" || match[1] === "JP" || match[1].includes('japan')) {
@@ -1218,7 +1218,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "kz" || match[1] === "Kz" || match[1] === "KZ" || match[1].includes('kazakistan')) {
@@ -1230,7 +1230,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "pk" || match[1] === "Pk" || match[1] === "PK" || match[1].includes('pakistan')) {
@@ -1242,7 +1242,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "ru" || match[1] === "Ru" || match[1] === "RU" || match[1].includes('russia')) {
@@ -1254,7 +1254,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "id" || match[1] === "İd" || match[1] === "İD" || match[1] === "ıd" || match[1] === "Id" || match[1] === "ID" || match[1].includes('ındonesia')) {
@@ -1266,7 +1266,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else if (match[1] === "nl" || match[1] === "Nl" || match[1] === "NL" || match[1].includes('netherland')) {
@@ -1278,7 +1278,7 @@ else if (config.WORKTYPE == 'public') {
                 });
 
             } catch (err) {
-                await message.reply(`Error : \n${err.message}`, MessageType.text)
+                await message.reply(`Error : \n${err.message}`, MessageType.text, { quoted: message.data })
             }
         }
         else {

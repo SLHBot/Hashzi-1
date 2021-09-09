@@ -23,8 +23,8 @@ if (Config.WORKTYPE == 'private') {
 
         const link = match[1]
 
-        if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
-        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
+        if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text, { quoted: message.data });
         await axios
             .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
@@ -34,8 +34,8 @@ if (Config.WORKTYPE == 'private') {
 
                 const videoBuffer = await axios.get(result, { responseType: 'arraybuffer' })
 
-                await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
+                await message.client.sendMessage(message.jid, YTV_UP, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
@@ -50,7 +50,7 @@ else if (Config.WORKTYPE == 'public') {
         const link = match[1]
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
-        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text)
+        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text, { quoted: message.data })
         await axios
             .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
@@ -61,7 +61,7 @@ else if (Config.WORKTYPE == 'public') {
                 const videoBuffer = await axios.get(result, { responseType: 'arraybuffer' })
 
                 await message.client.sendMessage(message.jid, YTV_UP, MessageType.text, { quoted: message.data });
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),

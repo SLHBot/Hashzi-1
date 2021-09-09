@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data });
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');
@@ -58,7 +58,7 @@ else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data });
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');
@@ -93,7 +93,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
     SlHackers.addCommand({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data });
         var topText, bottomText;
         if (match[1].includes(';')) {
             var split = match[1].split(';');

@@ -90,9 +90,9 @@ if (Config.WORKTYPE == 'private') {
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[8].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[8].views + '```\n' +
                 '*💹 ' + Lang.RATING + ':* ```' + json.result[8].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n', MessageType.text);
+                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n', MessageType.text, { quoted: message.data });
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
         }
     });
 }
@@ -178,9 +178,9 @@ else if (Config.WORKTYPE == 'public') {
                 '*🔼 ' + Lang.UPLOADER + ':* ```' + json.result[8].uploader + '```\n' +
                 '*📺 ' + Lang.VIEWS + ':* ```' + json.result[8].views + '```\n' +
                 '*💹 ' + Lang.RATING + ':* ```' + json.result[8].rating + '```\n' +
-                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n', MessageType.text);
+                '*📅 ' + Lang.ADDDATE + ':* ```' + json.result[8].added + '```\n\n\n', MessageType.text, { quoted: message.data });
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
         }
     });
     SlHackers.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {

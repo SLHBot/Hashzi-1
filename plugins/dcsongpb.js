@@ -135,10 +135,10 @@ if (config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text);
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text, { quoted: message.data });
         let arama = await yts(match[1]);
         arama = arama.all;
-        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text);
+        if (arama.length < 1) return await message.client.sendMessage(message.jid, Lang.NO_RESULT, MessageType.text, { quoted: message.data });
         var reply = await message.client.sendMessage(message.jid, Lang.DOWNLOADING_SONG, MessageType.text, { quoted: message.data });
 
         let title = arama[0].title.replace(' ', '+');

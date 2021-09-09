@@ -29,7 +29,7 @@ if (Config.AI_BOT == 'true') {
 				const json = JSON.parse(response.body);
 				if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n*🔰 ' + Lang.BOT + '* ```' + json.messages[0].response + '```\n\n', MessageType.text, { quoted: message.data });
 			} catch {
-				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, { quoted: message.data });
 			}
 		});
 	}
@@ -43,7 +43,7 @@ if (Config.AI_BOT == 'true') {
 				const json = JSON.parse(response.body);
 				if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n*🔰 ' + Lang.BOT + '* ```' + json.messages[0].response + '```\n\n', MessageType.text, { quoted: message.data });
 			} catch {
-				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, { quoted: message.data });
 			}
 		});
 	}
@@ -57,9 +57,9 @@ else if (Config.AI_BOT == 'false') {
 			try {
 				const response = await got(url);
 				const json = JSON.parse(response.body);
-				if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n🔰 ' + Lang.BOT + Lang.NOT_AVAILABLE, MessageType.text);
+				if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n🔰 ' + Lang.BOT + Lang.NOT_AVAILABLE, MessageType.text, { quoted: message.data });
 			} catch {
-				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, { quoted: message.data });
 			}
 		});
 	}
@@ -73,7 +73,7 @@ else if (Config.AI_BOT == 'false') {
 				const json = JSON.parse(response.body);
 				if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n🔰‍♀️ ' + Lang.BOT + Lang.NOT_AVAILABLE, MessageType.text, { quoted: message.data });
 			} catch {
-				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+				return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, { quoted: message.data });
 			}
 		});
 	}
@@ -81,16 +81,16 @@ else if (Config.AI_BOT == 'false') {
 
 SlHackers.addCommand({ pattern: 'adon ?(.*)', fromMe: true, desc: Lang.ADON_DESC }, (async (message, match) => {
 
-	if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.ADON_MISSING, MessageType.text);
+	if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.ADON_MISSING, MessageType.text, { quoted: message.data });
 	if ((varKey = match[1].split(':')[0]) && (varValue = match[1].split(':')[1])) {
 		await heroku.patch(baseURI + '/config-vars', {
 			body: {
 				[varKey]: varValue
 			}
 		}).then(async (app) => {
-			await message.client.sendMessage(message.jid, Lang.ADON_SUCCESS.format(varKey, varValue), MessageType.text);
+			await message.client.sendMessage(message.jid, Lang.ADON_SUCCESS.format(varKey, varValue), MessageType.text, { quoted: message.data });
 		});
 	} else {
-		await message.client.sendMessage(message.jid, Lang.ADON_INVALID, MessageType.text);
+		await message.client.sendMessage(message.jid, Lang.ADON_INVALID, MessageType.text, { quoted: message.data });
 	}
 }));

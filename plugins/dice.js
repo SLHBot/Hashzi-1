@@ -24,7 +24,7 @@ if (con.LANG === 'TR' || 'az') {
 
         SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
-            await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSEN, MessageType.text, { quoted: message.data });
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
@@ -38,7 +38,7 @@ if (con.LANG === 'TR' || 'az') {
 
             var i = Math.floor(6 * Math.random())
 
-            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text, { quoted: message.data });
 
         }));
     }
@@ -46,7 +46,7 @@ if (con.LANG === 'TR' || 'az') {
 
         SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
-            await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSEN, MessageType.text, { quoted: message.data });
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
@@ -60,7 +60,7 @@ if (con.LANG === 'TR' || 'az') {
 
             var i = Math.floor(6 * Math.random())
 
-            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text, { quoted: message.data });
 
         }));
     }
@@ -71,7 +71,7 @@ else if (con.LANG === 'HI') {
 
         SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
-            await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSEN, MessageType.text, { quoted: message.data });
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
@@ -85,7 +85,7 @@ else if (con.LANG === 'HI') {
 
             var i = Math.floor(6 * Math.random())
 
-            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text, { quoted: message.data });
 
         }));
     }
@@ -93,7 +93,7 @@ else if (con.LANG === 'HI') {
 
         SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
-            await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSEN, MessageType.text, { quoted: message.data });
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
@@ -107,7 +107,7 @@ else if (con.LANG === 'HI') {
 
             var i = Math.floor(6 * Math.random())
 
-            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text, { quoted: message.data });
 
         }));
     }
@@ -118,7 +118,7 @@ else {
 
         SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
-            await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSEN, MessageType.text, { quoted: message.data });
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
@@ -132,7 +132,7 @@ else {
 
             var i = Math.floor(6 * Math.random())
 
-            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text, { quoted: message.data });
 
         }));
     }
@@ -140,7 +140,7 @@ else {
 
         SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
-            await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSEN, MessageType.text, { quoted: message.data });
             await new Promise(r => setTimeout(r, 4000));
 
             // Numbers
@@ -154,7 +154,7 @@ else {
 
             var i = Math.floor(6 * Math.random())
 
-            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text);
+            await message.client.sendMessage(message.jid, ENSON + `${r_text[i]}`, MessageType.text, { quoted: message.data });
 
         }));
     }

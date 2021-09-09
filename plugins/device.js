@@ -20,9 +20,9 @@ if (Config.WORKTYPE == 'private') {
 
 			const json = JSON.parse(response.body);
 
-			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME: *' + json.title + '* \n' + 'DATE :  ' + json.released + 'WEIGHT :  ' + json.weight + '\n' + 'VERSION : ' + json.os_version + '\n' + 'ROM :  ' + json.storage + '\n' + 'DISPLAY :  ' + json.display_size + '\n' + 'RAM :  ' + json.ram + '\n' + 'BATTERY :  ' + json.battery + '\n' + 'MP :  ' + json.camera_pixel + '\n' + 'VIDEO MP :  ' + json.video_pixel, MessageType.text);
+			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME: *' + json.title + '* \n' + 'DATE :  ' + json.released + 'WEIGHT :  ' + json.weight + '\n' + 'VERSION : ' + json.os_version + '\n' + 'ROM :  ' + json.storage + '\n' + 'DISPLAY :  ' + json.display_size + '\n' + 'RAM :  ' + json.ram + '\n' + 'BATTERY :  ' + json.battery + '\n' + 'MP :  ' + json.camera_pixel + '\n' + 'VIDEO MP :  ' + json.video_pixel, MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 }
@@ -36,9 +36,9 @@ else if (Config.WORKTYPE == 'public') {
 
 			const json = JSON.parse(response.body);
 
-			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME: *' + json.title + '* \n' + 'DATE :  ' + json.released + 'WEIGHT :  ' + json.weight + '\n' + 'VERSION : ' + json.os_version + '\n' + 'ROM :  ' + json.storage + '\n' + 'DISPLAY :  ' + json.display_size + '\n' + 'RAM :  ' + json.ram + '\n' + 'BATTERY :  ' + json.battery + '\n' + 'MP :  ' + json.camera_pixel + '\n' + 'VIDEO MP :  ' + json.video_pixel, MessageType.text);
+			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'NAME: *' + json.title + '* \n' + 'DATE :  ' + json.released + 'WEIGHT :  ' + json.weight + '\n' + 'VERSION : ' + json.os_version + '\n' + 'ROM :  ' + json.storage + '\n' + 'DISPLAY :  ' + json.display_size + '\n' + 'RAM :  ' + json.ram + '\n' + 'BATTERY :  ' + json.battery + '\n' + 'MP :  ' + json.camera_pixel + '\n' + 'VIDEO MP :  ' + json.video_pixel, MessageType.text, { quoted: message.data });
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
 		}
 	});
 	SlHackers.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {

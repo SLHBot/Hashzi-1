@@ -19,8 +19,8 @@ SlHackers.addCommand({ pattern: 'zodiac(.*)', fromMe: false, desc: Lang.ZODIAC_D
 		const response = await got(url);
 		const json = JSON.parse(response.body);
 		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '*☸️ ' + Lang.SUNSIGN + ':* ```' + match[1] + '```\n\n' +
-			'*🔮 ' + Lang.HOROSCOPE + ':* ```' + json.horoscope + '```\n', MessageType.text);
+			'*🔮 ' + Lang.HOROSCOPE + ':* ```' + json.horoscope + '```\n', MessageType.text, { quoted: message.data });
 	} catch {
-		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
+		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, { quoted: message.data });
 	}
 });

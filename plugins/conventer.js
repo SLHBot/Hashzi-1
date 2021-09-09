@@ -67,8 +67,8 @@ if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'mp3$', fromMe: true, desc: Lang.MP4TOAUDİO_DESC }, (async (message, match) => {
         const mid = message.jid
-        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
-        var downloading = await message.client.sendMessage(mid, Lang.MP4TOAUDİO, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(mid, Lang.MP4TOAUDİO, MessageType.text, { quoted: message.data });
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -87,8 +87,8 @@ if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'photo$', fromMe: true, desc: Lang.STİCKER_DESC }, (async (message, match) => {
         const mid = message.jid
-        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
-        var downloading = await message.client.sendMessage(mid, Lang.STİCKER, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(mid, Lang.STİCKER, MessageType.text, { quoted: message.data });
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -108,7 +108,7 @@ if (Config.WORKTYPE == 'private') {
     SlHackers.addCommand({ pattern: 'stvideo$', desc: Lang.ANİM_STİCK, fromMe: true }, (async (message, match) => {
         const mid = message.jid
         if (message.reply_message === false) return await message.sendMessage(Lang.STİCKER_NEEDREPLY);
-        await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text)
+        await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text, { quoted: message.data })
         const savedFilename = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -132,8 +132,8 @@ else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'mp3$', fromMe: false, desc: Lang.MP4TOAUDİO_DESC }, (async (message, match) => {
         const mid = message.jid
-        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
-        var downloading = await message.client.sendMessage(mid, Lang.MP4TOAUDİO, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(mid, Lang.MP4TOAUDİO, MessageType.text, { quoted: message.data });
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -152,8 +152,8 @@ else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'photo$', fromMe: false, desc: Lang.STİCKER_DESC }, (async (message, match) => {
         const mid = message.jid
-        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text);
-        var downloading = await message.client.sendMessage(mid, Lang.STİCKER, MessageType.text);
+        if (message.reply_message === false) return await message.client.sendMessage(mid, Lang.STİCKER_NEEDREPLY, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(mid, Lang.STİCKER, MessageType.text, { quoted: message.data });
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -173,7 +173,7 @@ else if (Config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'stvideo$', desc: Lang.ANİM_STİCK, fromMe: false }, (async (message, match) => {
         const mid = message.jid
         if (message.reply_message === false) return await message.sendMessage(Lang.STİCKER_NEEDREPLY);
-        await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text)
+        await message.client.sendMessage(mid, Lang.ANİMATE, MessageType.text, { quoted: message.data })
         const savedFilename = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,

@@ -90,7 +90,7 @@ SlHackers.addCommand({ on: 'text', fromMe: true, deleteCommand: false }, (async 
         AFK.reason = false;
         AFK.isAfk = false;
 
-        await message.client.sendMessage(message.jid, Lang.IM_NOT_AFK, MessageType.text);
+        await message.client.sendMessage(message.jid, Lang.IM_NOT_AFK, MessageType.text, { quoted: message.data });
     }
 }));
 

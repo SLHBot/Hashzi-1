@@ -49,7 +49,7 @@ class Message extends Base {
     }
 
     async reply(text) {
-        var message = await this.client.sendMessage(this.jid, text, MessageType.text);
+        var message = await this.client.sendMessage(this.jid, text, MessageType.text, { quoted: message.data });
         return new Message(this.client, message)
     }
 

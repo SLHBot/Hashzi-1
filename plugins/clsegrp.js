@@ -14,16 +14,16 @@ SlHackers.addCommand({ pattern: 'close', fromMe: true, deleteCommand: false, des
   var msg = await message.reply('Preforming....');
 
   await message.client.sendMessage(
-    message.jid, TMUTE, MessageType.text);
+    message.jid, TMUTE, MessageType.text, { quoted: message.data });
 
   await message.client.sendMessage(
-    message.jid, SCXR, MessageType.text);
+    message.jid, SCXR, MessageType.text, { quoted: message.data });
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text);
+    message.jid, code, MessageType.text, { quoted: message.data });
 
   await message.client.sendMessage(
-    message.jid, FINAL, MessageType.text);
+    message.jid, FINAL, MessageType.text, { quoted: message.data });
 
 
 }));
