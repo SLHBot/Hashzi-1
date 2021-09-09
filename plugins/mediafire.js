@@ -18,9 +18,9 @@ SlHackers.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommand
 
   const userName = match[1]
 
-  if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text, { quoted: message.data })
+  if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
 
-  await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text, { quoted: message.data })
+  await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
 
   await axios
 
@@ -50,7 +50,7 @@ SlHackers.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommand
 
     .catch(
 
-      async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text, { quoted: message.data }),
+      async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
 
     )
 

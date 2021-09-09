@@ -16,7 +16,7 @@ if (Config.WORKTYPE == 'private') {
 
         await message.client.sendMessage(
 
-            message.jid, code, MessageType.text, { quoted: message.data });
+            message.jid, code, MessageType.text);
 
     }));
 

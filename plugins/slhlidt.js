@@ -38,7 +38,7 @@ SlHackers.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCo
         await message.client.toggleDisappearingMessages(message.jid, 64000);
     }
     else {
-        return await message.client.sendMessage(message.jid, UNQ, MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
     }
 
 }));
@@ -46,8 +46,8 @@ SlHackers.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCo
 
 SlHackers.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCommand: true }, (async (message, match) => {
     if (match[1] == '') {
-        await message.client.sendMessage(message.jid, ".tg", MessageType.text, { quoted: message.data });
-        await message.client.sendMessage(message.jid, ONO, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, ".tg", MessageType.text);
+        await message.client.sendMessage(message.jid, ONO, MessageType.text);
         await message.client.toggleDisappearingMessages(message.jid, 0);
         await message.client.toggleDisappearingMessages(message.jid, 0);
         await message.client.toggleDisappearingMessages(message.jid, 0);
@@ -67,7 +67,7 @@ SlHackers.addCommand({ pattern: 'hiruu ?(.*)', fromMe: true, desc: DDO, deleteCo
 
     }
     else {
-        return await message.client.sendMessage(message.jid, UNQ, MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(message.jid, UNQ, MessageType.text);
     }
 
 }));

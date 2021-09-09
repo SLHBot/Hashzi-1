@@ -18,13 +18,13 @@ if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'nvideo ?(.*)', fromMe: true, desc: Lang.T_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, { quoted: message.data });
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
-        if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text, { quoted: message.data });
+        if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text);
 
         if (match[1] === 'dodge') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'or') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -64,7 +64,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'multiply') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -84,7 +84,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'grainmerge') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -104,7 +104,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'and') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -124,7 +124,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'burn') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -144,7 +144,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'difference') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -164,7 +164,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'grainextract') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -184,7 +184,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'divide') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -204,7 +204,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'xor') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -224,7 +224,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'hardmix') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -244,7 +244,7 @@ if (Config.WORKTYPE == 'private') {
         }
         else if (match[1] === 'negation') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -264,7 +264,7 @@ if (Config.WORKTYPE == 'private') {
 
         }
         else {
-            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text);
         }
     }));
 }
@@ -272,13 +272,13 @@ else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'tblend ?(.*)', fromMe: false, desc: Lang.T_DESC }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, { quoted: message.data });
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
-        if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text, { quoted: message.data });
+        if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text);
 
         if (match[1] === 'dodge') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -298,7 +298,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'or') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -318,7 +318,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'multiply') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -338,7 +338,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'grainmerge') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -358,7 +358,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'and') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -378,7 +378,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'burn') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -398,7 +398,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'difference') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -418,7 +418,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'grainextract') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -438,7 +438,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'divide') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -458,7 +458,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'xor') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -478,7 +478,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'hardmix') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -498,7 +498,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'negation') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -518,18 +518,18 @@ else if (Config.WORKTYPE == 'public') {
 
         }
         else {
-            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text);
         }
     }));
     SlHackers.addCommand({ pattern: 'tblend ?(.*)', fromMe: true, desc: Lang.T_DESC, dontAddCommandList: true }, (async (message, match) => {
 
-        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text, { quoted: message.data });
+        if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.MP4TOAUDİO_NEEDREPLY, MessageType.text);
 
-        if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text, { quoted: message.data });
+        if (message.repy_message && match[1] === '') return await message.client.sendMessage(message.jid, Lang.T_NOT, MessageType.text);
 
         if (match[1] === 'dodge') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -549,7 +549,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'or') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -569,7 +569,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'multiply') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -589,7 +589,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'grainmerge') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -609,7 +609,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'and') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -629,7 +629,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'burn') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -649,7 +649,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'difference') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -669,7 +669,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'grainextract') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -689,7 +689,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'divide') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -709,7 +709,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'xor') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -729,7 +729,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'hardmix') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -749,7 +749,7 @@ else if (Config.WORKTYPE == 'public') {
         }
         else if (match[1] === 'negation') {
 
-            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text, { quoted: message.data });
+            var downloading = await message.client.sendMessage(message.jid, '```Editing..```', MessageType.text);
             var location = await message.client.downloadAndSaveMediaMessage({
                 key: {
                     remoteJid: message.reply_message.jid,
@@ -769,7 +769,7 @@ else if (Config.WORKTYPE == 'public') {
 
         }
         else {
-            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(message.jid, Lang.T_FALSE, MessageType.text);
         }
     }));
 }

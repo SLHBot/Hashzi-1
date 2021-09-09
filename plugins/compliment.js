@@ -17,8 +17,8 @@ SlHackers.addCommand({ pattern: 'compliment ?(.*)', fromMe: false, desc: Lang.CM
 	try {
 		const response = await got(url);
 		const json = JSON.parse(response.body);
-		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n\n *compliment : 🤗 ' + Lang.CM + '* ```' + json.compliment + '```\n\n', MessageType.text, { quoted: message.data });
+		if (response.statusCode === 200) return await message.client.sendMessage(message.jid, '\n\n *compliment : 🤗 ' + Lang.CM + '* ```' + json.compliment + '```\n\n', MessageType.text);
 	} catch {
-		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text, { quoted: message.data });
+		return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDAC, MessageType.text);
 	}
 });

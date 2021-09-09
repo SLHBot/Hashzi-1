@@ -15,19 +15,19 @@ SlHackers.addCommand({ pattern: 'open', fromMe: true, deleteCommand: false, desc
   var msg = await message.reply('Preforming....');
 
   await message.client.sendMessage(
-    message.jid, TMUTE, MessageType.text, { quoted: message.data });
+    message.jid, TMUTE, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, SCXR, MessageType.text, { quoted: message.data });
+    message.jid, SCXR, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, TST, MessageType.text, { quoted: message.data });
+    message.jid, TST, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, FINAL, MessageType.text, { quoted: message.data });
+    message.jid, FINAL, MessageType.text);
 
 
 }));

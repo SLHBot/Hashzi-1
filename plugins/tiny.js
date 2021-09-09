@@ -15,9 +15,9 @@ if (Config.WORKTYPE == 'public') {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
 			if (response.statusCode === 200) return await message.client.sendMessage(message.jid,
-				'\n *🔗 ' + Lang.SLINK + '* ```' + json.result + '```\n\n', MessageType.text, { quoted: message.data });
+				'\n *🔗 ' + Lang.SLINK + '* ```' + json.result + '```\n\n', MessageType.text);
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDLI, MessageType.text, { quoted: message.data });
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDLI, MessageType.text);
 		}
 	});
 }
@@ -30,9 +30,9 @@ else if (Config.WORKTYPE == 'private') {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
 			if (response.statusCode === 200) return await message.client.sendMessage(message.jid,
-				'\n *🔗 ' + Lang.SLINK + '* ```' + json.result + '```\n\n', MessageType.text, { quoted: message.data });
+				'\n *🔗 ' + Lang.SLINK + '* ```' + json.result + '```\n\n', MessageType.text);
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDLI, MessageType.text, { quoted: message.data });
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDLI, MessageType.text);
 		}
 	});
 }

@@ -45,10 +45,10 @@ if (Config.WORKTYPE == 'private') {
         '*💸' + CURRENCY + '* ```' + ipjson.currency + '```\n\n' +
         '*📡' + ISP + '* ```' + ipjson.isp + '```\n' +
         '*🛡' + PROXY + '* ```' + ipjson.proxy + '```\n' +
-        '*📱' + MOBILE + '* ```' + ipjson.mobile + '```\n', MessageType.text, { quoted: message.data });
+        '*📱' + MOBILE + '* ```' + ipjson.mobile + '```\n', MessageType.text);
     }
     catch {
-      return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text, { quoted: message.data });
+      return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text);
     }
   });
 }
@@ -77,10 +77,10 @@ else if (Config.WORKTYPE == 'public') {
         '*💸' + CURRENCY + '* ```' + ipjson.currency + '```\n\n' +
         '*📡' + ISP + '* ```' + ipjson.isp + '```\n' +
         '*🛡' + PROXY + '* ```' + ipjson.proxy + '```\n' +
-        '*📱' + MOBILE + '* ```' + ipjson.mobile + '```\n', MessageType.text, { quoted: message.data });
+        '*📱' + MOBILE + '* ```' + ipjson.mobile + '```\n', MessageType.text);
     }
     catch {
-      return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text, { quoted: message.data });
+      return await message.client.sendMessage(message.jid, NOT_FOUNDIP, MessageType.text);
     }
   });
 }

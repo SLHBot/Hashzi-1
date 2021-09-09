@@ -55,16 +55,16 @@ if (conf.WORKTYPE == 'private') {
                     convertToWav(file).on('end', async () => {
                         const recognizedText = await recognizeAudio()
 
-                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text, { quoted: message.data })
+                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text)
                     });
 
 
                 } else {
-                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text, { quoted: message.data })
+                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text)
 
                 }
             } else {
-                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data })
+                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
 
             }
 
@@ -94,16 +94,16 @@ if (conf.WORKTYPE == 'public') {
                     convertToWav(file).on('end', async () => {
                         const recognizedText = await recognizeAudio()
 
-                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text, { quoted: message.data })
+                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text)
                     });
 
 
                 } else {
-                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text, { quoted: message.data })
+                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text)
 
                 }
             } else {
-                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data })
+                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
 
             }
 
@@ -130,16 +130,16 @@ if (conf.WORKTYPE == 'public') {
                     convertToWav(file).on('end', async () => {
                         const recognizedText = await recognizeAudio()
 
-                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text, { quoted: message.data })
+                        await message.client.sendMessage(message.jid, Lang.TEXT + '```' + recognizedText + '```', MessageType.text)
                     });
 
 
                 } else {
-                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text, { quoted: message.data })
+                    await message.client.sendMessage(message.jid, Lang.ONLY_AUDIO, MessageType.text)
 
                 }
             } else {
-                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text, { quoted: message.data })
+                await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text)
 
             }
 

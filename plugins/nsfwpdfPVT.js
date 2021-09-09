@@ -29,7 +29,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36614`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, XN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, XN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 
@@ -39,7 +39,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36618`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, EEN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, EEN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 
@@ -49,7 +49,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36628`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, EEXN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, EEXN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 
@@ -59,7 +59,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36630`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, EEEEN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, EEEEN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 
@@ -69,7 +69,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36632`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, EEEEXN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, EEEEXN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 
@@ -79,7 +79,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36634`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, EEEEEEN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, EEEEEEN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 
@@ -89,7 +89,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36636`, { responseType: 'arraybuffer' })
 
-            await message.client.sendMessage(message.jid, EEEEEEXN_UP, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, EEEEEEXN_UP, MessageType.text);
 
             await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { mimetype: Mimetype.pdf })
 

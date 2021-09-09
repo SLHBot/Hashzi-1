@@ -16,19 +16,19 @@ const Lang = Language.getString('profile');
 
 SlHackers.addCommand({ pattern: 'kickme', fromMe: true, desc: Lang.KICKME_DESC, onlyGroup: true }, (async (message, match) => {
     if (Config.KICKMEMSG == 'default') {
-        await message.client.sendMessage(message.jid, Lang.KICKME, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.KICKME, MessageType.text);
         await message.client.groupLeave(message.jid);
     }
     else {
-        await message.client.sendMessage(message.jid, Config.KICKMEMSG, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Config.KICKMEMSG, MessageType.text);
         await message.client.groupLeave(message.jid);
     }
 }));
 
 SlHackers.addCommand({ pattern: 'pp', fromMe: true, desc: Lang.PP_DESC }, (async (message, match) => {
-    if (!message.reply_message || !message.reply_message.image) return await message.client.sendMessage(message.jid, Lang.NEED_PHOTO, MessageType.text, { quoted: message.data });
+    if (!message.reply_message || !message.reply_message.image) return await message.client.sendMessage(message.jid, Lang.NEED_PHOTO, MessageType.text);
 
-    var load = await message.client.sendMessage(message.jid, Lang.PPING, MessageType.text, { quoted: message.data });
+    var load = await message.client.sendMessage(message.jid, Lang.PPING, MessageType.text);
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -56,10 +56,10 @@ SlHackers.addCommand({ pattern: 'block ?(.*)', fromMe: true, desc: Lang.BLOCK_DE
                 await message.client.blockUser(user, "add");
             });
         } else if (!message.jid.includes('-')) {
-            await message.client.sendMessage(message.jid, '*' + Lang.BLOCKED_UPPER + '*', MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, '*' + Lang.BLOCKED_UPPER + '*', MessageType.text);
             await message.client.blockUser(message.jid, "add");
         } else {
-            await message.client.sendMessage(message.jid, '*' + Lang.NEED_USER + '*', MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, '*' + Lang.NEED_USER + '*', MessageType.text);
         }
     }
     else {
@@ -76,10 +76,10 @@ SlHackers.addCommand({ pattern: 'block ?(.*)', fromMe: true, desc: Lang.BLOCK_DE
                 await message.client.blockUser(user, "add");
             });
         } else if (!message.jid.includes('-')) {
-            await message.client.sendMessage(message.jid, '*' + Lang.BLOCKED_UPPER + '*', MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, '*' + Lang.BLOCKED_UPPER + '*', MessageType.text);
             await message.client.blockUser(message.jid, "add");
         } else {
-            await message.client.sendMessage(message.jid, '*' + Lang.NEED_USER + '*', MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, '*' + Lang.NEED_USER + '*', MessageType.text);
         }
     }
 }));
@@ -142,7 +142,7 @@ if (Config.WORKTYPE == 'private') {
                 });
             });
         } else {
-            await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text);
         }
     }));
 }
@@ -160,7 +160,7 @@ else if (Config.WORKTYPE == 'public') {
                 });
             });
         } else {
-            await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text);
         }
     }));
     SlHackers.addCommand({ pattern: 'jid ?(.*)', fromMe: true, desc: Lang.JID_DESC }, (async (message, match) => {
@@ -175,7 +175,7 @@ else if (Config.WORKTYPE == 'public') {
                 });
             });
         } else {
-            await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.JID_CHAT.format(message.jid), MessageType.text);
         }
     }));
 }

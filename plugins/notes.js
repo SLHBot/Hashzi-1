@@ -66,7 +66,7 @@ SlHackers.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAG
 
     if (userNote) {
         await NotesDB.saveNote(userNote)
-        await message.sendMessage(successfullMessage(Lang.SUCCESSFULLY_ADDED), MessageType.text, { quoted: message.data })
+        await message.sendMessage(successfullMessage(Lang.SUCCESSFULLY_ADDED), MessageType.text)
 
         return
 
@@ -85,13 +85,13 @@ SlHackers.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAG
                 const randomFileName = savedFileName.split('.')[0] + Math.floor(Math.random() * 50) + path.extname(savedFileName)
                 await fs.copyFile(savedFileName, path.resolve('media', randomFileName))
                 await NotesDB.saveNote("IMG;;;" + randomFileName)
-                await message.sendMessage(successfullMessage(Lang.SUCCESSFULLY_ADDED), MessageType.text, { quoted: message.data })
+                await message.sendMessage(successfullMessage(Lang.SUCCESSFULLY_ADDED), MessageType.text)
 
 
             }
 
             await NotesDB.saveNote(message.reply_message.text)
-            await message.sendMessage(successfullMessage(Lang.SUCCESSFULLY_ADDED), MessageType.text, { quoted: message.data })
+            await message.sendMessage(successfullMessage(Lang.SUCCESSFULLY_ADDED), MessageType.text)
 
             return
         }

@@ -60,10 +60,10 @@ SlHackers.addCommand({ pattern: 'hiruz ?(.*)', fromMe: true, desc: Lang.INSTALL_
         }
 
         await Db.installPlugin(url, plugin_name);
-        await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.INSTALLED, MessageType.text);
         if (!match[1].includes('Hirusha21')) {
             await new Promise(r => setTimeout(r, 400));
-            await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text);
         }
     }
 }));
@@ -80,7 +80,7 @@ SlHackers.addCommand({ pattern: 'pluglist', fromMe: true, desc: Lang.PLUGIN_DESC
                 mesaj += '```' + plugin.dataValues.name + '```: ' + '🧚‍♂️ \n' + vf + '\n\n';
             }
         );
-        return await message.client.sendMessage(message.jid, mesaj, MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(message.jid, mesaj, MessageType.text);
     }
 }));
 
@@ -89,12 +89,12 @@ SlHackers.addCommand({ pattern: 'hirux(?: |$)(.*)', fromMe: true, desc: Lang.REM
     if (!match[1].startsWith('.')) match[1] = '.' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: { name: match[1] } });
     if (plugin.length < 1) {
-        return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text, { quoted: message.data });
+        return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text);
     } else {
         await plugin[0].destroy();
         delete require.cache[require.resolve('./' + match[1] + '.js')]
         fs.unlinkSync('./plugins/' + match[1] + '.js');
-        await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text);
 
         await new Promise(r => setTimeout(r, 1000));
 

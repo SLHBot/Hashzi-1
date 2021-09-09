@@ -9,7 +9,7 @@ const ffmpeg = require('fluent-ffmpeg');
 const FIND_DESC = "Finds the Song"
 
 SlHackers.addCommand({ pattern: 'search', fromMe: false, desc: FIND_DESC }, (async (message, match) => {
-    if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*අනිවාර්යයෙන් ඔබ mp3 එකකට reply දැමිය යුතුයි⚡SLHackers!*', MessageType.text, { quoted: message.data });
+    if (message.reply_message === false) return await message.client.sendMessage(message.jid, '*අනිවාර්යයෙන් ඔබ mp3 එකකට reply දැමිය යුතුයි⚡SLHackers!*', MessageType.text);
     var filePath = await message.client.downloadAndSaveMediaMessage({
         key: {
             remoteJid: message.reply_message.jid,
@@ -30,9 +30,9 @@ SlHackers.addCommand({ pattern: 'search', fromMe: false, desc: FIND_DESC }, (asy
         await axios.post('https://api.audd.io/', form, configs).then(async (response) => {
             var res = response.data
             if (res === 'success') {
-                await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, `Title: ${res.title}\nArtist: ${res.artist}`, MessageType.text);
             } else {
-                await message.client.sendMessage(message.jid, '*කණගාටුයි හමුනොවීය..', MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, '*කණගාටුයි හමුනොවීය..', MessageType.text);
             }
         }).catch((error) => {
             console.log(error);

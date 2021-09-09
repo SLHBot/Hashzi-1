@@ -88,10 +88,10 @@ SlHackers.addCommand({ pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_N
                 var app = await heroku.get('/apps/' + Config.HEROKU.APP_NAME)
             } catch {
                 await message.client.sendMessage(
-                    message.jid, Lang.INVALID_HEROKU, MessageType.text, { quoted: message.data });
+                    message.jid, Lang.INVALID_HEROKU, MessageType.text);
                 await new Promise(r => setTimeout(r, 1000));
                 return await message.client.sendMessage(
-                    message.jid, Lang.IN_AF, MessageType.text, { quoted: message.data });
+                    message.jid, Lang.IN_AF, MessageType.text);
             }
 
             git.fetch('upstream', Config.BRANCH);
@@ -107,7 +107,7 @@ SlHackers.addCommand({ pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_N
             await git.push('heroku', Config.BRANCH);
 
             await message.client.sendMessage(
-                message.jid, Lang.UPDATED, MessageType.text, { quoted: message.data });
+                message.jid, Lang.UPDATED, MessageType.text);
 
             await message.sendMessage(Lang.AFTER_UPDATE);
 
@@ -115,11 +115,11 @@ SlHackers.addCommand({ pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_N
             git.pull((async (err, update) => {
                 if (update && update.summary.changes) {
                     await message.client.sendMessage(
-                        message.jid, Lang.UPDATED_LOCAL, MessageType.text, { quoted: message.data });
+                        message.jid, Lang.UPDATED_LOCAL, MessageType.text);
                     exec('npm install').stderr.pipe(process.stderr);
                 } else if (err) {
                     await message.client.sendMessage(
-                        message.jid, '*හෙරොකු API වෙනස් වී ඇත!*\n*♦:* ```' + err + '```', MessageType.text, { quoted: message.data });
+                        message.jid, '*හෙරොකු API වෙනස් වී ඇත!*\n*♦:* ```' + err + '```', MessageType.text);
                 }
             }));
             await guncelleme.delete();

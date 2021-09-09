@@ -23,9 +23,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39049`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -33,9 +33,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39050`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -43,9 +43,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39053`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -53,9 +53,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39055`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -63,9 +63,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39056`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -73,9 +73,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39059`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -83,9 +83,9 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39061`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -98,9 +98,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39049`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -108,9 +108,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39050`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -118,9 +118,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39053`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -128,9 +128,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39055`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -138,9 +138,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39056`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -148,9 +148,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39059`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 
@@ -158,9 +158,9 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39061`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, EEEEEEEDU_SLHEDU, MessageType.text);
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAAME })
 
     }));
 

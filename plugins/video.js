@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'public') {
 
         await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
 
     }));
 
@@ -43,7 +43,7 @@ else if (Config.WORKTYPE == 'private') {
 
         await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.video, { filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME })
 
     }));
 

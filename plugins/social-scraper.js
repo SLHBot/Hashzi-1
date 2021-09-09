@@ -47,9 +47,9 @@ if (cn.WORKTYPE == 'private') {
 
       const userName = match[1]
 
-      if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text, { quoted: message.data })
+      if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
 
-      await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text, { quoted: message.data })
+      await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
 
       await axios
         .get(`https://shinoa-rest.herokuapp.com/dl/tiktok?link=${userName}`)
@@ -67,7 +67,7 @@ if (cn.WORKTYPE == 'private') {
           })
         })
         .catch(
-          async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text, { quoted: message.data }),
+          async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
         )
     },
   )
@@ -132,9 +132,9 @@ else if (cn.WORKTYPE == 'public') {
 
       const userName = match[1]
 
-      if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text, { quoted: message.data })
+      if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
 
-      await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text, { quoted: message.data })
+      await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
 
       await axios
         .get(`https://api.xteam.xyz/dl/tiktok?url=${userName}&APIKEY=1d372151fb9f8bc5`)
@@ -152,7 +152,7 @@ else if (cn.WORKTYPE == 'public') {
           })
         })
         .catch(
-          async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text, { quoted: message.data }),
+          async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
         )
     },
   )
@@ -160,9 +160,9 @@ else if (cn.WORKTYPE == 'public') {
 
       const userName = match[1]
 
-      if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text, { quoted: message.data })
+      if (!userName) return await message.client.sendMessage(message.jid, Tlang.NEED, MessageType.text)
 
-      await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text, { quoted: message.data })
+      await message.client.sendMessage(message.jid, Tlang.DOWN, MessageType.text)
 
       await axios
         .get(`https://shinoa-rest.herokuapp.com/dl/tiktok?link=${userName}`)
@@ -180,7 +180,7 @@ else if (cn.WORKTYPE == 'public') {
           })
         })
         .catch(
-          async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text, { quoted: message.data }),
+          async (err) => await message.client.sendMessage(message.jid, Tlang.NOT + userName, MessageType.text),
         )
     },
   )

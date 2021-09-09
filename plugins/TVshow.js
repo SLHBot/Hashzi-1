@@ -24,12 +24,12 @@ const { errorMessage, infoMessage } = require('../helpers');
     '*🎧 ' + Lang.ALBUM +':* ```' + json.result.album + '```\n' + 
     '*🔊 ' + Lang.TITLE +':* ```' + json.result.judul + '```\n' +
     '*🎚️ ' + Lang.PUBLICATION +':* ```' + json.result.dipublikasi + '```\n' + 
-    '*🎙️ ' + Lang.SONGL +':* ```' + json.result.mp3 + '```\n' , MessageType.text, { quoted: message.data });
+    '*🎙️ ' + Lang.SONGL +':* ```' + json.result.mp3 + '```\n' , MessageType.text);
   	
     return await message.sendMessage(from,await getBuffer(`json.result.mp3`, {method: 'get'})  , MessageType.audio, {quoted: mek, mimetype: Mimetype.mp4audio, ptt: true});
     
   } catch {
-    return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDS, MessageType.text, { quoted: message.data });
+    return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDS, MessageType.text);
   }
 });*/
 
@@ -169,7 +169,7 @@ SlHackers.addCommand({ pattern: 'show ?(.*)', fromMe: false, desc: "Get info rel
 
       const msg = `*${"Name"}*: ${name}\n*${"Type"}*: ${type}\n*${"Type"}*: ${status}\n*${"Summary"}*: ${summary}\n*${"Official Site"}*: ${officialSite}`
 
-      await message.client.sendMessage(message.jid, msg, MessageType.text, { quoted: message.data });
+      await message.client.sendMessage(message.jid, msg, MessageType.text);
     })
     .catch(
       async (err) => await message.sendMessage(errorMessage("Not Found")),

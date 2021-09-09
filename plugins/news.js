@@ -52,9 +52,9 @@ if (Config.WORKTYPE == 'private') {
 				'*👉 ' + Lang.RMLINK + ':* ```' + json.data[9].readMoreUrl + '```\n\n' +
 				'*◼️ ' + Lang.NEWST + ':* ```' + json.data[10].title + '```\n' +
 				'*📰 ' + Lang.NEWS + ':* ```' + json.data[10].content + '```\n' +
-				'*👉 ' + Lang.RMLINK + ':* ```' + json.data[10].readMoreUrl + '```\n\n', MessageType.text, { quoted: message.data });
+				'*👉 ' + Lang.RMLINK + ':* ```' + json.data[10].readMoreUrl + '```\n\n', MessageType.text);
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDC, MessageType.text, { quoted: message.data });
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDC, MessageType.text);
 		}
 	});
 }
@@ -101,9 +101,9 @@ else if (Config.WORKTYPE == 'public') {
 				'*👉 ' + Lang.RMLINK + ':* ```' + json.data[9].readMoreUrl + '```\n\n' +
 				'*◼️ ' + Lang.NEWST + ':* ```' + json.data[10].title + '```\n' +
 				'*📰 ' + Lang.NEWS + ':* ```' + json.data[10].content + '```\n' +
-				'*👉 ' + Lang.RMLINK + ':* ```' + json.data[10].readMoreUrl + '```\n\n', MessageType.text, { quoted: message.data });
+				'*👉 ' + Lang.RMLINK + ':* ```' + json.data[10].readMoreUrl + '```\n\n', MessageType.text);
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDC, MessageType.text, { quoted: message.data });
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDC, MessageType.text);
 		}
 	});
 }

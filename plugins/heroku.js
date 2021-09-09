@@ -27,15 +27,15 @@ let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC }, (async (message, match) => {
 
     if (match[1] == '') {
-        return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text);
     }
     else if (!message.reply_message) {
-        return await message.client.sendMessage(message.jid, Langr.NEED_REPLY, MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(message.jid, Langr.NEED_REPLY, MessageType.text);
     }
     else if (match[1] == 'ban' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['BAN_MESSAGE']: message.reply_message.text
@@ -43,19 +43,19 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'welcome' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await sql.setMessage(message.jid, 'welcome', message.reply_message.text)
-        await message.client.sendMessage(message.jid, Lang.GR_DEL, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.GR_DEL, MessageType.text);
     }
     else if (match[1] == 'goodbye' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await sql.setMessage(message.jid, 'goodbye', message.reply_message.text)
-        await message.client.sendMessage(message.jid, Lang.GR_DEL, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.GR_DEL, MessageType.text);
     }
     else if (match[1] == 'mute' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['MUTE_MESSAGE']: message.reply_message.text
@@ -63,9 +63,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'unmute' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['UNMUTE_MESSAGE']: message.reply_message.text
@@ -73,9 +73,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'add' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['ADD_MESSAGE']: message.reply_message.text
@@ -83,9 +83,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'kickme' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['KICKME_MESSAGE']: message.reply_message.text
@@ -93,9 +93,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'afk' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['AFK_MESSAGE']: message.reply_message.text
@@ -103,9 +103,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'alive' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['ALIVE_MESSAGE']: message.reply_message.text
@@ -113,9 +113,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'demote' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['DEMOTE_MESSAGE']: message.reply_message.text
@@ -123,9 +123,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'promote' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['PROMOTE_MESSAGE']: message.reply_message.text
@@ -133,9 +133,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'block' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['BLOCK_MESSAGE']: message.reply_message.text
@@ -143,9 +143,9 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (match[1] == 'unblock' && message.reply_message) {
-        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC, MessageType.text);
         await new Promise(r => setTimeout(r, 1200));
-        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SUCC_AF, MessageType.text);
         await heroku.patch(baseURI + '/config-vars', {
             body: {
                 ['UNBLOCK_MESSAGE']: message.reply_message.text
@@ -153,17 +153,17 @@ SlHackers.addCommand({ pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_D
         });
     }
     else if (!match[1] == 'unblock' || !match[1] == 'welcome' || !match[1] == 'goodbye' || !match[1] == 'add' || !match[1] == 'block' || !match[1] == 'mute' || !match[1] == 'unmute' || !match[1] == 'afk' || !match[1] == 'alive' || !match[1] == 'demote' || !match[1] == 'promote' || !match[1] == 'ban' || !match[1] == 'kickme' && message.reply_message) {
-        return await message.client.sendMessage(message.jid, Lang.WR, MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(message.jid, Lang.WR, MessageType.text);
     }
 }));
 
 
 SlHackers.addCommand({ pattern: 'restart$', fromMe: true, desc: Lang.RESTART_DESC }, (async (message, match) => {
 
-    await message.client.sendMessage(message.jid, Lang.RESTART_MSG, MessageType.text, { quoted: message.data });
+    await message.client.sendMessage(message.jid, Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
     await heroku.delete(baseURI + '/dynos').catch(async (error) => {
-        await message.client.sendMessage(message.jid, error.message, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, error.message, MessageType.text);
     });
 }));
 
@@ -171,14 +171,14 @@ SlHackers.addCommand({ pattern: 'shutdown$', fromMe: true, desc: Lang.SHUTDOWN_D
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
-        await message.client.sendMessage(message.jid, Lang.SHUTDOWN_MSG, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.SHUTDOWN_MSG, MessageType.text);
         await heroku.patch(baseURI + '/formation/' + forID, {
             body: {
                 quantity: 0
             }
         });
     }).catch(async (err) => {
-        await message.client.sendMessage(message.jid, error.message, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, error.message, MessageType.text);
     });
 }));
 
@@ -211,7 +211,7 @@ if (Config.WORKTYPE == 'private') {
                     MessageType.text
                 );
             }).catch(async (err) => {
-                await message.client.sendMessage(message.jid, err.message, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, err.message, MessageType.text);
             });
         });
     }));
@@ -244,7 +244,7 @@ else if (Config.WORKTYPE == 'public') {
                     MessageType.text
                 );
             }).catch(async (err) => {
-                await message.client.sendMessage(message.jid, err.message, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, err.message, MessageType.text);
             });
         });
     }));
@@ -252,7 +252,7 @@ else if (Config.WORKTYPE == 'public') {
 
 SlHackers.addCommand({ pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC }, (async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.KEY_VAL_MISSING, MessageType.text, { quoted: message.data });
+    if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.KEY_VAL_MISSING, MessageType.text);
 
     // ================================================== CONFIG SCANNER ==================================================
     if (match[1] == 'SEND_READ: true' || match[1] == 'SEND_READ: True' || match[1] == 'SEND_READ: TRUE' || match[1] == 'SEND_READ:True' || match[1] == 'SEND_READ:TRUE' || match[1] == 'SEND_READ:ture' || match[1] == 'SEND_READ: ture' || match[1] == 'SEND_READ:ttue' || match[1] == 'SEND_READ:trie' || match[1] == 'SEND_READ: trie' || match[1] == 'SEND_READ:Trie' || match[1] == 'SEND_READ: Trie') {
@@ -658,17 +658,17 @@ SlHackers.addCommand({ pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_
                 [varKey]: varValue
             }
         }).then(async (app) => {
-            await message.client.sendMessage(message.jid, Lang.SET_SUCCESS.format(varKey, varValue), MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.SET_SUCCESS.format(varKey, varValue), MessageType.text);
         });
     } else {
-        await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
     }
 }));
 
 
 SlHackers.addCommand({ pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC }, (async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.KEY_VAL_MISSING, MessageType.text, { quoted: message.data });
+    if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         key = match[1].trim();
         for (vr in vars) {
@@ -678,25 +678,25 @@ SlHackers.addCommand({ pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_
                         [key]: null
                     }
                 });
-                return await message.client.sendMessage(message.jid, Lang.DEL_SUCCESS.format(key), MessageType.text, { quoted: message.data });
+                return await message.client.sendMessage(message.jid, Lang.DEL_SUCCESS.format(key), MessageType.text);
             }
         }
-        await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
     }).catch(async (error) => {
-        await message.client.sendMessage(message.jid, error.message, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, error.message, MessageType.text);
     });
 
 }));
 
 SlHackers.addCommand({ pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC }, (async (message, match) => {
 
-    if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.KEY_VAL_MISSING, MessageType.text, { quoted: message.data });
+    if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
         for (vr in vars) {
             if (match[1].trim() == vr) return await message.sendMessage("```{} - {}```".format(vr, vars[vr]));
         }
-        await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, Lang.NOT_FOUND, MessageType.text);
     }).catch(async (error) => {
-        await message.client.sendMessage(message.jid, error.message, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, error.message, MessageType.text);
     });
 }));

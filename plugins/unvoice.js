@@ -38,7 +38,7 @@ if (Config.WORKTYPE == 'private') {
     SlHackers.addCommand({ pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
-        var downloading = await message.client.sendMessage(message.jid, Lang.UV_PROC, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(message.jid, Lang.UV_PROC, MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -61,7 +61,7 @@ else if (Config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'unvoice', fromMe: false, desc: Lang.UV_DESC }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
-        var downloading = await message.client.sendMessage(message.jid, Lang.UV_PROC, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(message.jid, Lang.UV_PROC, MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,
@@ -100,7 +100,7 @@ else if (Config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'unvoice', fromMe: true, desc: Lang.UV_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage(Lang.UV_REPLY);
-        var downloading = await message.client.sendMessage(message.jid, Lang.UV_PROC, MessageType.text, { quoted: message.data });
+        var downloading = await message.client.sendMessage(message.jid, Lang.UV_PROC, MessageType.text);
         var location = await message.client.downloadAndSaveMediaMessage({
             key: {
                 remoteJid: message.reply_message.jid,

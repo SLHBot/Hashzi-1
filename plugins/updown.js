@@ -166,7 +166,7 @@ if (pb.WORKTYPE == 'private') {
                 index2 = string.split('')
                 for (let j = 0; j < index1.length; j++) {
                     while (index1[j] != index2[j]) {
-                        return await message.client.sendMessage(message.jid, msg + command[i] + '```', MessageType.text, { quoted: message.data })
+                        return await message.client.sendMessage(message.jid, msg + command[i] + '```', MessageType.text)
                     }
                 }
                 return;
@@ -176,7 +176,7 @@ if (pb.WORKTYPE == 'private') {
             }
         }
         if(sml.length < 1) return;
-        await message.client.sendMessage(message.jid, msg + sml, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, msg + sml, MessageType.text)
 
     }));
 }
@@ -340,7 +340,7 @@ else if (pb.WORKTYPE == 'public') {
                 index2 = string.split('')
                 for (let j = 0; j < index1.length; j++) {
                     while (index1[j] != index2[j]) {
-                        return await message.client.sendMessage(message.jid, msg + command[i] + '```', MessageType.text, { quoted: message.data })
+                        return await message.client.sendMessage(message.jid, msg + command[i] + '```', MessageType.text)
                     }
                 }
                 return;
@@ -350,7 +350,7 @@ else if (pb.WORKTYPE == 'public') {
             }
         }
         if(sml.length < 1) return;
-        await message.client.sendMessage(message.jid, msg + sml, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, msg + sml, MessageType.text)
 
     }));
     SlHackers.addCommand({ pattern: '.', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
@@ -512,7 +512,7 @@ else if (pb.WORKTYPE == 'public') {
                 index2 = string.split('')
                 for (let j = 0; j < index1.length; j++) {
                     while (index1[j] != index2[j]) {
-                        return await message.client.sendMessage(message.jid, msg + command[i] + '```', MessageType.text, { quoted: message.data })
+                        return await message.client.sendMessage(message.jid, msg + command[i] + '```', MessageType.text)
                     }
                 }
                 return;
@@ -522,7 +522,7 @@ else if (pb.WORKTYPE == 'public') {
             }
         }
         if(sml.length < 1) return;
-        await message.client.sendMessage(message.jid, msg + sml, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, msg + sml, MessageType.text)
 
     }));
 }

@@ -338,7 +338,7 @@ SlHackers.addCommand({ pattern: 'eva ?(.*)', desc: fulleva_dsc, fromMe: true, us
     var eva_status = `${conf.FULLEVA}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
-            return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text, { quoted: message.data })
+            return await message.client.sendMessage(message.jid, '*' + already_on + '*', MessageType.text)
         }
         else {
             await heroku.patch(baseURI + '/config-vars', {
@@ -346,12 +346,12 @@ SlHackers.addCommand({ pattern: 'eva ?(.*)', desc: fulleva_dsc, fromMe: true, us
                     ['FULL_EVA']: 'true'
                 }
             });
-            await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text, { quoted: message.data })
+            await message.client.sendMessage(message.jid, '*' + succ_on + '*', MessageType.text)
         }
     }
     else if (match[1] == 'off') {
         if (eva_status !== 'true') {
-            return await message.client.sendMessage(message.jid, '*' + already_off + '*', MessageType.text, { quoted: message.data })
+            return await message.client.sendMessage(message.jid, '*' + already_off + '*', MessageType.text)
         }
         else {
             await heroku.patch(baseURI + '/config-vars', {
@@ -359,7 +359,7 @@ SlHackers.addCommand({ pattern: 'eva ?(.*)', desc: fulleva_dsc, fromMe: true, us
                     ['FULL_EVA']: 'false'
                 }
             });
-            await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text, { quoted: message.data })
+            await message.client.sendMessage(message.jid, '*' + succ_off + '*', MessageType.text)
         }
     }
 }));

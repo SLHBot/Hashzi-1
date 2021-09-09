@@ -20,9 +20,9 @@ if (Config.WORKTYPE == 'private') {
 
             const json = JSON.parse(response.body);
 
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'Result      : *' + json.message + '* \n\n' + 'DOWNLOAD URL      : *' + json.result + '*', MessageType.text, { quoted: message.data });
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'Result      : *' + json.message + '* \n\n' + 'DOWNLOAD URL      : *' + json.result + '*', MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
     });
 }
@@ -36,9 +36,9 @@ else if (Config.WORKTYPE == 'public') {
 
             const json = JSON.parse(response.body);
 
-            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'Result      : *' + json.message + '* \n\n' + 'DOWNLOAD URL      : *' + json.result + '*', MessageType.text, { quoted: message.data });
+            if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'Result      : *' + json.message + '* \n\n' + 'DOWNLOAD URL      : *' + json.result + '*', MessageType.text);
         } catch {
-            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
     });
     SlHackers.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {

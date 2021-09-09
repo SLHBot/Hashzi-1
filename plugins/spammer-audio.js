@@ -10,7 +10,7 @@ const Lang = Language.getString('spammer');
 
 SlHackers.addCommand({ pattern: 'audio spam$', fromMe: true, desc: Lang.AU_DESC }, (async (message, match) => {
 
-    if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.AU_REP, MessageType.text, { quoted: message.data });
+    if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.AU_REP, MessageType.text);
 
     var location = await message.client.downloadAndSaveMediaMessage({
         key: {

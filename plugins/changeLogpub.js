@@ -7,7 +7,7 @@ const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 if (Config.WORKTYPE == 'public') {
-    SlHackers.addCommand({ pattern: 'cnlog1', fromMe: false, desc: Lang.UP }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'cnlog', fromMe: false, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -25,7 +25,6 @@ if (Config.WORKTYPE == 'public') {
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
-            quoted: message.data,
             mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs ○▷*
 
  *🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.4*

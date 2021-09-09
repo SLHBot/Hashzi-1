@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
 
     const link = match[1]
 
-    if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
+    if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
     await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text, { quoted: message.data });
     await axios
       .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=${Config.ASENA_PLUG}&q=${link}`)
@@ -50,7 +50,7 @@ else if (Config.WORKTYPE == 'public') {
     const link = match[1]
 
     if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
-    await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text, { quoted: message.data })
+    await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text)
     await axios
       .get(`https://api.zeks.xyz/api/ytplaymp4/2?apikey=${Config.ASENA_PLUG}&q=${link}`)
       .then(async (response) => {

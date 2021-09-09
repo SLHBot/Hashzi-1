@@ -20,9 +20,9 @@ if (Config.WORKTYPE == 'private') {
 
 			const json = JSON.parse(response.body);
 
-			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'FILE NAME: *' + json.filename + '* \n\n' + 'DOWNLOAD URL: *' + json.url + '* \n\n' + 'SIZE: *' + json.filesize + '* \n\n' + 'UPLOAD DATE & TIME: *' + json.uploaded + '* \n\n' + 'FILE TYPE: *' + json.filetype + '*\n\n\n' + 'SLHACKERS TEAM HACKED DETAILS: *' + json.desc + '*', MessageType.text, { quoted: message.data });
+			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'FILE NAME: *' + json.filename + '* \n\n' + 'DOWNLOAD URL: *' + json.url + '* \n\n' + 'SIZE: *' + json.filesize + '* \n\n' + 'UPLOAD DATE & TIME: *' + json.uploaded + '* \n\n' + 'FILE TYPE: *' + json.filetype + '*\n\n\n' + 'SLHACKERS TEAM HACKED DETAILS: *' + json.desc + '*', MessageType.text);
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
 		}
 	});
 }
@@ -36,9 +36,9 @@ else if (Config.WORKTYPE == 'public') {
 
 			const json = JSON.parse(response.body);
 
-			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'FILE NAME: *' + json.filename + '* \n\n' + 'DOWNLOAD URL: *' + json.url + '* \n\n' + 'SIZE: *' + json.filesize + '* \n\n' + 'UPLOAD DATE & TIME: *' + json.uploaded + '* \n\n' + 'FILE TYPE: *' + json.filetype + '* \n\n\n' + 'SLHACKERS TEAM HACKED DETAILS: *' + json.desc + '*', MessageType.text, { quoted: message.data });
+			if (response.statusCode === 200) return await message.client.sendMessage(message.jid, 'FILE NAME: *' + json.filename + '* \n\n' + 'DOWNLOAD URL: *' + json.url + '* \n\n' + 'SIZE: *' + json.filesize + '* \n\n' + 'UPLOAD DATE & TIME: *' + json.uploaded + '* \n\n' + 'FILE TYPE: *' + json.filetype + '* \n\n\n' + 'SLHACKERS TEAM HACKED DETAILS: *' + json.desc + '*', MessageType.text);
 		} catch {
-			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text, { quoted: message.data });
+			return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
 		}
 	});
 	SlHackers.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {

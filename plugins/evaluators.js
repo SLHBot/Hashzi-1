@@ -39,9 +39,9 @@ if (Config.LANG == 'RU') dd = 'Печатает внутреннюю часть 
 SlHackers.addCommand({ pattern: 'print ?(.*)', fromMe: true, desc: dd }, (async (message, match) => {
     exec('cat ' + match[1], async (err, stdout, stderr) => {
         if (err) {
-            return await message.client.sendMessage(message.jid, errmsg, MessageType.text, { quoted: message.data })
+            return await message.client.sendMessage(message.jid, errmsg, MessageType.text)
         }
-        await message.client.sendMessage(message.jid, `Root ~# ${match[1]} \n\n` + stdout, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, `Root ~# ${match[1]} \n\n` + stdout, MessageType.text)
     });
 }));
 var bdesc = ''
@@ -70,10 +70,10 @@ SlHackers.addCommand({ pattern: 'bashmedia ?(.*)', fromMe: wk_q, desc: bdesc, us
             await message.client.sendMessage(id, fs.readFileSync(`/root/WhatsAsenaDuplicated/${match[1]}`), MessageType.audio);
         }
         else {
-            await message.client.sendMessage(id, need_way, MessageType.text, { quoted: message.data })
+            await message.client.sendMessage(id, need_way, MessageType.text)
         }
     } catch (err) {
-        await message.client.sendMessage(id, berr, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(id, berr, MessageType.text)
     }
 }));
 let wk_ad = Config.WORKTYPE == 'public' ? false : true
@@ -101,7 +101,7 @@ SlHackers.addCommand({ pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc }, (
         });
         var fin = location.split('.')[1]
         exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-image.' + fin)
-        await message.client.sendMessage(message.jid, suc_add, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, suc_add, MessageType.text)
     }
     else if (message.reply_message.video) {
         var location = await message.client.downloadAndSaveMediaMessage({
@@ -114,7 +114,7 @@ SlHackers.addCommand({ pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc }, (
         });
         var fin = location.split('.')[1]
         exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-video.' + fin)
-        await message.client.sendMessage(message.jid, suc_add, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, suc_add, MessageType.text)
     }
     else if (message.reply_message.audio) {
         var location = await message.client.downloadAndSaveMediaMessage({
@@ -127,10 +127,10 @@ SlHackers.addCommand({ pattern: 'addserver$', fromMe: wk_ad, desc: addsdesc }, (
         });
         var fin = location.split('.')[1]
         exec('mv ' + location + ' /root/WhatsAsenaDuplicated/server-audio.' + fin)
-        await message.client.sendMessage(message.jid, suc_add, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, suc_add, MessageType.text)
     }
     else {
-        await message.client.sendMessage(message.jid, rep_add, MessageType.text, { quoted: message.data })
+        await message.client.sendMessage(message.jid, rep_add, MessageType.text)
     }
 }));
 async function checkUsAdmin(message, user = message.data.participant) {
@@ -197,14 +197,14 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
 SlHackers.addCommand({ pattern: 'term ?(.*)', fromMe: true, desc: Lang.TERM_DESC }, (async (message, match) => {
     var user = message.client.user.name
     var id = message.jid
-    if (match[1] === '') return await message.client.sendMessage(id, Lang.GIVE_ME_CODE, MessageType.text, { quoted: message.data });
+    if (match[1] === '') return await message.client.sendMessage(id, Lang.GIVE_ME_CODE, MessageType.text);
 
     exec(match[1], async (err, stdout, stderr) => {
         if (err) {
-            return await message.client.sendMessage(id, '```' + user + ':~# ' + match[1] + '\n' + err + '```', MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(id, '```' + user + ':~# ' + match[1] + '\n' + err + '```', MessageType.text);
         }
 
-        return await message.client.sendMessage(id, '```' + user + ':~# ' + match[1] + '\n' + stdout + '```', MessageType.text, { quoted: message.data });
+        return await message.client.sendMessage(id, '```' + user + ':~# ' + match[1] + '\n' + stdout + '```', MessageType.text);
     });
 }));
 let wk = Config.WORKTYPE == 'public' ? false : true
@@ -232,7 +232,7 @@ SlHackers.addCommand({ pattern: 'mediainfo$', fromMe: wk, desc: medinfo }, (asyn
         exec('mv ' + location + ' /root/WhatsAsenaDuplicated/vid.mp4')
         exec('ffprobe -hide_banner -loglevel fatal -show_error -show_format -show_streams -show_programs -show_chapters -show_private_data -print_format json /root/WhatsAsenaDuplicated/vid.mp4', async (err, st, stderr) => {
             if (err) {
-                return await message.client.sendMessage(id, '*Error:* \n\n' + err, MessageType.text, { quoted: message.data });
+                return await message.client.sendMessage(id, '*Error:* \n\n' + err, MessageType.text);
             }
             var stdout = JSON.parse(st)
             let
@@ -254,10 +254,10 @@ SlHackers.addCommand({ pattern: 'mediainfo$', fromMe: wk, desc: medinfo }, (asyn
             schannel = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '\n*Ses Kanalları:* ' : '\n*Audio Channels:* '
             schome = Config.LANG == 'TR' || Config.LANG == 'AZ' ? '\n*Ses Kanalı Yerleşimi:* ' : '\n*Audio Channel Layout:* '
             var msgi = vsize + stdout.format.size / 1000000 + 'MB' + vlength + stdout.streams[0].duration + second + vrvalue + stdout.streams[0].width + 'p' + vpvalue + stdout.streams[0].width + 'x' + stdout.streams[0].height + vpformat + stdout.streams[0].pix_fmt + vcprofile + stdout.streams[0].codec_name + vctag + stdout.streams[0].codec_tag_string + srvalue + stdout.streams[0].sample_aspect_ratio + vrvalue + stdout.streams[0].display_aspect_ratio + vfps + stdout.streams[0].r_frame_rate.split('/')[0] + vavgfps + stdout.streams[0].avg_frame_rate.split('/')[0] + sctip + stdout.streams[1].codec_name + sctag + stdout.streams[1].codec_tag_string + shzvalue + stdout.streams[1].sample_rate + schannel + stdout.streams[1].channels + schome + stdout.streams[1].channel_layout
-            return await message.client.sendMessage(id, msgi, MessageType.text, { quoted: message.data });
+            return await message.client.sendMessage(id, msgi, MessageType.text);
         });
     } else {
-        return await message.client.sendMessage(id, SLang.MP4TOAUDİO_NEEDREPLY, MessageType.text, { quoted: message.data })
+        return await message.client.sendMessage(id, SLang.MP4TOAUDİO_NEEDREPLY, MessageType.text)
     }
 }));
 var sucmsg = ''
@@ -273,15 +273,15 @@ if (Config.LANG == 'RU') sucmsg = '*Сообщение успешно отпра
 if (Config.LANG == 'ID') sucmsg = '*Pesan Berhasil Terkirim ✅*', pmmm = 'Mengirim pesan pribadi ke orang yang dibalas.', psmm = 'Mengirim pesan suara pribadi ke responden.'
 if (Config.LANG == 'PT') sucmsg = '*Mensagem enviada com sucesso ✅*', pmmm = 'Envia uma mensagem privada para a pessoa respondida.', psmm = 'Envia uma mensagem de voz privada para o entrevistado.'
 SlHackers.addCommand({ pattern: 'pmsend ?(.*)', fromMe: true, desc: pmmm }, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid, NLang.NEED_REPLY, MessageType.text, { quoted: message.data });
-    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text, { quoted: message.data });
+    if (!message.reply_message) return await message.client.sendMessage(message.jid, NLang.NEED_REPLY, MessageType.text);
+    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text);
     const uspm = message.reply_message.jid
-    await message.client.sendMessage(uspm, `${match[1]}`, MessageType.text, { quoted: message.data });
-    await message.client.sendMessage(message.jid, sucmsg, MessageType.text, { quoted: message.data });
+    await message.client.sendMessage(uspm, `${match[1]}`, MessageType.text);
+    await message.client.sendMessage(message.jid, sucmsg, MessageType.text);
 }));
 SlHackers.addCommand({ pattern: 'pmttssend ?(.*)', fromMe: true, desc: psmm }, (async (message, match) => {
-    if (!message.reply_message) return await message.client.sendMessage(message.jid, NLang.NEED_REPLY, MessageType.text, { quoted: message.data });
-    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text, { quoted: message.data });
+    if (!message.reply_message) return await message.client.sendMessage(message.jid, NLang.NEED_REPLY, MessageType.text);
+    if (message.reply_message && match[1] == '') return await message.client.sendMessage(message.jid, NLang.NEED_WORDS, MessageType.text);
     let
         LANG = Config.LANG.toLowerCase(),
         ttsMessage = match[1],
@@ -303,6 +303,6 @@ SlHackers.addCommand({ pattern: 'pmttssend ?(.*)', fromMe: true, desc: psmm }, (
     fs.writeFileSync('tts.mp3', buffer);
 
     await message.client.sendMessage(message.reply_message.jid, fs.readFileSync('tts.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, ptt: true });
-    await message.client.sendMessage(message.jid, sucmsg, MessageType.text, { quoted: message.data });
+    await message.client.sendMessage(message.jid, sucmsg, MessageType.text);
 
 }));

@@ -22,7 +22,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 SlHackers.addCommand({ pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid, Lang.ADMİN, MessageType.text, { quoted: message.data });
+    if (!im) return await message.client.sendMessage(message.jid, Lang.ADMİN, MessageType.text);
 
     if (match[1] !== '') {
         grup = await message.client.groupMetadata(message.jid);

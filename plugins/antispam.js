@@ -14,57 +14,57 @@ SlHackers.addCommand({ pattern: 'antispm', fromMe: true, deleteCommand: false, d
   var msg = await message.reply('Preforming....');
 
   await message.client.sendMessage(
-    message.jid, TMUTE, MessageType.text, { quoted: message.data });
+    message.jid, TMUTE, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, MUT, MessageType.text, { quoted: message.data });
+    message.jid, MUT, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, SCXR, MessageType.text, { quoted: message.data });
+    message.jid, SCXR, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, code, MessageType.text, { quoted: message.data });
+    message.jid, code, MessageType.text);
 
   await message.client.sendMessage(
-    message.jid, FINAL, MessageType.text, { quoted: message.data });
+    message.jid, FINAL, MessageType.text);
 
 }));

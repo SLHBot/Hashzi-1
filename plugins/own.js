@@ -21,7 +21,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
 
     SlHackers.addCommand({ pattern: 'setown ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, deleteCommand: true }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text, { quoted: message.data });
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
 
         if (varValue = match[1]) {
             await heroku.patch(baseURI + '/config-vars', {
@@ -29,11 +29,11 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
                     [Name]: varValue
                 }
             }).then(async (app) => {
-                await message.client.sendMessage(message.jid, Lang.SET_SUCCESS.format(Msg, varValue) + '\n\n' + Lang.RESTART_MSG, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, Lang.SET_SUCCESS.format(Msg, varValue) + '\n\n' + Lang.RESTART_MSG, MessageType.text);
 
             });
         } else {
-            await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
         }
     }));
 
@@ -165,7 +165,7 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
 
     SlHackers.addCommand({ pattern: 'setown ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC, deleteCommand: true }, (async (message, match) => {
 
-        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text, { quoted: message.data });
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
 
         if (varValue = match[1]) {
             await heroku.patch(baseURI + '/config-vars', {
@@ -173,10 +173,10 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
                     [Name]: varValue
                 }
             }).then(async (app) => {
-                await message.client.sendMessage(message.jid, Lang.SET_SUCCESS.format(Msg, varValue) + '\n\n' + Lang.RESTART_MSG, MessageType.text, { quoted: message.data });
+                await message.client.sendMessage(message.jid, Lang.SET_SUCCESS.format(Msg, varValue) + '\n\n' + Lang.RESTART_MSG, MessageType.text);
             });
         } else {
-            await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text, { quoted: message.data });
+            await message.client.sendMessage(message.jid, Lang.INVALID, MessageType.text);
         }
     }));
 

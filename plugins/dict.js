@@ -55,9 +55,9 @@ SlHackers.addCommand({ pattern: 'lngcode', fromMe: false, dontAddCommandList: tr
                 '* ' + "Definition :" +'* ```' + json[0].meanings[0].definitions[0].definition + '```\n' +                                                                          
                 '* ' + "Synonyms:" +'* ```' + json[0].meanings[0].definitions[0].synonyms[0] + '```\n' + 
                 '* ' + "-" +'* ```' + json[0].meanings[0].definitions[0].synonyms[1] + '```\n' +  
-                '* ' + "Usage:" +'* ```' + json[0].meanings[0].definitions[0].example + '```\n\n', MessageType.text, { quoted: message.data });
+                '* ' + "Usage:" +'* ```' + json[0].meanings[0].definitions[0].example + '```\n\n', MessageType.text);
         } catch {
-                return await message.client.sendMessage(message.jid, "error", MessageType.text, { quoted: message.data });
+                return await message.client.sendMessage(message.jid, "error", MessageType.text);
         }
 });
 */

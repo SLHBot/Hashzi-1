@@ -11,8 +11,8 @@ const Lang = Language.getString('spammer');
 
 SlHackers.addCommand({ pattern: 'sticker spam$', fromMe: true, desc: Lang.ST_DESC }, (async (message, match) => {
 
-    if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.ST_NEED, MessageType.text, { quoted: message.data });
-    if (message.reply_message.sticker) return await message.client.sendMessage(message.jid, Lang.ST_ST, MessageType.text, { quoted: message.data });
+    if (!message.reply_message) return await message.client.sendMessage(message.jid, Lang.ST_NEED, MessageType.text);
+    if (message.reply_message.sticker) return await message.client.sendMessage(message.jid, Lang.ST_ST, MessageType.text);
 
     var locspam = await message.client.downloadAndSaveMediaMessage({
         key: {
