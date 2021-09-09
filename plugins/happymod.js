@@ -15,7 +15,7 @@ if (Config.WORKTYPE == 'private') {
 		try {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
-			if (json.status != 'true') return await message.client.sendMessage(message.jid,
+			if (json.status === 'true') return await message.client.sendMessage(message.jid,
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
 				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
@@ -33,7 +33,7 @@ else if (Config.WORKTYPE == 'public') {
 		try {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
-			if (json.status != 'true') return await message.client.sendMessage(message.jid,
+			if (json.status === 'true') return await message.client.sendMessage(message.jid,
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
 				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
@@ -49,7 +49,7 @@ else if (Config.WORKTYPE == 'public') {
 		try {
 			const response = await got(url);
 			const json = JSON.parse(response.body);
-			if (json.status != 'true') return await message.client.sendMessage(message.jid,
+			if (json.status === 'true') return await message.client.sendMessage(message.jid,
 				'*📕 ' + Lang.NAME + '* ```' + json.result[0].title + '```\n\n' +
 				'*📗 ' + Lang.DOWNLOAD + ':* ```' + json.result[0].url + '```\n\n\n' +
 				'*📘 ' + Lang.RATING + '* ```' + json.result[0].rating + '```\n\n\n' +
