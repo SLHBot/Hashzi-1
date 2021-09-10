@@ -31,7 +31,7 @@ if (Config.WORKTYPE == 'private') {
                 const {
                     judul,
                     link,
-                } = response.result[0]
+                } = response.data.result[0]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'private') {
                 const {
                     judul,
                     link,
-                } = response.result[2]
+                } = response.data.result[2]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -63,7 +63,7 @@ if (Config.WORKTYPE == 'private') {
                 const {
                     judul,
                     link,
-                } = response.result[3]
+                } = response.data.result[3]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -79,7 +79,7 @@ if (Config.WORKTYPE == 'private') {
                 const {
                     judul,
                     link,
-                } = response.result[4]
+                } = response.data.result[4]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -112,7 +112,7 @@ if (Config.WORKTYPE == 'public') {
                 const {
                     judul,
                     link,
-                } = response.result[0]
+                } = response.data.result[0]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -128,7 +128,7 @@ if (Config.WORKTYPE == 'public') {
                 const {
                     judul,
                     link,
-                } = response.result[2]
+                } = response.data.result[2]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -144,7 +144,7 @@ if (Config.WORKTYPE == 'public') {
                 const {
                     judul,
                     link,
-                } = response.result[3]
+                } = response.data.result[3]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
@@ -160,7 +160,7 @@ if (Config.WORKTYPE == 'public') {
                 const {
                     judul,
                     link,
-                } = response.result[4]
+                } = response.data.result[4]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
