@@ -51,7 +51,6 @@ if (Config.WORKTYPE == 'private') {
 
                 const www = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_CHAN}* ${channel}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
                 const profileBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
@@ -105,7 +104,6 @@ else if (Config.WORKTYPE == 'public') {
 
                 const www = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_CHAN}* ${channel}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
                 const profileBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
