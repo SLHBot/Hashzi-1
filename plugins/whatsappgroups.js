@@ -34,7 +34,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[0]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -50,7 +50,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[2]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[3]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -82,7 +82,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[4]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -98,7 +98,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[5]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -114,7 +114,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[6]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -130,7 +130,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[7]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -146,7 +146,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[8]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -162,7 +162,7 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result[9]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -195,7 +195,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[0]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -211,7 +211,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[2]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -227,7 +227,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[3]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -243,7 +243,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[4]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -259,7 +259,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[5]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -275,7 +275,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[6]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -291,7 +291,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[7]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -307,7 +307,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[8]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
@@ -323,7 +323,7 @@ if (Config.WORKTYPE == 'public') {
                 } = response.data.result[9]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
-                    `*${PHN_RDATE}* ${link}` + `-_SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර_-`
+                    `*${PHN_RDATE}* ${link}` + `\n\n\n_*#SLHackers කණ්ඩායම විසින් හැක් කරන ලද විස්තර*_`
 
                 await message.client.sendMessage(message.jid, msg, MessageType.text, {
                     quoted: message.data,
