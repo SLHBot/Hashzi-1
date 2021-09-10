@@ -6,8 +6,8 @@ const Config = require('../config');
 const Language = require('../language');
 const XN_DESC = "NSFU වීඩියෝ බාගත කරයි"
 const XN_NEED = "*Link අවශ්‍යයි!*"
-const XN_D = "*🙇Downloading Your Video*"
-const XN_UP = "*🔞Uploading Your Video*"
+const XN_D = "*🙇ඔබේ වීඩියෝ බාගැනීම*"
+const XN_UP = "*🔞ඔබේ වීඩියෝ පටය උඩුගත කිරීම*"
 const XN_NO = "*කණගාටුයි හමු නොවීය...*"
 
 

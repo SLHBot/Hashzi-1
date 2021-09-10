@@ -6,8 +6,8 @@ const Config = require('../config');
 const Language = require('../language');
 const PB_DESC = "PHUB වීඩියෝ බාගත කරයි"
 const PB_NEED = "*Link අවශ්‍යයි!*"
-const PB_D = "*🙇Downloading Your Video*"
-const PB_UP = "*🔞Uploading Your Video*"
+const PB_D = "*🙇ඔබේ වීඩියෝ බාගැනීම*"
+const PB_UP = "*🔞ඔබේ වීඩියෝ පටය උඩුගත කිරීම*"
 const PB_NO = "*කණගාටුයි හමු නොවීය...*"
 
 

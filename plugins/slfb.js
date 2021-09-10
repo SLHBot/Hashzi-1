@@ -11,10 +11,10 @@ const Language = require('../language');
 const Lang = Language.getString('instagram');
 const Tlang = Language.getString('tiktok');
 const YTV_DESC = "Youtube Video Downloader V2 ."
-const YT_NEED = "*need word!.*"
-const DWLOAD_VID = "*🎭Downloading Your Video...*"
-const YTV_UP = "*🚀Uploading Your Video...*"
-const NO_RESULT = "*🌀can't Find Anything...*"
+const YT_NEED = "*URL අවශ්‍යයි!.*"
+const DWLOAD_VID = "*🎭ඔබේ වීඩියෝ බාගැනීම...*"
+const YTV_UP = "*🚀ඔබේ වීඩියෝ පටය උඩුගත කිරීම...*"
+const NO_RESULT = "*🌀කිසිවක් සොයා ගත නොහැක...*"
 
 
 if (Config.WORKTYPE == 'private') {

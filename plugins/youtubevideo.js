@@ -10,14 +10,17 @@ const Language = require('../language');
 
 const Lang = Language.getString('instagram');
 const Tlang = Language.getString('tiktok');
-const YTV_DESC = "Youtube Video Downloader V2 ."
-const YT_NEED = "*need word!.*"
-const DWLOAD_VID = "*🎭Downloading Your Video...*"
-const YTV_UP = "*🚀Uploading Your Video...*"
-const NO_RESULT = "*🌀can't Find Anything...*"
-const PHN_PHN = "කාල සීමාව:-"
+const YTV_DESC = "යූටියුබ් වීඩියෝ බාගැනීම් V2 ."
+const YT_NEED = "*URL අවශ්‍යයි!.*"
+const DWLOAD_VID = "*🎭ඔබේ වීඩියෝ බාගැනීම...*"
+const YTV_UP = "*🚀ඔබේ වීඩියෝ පටය උඩුගත කිරීම...*"
+const NO_RESULT = "*🌀කිසිවක් සොයා ගත නොහැක...*"
+const PHN_DU = "කාල සීමාව:-"
 const PHN_RDATE = "ශීර්ෂය:-"
-const PHN_CHAN = "අනුගමනය කරන්න-:"
+const PHN_UP = "හිමිකරු :-"
+const PHN_VIEW = "බැලීම් :-"
+const PHN_CHAN = "අනුගමනය කරන්න:-"
+const PHN_RES = "Resolution :-"
 
 
 if (Config.WORKTYPE == 'private') {
@@ -33,6 +36,7 @@ if (Config.WORKTYPE == 'private') {
             .then(async (response) => {
                 const {
                     link,
+                    resolution,
 
                 } = response.data.result.link
 
@@ -40,17 +44,21 @@ if (Config.WORKTYPE == 'private') {
                     title,
                     channel,
                     duration,
+                    uploader,
 
                 } = response.data.result
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
-                const msg = `*${PHN_RDATE}* ${title}` + `\n` +
-                    `*${PHN_CHAN}* ${channel}` + `\n` +
-                    `*${PHN_PHN}* ${duration}`
+                const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
+                    `*${PHN_UP}* ${uploader}` + `\n\n` +
+                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
+                    `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_RES}* ${resolution}` + `\n\n` +
+                    `*${PHN_DU}* ${duration}`
 
                 await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg + '\n' + Config.BOT_NAAAAAAAME, ptt: false })
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg + '\n\n\n\n' + Config.BOT_NAAAAAAAME, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
@@ -71,12 +79,29 @@ else if (Config.WORKTYPE == 'public') {
             .then(async (response) => {
                 const {
                     link,
+                    resolution,
+
                 } = response.data.result.link
+
+                const {
+                    title,
+                    channel,
+                    duration,
+                    uploader,
+
+                } = response.data.result
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
-                await message.client.sendMessage(message.jid, YTV_UP, MessageType.text, { quoted: message.data });
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: Config.BOT_NAAAAAAAME, ptt: false })
+                const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
+                    `*${PHN_UP}* ${uploader}` + `\n\n` +
+                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
+                    `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_RES}* ${resolution}` + `\n\n` +
+                    `*${PHN_DU}* ${duration}`
+
+                await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg + '\n\n\n\n' + Config.BOT_NAAAAAAAME, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),

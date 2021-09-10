@@ -11,7 +11,7 @@ const USAGE = "..."
 const LOADING = "Fetching User Data"
 const PHN_PHN = "App Name:-"
 const PHN_RDATE = "බගතකරගන්නා Url:-"
-const NOT_FOUND = "*Can't Find Anything!.*"
+const NOT_FOUND = "*කිසිවක් සොයා ගත නොහැක!.*"
 
 
 
