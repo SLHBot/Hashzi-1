@@ -32,7 +32,7 @@ module.exports = {
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://telegra.ph/file/7645d42ee46a3017ac88f.jpg' : process.env.ALIVE_LOGO,
     WELCOME_LOGO: process.env.WELCOME_LOGO === undefined ? 'https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg' : process.env.WELCOME_LOGO,
-    BYE_LOGO: process.env.BYE_LOGO === undefined ? 'https://telegra.ph/file/b2ae47b17b19266acfdd3.jpg' : process.env.BYE_LOGO,
+    BYE_LOGO: process.env.BYE_LOGO === undefined ? 'https://leyscoders-api.herokuapp.com/api/leave?name=SLHackers%20Team%20Bot%20Users&group=Official%20Group&profile=https://i.ibb.co/Gxct8Hg/Logo-SLH.jpg&apikey=dappakntlll' : process.env.BYE_LOGO,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,

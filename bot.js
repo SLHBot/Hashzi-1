@@ -636,7 +636,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             var gb = await getMessage(msg.key.remoteJid, 'goodbye');
             var blogo = await axios.get(config.BYE_LOGO, { responseType: 'arraybuffer' })
             if (gb !== false) {
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(blogo.data), MessageType.video, { mimetype: Mimetype.gif, caption: gb.message });
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(blogo.data), MessageType.image, { mimetype: Mimetype.png, caption: gb.message });
             }
             return;
         } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
@@ -645,7 +645,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
             var wlogo = await axios.get(config.WELCOME_LOGO, { responseType: 'arraybuffer' })
             if (gb !== false) {
 
-                await conn.sendMessage(msg.key.remoteJid, Buffer.from(wlogo.data), MessageType.video, { mimetype: Mimetype.gif, caption: gb.message });
+                await conn.sendMessage(msg.key.remoteJid, Buffer.from(wlogo.data), MessageType.image, { mimetype: Mimetype.png, caption: gb.message });
             }
             return;
         }
