@@ -44,22 +44,8 @@ if (Config.WORKTYPE == 'private') {
                     title,
                     duration,
                     uploader,
-                    thumbnail,
-                    view,
 
                 } = response.data.result
-
-                const profileBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
-
-                const www = `*${PHN_RDATE}* ${title}` + `\n\n` +
-                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
-                    `*${PHN_DU}* ${duration}`
-
-                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    quoted: message.data,
-                    caption: www + '\n' + '*🚀slhackers-bot*'
-                })
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
@@ -98,22 +84,8 @@ else if (Config.WORKTYPE == 'public') {
                     title,
                     duration,
                     uploader,
-                    thumbnail,
-                    view,
 
                 } = response.data.result
-
-                const profileBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
-
-                const www = `*${PHN_RDATE}* ${title}` + `\n\n` +
-                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
-                    `*${PHN_DU}* ${duration}`
-
-                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    quoted: message.data,
-                    caption: www + '\n' + '*🚀slhackers-bot*'
-                })
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
