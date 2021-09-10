@@ -40,11 +40,23 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result.link
 
                 const {
+                    thumbnail,
                     title,
                     duration,
                     uploader,
+                    channel,
+                    view,
 
                 } = response.data.result
+
+                const thumbnailBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
+
+                const slh = `*${PHN_RDATE}* ${title}` + `\n\n` +
+                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
+                    `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_DU}* ${duration}`
+
+                await message.client.sendMessage(message.jid, Buffer.from(thumbnailBuffer.data), MessageType.image, { quoted: message.data, caption: slh });
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
