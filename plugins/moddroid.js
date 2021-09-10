@@ -9,8 +9,8 @@ const PHONEDE_DESC = "එය මොඩ්ඩ්‍රොයිඩ් යෙද�
 const NEED_WORDC = "කරුණාකර APP නමක් ඇතුළත් කරන්න"
 const USAGE = "..."
 const LOADING = "Fetching User Data"
-const PHN_PHN = "App Name:-"
-const PHN_RDATE = "බගතකරගන්නා Url:-"
+const PHN_RDATE = "App Name:-"
+const PHN_PHN = "බගතකරගන්නා Url:-"
 const NOT_FOUND = "*කිසිවක් සොයා ගත නොහැක!.*"
 
 

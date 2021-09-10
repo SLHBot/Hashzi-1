@@ -42,7 +42,6 @@ if (Config.WORKTYPE == 'private') {
 
                 const {
                     title,
-                    channel,
                     duration,
                     uploader,
 
@@ -52,7 +51,6 @@ if (Config.WORKTYPE == 'private') {
 
                 const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_UP}* ${uploader}` + `\n\n` +
-                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
                     `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_RES}* ${resolution}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
@@ -85,7 +83,6 @@ else if (Config.WORKTYPE == 'public') {
 
                 const {
                     title,
-                    channel,
                     duration,
                     uploader,
 
@@ -95,7 +92,6 @@ else if (Config.WORKTYPE == 'public') {
 
                 const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_UP}* ${uploader}` + `\n\n` +
-                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
                     `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_RES}* ${resolution}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
