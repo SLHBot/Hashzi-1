@@ -19,7 +19,7 @@ const NO_RESULT = "*🌀can't Find Anything...*"
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'slfb ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'Vfb ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
 
         const link = match[1]
 
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    SlHackers.addCommand({ pattern: 'slfb ?(.*)', fromMe: false, desc: YTV_DESC }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'Vfb ?(.*)', fromMe: false, desc: YTV_DESC }, async (message, match) => {
 
         const link = match[1]
 

@@ -70,7 +70,7 @@ if (Config.WORKTYPE == 'private') {
           `*${PHN_CREAT}* ${created_at}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg + '\n' + '*🚀slhackers-x *'
+          caption: msg + '\n' + '*🚀slhackers-bot *'
         })
       })
       .catch(
@@ -126,7 +126,7 @@ if (Config.WORKTYPE == 'public') {
           `*${PHN_CREAT}* ${created_at}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg + '\n' + '*🎭SLHackers-X*'
+          caption: msg + '\n' + '*🎭ALHackers-Bot*'
         })
       })
       .catch(

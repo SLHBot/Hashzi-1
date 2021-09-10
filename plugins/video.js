@@ -15,7 +15,7 @@ const NEED_WORD = "*ඔබ 📥වීඩියෝවක URL ඇතුළත් �
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'allvideo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
 
         await message.client.sendMessage(message.jid, XN_N, MessageType.text, { quoted: message.data });
 

@@ -58,7 +58,7 @@ _2021/08/12_
 ▷ Type:  .Admin
 *╠🧚‍♂️Added Update Report System*
 ╚═════════════▷
-*🎭SLHACKERS-X NEXT UPDATE*
+*🎭ALHackers-Bot NEXT UPDATE*
 ╔═════════════▷
 ╠ 🙇ඔයාලා දන්නවා ඇති Logo Site Maintenance අලුත් features Add කරන්නලු යන්නෙ එයාලා🌝ඒ නිසා Logo pack එක වැඩ නෑ (තාවකාලිකව)
 ║
@@ -81,7 +81,7 @@ _▷ Loging Heroku>Select App>>Click Setting⚙>>> -scroll up- >>>> Click Reveal
 ╠⚙Update එකේ හෝ Bot සම්බන්ධ ඕනම ගැටලුවක් ADMIN PANEL එකට Inbox කරන්න
 ╚═════════════▷
 
-🤍Thank For Using SLHACKERS-X 🙇 Stay Safe &Stay With Us💌
+🤍Thank For Using ALHackers-Bot 🙇 Stay Safe &Stay With Us💌
 
 *🧞𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
 _2021/08/08
