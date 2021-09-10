@@ -126,7 +126,7 @@ if (Config.WORKTYPE == 'public') {
           `*${PHN_CREAT}* ${created_at}`
 
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg + '\n' + '*🎭ALHackers-Bot*'
+          caption: msg + '\n' + '*🎭SLHackers-Bot*'
         })
       })
       .catch(
