@@ -41,7 +41,27 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_PHN}* ${url}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot *'
+                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+
+                } = response.data.result[1]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_RDATE}* ${title}` + `\n` +
+                    `*${PHN_PHN}* ${url}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀slhackers-bot*'
                 })
             })
             .catch(
