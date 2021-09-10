@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
                     title,
                     duration,
                     uploader,
-                    img,
+                    thumbnail,
                     view,
 
                 } = response.data.result
@@ -54,7 +54,7 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
-                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+                const profileBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
                     quoted: message.data,
@@ -98,7 +98,7 @@ else if (Config.WORKTYPE == 'public') {
                     title,
                     duration,
                     uploader,
-                    img,
+                    thumbnail,
                     view,
 
                 } = response.data.result
@@ -108,7 +108,7 @@ else if (Config.WORKTYPE == 'public') {
                     `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
-                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+                const profileBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
                     quoted: message.data,
