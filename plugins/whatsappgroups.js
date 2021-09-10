@@ -88,6 +88,86 @@ if (Config.WORKTYPE == 'private') {
                     quoted: message.data,
                 })
             })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[5]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[6]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[7]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[8]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[9]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
             .catch(
                 async (err) => await message.sendMessage(errorMessage(NOT_FOUND + pname)),
             )
@@ -161,6 +241,86 @@ if (Config.WORKTYPE == 'public') {
                     judul,
                     link,
                 } = response.data.result[4]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[5]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[6]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[7]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[8]
+
+                const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
+                    `*${PHN_RDATE}* ${link}`
+
+                await message.client.sendMessage(message.jid, msg, MessageType.text, {
+                    quoted: message.data,
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/whatsapp-group?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    judul,
+                    link,
+                } = response.data.result[9]
 
                 const msg = `*${PHN_PHN}* ${judul}` + `\n\n` +
                     `*${PHN_RDATE}* ${link}`
