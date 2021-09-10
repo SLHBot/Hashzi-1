@@ -51,12 +51,11 @@ if (Config.WORKTYPE == 'private') {
 
                 const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_UP}* ${uploader}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_RES}* ${resolution}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
                 await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg + '\n\n\n\n' + Config.BOT_NAAAAAAAME, ptt: false })
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
@@ -92,12 +91,11 @@ else if (Config.WORKTYPE == 'public') {
 
                 const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_UP}* ${uploader}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
                     `*${PHN_RES}* ${resolution}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
                 await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg + '\n\n\n\n' + Config.BOT_NAAAAAAAME, ptt: false })
+                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
