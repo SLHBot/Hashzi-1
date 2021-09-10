@@ -33,11 +33,15 @@ if (Config.WORKTYPE == 'private') {
             .then(async (response) => {
                 const {
                     link,
+
+                } = response.data.result.link
+
+                const {
                     title,
                     channel,
                     duration,
 
-                } = response.data.result.link
+                } = response.data.result
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
