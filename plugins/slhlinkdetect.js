@@ -34,8 +34,8 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') cdc = '*🤜🏻🤜🏻🤜🏻🤛🏻🤛🏻🤛🏻*'
 
     var fdc = ''
-    if (Config.LANG == 'EN') fdc = '*test*'
-    if (Config.LANG == 'SI') fdc = '*test*'
+    if (Config.LANG == 'EN') fdc = '*🎲 en si*'
+    if (Config.LANG == 'SI') fdc = '*🎲 en si*'
 
     var gdc = ''
     if (Config.LANG == 'EN') gdc = '*Why?*'
@@ -48,7 +48,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
         let regex4 = new RegExp('https://slbreakingnews.com')
         let regex5 = new RegExp('https://dailymirror.lk')
         let regex6 = new RegExp('https://facbook.com')
-        let regex7 = new RegExp('vushantha')
+        let regex7 = new RegExp('ado')
         let regex8 = new RegExp('Hirusha')
         if (regex1.test(message.message)) {
             await message.client.sendMessage(message.jid, edc, MessageType.text, { quoted: message.data })

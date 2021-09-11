@@ -44,16 +44,16 @@ if (config.LANG == 'EN') {
 
 if (config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'test', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '🎲(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true }, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         }
 
-        ceviri = await translatte(message.reply_message.message, { from: en === '' ? 'auto' : en, to: si === '' ? config.LANG : si });
+        ceviri = await translatte(message.reply_message.message, { from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2] });
         if ('text' in ceviri) {
-            return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (en === '' ? 'auto' : en) + '```\n'
-                + '*◀️ ' + Lang.FROM + '*: ```' + (si === '' ? config.LANG : si) + '```\n'
+            return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
+                + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
                 + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid, Lang.TRANSLATE_ERROR, MessageType.text)
@@ -63,16 +63,16 @@ if (config.WORKTYPE == 'private') {
 
 else if (config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'test', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '🎲(?: |$)(\\S*) ?(\\S*)', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false }, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         }
 
-        ceviri = await translatte(message.reply_message.message, { from: en === '' ? 'auto' : en, to: si === '' ? config.LANG : si });
+        ceviri = await translatte(message.reply_message.message, { from: match[1] === '' ? 'auto' : match[1], to: match[2] === '' ? config.LANG : match[2] });
         if ('text' in ceviri) {
-            return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (en === '' ? 'auto' : en) + '```\n'
-                + '*◀️ ' + Lang.FROM + '*: ```' + (si === '' ? config.LANG : si) + '```\n'
+            return await message.reply('*▶️ ' + Lang.LANG + ':* ```' + (match[1] === '' ? 'auto' : match[1]) + '```\n'
+                + '*◀️ ' + Lang.FROM + '*: ```' + (match[2] === '' ? config.LANG : match[2]) + '```\n'
                 + '*🔎 ' + Lang.RESULT + ':* ```' + ceviri.text + '```');
         } else {
             return await message.client.sendMessage(message.jid, Lang.TRANSLATE_ERROR, MessageType.text)
