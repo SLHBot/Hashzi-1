@@ -43,11 +43,11 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
 
 
     if (link_finder == 'true' && message.jid !== '94755681782@s.whatsapp.net') {
-        let regex1 = new RegExp('GOOD NIGHT')
+        let regex1 = new RegExp('Good night')
         let regex2 = new RegExp('Good Night')
         let regex3 = new RegExp('good night')
         let regex4 = new RegExp('GN')
-        let regex5 = new RegExp('GOOD MORNING')
+        let regex5 = new RegExp('Good morning')
         let regex6 = new RegExp('Good Morning')
         let regex7 = new RegExp('GM')
         let regex8 = new RegExp('good morning')

@@ -31,6 +31,7 @@ if (Config.WORKTYPE == 'private') {
 		msg += '*🎬Production*\n' + '```' + json.Production + '```' + '\n\n';
 		msg += '*🧚🏻‍♀️imdbRating*\n' + '```' + json.imdbRating + '```' + '\n\n';
 		msg += '*👌🏻imdbVotes*\n' + '```' + json.imdbVotes + '```' + '\n';
+		msg += '*🔗link\n*' + '```' + json.link + '\n\n*https://t.me/malayalam_rocker_s*';
 
 		var image = await axios.get(`https://i.ibb.co/T17zhtB/FI-LOGO-RD.jpg`, { responseType: 'arraybuffer' })
 
@@ -64,6 +65,7 @@ else if (Config.WORKTYPE == 'public') {
 		msg += '*🎬Production*\n' + '```' + json.Production + '```' + '\n\n';
 		msg += '*🧚🏻‍♀️imdbRating*\n' + '```' + json.imdbRating + '```' + '\n\n';
 		msg += '*👌🏻imdbVotes*\n' + '```' + json.imdbVotes + '```' + '\n';
+		msg += '*🔗link\n*' + '```' + json.link + '\n\n*https://t.me/malayalam_rocker_s*';
 
 		var image = await axios.get(`https://i.ibb.co/T17zhtB/FI-LOGO-RD.jpg`, { responseType: 'arraybuffer' })
 
@@ -95,6 +97,7 @@ else if (Config.WORKTYPE == 'public') {
 		msg += '*🎬Production*\n' + '```' + json.Production + '```' + '\n\n';
 		msg += '*🧚🏻‍♀️imdbRating*\n' + '```' + json.imdbRating + '```' + '\n\n';
 		msg += '*👌🏻imdbVotes*\n' + '```' + json.imdbVotes + '```' + '\n';
+		msg += '*🔗link\n*' + '```' + json.link + '\n\n*https://t.me/malayalam_rocker_s*';
 
 		var image = await axios.get(`https://i.ibb.co/T17zhtB/FI-LOGO-RD.jpg`, { responseType: 'arraybuffer' })
 

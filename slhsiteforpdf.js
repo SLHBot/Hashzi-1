@@ -1,16 +1,20 @@
-let SlHackers = require('../events');
-let { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
-let fs = require('fs');
-let axios = require('axios');
-let request = require('request');
-let got = require("got");
-let Config = require('../config');
-let Language = require('../language');
-let Lang = Language.getString('unvoice');
+/* උස්සන්න එපා බේසිකෙ කොල්ලො අහලා ගනිම්
+Codded BY Hirusha Dayarathne
+Wa.me/+94755681782
+*/
+
+const SlHackers = require('../events');
+const Config = require('../config');
+const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
+const axios = require('axios');
+const SPDF_DESC = "Converts a Site into PDF"
+const SPDF_LINK = "*You Must Enter a URL*"
+const SPDF_PROC = "```Converting Site into PDF```"
+
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: '😎 ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'spdf ?(.*)', fromMe: true, desc: SPDF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(SPDF_LINK);
 
@@ -24,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: '😎 ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'spdf ?(.*)', fromMe: false, desc: SPDF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(SPDF_LINK);
 

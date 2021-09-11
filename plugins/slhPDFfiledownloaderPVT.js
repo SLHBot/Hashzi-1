@@ -9,11 +9,12 @@ const { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys'
 const fs = require('fs');
 const axios = require('axios');
 const Language = require('../language');
-const XN_N = "```PDF 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕚𝕟𝕘...```"
-const XN_D = "```PDF 𝕌𝕡𝕝𝕠𝕒𝕕𝕚𝕟𝕘...```"
+const PDF_D = "```PDF 𝔻𝕠𝕨𝕟𝕝𝕠𝕒𝕕𝕚𝕟𝕘...```"
+const PDF_U = "```PDF 𝕌𝕡𝕝𝕠𝕒𝕕𝕚𝕟𝕘...```"
 const NEED_WORD = "*ඔබ PDF URL ඇතුළත් කළ යුතුය*"
 
-if (Config.NEOA == 'bimsaraapi') {
+
+if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'pdf ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
 
@@ -21,9 +22,27 @@ if (Config.NEOA == 'bimsaraapi') {
 
         var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, XN_N, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, PDF_D, MessageType.text, { quoted: message.data });
 
-        await message.client.sendMessage(message.jid, XN_D, MessageType.text, { quoted: message.data });
+        await message.client.sendMessage(message.jid, PDF_U, MessageType.text, { quoted: message.data });
+
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { filename: 'SLHackers.pdf', mimetype: Mimetype.pdf })
+
+    }));
+
+}
+
+else if (Config.WORKTYPE == 'public') {
+
+    SlHackers.addCommand({ pattern: 'pdf ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+
+        if (match[1] === '') return await message.sendMessage(NEED_WORD);
+
+        var webimage = await axios.get(`${match[1]}`, { responseType: 'arraybuffer' })
+
+        await message.client.sendMessage(message.jid, PDF_D, MessageType.text, { quoted: message.data });
+
+        await message.client.sendMessage(message.jid, PDF_U, MessageType.text, { quoted: message.data });
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.document, { filename: 'SLHackers.pdf', mimetype: Mimetype.pdf })
 

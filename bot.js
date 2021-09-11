@@ -157,7 +157,7 @@ async function whatsAsena() {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Asia/Colombo' }).split(' ')[1]
-                const biography = '🆆🅾🆁🅺 🆂🆄🅿🅴🆁 🅷🅰🆁🅳 | අවසන් වරට මම Online සිටි වේලාව.\n\n' + '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🎲S͓̽L͓̽H͓̽a͓̽c͓̽k͓̽e͓̽r͓̽s͓̽ සාමාජිකයෙකි🎲'
+                const biography = '🆆🅾🆁🅺 🆂🆄🅿🅴🆁 🅷🅰🆁🅳 | අවසන් වරට මම Online සිටි වේලාව.\n\n' + '📅 ' + utch + '\n⌚ ' + ov_time + '\n\🚀SLHαcĸerѕ සාමාජිකයෙකි🎲'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('351')) { // Portugal
@@ -308,11 +308,11 @@ async function whatsAsena() {
         console.log(`${chalk.green.bold('SLHackers')}${chalk.blue.bold('X')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමින්..')}`);
+${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමින්...▶')}`);
     });
     conn.on('credentials-updated', async () => {
         console.log(
-            chalk.green.bold('✅ සාර්ථකතයි!')
+            chalk.green.bold('✅ Login successful!▶')
         );
         console.log(
             chalk.blueBright.italic('⬇️ප්ලගින් යතාවත්කාලින වෙමින්...')
@@ -333,7 +333,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         // ==================== End External Plugins ====================
 
         console.log(
-            chalk.blueBright.italic('⬇️ බාහිර ප්ලගින් ස්ථාපනය වෙමින්...')
+            chalk.blueBright.italic('⬇️ බාහිර ප්ලගින් ස්ථාපනය වෙමින්...▶')
         );
 
         // ==================== Internal Plugins ====================
@@ -1005,7 +1005,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else {
-                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි..! Auto error පද්ධතියට හදුනාගත නොහැකියි..🙇🏻*' +
+                                    return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි..! SLHackers Team Bots Auto error පද්ධතියට හදුනාගත නොහැකියි..🙇🏻*' +
                                         '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයන්ට ලියන්න..._'
                                         , MessageType.text
                                     );
