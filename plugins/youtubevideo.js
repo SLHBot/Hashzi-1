@@ -30,9 +30,7 @@ if (Config.WORKTYPE == 'private') {
         const link = match[1]
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
-        var downloading = await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
-        await new Promise(r => setTimeout(r, 4000));
-        await message.client.deleteMessage(message.jid, { id: downloading.data.id, remoteJid: message.jid, fromMe: true });
+        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
         await axios
             .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
