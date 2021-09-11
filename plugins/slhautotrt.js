@@ -44,7 +44,7 @@ if (config.LANG == 'EN') {
 
 if (config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'trt', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'test', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: true }, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
@@ -63,7 +63,7 @@ if (config.WORKTYPE == 'private') {
 
 else if (config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'trt', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'test', desc: Lang.TRANSLATE_DESC, usage: Lang.TRANSLATE_USAGE, fromMe: false }, (async (message, match) => {
 
         if (!message.reply_message) {
             return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);

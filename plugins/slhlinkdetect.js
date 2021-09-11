@@ -34,8 +34,8 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') cdc = '*🤜🏻🤜🏻🤜🏻🤛🏻🤛🏻🤛🏻*'
 
     var fdc = ''
-    if (Config.LANG == 'EN') fdc = '*trt*'
-    if (Config.LANG == 'SI') fdc = '*trt*'
+    if (Config.LANG == 'EN') fdc = '*test*'
+    if (Config.LANG == 'SI') fdc = '*test*'
 
     var gdc = ''
     if (Config.LANG == 'EN') gdc = '*Why?*'
