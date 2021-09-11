@@ -30,7 +30,9 @@ if (Config.WORKTYPE == 'private') {
         const link = match[1]
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
-        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
+        var downloading = await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
+        await new Promise(r => setTimeout(r, 4000));
+        await message.client.deleteMessage(message.jid, { id: downloading.id, remoteJid: message.jid, fromMe: true });
         await axios
             .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
@@ -41,11 +43,27 @@ if (Config.WORKTYPE == 'private') {
                 } = response.data.result.link
 
                 const {
+                    thumbnail,
                     title,
                     duration,
                     uploader,
+                    channel,
+                    view,
+                    like,
+                    dislike,
 
                 } = response.data.result
+
+                const thumbnailBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
+
+                const slh = `*${PHN_RDATE}* ${title}` + `\n\n` +
+                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
+                    `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_LIKE}* ${like}` + `\n\n` +
+                    `*${PHN_DISLIKE}* ${dislike}` + `\n\n` +
+                    `*${PHN_DU}* ${duration}`
+
+                await message.client.sendMessage(message.jid, Buffer.from(thumbnailBuffer.data), MessageType.image, { quoted: message.data, caption: slh });
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
@@ -81,11 +99,27 @@ else if (Config.WORKTYPE == 'public') {
                 } = response.data.result.link
 
                 const {
+                    thumbnail,
                     title,
                     duration,
                     uploader,
+                    channel,
+                    view,
+                    like,
+                    dislike,
 
                 } = response.data.result
+
+                const thumbnailBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
+
+                const slh = `*${PHN_RDATE}* ${title}` + `\n\n` +
+                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
+                    `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_LIKE}* ${like}` + `\n\n` +
+                    `*${PHN_DISLIKE}* ${dislike}` + `\n\n` +
+                    `*${PHN_DU}* ${duration}`
+
+                await message.client.sendMessage(message.jid, Buffer.from(thumbnailBuffer.data), MessageType.image, { quoted: message.data, caption: slh });
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 

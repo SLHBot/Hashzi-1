@@ -19,7 +19,9 @@ const PHN_DU = "කාල සීමාව:-"
 const PHN_RDATE = "ශීර්ෂය:-"
 const PHN_UP = "හිමිකරු :-"
 const PHN_VIEW = "බැලීම් :-"
-const PHN_CHAN = "අනුගමනය කරන්න:-"
+const PHN_LIKE = "කමැත්ත පලකළ ගණන:-"
+const PHN_DISLIKE = "අකමැත්ත පලකළ ගණන :-"
+const PHN_CHAN = "හිමිකරුගේ තව video බැලීමට අනුගමනය කරන්න:-"
 const PHN_RES = "Resolution :-"
 
 
@@ -46,6 +48,8 @@ if (Config.WORKTYPE == 'private') {
                     uploader,
                     channel,
                     view,
+                    like,
+                    dislike,
 
                 } = response.data.result
 
@@ -54,6 +58,8 @@ if (Config.WORKTYPE == 'private') {
                 const slh = `*${PHN_RDATE}* ${title}` + `\n\n` +
                     `*${PHN_CHAN}* ${channel}` + `\n\n` +
                     `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_LIKE}* ${like}` + `\n\n` +
+                    `*${PHN_DISLIKE}* ${dislike}` + `\n\n` +
                     `*${PHN_DU}* ${duration}`
 
                 await message.client.sendMessage(message.jid, Buffer.from(thumbnailBuffer.data), MessageType.image, { quoted: message.data, caption: slh });
@@ -90,11 +96,27 @@ else if (Config.WORKTYPE == 'public') {
                 } = response.data.result.link
 
                 const {
+                    thumbnail,
                     title,
                     duration,
                     uploader,
+                    channel,
+                    view,
+                    like,
+                    dislike,
 
                 } = response.data.result
+
+                const thumbnailBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
+
+                const slh = `*${PHN_RDATE}* ${title}` + `\n\n` +
+                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
+                    `*${PHN_VIEW}* ${view}` + `\n\n` +
+                    `*${PHN_LIKE}* ${like}` + `\n\n` +
+                    `*${PHN_DISLIKE}* ${dislike}` + `\n\n` +
+                    `*${PHN_DU}* ${duration}`
+
+                await message.client.sendMessage(message.jid, Buffer.from(thumbnailBuffer.data), MessageType.image, { quoted: message.data, caption: slh });
 
                 const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
 
