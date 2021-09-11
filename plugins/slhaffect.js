@@ -23,7 +23,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.image) return await message.sendMessage(Lang.MUST_TEXT);
-        const msg = message.reply_message.image
+        const msg = message.reply_message.image.jid
 
         var webimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/img/affect?url=${msg}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
 

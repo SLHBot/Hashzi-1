@@ -32,8 +32,8 @@ if (Config.WORKTYPE == 'private') {
 
         const link = match[1]
 
-        if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
-        var load = await message.reply(DWLOAD_VID);
+        if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
+        var load = await message.reply(DWLOAD_VID, { quoted: message.data });
         await axios
             .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
@@ -75,8 +75,9 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_DU}* ${duration}` + `\n\n` +
                     `${PHN_HELPER}`
 
-                await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
+                var upload = await message.reply(YTV_UP, { quoted: message.data });
                 await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
+                await upload.delete();
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
@@ -92,7 +93,7 @@ else if (Config.WORKTYPE == 'public') {
         const link = match[1]
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
-        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text)
+        var load = await message.reply(DWLOAD_VID, { quoted: message.data });
         await axios
             .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
@@ -134,12 +135,14 @@ else if (Config.WORKTYPE == 'public') {
                     `*${PHN_DU}* ${duration}` + `\n\n` +
                     `${PHN_HELPER}`
 
-                await message.client.sendMessage(message.jid, YTV_UP, MessageType.text);
+                var upload = await message.reply(YTV_UP, { quoted: message.data });
                 await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
+                await upload.delete();
             })
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
             )
+        await load.delete();
     },
     )
 }
