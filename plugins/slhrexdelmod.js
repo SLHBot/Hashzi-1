@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
 
@@ -71,7 +71,7 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
 
@@ -95,7 +95,7 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
 
@@ -119,7 +119,7 @@ if (Config.WORKTYPE == 'private') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
             .catch(
@@ -160,7 +160,7 @@ if (Config.WORKTYPE == 'public') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
 
@@ -184,7 +184,7 @@ if (Config.WORKTYPE == 'public') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
 
@@ -208,7 +208,7 @@ if (Config.WORKTYPE == 'public') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
 
@@ -232,7 +232,7 @@ if (Config.WORKTYPE == 'public') {
                     `*${PHN_DESC}* ${desc}`
 
                 await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-                    caption: msg + '\n' + '*🚀slhackers-bot*'
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
             .catch(

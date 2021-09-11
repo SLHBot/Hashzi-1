@@ -8,9 +8,9 @@ const Language = require('../language');
 const PHONEDE_DESC = "එය මොඩ්ඩ්‍රොයිඩ් යෙදුම් දත්ත යවයි."
 const NEED_WORDC = "කරුණාකර APP නමක් ඇතුළත් කරන්න"
 const USAGE = "..."
-const LOADING = "Fetching User Data"
-const PHN_PHN = "ශීර්ෂය:-"
-const PHN_RDATE = "සබැඳිය:-"
+const LOADING = "🔎 Fetching User Data"
+const PHN_PHN = "🪀 ශීර්ෂය:-"
+const PHN_RDATE = "🎸 සබැඳිය:-"
 const NOT_FOUND = "*කිසිවක් සොයා ගත නොහැක!.*"
 
 
