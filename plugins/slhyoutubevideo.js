@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'private') {
         const link = match[1]
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
-        await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text);
+        var load = await message.reply(DWLOAD_VID);
         await axios
             .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
@@ -81,6 +81,7 @@ if (Config.WORKTYPE == 'private') {
             .catch(
                 async (err) => await message.client.sendMessage(message.jid, NO_RESULT, MessageType.text, { quoted: message.data }),
             )
+        await load.delete();
     },
     )
 }
