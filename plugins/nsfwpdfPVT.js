@@ -25,7 +25,7 @@ const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ ය�
 
 if (Config.NEOA == 'bimsaraapi') {
 
-      SlHackers.addCommand({ pattern: '1xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '1xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36614`, { responseType: 'arraybuffer' })
 
@@ -35,7 +35,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
       }));
 
-      SlHackers.addCommand({ pattern: '2xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '2xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36618`, { responseType: 'arraybuffer' })
 
@@ -45,7 +45,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
       }));
 
-      SlHackers.addCommand({ pattern: '3xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '3xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36628`, { responseType: 'arraybuffer' })
 
@@ -55,7 +55,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
       }));
 
-      SlHackers.addCommand({ pattern: '4xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '4xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36630`, { responseType: 'arraybuffer' })
 
@@ -65,7 +65,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
       }));
 
-      SlHackers.addCommand({ pattern: '5xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '5xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36632`, { responseType: 'arraybuffer' })
 
@@ -75,7 +75,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
       }));
 
-      SlHackers.addCommand({ pattern: '6xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '6xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36634`, { responseType: 'arraybuffer' })
 
@@ -85,7 +85,7 @@ if (Config.NEOA == 'bimsaraapi') {
 
       }));
 
-      SlHackers.addCommand({ pattern: '7xst ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+      SlHackers.addCMD({ pattern: '7xst ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
             var webimage = await axios.get(`https://netfiletolink.herokuapp.com/36636`, { responseType: 'arraybuffer' })
 

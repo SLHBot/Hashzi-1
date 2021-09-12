@@ -13,7 +13,7 @@ const XN_NO = "*කණගාටුයි හමු නොවීය...*"
 
 if (Config.WORKTYPE == 'private') {
 
-  SlHackers.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
 
     const link = match[1]
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-  SlHackers.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
 
     const link = match[1]
 

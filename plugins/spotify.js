@@ -16,7 +16,7 @@ const Lang = Language.getString('spotify');
 
 if (Config.WORKTYPE == 'private') {
 
-  SlHackers.addCommand({ pattern: 'spotify ?(.*)', fromMe: true, desc: Lang.SPO_DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'spotify ?(.*)', fromMe: true, desc: Lang.SPO_DESC }, async (message, match) => {
 
     const link = match[1]
 
@@ -41,7 +41,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-  SlHackers.addCommand({ pattern: 'spotify ?(.*)', fromMe: false, desc: Lang.SPO_DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'spotify ?(.*)', fromMe: false, desc: Lang.SPO_DESC }, async (message, match) => {
 
     const link = match[1]
 

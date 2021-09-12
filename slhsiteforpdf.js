@@ -1,4 +1,4 @@
-let Asena = require('../events');
+let SlHackers = require('../events');
 let { MessageType, MessageOptions, Mimetype } = require('@adiwajshing/baileys');
 let fs = require('fs');
 let axios = require('axios');
@@ -10,7 +10,7 @@ let Lang = Language.getString('unvoice');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({ pattern: 'spdf ?(.*)', fromMe: true, desc: Lang.SPDF_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'spdf ?(.*)', fromMe: true, desc: Lang.SPDF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.SPDF_LINK);
 
@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({ pattern: 'spdf ?(.*)', fromMe: false, desc: Lang.SPDF_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'spdf ?(.*)', fromMe: false, desc: Lang.SPDF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.SPDF_LINK);
 

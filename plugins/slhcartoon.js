@@ -13,7 +13,7 @@ const need = "*type some word after command*\n*command enthelum perupara nenba"
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'cartoon(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'cartoon(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'cartoon(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'cartoon(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 

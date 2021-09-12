@@ -10,7 +10,7 @@ const NEED_WORD = "*ඔබ වචනයක් ඇතුළත් කළ යු�
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'glitch ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'glitch ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -27,7 +27,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'freefire ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'freefire ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'cfire ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'cfire ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -47,7 +47,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'light ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'light ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -57,7 +57,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'cslogo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'cslogo ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -67,7 +67,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 's3d ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 's3d ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -77,7 +77,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nlogo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nlogo ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
@@ -87,7 +87,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'blackpink ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'blackpink ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -97,7 +97,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'neonlight ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'neonlight ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -107,7 +107,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'pornhub ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'pornhub ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -124,7 +124,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'blood ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'blood ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -134,7 +134,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '3dtext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '3dtext ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -144,7 +144,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nfire ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nfire ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -154,7 +154,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'ninjalogo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'ninjalogo ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.NEED_WORD);
 
@@ -164,7 +164,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nglow ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nglow ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -174,7 +174,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nleaves ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nleaves ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -184,7 +184,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nsky ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nsky ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -194,7 +194,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'buttonyt ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'buttonyt ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -204,7 +204,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'bcwall ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'bcwall ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -214,7 +214,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'anony ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'anony ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -224,7 +224,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'ptext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'ptext ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -234,7 +234,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'colortext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'colortext ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -244,7 +244,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'emoji ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'emoji ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -256,7 +256,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nsky ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nsky ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -266,7 +266,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'silk ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'silk ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -276,7 +276,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'sand ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'sand ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -286,7 +286,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'glowtext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'glowtext ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -296,7 +296,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'flametext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'flametext ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -306,7 +306,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'flowertext ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'flowertext ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -316,7 +316,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'blood ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'blood ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/blood?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -325,7 +325,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'luxury ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'luxury ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/luxury?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -334,7 +334,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'xmas ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'xmas ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/xmas?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -343,7 +343,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'toxic ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'toxic ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/toxic?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -352,7 +352,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'njoker ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'njoker ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/joker?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -361,7 +361,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'glossy ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'glossy ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/glossy-carbon?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -370,7 +370,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nethu ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nethu ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/blood?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -379,7 +379,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'metald ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'metald ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/metal-dark?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -388,7 +388,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'marvel ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'marvel ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var topText, bottomText;
@@ -404,7 +404,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'space3d ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'space3d ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var topText, bottomText;
@@ -420,7 +420,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'horror ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'horror ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/horror?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -429,7 +429,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'dgold ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'dgold ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/deluxe-gold?text=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -438,7 +438,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nwolf ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nwolf ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/wolf?text1=Neotrox&text2=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -447,7 +447,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nxwolf ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nxwolf ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/wolf2?text1=Neotrox&text2=${match[1]}&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -456,7 +456,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'nxninja ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'nxninja ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
         var webimage = await axios.get(`https://${Config.A_HACKER}.herokuapp.com/api/textprome/ninja?text1=${match[1]}&text2=Neotrox&apikey=${Config.HACKER}`, { responseType: 'arraybuffer' })
@@ -466,7 +466,7 @@ if (Config.WORKTYPE == 'public') {
     }));
 
     //============================================================I Edited logo====================================================================================
-    SlHackers.addCommand({ pattern: 'smoke ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'smoke ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -476,7 +476,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'candy ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'candy ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -486,7 +486,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'gradientavatar ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'gradientavatar ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -496,7 +496,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'fur ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'fur ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -506,7 +506,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'flaming ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'flaming ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -516,7 +516,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'bevel ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'bevel ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -526,7 +526,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'lolcover ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'lolcover ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -536,7 +536,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'dota2avatar ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'dota2avatar ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -546,7 +546,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'crossfire ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'crossfire ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -556,7 +556,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'warfacecover ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'warfacecover ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -566,7 +566,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'aov ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'aov ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -576,7 +576,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'pokemon ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'pokemon ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -586,7 +586,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'kopi2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'kopi2 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -596,7 +596,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'underwebmatrix ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'underwebmatrix ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -606,7 +606,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'watermelon ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'watermelon ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -616,7 +616,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'rock ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'rock ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -626,7 +626,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'lion ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'lion ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -643,7 +643,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'ultragloss ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'ultragloss ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -653,7 +653,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'denim ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'denim ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -663,7 +663,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'rph ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'rph ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -680,7 +680,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -698,7 +698,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write1 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -708,7 +708,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write2 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -718,7 +718,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write3 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -728,7 +728,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write4 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -738,7 +738,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write5 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write5 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -748,7 +748,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'write6 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'write6 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -761,7 +761,7 @@ if (Config.WORKTYPE == 'public') {
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++My Video+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-    SlHackers.addCommand({ pattern: 'vtext1 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext1 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -771,7 +771,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'vtext2 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext2 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -781,7 +781,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'vtext3 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext3 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -791,7 +791,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'vtext4 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext4 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -801,7 +801,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'vtext5 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext5 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -811,7 +811,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'vtext6 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext6 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -821,7 +821,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: 'vtext7 ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'vtext7 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 

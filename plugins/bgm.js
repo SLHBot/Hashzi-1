@@ -80,7 +80,7 @@ if (config.LANG == 'ID') {
     BGM_on = 'bgm option turned on'
     BGM_off = 'bgm option turned off'
 }
-SlHackers.addCommand({ pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'bgm ?(.*)', fromMe: true, desc: l_dsc, usage: '.bgm on / off' }, (async (message, match) => {
     if (match[1] == 'off') {
         await heroku.patch(baseURI + '/config-vars', {
             body: {

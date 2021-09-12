@@ -11,7 +11,7 @@ const Lang = Language.getString('whois'); // Language Support
 
 if (CON.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => {
+    SlHackers.addCMD({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC }, async (message, match) => {
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid)
@@ -48,7 +48,7 @@ if (CON.WORKTYPE == 'private') {
 }
 else if (CON.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'whois', fromMe: false, desc: Lang.PL_DESC }, async (message, match) => {
+    SlHackers.addCMD({ pattern: 'whois', fromMe: false, desc: Lang.PL_DESC }, async (message, match) => {
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid)
@@ -82,7 +82,7 @@ else if (CON.WORKTYPE == 'public') {
             );
         }
     });
-    SlHackers.addCommand({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC, dontAddCommandList: true }, async (message, match) => {
+    SlHackers.addCMD({ pattern: 'whois', fromMe: true, desc: Lang.PL_DESC, dontaddCMDList: true }, async (message, match) => {
 
         if (message.jid.includes('-')) {
             var json = await message.client.groupMetadataMinimal(message.jid)

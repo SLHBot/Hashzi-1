@@ -133,7 +133,7 @@ if (config.LANG == 'RU') {
 
 if (config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'dcsong ?(.*)', fromMe: false, desc: Lang.SONG_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_TEXT_SONG, MessageType.text);
         let arama = await yts(match[1]);

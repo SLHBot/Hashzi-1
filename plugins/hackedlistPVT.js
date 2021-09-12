@@ -9,7 +9,7 @@ const fs = require("fs")
 const slhb = fs.readFileSync('./media/bot.mp3')
 
 if (Config.WORKTYPE == 'private') {
-    SlHackers.addCommand({ pattern: 'hacked', fromMe: true, desc: Lang.UP }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'hacked', fromMe: true, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 

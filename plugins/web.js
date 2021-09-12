@@ -30,7 +30,7 @@ function speedText(speed) {
     return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
 }
 
-SlHackers.addCommand({ pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC }, (async (message, match) => {
     var msg = await message.reply(Lang.SPEEDTESTING);
     var st = await speedTest({ acceptLicense: true, acceptGdpr: true });
 
@@ -44,7 +44,7 @@ SlHackers.addCommand({ pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_
     await msg.delete();
 }));
 
-SlHackers.addCommand({ pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC }, (async (message, match) => {
     var start = new Date().getTime();
     await message.sendMessage('```Ping!```');
     var end = new Date().getTime();
@@ -55,7 +55,7 @@ SlHackers.addCommand({ pattern: 'ping', fromMe: true, deleteCommand: false, desc
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
             await message.client.sendMessage(message.jid, `*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
         });
     }));
-    SlHackers.addCommand({ pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC }, (async (message, match) => {
         if (match[1].length < 4) { return await message.client.sendMessage(message.jid, Lang.VALİD, MessageType.text) }
         if (match[1].includes('+')) {
             var split = match[1].split('+'), sonsayi = split[1], ilksayi = split[0]
@@ -104,7 +104,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -115,7 +115,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid, `*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
         });
     }));
-    SlHackers.addCommand({ pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -126,7 +126,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid, `*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
         });
     }));
-    SlHackers.addCommand({ pattern: 'calc ?(.*)', fromMe: false, desc: Lang.CALC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'calc ?(.*)', fromMe: false, desc: Lang.CALC }, (async (message, match) => {
         if (match[1].length < 4) { return await message.client.sendMessage(message.jid, Lang.VALİD, MessageType.text) }
         if (match[1].includes('+')) {
             var split = match[1].split('+'), sonsayi = split[1], ilksayi = split[0]
@@ -161,7 +161,7 @@ else if (Config.WORKTYPE == 'public') {
             }
         }
     }));
-    SlHackers.addCommand({ pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'calc ?(.*)', fromMe: true, desc: Lang.CALC, dontaddCMDList: true }, (async (message, match) => {
         if (match[1].length < 4) { return await message.client.sendMessage(message.jid, Lang.VALİD, MessageType.text) }
         if (match[1].includes('+')) {
             var split = match[1].split('+'), sonsayi = split[1], ilksayi = split[0]

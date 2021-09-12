@@ -98,7 +98,7 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-SlHackers.addCommand({ on: 'text', fromMe: wk, dontAddCommandList: true, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCMD({ on: 'text', fromMe: wk, dontaddCMDList: true, deleteCommand: false }, (async (message, match) => {
     if (message.message.startsWith('Eva') && conf.FULLEVA !== 'true') {
         var unique_ident = message.client.user.jid.split('@')[0]
         let acc = os.userInfo().homedir.split('Whats')[1].split('Duplicated/')[0] == 'Asena' ? '7d57838203msh0c5cf65c90a7231p13b461jsn77c8cfa55871' : '7d57838203msh0c582jak19865261js1229n77c8cfa55871'
@@ -127,7 +127,7 @@ SlHackers.addCommand({ on: 'text', fromMe: wk, dontAddCommandList: true, deleteC
         })
     }
 }));
-SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCMD({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
     if (conf.FULLEVA == 'true' && ((!message.jid.includes('-')) || (message.jid.includes('-') &&
         ((message.mention !== false && message.mention.length !== 0) || message.reply_message !== false)))) {
         if (message.jid.includes('-') && (message.mention !== false && message.mention.length !== 0)) {
@@ -216,7 +216,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     }
 
 }));
-SlHackers.addCommand({ pattern: 'vtalk$', desc: vtalk_dsc, fromMe: wk }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'vtalk$', desc: vtalk_dsc, fromMe: wk }, (async (message, match) => {
     if (!message.reply_message) return await message.client.sendMessage(message.jid, reply_eva, MessageType.text, { quoted: message.data })
     try {
         const file = await message.client.downloadAndSaveMediaMessage({
@@ -334,7 +334,7 @@ if (conf.LANG == 'ID') {
     succ_off = 'Eva Set ke Semi-Fungsional! Mohon tunggu sebentar! ☑️'
 }
 
-SlHackers.addCommand({ pattern: 'eva ?(.*)', desc: fulleva_dsc, fromMe: true, usage: '.eva on / off' }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'eva ?(.*)', desc: fulleva_dsc, fromMe: true, usage: '.eva on / off' }, (async (message, match) => {
     var eva_status = `${conf.FULLEVA}`
     if (match[1] == 'on') {
         if (eva_status == 'true') {
