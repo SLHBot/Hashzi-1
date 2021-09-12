@@ -13,20 +13,20 @@ const XN_NO = "*කණගාටුයි හමු නොවීය...*"
 
 if (Config.WORKTYPE == 'private') {
 
-  SlHackers.addCommand({ pattern: 'vxham144p ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
 
     const link = match[1]
 
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
-     var load = await message.client.sendMessage(message.jid, XN_D, MessageType.text)
+    await message.client.sendMessage(message.jid, XN_D, MessageType.text)
     await axios
-      .get(`https://api.lolhuman.xyz/api/xhamster?apikey=${Config.LLHAPI}=${match[1]}`)
+      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=bimsaraapi`)
       .then(async (response) => {
         const {
-          144p,
-        } = response.data.result.download
+          url,
+        } = response.data.result
 
-        const videoBuffer = await axios.get(144p, { responseType: 'arraybuffer' })
+        const videoBuffer = await axios.get(url, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, XN_UP, MessageType.text, { quoted: message.data });
         await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { mimetype: Mimetype.mp4, ptt: false })
@@ -34,27 +34,26 @@ if (Config.WORKTYPE == 'private') {
       .catch(
         async (err) => await message.client.sendMessage(message.jid, XN_NO, MessageType.text, { quoted: message.data }),
       )
-       await load.delete();
   },
   )
 }
 
 if (Config.WORKTYPE == 'public') {
 
-  SlHackers.addCommand({ pattern: 'vxham144p ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
+  SlHackers.addCommand({ pattern: 'xnx ?(.*)', fromMe: true, desc: XN_DESC }, async (message, match) => {
 
     const link = match[1]
 
     if (!link) return await message.client.sendMessage(message.jid, XN_NEED, MessageType.text, { quoted: message.data })
-     var load = await message.client.sendMessage(message.jid, XN_D, MessageType.text)
+    await message.client.sendMessage(message.jid, XN_D, MessageType.text)
     await axios
-      .get(`https://api.lolhuman.xyz/api/xhamster?apikey=${Config.LLHAPI}=${match[1]}`)
+      .get(`https://zenzapi.xyz/api/xnxx?url=${link}&apikey=bimsaraapi`)
       .then(async (response) => {
         const {
-          144p,
+          url,
         } = response.data.result
 
-        const videoBuffer = await axios.get(144p, { responseType: 'arraybuffer' })
+        const videoBuffer = await axios.get(url, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, XN_UP, MessageType.text, { quoted: message.data });
         await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { mimetype: Mimetype.mp4, ptt: false })
@@ -62,7 +61,6 @@ if (Config.WORKTYPE == 'public') {
       .catch(
         async (err) => await message.client.sendMessage(message.jid, XN_NO, MessageType.text, { quoted: message.data }),
       )
-       await load.delete();
   },
   )
 }

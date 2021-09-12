@@ -22,20 +22,20 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') bdc = '*👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻*'
 
     var cdc = ''
-    if (Config.LANG == 'EN') edc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
-    if (Config.LANG == 'SI') edc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
+    if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
+    if (Config.LANG == 'SI') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
 
     var ddc = ''
     if (Config.LANG == 'EN') ddc = '*👊👊👊👊👊👊👊*'
     if (Config.LANG == 'SI') ddc = '*👊👊👊👊👊👊👊*'
 
     var edc = ''
-    if (Config.LANG == 'EN') cdc = '*🤜🏻🤜🏻🤜🏻🤛🏻🤛🏻🤛🏻*'
-    if (Config.LANG == 'SI') cdc = '*🤜🏻🤜🏻🤜🏻🤛🏻🤛🏻🤛🏻*'
+    if (Config.LANG == 'EN') edc = '*🪔🪔🪔🖥🪔🪔🪔*'
+    if (Config.LANG == 'SI') edc = '*🪔🪔🪔🖥🪔🪔🪔*'
 
     var fdc = ''
-    if (Config.LANG == 'EN') fdc = '🎲 en si'
-    if (Config.LANG == 'SI') fdc = '🎲 en si'
+    if (Config.LANG == 'EN') fdc = '!🎲 en si'
+    if (Config.LANG == 'SI') fdc = '!🎲 en si'
 
     var gdc = ''
     if (Config.LANG == 'EN') gdc = '*Why?*'

@@ -21,7 +21,7 @@ const PHN_UP = "🛂 හිමිකරු :-"
 const PHN_VIEW = "👁‍🗨 බැලීම් :-"
 const PHN_LIKE = "👍🏻 කමැත්ත පලකළ ගණන:-"
 const PHN_DISLIKE = "👎🏻 අකමැත්ත පලකළ ගණන :-"
-const PHN_CHAN = "� හිමිකරුගේ තව video බැලීමට අනුගමනය කරන්න:-"
+const PHN_CHAN = "🎦 හිමිකරුගේ තව video බැලීමට අනුගමනය කරන්න:-"
 const PHN_RES = "☣ Resolution :-"
 const PHN_HELPER = "*📢 Youtube Link Promoter :-* _හිරුවා_"
 

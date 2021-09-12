@@ -78,7 +78,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
         var i = Math.floor(10 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖�� �𝕖�� ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖 Team ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
     })); /* owner close */
 
 
@@ -119,7 +119,7 @@ if (Config.WORKTYPE == 'public') {  /* Public open */
         var i = Math.floor(10 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖�� �𝕖�� ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖 Team ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
     }));
 
 }  /* Public close */
@@ -163,7 +163,7 @@ else if (Config.WORKTYPE == 'private') {  /* private open */
         var i = Math.floor(10 * Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖�� �𝕖�� ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: '*╔═══◈⎚ BOT▿OWNER ⎚◈═══╗* \n              *┖ɴᴇᴏᴛʀᴏ x ʀᴀᴍɪʏᴀ┛* \n\n🛡️ Name : ' + text1 + '\n🔮 I am a ' + text2 + '\n\n🪀 Whatsapp : wa.me/94' + text3 + '\n🔗 Email : ' + text4 + '\n🍿 Youtube : ' + text5 + '\n🏓 Facebook : ' + text6 + '\n🎨 Insta : ' + text7 + '\n🎭 Tiktok : ' + text8 + '\n🕊️ Twitter : ' + text9 + '\n⚙️ Telegram : ' + text10 + '\n👨‍💻 Github : ' + text11 + '\n\n                 *𝕊𝕃ℍ𝕒𝕔𝕜𝕖 Team ℙ𝕣𝕠𝕛𝕖𝕔𝕥™*\n*╚═══✿══◈══⎚══◈══✿═══╝*' })
     })); /* owner close */
 
 
