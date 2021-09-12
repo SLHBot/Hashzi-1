@@ -122,6 +122,174 @@ if (Config.WORKTYPE == 'private') {
                     caption: msg + '\n' + '*🚀SLHackers Team Bot*'
                 })
             })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[4]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[5]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[6]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[7]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[8]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[9]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[10]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
             .catch(
                 async (err) => await message.sendMessage(errorMessage(NOT_FOUND + pname)),
             )
@@ -223,6 +391,174 @@ if (Config.WORKTYPE == 'public') {
                     desc,
 
                 } = response.data.result[3]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[4]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[5]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[6]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[7]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[8]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[9]
+
+                const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
+
+                const msg = `*${PHN_TITLE}* ${title}` + `\n` +
+                    `*${PHN_UP}* ${update_on}` + `\n\n` +
+                    `*${PHN_URL}* ${url}` + `\n\n` +
+                    `*${PHN_DESC}* ${desc}`
+
+                await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
+                    caption: msg + '\n' + '*🚀SLHackers Team Bot*'
+                })
+            })
+
+        await axios
+            .get(`https://leyscoders-api.herokuapp.com/api/rexdl-search?q=${pname}&apikey=dappakntlll`)
+            .then(async (response) => {
+                const {
+                    url,
+                    title,
+                    img,
+                    update_on,
+                    desc,
+
+                } = response.data.result[10]
 
                 const profileBuffer = await axios.get(img, { responseType: 'arraybuffer' })
 
