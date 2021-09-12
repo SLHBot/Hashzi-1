@@ -749,7 +749,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
-                                    '\n_Hatayı https://chat.whatsapp.com/BPNzFEBUVbT1MnfNv3uTvL bu gruba iletebilirsiniz._\n\n' +
+                                    '\n_Hatayı https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci bu gruba iletebilirsiniz._\n\n' +
                                     '*Gerçekleşen Hata:* ```' + error + '```\n\n'
                                     , MessageType.text, { detectLinks: false });
 
@@ -880,7 +880,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                             else {
                                 await conn.sendMessage(conn.user.jid, '*-- Bot වාර්තාව [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] --*' +
                                     '\n*🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴 නිසි ලෙස ක්‍රියා කරයි!*' +
-                                    '\n_මෙය LOG අංකයයි.. මෙහි පණිවිඩ පිළිබඳව සැලකිලිමත් වන්න..!_' +
+                                    '\n\n\n_මෙය LOG අංකයයි.. මෙහි පණිවිඩ පිළිබඳව සැලකිලිමත් වන්න..!_' +
                                     '\n_ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහයට සම්බන්ධ වන්න.._' +
                                     '\n_සහය සමූහය_: https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci' +
                                     '\n_(සුරැකි පණිවිඩ)._\n\n' +
@@ -890,17 +890,17 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 if (error.message.includes('URL')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Only Absolutely URLs Supported_' +
-                                        '\n*Reason:* _The usage of media tools (nmedia, sticker..) in the LOG number._' +
-                                        '\n*Solution:* _You can use commands in any chat, except the LOG number._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _සහය වන්නේ නියත වශයෙන්ම URL පමණි_' +
+                                        '\n*හේතුව:* _LOG අංකය තුළ මාධ්‍ය මෙවලම් (nmedia, ස්ටිකර් ..) භාවිතය._' +
+                                        '\n*විසඳුම:* _ඔබට LOG අංකය හැර ඕනෑම චැට් එකකදී විධානයන් භාවිතා කළ හැකිය._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Deleting Plugin_' +
-                                        '\n*Reason:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _ප්ලගිනය ඉවත් කිරීම_' +
+                                        '\n*හේතුව:* _ප්ලගිනයේ නම වැරදි ලෙස ඇතුළත් කිරීම මැකීමට අවශ්‍යයි._' +
                                         '\n*Solution:* _Please try without adding_ *__* _to the plugin you want to delete. If you still get an error, try to add like_ ```?(.*) / $``` _to the end of the name._ '
                                         , MessageType.text
                                     );
@@ -908,105 +908,105 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 else if (error.message.includes('split')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Split of Undefined_' +
-                                        '\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
-                                        '\n*Solution:* _Restarting will be enough._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _නිර්වචනය නොකළ බෙදීම_' +
+                                        '\n*හේතුව:* _කණ්ඩායම් පරිපාලකයින්ට භාවිතා කළ හැකි නියෝග සමහර විට බෙදීමේ ක්‍රියාවලිය නොදකිති._ ' +
+                                        '\n*විසඳුම:* _නැවත ආරම්භ කිරීම ප්‍රමාණවත් වේ._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _SQL Database Error_' +
-                                        '\n*Reason:* _Database corruption._ ' +
-                                        '\n*Solution:* _There is no known solution. You can try reinstalling it._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _SQL දත්ත සමුදා දෝෂය_' +
+                                        '\n*හේතුව:* _දත්ත සමුදාය දූෂණය_ ' +
+                                        '\n*විසඳුම:* _දන්නා විසඳුමක් නොමැත. ඔබට එය නැවත ස්ථාපනය කිරීමට උත්සාහ කළ හැකිය._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Ookla Server Connection_' +
-                                        '\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
-                                        '\n*Solution:* _If you use it one more time the problem will be solved._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _Ookla සේවාදායක සම්බන්ධතාවය_' +
+                                        '\n*හේතුව:* _Sepedtest දත්ත සේවාදායකයට සම්ප්‍රේෂණය කළ නොහැක._' +
+                                        '\n*විසඳුම:* _ඔබ එය තවත් වරක් භාවිතා කළහොත් ගැටලුව විසඳනු ඇත._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('params')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Requested Audio Params_' +
-                                        '\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
-                                        '\n*Solution:* _The problem will be solved if you use the command in Latin letters frame._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _ඉල්ලූ ශ්‍රව්‍ය පරාමිතීන්_' +
+                                        '\n*හේතුව:* _ලතින් හෝඩියේ පිටත TTS විධානය භාවිතා කිරීම._' +
+                                        '\n*විසඳුම:* _ඔබ ලතින් අකුරු රාමුව තුළ විධානය භාවිතා කළහොත් ගැටළුව විසඳනු ඇත._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය``` ==========' +
-                                        '\n\n*Main Error:* _No Such File or Directory_' +
-                                        '\n*Reason:* _Incorrect coding of the plugin._' +
-                                        '\n*Solution:* _Please check the your plugin codes._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _එවැනි ගොනුවක් හෝ නාමාවලියක් නොමැත' +
+                                        '\n*හේතුව:* _ප්ලගිනයේ වැරදි කේතීකරණය._' +
+                                        '\n*විසඳුම:* _කරුණාකර ඔබගේ ප්ලගින කේත පරීක්‍ෂා කරන්න._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('404')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Error 404 HTTPS_' +
-                                        '\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
-                                        '\n*Solution:* _Wait a while and try again. If you still get the error, perform the transaction on the website.._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _දෝෂය 404 HTTPS_' +
+                                        '\n*හේතුව:* _හෙරෝකු ප්ලගිනය යටතේ ඇති විධානයන් භාවිතා කිරීම හේතුවෙන් සේවාදායකයා සමඟ සන්නිවේදනය කිරීමට නොහැකි වීම._' +
+                                        '\n*විසඳුම:* _ටික වේලාවක් රැඳී සිට නැවත උත්සාහ කරන්න. ඔබට තවමත් දෝෂයක් ඇත්නම් එම ගනුදෙනුව වෙබ් අඩවියේ සිදු කරන්න._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Reply Delete Function_' +
-                                        '\n*Reason:* _Using IMG or Wiki commands._' +
-                                        '\n*Solution:* _There is no solution for this error. It is not a fatal error._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
+                                        '\n*හේතුව:* _IMG හෝ විකි විධානයන් භාවිතා කිරීම._' +
+                                        '\n*විසඳුම:* _මෙම දෝෂයට විසඳුමක් නොමැත. එය මාරාන්තික වරදක් නොවේ._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Reply Delete Function_' +
-                                        '\n*Reason:* _Using IMG or Wiki commands._' +
-                                        '\n*Solution:* _There is no solution for this error. It is not a fatal error._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
+                                        '\n*හේතුව:* _IMG හෝ විකි විධානයන් භාවිතා කිරීම._' +
+                                        '\n*විසඳුම:* _මෙම දෝෂයට විසඳුමක් නොමැත. එය මාරාන්තික වරදක් නොවේ._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('400')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Bailyes Action Error_ ' +
-                                        '\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
-                                        '\n*Solution:* _If you use it again, it may improve. If the error continues, you can try to restart._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _Bailyes ක්‍රියා දෝෂය_' +
+                                        '\n*හේතුව:* _නිශ්චිත හේතුව නොදනී. විකල්ප එකකට වඩා මෙම දෝෂය ඇති කිරීමට ඉඩ ඇත._' +
+                                        '\n*විසඳුම:* _ඔබ එය නැවත භාවිතා කළහොත් එය වැඩිදියුණු විය හැකිය. දෝෂය දිගටම පවතී නම්, ඔබට නැවත ආරම්භ කිරීමට උත්සාහ කළ හැකිය._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Cannot Decode Text or Media_' +
-                                        '\n*Reason:* _Incorrect use of the plug._' +
-                                        '\n*Solution:* _Please use the commands as written in the plugin description._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _පෙළ හෝ මාධ්‍ය_ විකේතනය කළ නොහැක' +
+                                        '\n*හේතුව:* _ප්ලග් එක වැරදි ලෙස භාවිතා කිරීම._' +
+                                        '\n*විසඳුම:* _කරුණාකර ප්ලගිනය විස්තරයේ ලියා ඇති පරිදි විධානයන් භාවිතා කරන්න._'
                                         , MessageType.text
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️ ERROR ANALYSIS [🚀SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉🤴] ⚕️*' +
                                         '\n========== ```🙇දෝශ විශ්ලේෂණය!``` ==========' +
-                                        '\n\n*Main Error:* _Word Character Usage_' +
-                                        '\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
-                                        '\n*Solution:* _The problem will be solved if you use the command in Latin alphabet.._'
+                                        '\n\n\n*ප්‍රධාන දෝෂය:* _වචන චරිත භාවිතය_' +
+                                        '\n*හේතුව:* _ලතින් හෝඩියේ පිටත TTP, ATTP වැනි විධානයන් භාවිතා කිරීම._' +
+                                        '\n*විසඳුම:* _ඔබ ලතින් හෝඩියේ විධානය භාවිතා කළහොත් ගැටළුව විසඳනු ඇත.._'
                                         , MessageType.text
                                     );
                                 }
                                 else {
                                     return await conn.sendMessage(conn.user.jid, '*🙇🏻 කණගාටුයි..! SLHackers Team Bots Auto error පද්ධතියට හදුනාගත නොහැකියි..🙇🏻*' +
-                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයන්ට ලියන්න..._'
+                                        '\n_ඔබට පුලුවන් වැඩිදුර උදව් සදහා සහය සමූහයන්ට ලියන්න.._'
                                         , MessageType.text
                                     );
                                 }
