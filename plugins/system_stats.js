@@ -21,7 +21,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
 
@@ -38,7 +38,7 @@ if (Config.WORKTYPE == 'private') {
         }
     }));
 
-    SlHackers.addCMD({ pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -53,7 +53,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
 
@@ -70,7 +70,7 @@ else if (Config.WORKTYPE == 'public') {
         }
     }));
 
-    SlHackers.addCMD({ pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, dontAddCommandList: true }, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

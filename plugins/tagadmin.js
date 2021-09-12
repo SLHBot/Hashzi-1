@@ -14,7 +14,7 @@ const Language = require('../language');
 const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
-    SlHackers.addCMD({ pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'tagadmin$', fromMe: true, desc: Lang.TAGADMİN }, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-    SlHackers.addCMD({ pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'tagadmin$', fromMe: false, desc: Lang.TAGADMİN }, (async (message, match) => {
         let grup = await message.client.groupMetadata(message.jid);
         var jids = [];
         mesaj = '';

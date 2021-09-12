@@ -11,7 +11,7 @@ const Language = require('../language');
 const Lang = Language.getString('AsenaPlug');
 const axios = require('axios');
 
-SlHackers.addCMD({ pattern: 'delall', fromMe: true, desc: DEL }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'delall', fromMe: true, desc: DEL }, (async (message, match) => {
 
     await message.sendMessage(Lang.DELETING);
     await message.client.modifyChat(message.jid, ChatModification.delete);

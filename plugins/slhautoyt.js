@@ -28,7 +28,7 @@ const PHN_HELPER = "*📢 Youtube Link Promoter :-* _හිරුවා_"
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: '💳 ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
+    SlHackers.addCommand({ pattern: '💳 ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
 
         const link = match[1]
 
@@ -84,7 +84,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-    SlHackers.addCMD({ pattern: '💳 ?(.*)', fromMe: false, desc: YTV_DESC }, async (message, match) => {
+    SlHackers.addCommand({ pattern: '💳 ?(.*)', fromMe: false, desc: YTV_DESC }, async (message, match) => {
 
         const link = match[1]
 

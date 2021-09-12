@@ -16,7 +16,7 @@ if (con.LANG === 'TR' || 'az') {
 
     if (con.WORKTYPE === 'private') {
 
-        SlHackers.addCMD({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
@@ -38,7 +38,7 @@ if (con.LANG === 'TR' || 'az') {
     }
     else if (con.WORKTYPE === 'public') {
 
-        SlHackers.addCMD({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
@@ -63,7 +63,7 @@ else if (con.LANG === 'HI') {
 
     if (con.WORKTYPE === 'private') {
 
-        SlHackers.addCMD({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
@@ -85,7 +85,7 @@ else if (con.LANG === 'HI') {
     }
     else if (con.WORKTYPE === 'public') {
 
-        SlHackers.addCMD({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
@@ -110,7 +110,7 @@ else {
 
     if (con.WORKTYPE === 'private') {
 
-        SlHackers.addCMD({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: true, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));
@@ -132,7 +132,7 @@ else {
     }
     else if (con.WORKTYPE === 'public') {
 
-        SlHackers.addCMD({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'roll', fromMe: false, desc: ENZAR }, (async (message, match) => {
 
             await message.client.sendMessage(message.jid, ENSEN, MessageType.text);
             await new Promise(r => setTimeout(r, 4000));

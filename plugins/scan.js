@@ -11,7 +11,7 @@ const Language = require('../language');
 const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
-    SlHackers.addCMD({ pattern: 'scan ?(.*)', fromMe: true, desc: Lang.SCAN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'scan ?(.*)', fromMe: true, desc: Lang.SCAN }, (async (message, match) => {
 
         if (match[1] == '') return await message.client.sendMessage(message.jid, Lang.NO, MessageType.text);
 
@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 }
 else if (Config.WORKTYPE == 'public') {
-    SlHackers.addCMD({ pattern: 'scan ?(.*)', fromMe: false, desc: Lang.SCAN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'scan ?(.*)', fromMe: false, desc: Lang.SCAN }, (async (message, match) => {
 
         if (match[1] == '') return await message.client.sendMessage(message.jid, Lang.NO, MessageType.text);
 
@@ -37,7 +37,7 @@ else if (Config.WORKTYPE == 'public') {
             await message.client.sendMessage(message.jid, '```' + match[1] + '``` \n' + Lang.UNSUC, MessageType.text);
         }
     }));
-    SlHackers.addCMD({ pattern: 'scan ?(.*)', fromMe: true, dontaddCMDList: true, desc: Lang.SCAN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'scan ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.SCAN }, (async (message, match) => {
 
         if (match[1] == '') return await message.client.sendMessage(message.jid, Lang.NO, MessageType.text);
 

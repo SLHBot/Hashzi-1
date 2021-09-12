@@ -9,7 +9,7 @@ const { MessageType, MessageOptions, Mimetype, Presence } = require('@adiwajshin
 const Language = require('../language');
 const Lang = Language.getString('scam');
 
-SlHackers.addCMD({ pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'scam ?(.*)', fromMe: true, desc: Lang.SCAM_DESC }, (async (message, match) => {
 
     if (match[1] === '') {
 

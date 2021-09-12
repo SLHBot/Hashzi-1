@@ -13,7 +13,7 @@ const Lang = Language.getString('scrapers');
 const fs = require("fs")
 const slhb = fs.readFileSync('./media/bot.mp3')
 
-SlHackers.addCMD({ pattern: 'version', fromMe: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'version', fromMe: true }, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, slhb, MessageType.audio, { mimetype: 'audio/mp4', ptt: true }, { quoted: message.data })
     await message.sendMessage("*⚜SLHACKERS VERSION CHECKER🙇*\n\n*🧚‍♂️SLHackers ▻5.5.4*\n*Global Stable*");

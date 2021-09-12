@@ -8,7 +8,7 @@ const capt = "🎭 *SLHackers Tiktok Downloader* 🕊\n    🌀  ```CODED BY Hir
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'ttv ?(.*)', fromMe: false }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'ttv ?(.*)', fromMe: false }, async (message, match) => {
 
         const link = match[1]
 
@@ -37,7 +37,7 @@ if (Config.WORKTYPE == 'public') {
 
     }) //pattern close
 
-    SlHackers.addCMD({ pattern: 'ttv ?(.*)', fromMe: true }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'ttv ?(.*)', fromMe: true }, async (message, match) => {
 
         const link = match[1]
 
@@ -70,7 +70,7 @@ if (Config.WORKTYPE == 'public') {
 
 else if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'ttv ?(.*)', fromMe: true }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'ttv ?(.*)', fromMe: true }, async (message, match) => {
 
         const link = match[1]
 

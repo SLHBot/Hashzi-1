@@ -17,7 +17,7 @@ const NOT_FOUND = "*කිසිවක් සොයා ගත නොහැක!.*
 
 if (Config.WORKTYPE == 'private') {
 
-    hiru.addCMD({ pattern: 'hmod ?(.*)', fromMe: true, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
+    hiru.addCommand({ pattern: 'hmod ?(.*)', fromMe: true, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
 
         const pname = match[1]
 
@@ -114,7 +114,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-    hiru.addCMD({ pattern: 'hmod ?(.*)', fromMe: false, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
+    hiru.addCommand({ pattern: 'hmod ?(.*)', fromMe: false, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
 
         const pname = match[1]
 

@@ -8,7 +8,7 @@ const Config = require('../config');
 
 
 if (Config.WORKTYPE == 'private') {
-	SlHackers.addCMD({ pattern: 'fake id ?(.*)', fromMe: true, desc: '', dontaddCMDList: true }, async (message, match) => {
+	SlHackers.addCommand({ pattern: 'fake id ?(.*)', fromMe: true, desc: '', dontAddCommandList: true }, async (message, match) => {
 		const url = `https://docs-jojo.herokuapp.com/api/fake_identity?lang=en&type=json`;
 		try {
 			const response = await got(url);
@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
 
-	SlHackers.addCMD({ pattern: 'fake id ?(.*)', fromMe: false, desc: '', dontaddCMDList: true }, async (message, match) => {
+	SlHackers.addCommand({ pattern: 'fake id ?(.*)', fromMe: false, desc: '', dontAddCommandList: true }, async (message, match) => {
 		const url = `https://docs-jojo.herokuapp.com/api/fake_identity?lang=en&type=json`;
 		try {
 			const response = await got(url);

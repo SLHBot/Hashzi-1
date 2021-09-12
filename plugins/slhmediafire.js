@@ -14,7 +14,7 @@ const Lang = Language.getString('instagram')
 
 const Tlang = Language.getString('mediafire')
 
-SlHackers.addCMD({ pattern: 'mediafire ?(.*)', fromMe: false, dontaddCMDList: true }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'mediafire ?(.*)', fromMe: false, dontAddCommandList: true }, async (message, match) => {
 
   const userName = match[1]
 

@@ -23,7 +23,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-SlHackers.addCMD({ pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.BAN_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.BAN_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
 
@@ -61,7 +61,7 @@ SlHackers.addCMD({ pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: La
     }
 }));
 
-SlHackers.addCMD({ pattern: 'add(?: |$)(.*)', fromMe: true, onlyGroup: true, desc: Lang.ADD_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'add(?: |$)(.*)', fromMe: true, onlyGroup: true, desc: Lang.ADD_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
 
@@ -95,7 +95,7 @@ SlHackers.addCMD({ pattern: 'add(?: |$)(.*)', fromMe: true, onlyGroup: true, des
     }
 }));
 
-SlHackers.addCMD({ pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.PROMOTE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.PROMOTE_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
 
@@ -153,7 +153,7 @@ SlHackers.addCMD({ pattern: 'promote ?(.*)', fromMe: true, onlyGroup: true, desc
     }
 }));
 
-SlHackers.addCMD({ pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.DEMOTE_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN);
 
@@ -211,7 +211,7 @@ SlHackers.addCMD({ pattern: 'demote ?(.*)', fromMe: true, onlyGroup: true, desc:
     }
 }));
 
-SlHackers.addCMD({ pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.MUTE_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
 
@@ -1567,7 +1567,7 @@ SlHackers.addCMD({ pattern: 'mute ?(.*)', fromMe: true, onlyGroup: true, desc: L
     }
 }));
 
-SlHackers.addCMD({ pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.UNMUTE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.UNMUTE_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
 
@@ -1581,7 +1581,7 @@ SlHackers.addCMD({ pattern: 'unmute ?(.*)', fromMe: true, onlyGroup: true, desc:
     }
 }));
 
-SlHackers.addCMD({ pattern: 'invite ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.INVITE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'invite ?(.*)', fromMe: true, onlyGroup: true, desc: Lang.INVITE_DESC }, (async (message, match) => {
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.IM_NOT_ADMIN, MessageType.text);
     var invite = await message.client.groupInviteCode(message.jid);

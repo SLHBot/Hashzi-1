@@ -19,7 +19,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-SlHackers.addCMD({ pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'tagall ?(.*)', fromMe: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
 
     var im = await checkImAdmin(message);
     if (!im) return await message.client.sendMessage(message.jid, Lang.ADMİN, MessageType.text);
