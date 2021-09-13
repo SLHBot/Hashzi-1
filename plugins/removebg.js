@@ -55,6 +55,7 @@ if (Config.WORKTYPE == 'private') {
             fs.createWriteStream('rbg.png')
         );
 
+        await message.client.sendMessage(message.jid, fs.readFileSync('rbg.png'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAME });
         await message.client.sendMessage(message.jid, fs.readFileSync('rbg.png'), MessageType.document, { filename: 'SLHackers.png', mimetype: Mimetype.png });
         await load.delete();
     }));
@@ -96,6 +97,7 @@ else if (Config.WORKTYPE == 'public') {
             fs.createWriteStream('rbg.png')
         );
 
+        await message.client.sendMessage(message.jid, fs.readFileSync('rbg.png'), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAAME });
         await message.client.sendMessage(message.jid, fs.readFileSync('rbg.png'), MessageType.document, { filename: 'SLHackers.png', mimetype: Mimetype.png });
         await load.delete();
     }));
