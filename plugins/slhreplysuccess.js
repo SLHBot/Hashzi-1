@@ -66,9 +66,6 @@ if (Config.WORKTYPE == 'private') {
 
                 await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
             })
-            .catch(
-                async (err) => await message.client.sendMessage(message.jid, '👍🏻👍👍🏻👍👍🏻👍', MessageType.text, { quoted: message.data }),
-            )
     }));
 }
 
