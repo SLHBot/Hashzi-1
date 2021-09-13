@@ -56,8 +56,7 @@ SlHackers.addCommand({ on: 'text', fromMe: wk, dontaddCommandList: true, deleteC
         var ldet = lngDetector.detect(finm)
         var trmsg = finm
 
-        var uren = encodeURI(trmsg)
-        await axios.get('https://api.lolhuman.xyz/api/ytvideo?apikey=https://github.com/BlackAmda&url=' + uren).then(async (response) => {
+        await axios.get('https://api.lolhuman.xyz/api/ytvideo?apikey=https://github.com/BlackAmda&url=' + trmsg).then(async (response) => {
             var fins = ''
             if (conf.LANG !== 'EN') {
                 ceviri = await translatte(response.data.result.title, { from: 'auto', to: 'si' });
