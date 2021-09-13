@@ -34,8 +34,8 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') edc = '*Thank you so much for informing me of this message.*'
 
     var fdc = ''
-    if (Config.LANG == 'EN') fdc = '!🎲 en si'
-    if (Config.LANG == 'SI') fdc = '!🎲 en si'
+    if (Config.LANG == 'EN') fdc = '!🎲'
+    if (Config.LANG == 'SI') fdc = '!🎲'
 
     var gdc = ''
     if (Config.LANG == 'EN') gdc = '*Why?*'
@@ -47,7 +47,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
         let regex3 = new RegExp('https://meemassoo.lk')
         let regex4 = new RegExp('https://slbreakingnews.com')
         let regex5 = new RegExp('https://dailymirror.lk')
-        let regex6 = new RegExp('https://facbook.com')
+        let regex6 = new RegExp('https://www.facebook.com')
         let regex7 = new RegExp('hiruwa')
         let regex8 = new RegExp('Hirusha')
         if (regex1.test(message.message)) {
