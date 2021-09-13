@@ -21,6 +21,14 @@ const Heroku = require('heroku-client');
 const heroku = new Heroku({
     token: conf.HEROKU.API_KEY
 });
+
+// List
+const QUOTE_DESC = "It Sends Random Quote"
+const NEED_LOCATIONA = "*Invalid Request*"
+const QUOTE = "Quote :"
+const AUTHOR = "Author :"
+const NOT_FOUNDA = "```Sorry,I could not find a quote. 😖```"
+
 let baseURI = '/apps/' + conf.HEROKU.APP_NAME;
 
 let wk = conf.WORKTYPE == 'public' ? false : true
@@ -51,9 +59,9 @@ const convertToWav = file => {
 }
 
 SlHackers.addCommand({ on: 'text', fromMe: wk, dontaddCommandList: true, deleteCommand: false }, (async (message, match) => {
-    if (message.message.startsWith('1') && conf.FULLEVA !== 'true') {
+    if (message.message.startsWith('q') && conf.FULLEVA !== 'true') {
         var unique_ident = message.client.user.jid.split('@')[0]
-        var finm = message.message.replace('1', '').replace(' ', '')
+        var finm = message.message.replace('q', '').replace(' ', '')
         var ldet = lngDetector.detect(finm)
         var trmsg = finm
 
@@ -66,7 +74,17 @@ SlHackers.addCommand({ on: 'text', fromMe: wk, dontaddCommandList: true, deleteC
                     fins = ceviri.text
                 }
             } else { fins = response.data.content }
-            await message.client.sendMessage(message.jid, fins, MessageType.text, { quoted: message.data })
+
+            var ains = ''
+            if (conf.LANG !== 'SI') {
+                seviri = await translatte(response.data.author, { from: 'auto', to: 'si' });
+                if ('text' in seviri) {
+                    ains = seviri.text
+                }
+            } else { ains = response.data.author }
+
+            await message.client.sendMessage(message.jid, '*📌 ' + QUOTE + '* ```' + fins + '```\n\n' +
+                '*✒️' + AUTHOR + '* ```' + ains + '```\n', MessageType.text, { quoted: message.data })
         })
     }
 }));
