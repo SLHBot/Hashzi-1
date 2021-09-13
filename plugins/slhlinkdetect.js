@@ -11,15 +11,15 @@ const Lang = Language.getString('conventer');
 
 
 SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
-    var link_finder = 'true'
+    var my_link_detector = 'true'
 
     var adc = ''
-    if (Config.LANG == 'EN') adc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
-    if (Config.LANG == 'SI') adc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
+    if (Config.LANG == 'EN') adc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'SI') adc = '*Thank you so much for informing me of this message.*'
 
     var bdc = ''
-    if (Config.LANG == 'EN') bdc = '*Thank you so much for informing me of this message.*'
-    if (Config.LANG == 'SI') bdc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'EN') bdc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
+    if (Config.LANG == 'SI') bdc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
 
     var cdc = ''
     if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
@@ -41,7 +41,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'EN') gdc = '*Why?*'
     if (Config.LANG == 'SI') gdc = '*ai*'
 
-    if (link_finder == 'true' && message.jid !== '905511384572-1616356915@g.us') {
+    if (my_link_detector == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
         let regex2 = new RegExp('https://gagana.lk')
         let regex3 = new RegExp('https://meemassoo.lk')
