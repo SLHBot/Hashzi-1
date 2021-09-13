@@ -60,7 +60,7 @@ SlHackers.addCommand({ on: 'text', fromMe: wk, dontaddCommandList: true, deleteC
         var uren = encodeURI(trmsg)
         await axios.get('http://api.brainshop.ai/get?bid=157582&key=HzYiQOTcF1zOB0cs&uid=' + unique_ident + '&msg=' + uren).then(async (response) => {
             var fins = ''
-            if (conf.LANG !== 'EN') {
+            if (conf.LANG !== 'SI') {
                 ceviri = await translatte(response.data.cnt, { from: 'auto', to: 'si' });
                 if ('text' in ceviri) {
                     fins = ceviri.text

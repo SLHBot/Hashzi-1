@@ -49,7 +49,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
         let regex5 = new RegExp('https://dailymirror.lk')
         let regex6 = new RegExp('https://www.facebook.com')
         let regex7 = new RegExp('hiruwa')
-        let regex8 = new RegExp('Hirusha')
+        let regex8 = new RegExp('ado')
         if (regex1.test(message.message)) {
             await message.client.sendMessage(message.jid, edc, MessageType.text, { quoted: message.data })
         }
