@@ -18,6 +18,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
 SlHackers.addCommand({ pattern: 'clear', fromMe: true, desc: END, dontAddCommandList: true }, (async (message, match) => {
 
     await message.sendMessage('```Chat clearing...```');
+    await message.sendMessage('.setvar AUTO_BİO:true');
     await message.client.modifyChat(message.jid, ChatModification.delete);
     await message.sendMessage('```🚮 Chat cleared```');
 }));
