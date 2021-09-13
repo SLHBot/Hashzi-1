@@ -51,19 +51,21 @@ const convertToWav = file => {
 }
 
 SlHackers.addCommand({ on: 'text', fromMe: wk, dontaddCommandList: true, deleteCommand: false }, (async (message, match) => {
-    if (message.message.startsWith('https://youtu.be') && conf.FULLEVA !== 'true') {
-        var finm = message.message.replace('https://youtu.be', '').replace('https://youtu.be', '')
+    if (message.message.startsWith('1') && conf.FULLEVA !== 'true') {
+        var unique_ident = message.client.user.jid.split('@')[0]
+        var finm = message.message.replace('1', '').replace(' ', '')
         var ldet = lngDetector.detect(finm)
         var trmsg = finm
 
-        await axios.get('https://api.lolhuman.xyz/api/ytvideo?apikey=https://github.com/BlackAmda&url=' + trmsg).then(async (response) => {
+        var uren = encodeURI(trmsg)
+        await axios.get('https://api.quotable.io/random').then(async (response) => {
             var fins = ''
-            if (conf.LANG !== 'EN') {
-                ceviri = await translatte(response.data.result.title, { from: 'auto', to: 'si' });
+            if (conf.LANG !== 'SI') {
+                ceviri = await translatte(response.data.content, { from: 'auto', to: 'si' });
                 if ('text' in ceviri) {
                     fins = ceviri.text
                 }
-            } else { fins = response.data.result.title }
+            } else { fins = response.data.content }
             await message.client.sendMessage(message.jid, fins, MessageType.text, { quoted: message.data })
         })
     }
