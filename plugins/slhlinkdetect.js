@@ -14,12 +14,12 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     var link_finder = 'true'
 
     var adc = ''
-    if (Config.LANG == 'EN') adc = '*🤟🏻🤟🏻🤟🏻🤟🏻🤟🏻🤟🏻🤟🏻*'
-    if (Config.LANG == 'SI') adc = '*🤟🏻🤟🏻🤟🏻🤟🏻🤟🏻🤟🏻🤟🏻*'
+    if (Config.LANG == 'EN') adc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
+    if (Config.LANG == 'SI') adc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
 
     var bdc = ''
-    if (Config.LANG == 'EN') bdc = '*👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻*'
-    if (Config.LANG == 'SI') bdc = '*👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻👌🏻*'
+    if (Config.LANG == 'EN') bdc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'SI') bdc = '*Thank you so much for informing me of this message.*'
 
     var cdc = ''
     if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
@@ -30,8 +30,8 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') ddc = '*👊👊👊👊👊👊👊*'
 
     var edc = ''
-    if (Config.LANG == 'EN') edc = '*🪔🪔🪔🖥🪔🪔🪔*'
-    if (Config.LANG == 'SI') edc = '*🪔🪔🪔🖥🪔🪔🪔*'
+    if (Config.LANG == 'EN') edc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'SI') edc = '*Thank you so much for informing me of this message.*'
 
     var fdc = ''
     if (Config.LANG == 'EN') fdc = '!🎲 en si'
