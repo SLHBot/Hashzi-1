@@ -19,80 +19,39 @@ const Lang = Language.getString('nekobin');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: '🚀', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hss', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
-        await axios
-            .get(`${Config.LOLSITE}api/ytvideo?apikey=${Config.LLHAPI}&url=${msg}`)
-            .then(async (response) => {
-                const {
-                    link,
-                    resolution,
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${D5FHWDB - RDS42AX - MRESW75 - K0FS7Z5}&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-                } = response.data.result.link
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
 
-                const {
-                    thumbnail,
-                    title,
-                    duration,
-                    uploader,
-                    channel,
-                    view,
-                    like,
-                    dislike,
-
-                } = response.data.result
-
-                const thumbnailBuffer = await axios.get(thumbnail, { responseType: 'arraybuffer' })
-
-                const slh = `*${PHN_RDATE}* ${title}` + `\n\n` +
-                    `*${PHN_CHAN}* ${channel}` + `\n\n` +
-                    `*${PHN_VIEW}* ${view}` + `\n\n` +
-                    `*${PHN_LIKE}* ${like}` + `\n\n` +
-                    `*${PHN_DISLIKE}* ${dislike}` + `\n\n` +
-                    `*${PHN_DU}* ${duration}` + `\n\n` +
-                    `${PHN_HELPER}`
-
-                await message.client.sendMessage(message.jid, Buffer.from(thumbnailBuffer.data), MessageType.image, { quoted: message.data, caption: slh });
-
-                const videoBuffer = await axios.get(link, { responseType: 'arraybuffer' })
-
-                const msg = `*${PHN_RDATE}* ${title}` + `\n\n` +
-                    `*${PHN_UP}* ${uploader}` + `\n\n` +
-                    `*${PHN_RES}* ${resolution}` + `\n\n` +
-                    `*${PHN_DU}* ${duration}` + `\n\n` +
-                    `${PHN_HELPER}`
-
-                await message.client.sendMessage(message.jid, Buffer.from(videoBuffer.data), MessageType.video, { quoted: message.data, filename: 'SLHackers.mp4', mimetype: Mimetype.mp4, caption: msg, ptt: false })
-            })
     }));
 }
-
-
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'necto', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hss', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/skytext?apikey=${Config.ASENA_PLUG}&text=${msg}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${D5FHWDB - RDS42AX - MRESW75 - K0FS7Z5}&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
 
     }));
 
-    SlHackers.addCommand({ pattern: 'necto', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hss', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
-        var webimage = await axios.get(`https://api.zeks.xyz/api/skytext?apikey=${Config.ASENA_PLUG}&text=${msg}`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${D5FHWDB - RDS42AX - MRESW75 - K0FS7Z5}&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
 
