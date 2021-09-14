@@ -19,5 +19,6 @@ SlHackers.addCommand({ pattern: 'clear', fromMe: true, desc: END, dontAddCommand
 
     await message.sendMessage('```Chat clearing...```');
     await message.client.modifyChat(message.jid, ChatModification.delete);
+    await message.sendMessage('.setvar AUTO_BİO:true');
     await message.sendMessage('```🚮 Chat cleared```');
 }));
