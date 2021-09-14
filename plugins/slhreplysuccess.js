@@ -25,7 +25,7 @@ if (Config.WORKTYPE == 'private') {
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
-        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${D5FHWDB - RDS42AX - MRESW75 - K0FS7Z5}&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=D5FHWDB-RDS42AX-MRESW75-K0FS7Z5&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
 
@@ -39,7 +39,7 @@ else if (Config.WORKTYPE == 'public') {
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
-        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${D5FHWDB - RDS42AX - MRESW75 - K0FS7Z5}&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=D5FHWDB-RDS42AX-MRESW75-K0FS7Z5&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
 
@@ -51,7 +51,7 @@ else if (Config.WORKTYPE == 'public') {
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
-        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${D5FHWDB - RDS42AX - MRESW75 - K0FS7Z5}&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
+        var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=D5FHWDB-RDS42AX-MRESW75-K0FS7Z5&url=${msg}&full_page=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&dark_mode=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
         await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
 
