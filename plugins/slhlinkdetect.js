@@ -14,12 +14,13 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     var my_link_detector = 'true'
 
     var adc = ''
-    if (Config.LANG == 'EN') adc = '*Thank you so much for informing me of this message.*'
-    if (Config.LANG == 'SI') adc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'EN') adc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි.*'
+    if (Config.LANG == 'SI') adc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි*'
 
     var bdc = ''
-    if (Config.LANG == 'EN') bdc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි.*'
-    if (Config.LANG == 'SI') bdc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි*'
+    if (Config.LANG == 'EN') bdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
+    if (Config.LANG == 'SI') bdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
+ 
 
     var cdc = ''
     if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
@@ -41,21 +42,21 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'EN') gdc = '*Why?*'
     if (Config.LANG == 'SI') gdc = '*ai*'
 
-    var gdc = ''
-    if (Config.LANG == 'EN') gdc = '*Thanks for letting me know*'
-    if (Config.LANG == 'SI') gdc = '*Thanks for letting me know*'
+    var hdc = ''
+    if (Config.LANG == 'EN') hdc = '*Thanks for letting me know*'
+    if (Config.LANG == 'SI') hdc = '*Thanks for letting me know*'
 
-    var gdc = ''
-    if (Config.LANG == 'EN') gdc = '*Thanks for informing me?*'
-    if (Config.LANG == 'SI') gdc = '*Thanks for informing me*'
+    var idc = ''
+    if (Config.LANG == 'EN') idc = '*Thanks for informing me?*'
+    if (Config.LANG == 'SI') idc = '*Thanks for informing me*'
 
-    var gdc = ''
-    if (Config.LANG == 'EN') gdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි?*'
-    if (Config.LANG == 'SI') gdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
+    var jdc = ''
+    if (Config.LANG == 'EN') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි?*'
+    if (Config.LANG == 'SI') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
 
-    var gdc = ''
-    if (Config.LANG == 'EN') gdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
-    if (Config.LANG == 'SI') gdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
+    var kdc = ''
+    if (Config.LANG == 'EN') kdc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'SI') kdc = '*Thank you so much for informing me of this message.*'
 
     if (my_link_detector == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
@@ -63,7 +64,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
         let regex3 = new RegExp('https://meemassoo.lk')
         let regex4 = new RegExp('https://slbreakingnews.com')
         let regex5 = new RegExp('https://dailymirror.lk')
-        let regex6 = new RegExp('https://www.facebook.com')
+        let regex6 = new RegExp('https://www.github.com')
         let regex7 = new RegExp('hiruwa')
         let regex8 = new RegExp('ado')
         if (regex1.test(message.message)) {

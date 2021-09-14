@@ -38,7 +38,7 @@ module.exports = {
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
-    CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*🍀 SLHαcĸerѕ Teαм Boт 𝒫𝓇𝑜𝒿𝑒𝒸𝓉 🍀*' : process.env.CAPTION_KEY,
+    CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*⫷ S̳L̳H̳a̳c̳k̳e̳r̳s̳ ̳T̳e̳a̳m̳ ̳B̳o̳t̳ ̳P̳r̳o̳j̳e̳c̳t̳ ⫸*' : process.env.CAPTION_KEY,
     COMMAND: process.env.COMMAND === undefined ? 'hacked' : process.env.COMMAND,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
@@ -77,11 +77,11 @@ module.exports = {
 
     //PRO
     LLHAPI: process.env.LLHAPI === undefined ? 'https://github.com/BlackAmda' : process.env.LLHAPI,
-    BIO_CP: process.env.BIO_CP === undefined ? '██▓▒­░⡷⠂𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 සාමාජිකයෙකි⠐⢾░▒▓██' : process.env.BIO_CP,
-    BIO_CAP: process.env.BIO_CAP === undefined ? '🆆🅾🆁🅺 🆂🆄🅿🅴🆁 🅷🅰🆁🅳 | අවසන් වරට මම Online සිටි වේලාව.\n\n' : process.env.BIO_CAP,
+    BIO_CP: process.env.BIO_CP === undefined ? '██▓▒­░⡷⠂𝙼𝚎𝚖𝚋𝚎𝚛 𝚘𝚏 𝚝𝚑𝚎 𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖.⠐⢾░▒▓██' : process.env.BIO_CP,
+    BIO_CAP: process.env.BIO_CAP === undefined ? '🆆🅾🆁🅺 🆂🆄🅿🅴🆁 🅷🅰🆁🅳 | ⫷ අවසන් වරට මම Online සිටි වේලාව.⫸\n\n' : process.env.BIO_CAP,
     LLHMYAPI: process.env.LLHMYAPI === undefined ? '03ffdf45513a71ed7e669db1' : process.env.LLMHHAPI,
     BOT_NAAME: process.env.BOT_NAAME === undefined ? 'Made by :\n 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAME,
-    BOT_NAAAME: process.env.BOT_NAAAME === undefined ? '*Made by* :\n SLHαcĸerѕ Teαм Boт' : process.env.BOT_NAAAME,
+    BOT_NAAAME: process.env.BOT_NAAAME === undefined ? '*Made by* :\n۞ SLHαcĸerѕ Teαм Boт ۞' : process.env.BOT_NAAAME,
     BOT_NAAAAME: process.env.BOT_NAAAAME === undefined ? 'Copyright *©* 2021 | 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAAAME,
     BOT_NAAAAAME: process.env.BOT_NAAAAAME === undefined ? 'Made by :\n*¨˜ˆ”°⍣~•✡⊹٭„¸ SLHackers Team Bot ¸„٭⊹✡•~⍣°”ˆ˜¨*' : process.env.BOT_NAAAAAME,
     BOT_NAAAAAAME: process.env.BOT_NAAAAAAME === undefined ? '*Made by* ⚡\n꧁•⊹٭SLHackers Team Bot٭⊹•꧂' : process.env.BOT_NAAAAAAME,
