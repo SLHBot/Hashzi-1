@@ -533,7 +533,7 @@ if (config.WORKTYPE == 'private') {
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
         var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
 
-        var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
+        var arama = await wiki({ apiUrl: 'https://' + 'si' + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
@@ -1001,7 +1001,7 @@ else if (config.WORKTYPE == 'public') {
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
         var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
 
-        var arama = await wiki({ apiUrl: 'https://' + config.LANG + '.wikipedia.org/w/api.php' })
+        var arama = await wiki({ apiUrl: 'https://' + 'si' + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();

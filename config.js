@@ -73,9 +73,13 @@ module.exports = {
     BOT_NAME: process.env.BOT_NAME === undefined ? '*Produced by :*\n 𝑺̲̅𝑳̲̅𝑯̲̅𝒂̲̅𝒄̲̅𝒌̲̅𝒆̲̅𝒓̲̅𝒔̲̅ 𝑻̲̅𝒆̲̅𝒂̲̅𝒎̲̅ 𝑩̲̅𝒐̲̅𝒕̲̅' : process.env.BOT_NAME,
 
     //PRO
+    BIO_CP: process.env.BIO_CP === undefined ? '🚀𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 සාමාජිකයෙකි🎲' : process.env.BIO_CP,
     LLHAPI: process.env.LLHAPI === undefined ? 'https://github.com/BlackAmda' : process.env.LLHAPI,
+    LOLSITE: process.env.LOLSITE === undefined ? 'https://api.lolhuman.xyz/' : process.env.LOLSITE,
     LLHMYAPI: process.env.LLHMYAPI === undefined ? '03ffdf45513a71ed7e669db1' : process.env.LLMHHAPI,
+    LYCODEAPI: process.env.LYCODEAPI === undefined ? 'dappakntlll' : process.env.LYCODEAPI,
     BOT_NAAME: process.env.BOT_NAAME === undefined ? 'Made by :\n 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAME,
+    LYCODESITE: process.env.LYCODESITE === undefined ? 'https://leyscoders-api.herokuapp.com/' : process.env.LYCODESITE,
     BOT_NAAAME: process.env.BOT_NAAAME === undefined ? '*Made by* :\n SLHαcĸerѕ Teαм Boт' : process.env.BOT_NAAAME,
     BOT_NAAAAME: process.env.BOT_NAAAAME === undefined ? 'Copyright *©* 2021 | 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAAAME,
     BOT_NAAAAAME: process.env.BOT_NAAAAAME === undefined ? 'Made by :\n*🔰SLHαcĸerѕ Teαм Boт🔰*' : process.env.BOT_NAAAAAME,
