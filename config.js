@@ -77,7 +77,7 @@ module.exports = {
 
     //PRO
     LLHAPI: process.env.LLHAPI === undefined ? 'https://github.com/BlackAmda' : process.env.LLHAPI,
-    BIO_CP: process.env.BIO_CP === undefined ? '██▓▒­░⡷⠂𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 සාමාජිකයෙකි⠐⢾░▒▓██' : process.env.BIO_CP,
+    BIO_CP: process.env.BIO_CP === undefined ? '██▓▒­░⡷⠂𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 සාමාජිකයෙකි⠐⢾░▒▓██' : process.env.BIO_CP,
     BIO_CAP: process.env.BIO_CAP === undefined ? '🆆🅾🆁🅺 🆂🆄🅿🅴🆁 🅷🅰🆁🅳 | අවසන් වරට මම Online සිටි වේලාව.\n\n' : process.env.BIO_CAP,
     LLHMYAPI: process.env.LLHMYAPI === undefined ? '03ffdf45513a71ed7e669db1' : process.env.LLMHHAPI,
     BOT_NAAME: process.env.BOT_NAAME === undefined ? 'Made by :\n 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭' : process.env.BOT_NAAME,
