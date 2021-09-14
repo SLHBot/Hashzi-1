@@ -18,8 +18,8 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') adc = '*Thank you so much for informing me of this message.*'
 
     var bdc = ''
-    if (Config.LANG == 'EN') bdc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
-    if (Config.LANG == 'SI') bdc = '*මේ පණිවිඩය ලබාදි මාව දැනුවත් කල ඔබට බොහොමත්ම ස්තූති.*'
+    if (Config.LANG == 'EN') bdc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි.*'
+    if (Config.LANG == 'SI') bdc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි*'
 
     var cdc = ''
     if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
@@ -40,6 +40,22 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     var gdc = ''
     if (Config.LANG == 'EN') gdc = '*Why?*'
     if (Config.LANG == 'SI') gdc = '*ai*'
+
+    var gdc = ''
+    if (Config.LANG == 'EN') gdc = '*Thanks for letting me know*'
+    if (Config.LANG == 'SI') gdc = '*Thanks for letting me know*'
+
+    var gdc = ''
+    if (Config.LANG == 'EN') gdc = '*Thanks for informing me?*'
+    if (Config.LANG == 'SI') gdc = '*Thanks for informing me*'
+
+    var gdc = ''
+    if (Config.LANG == 'EN') gdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි?*'
+    if (Config.LANG == 'SI') gdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
+
+    var gdc = ''
+    if (Config.LANG == 'EN') gdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
+    if (Config.LANG == 'SI') gdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
 
     if (my_link_detector == 'true' && message.jid !== '905511384572-1616356915@g.us') {
         let regex1 = new RegExp('http://')
