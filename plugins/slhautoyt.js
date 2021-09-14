@@ -28,7 +28,7 @@ const PHN_HELPER = "*📢 Youtube Link Promoter :-* _හිරුවා_"
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: '👍🏻 ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
+    SlHackers.addCommand({ pattern: '💳 ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
 
         const link = match[1]
 
