@@ -541,6 +541,19 @@ if (config.WORKTYPE == 'private') {
         await reply.delete();
     }));
 
+    SlHackers.addCommand({ pattern: 'enwiki ?(.*)', fromMe: true, desc: Lang.WIKI_DESC }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
+        var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
+
+        var arama = await wiki({ apiUrl: 'https://' + 'en' + '.wikipedia.org/w/api.php' })
+            .page(match[1]);
+
+        var info = await arama.rawContent();
+        await message.client.sendMessage(message.jid, info, MessageType.text);
+        await reply.delete();
+    }));
+
     SlHackers.addCommand({ pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
@@ -1002,6 +1015,19 @@ else if (config.WORKTYPE == 'public') {
         var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
 
         var arama = await wiki({ apiUrl: 'https://' + 'si' + '.wikipedia.org/w/api.php' })
+            .page(match[1]);
+
+        var info = await arama.rawContent();
+        await message.client.sendMessage(message.jid, info, MessageType.text);
+        await reply.delete();
+    }));
+
+    SlHackers.addCommand({ pattern: 'enwiki ?(.*)', fromMe: false, desc: Lang.WIKI_DESC }, (async (message, match) => {
+
+        if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORDS, MessageType.text);
+        var reply = await message.client.sendMessage(message.jid, Lang.SEARCHING, MessageType.text);
+
+        var arama = await wiki({ apiUrl: 'https://' + 'en' + '.wikipedia.org/w/api.php' })
             .page(match[1]);
 
         var info = await arama.rawContent();
