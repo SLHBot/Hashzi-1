@@ -14,7 +14,7 @@ const Lang = Language.getString('weather');
 if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'sxham ?(.*)', fromMe: true, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
-        const url = `https://api.lolhuman.xyz/api/xhamstersearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
+        const url = `${Config.LOLSITE}api/xhamstersearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
@@ -93,7 +93,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'sxham ?(.*)', fromMe: false, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
-        const url = `https://api.lolhuman.xyz/api/xhamstersearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
+        const url = `${Config.LOLSITE}api/xhamstersearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
         try {
             const response = await got(url);
 

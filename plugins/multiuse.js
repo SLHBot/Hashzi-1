@@ -63,7 +63,7 @@ SlHackers.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async
   await message.sendMessage(infoMessage(LOADING))
 
   await axios
-    .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${userName}`)
+    .get(`${Config.LOLSITE}api/facebook2?apikey=${Config.LLHAPI}&url=${userName}`)
     .then(async (response) => {
       const {
         result,

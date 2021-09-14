@@ -12,7 +12,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (match[1] === '') return await message.sendMessage(need);
 
-        var ttinullimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/img/affect?url=${encodeURIComponent(match[1])}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${Config.LYCODESITE}api/img/affect?url=${encodeURIComponent(match[1])}&apikey=${Config.LYCODEAPI}`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by Hiruwa*' })
 
@@ -25,7 +25,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (match[1] === '') return await message.sendMessage(need);
 
-        var ttinullimage = await axios.get(`https://leyscoders-api.herokuapp.com/api/img/affect?url=${encodeURIComponent(match[1])}&apikey=dappakntlll`, { responseType: 'arraybuffer' })
+        var ttinullimage = await axios.get(`${Config.LYCODESITE}api/img/affect?url=${encodeURIComponent(match[1])}&apikey=${Config.LYCODEAPI}`, { responseType: 'arraybuffer' })
 
         await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: '*Made by Hiruwa*' })
 

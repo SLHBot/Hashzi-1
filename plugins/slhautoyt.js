@@ -34,7 +34,7 @@ if (Config.WORKTYPE == 'private') {
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text)
         await axios
-            .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
+            .get(`${Config.LOLSITE}api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
                 const {
                     link,
@@ -90,7 +90,7 @@ else if (Config.WORKTYPE == 'public') {
 
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
         await axios
-            .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
+            .get(`${Config.LOLSITE}api/ytvideo?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
                 const {
                     link,

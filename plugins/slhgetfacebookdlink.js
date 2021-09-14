@@ -14,7 +14,7 @@ const Lang = Language.getString('weather');
 if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'sfb ?(.*)', fromMe: true, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
-        const url = `https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${match[1]}`;
+        const url = `${Config.LOLSITE}api/facebook2?apikey=${Config.LLHAPI}&url=${match[1]}`;
         try {
             const response = await got(url);
 
@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'sfb ?(.*)', fromMe: false, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
-        const url = `https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${match[1]}`;
+        const url = `${Config.LOLSITE}api/facebook2?apikey=${Config.LLHAPI}&url=${match[1]}`;
         try {
             const response = await got(url);
 

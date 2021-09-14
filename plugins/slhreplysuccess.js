@@ -21,10 +21,12 @@ if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: '🚀', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
+        if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
+        if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
         const msg = message.reply_message.text
 
         await axios
-            .get(`https://api.lolhuman.xyz/api/ytvideo?apikey=${Config.LLHAPI}&url=${msg}`)
+            .get(`${Config.LOLSITE}api/ytvideo?apikey=${Config.LLHAPI}&url=${msg}`)
             .then(async (response) => {
                 const {
                     link,
@@ -72,7 +74,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: '🚀', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'necto', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);

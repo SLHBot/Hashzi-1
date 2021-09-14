@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(infoMessage(LOADING))
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
             })
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -66,7 +66,7 @@ if (Config.WORKTYPE == 'private') {
             })
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -86,7 +86,7 @@ if (Config.WORKTYPE == 'private') {
             })
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -123,7 +123,7 @@ if (Config.WORKTYPE == 'public') {
         await message.sendMessage(infoMessage(LOADING))
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -143,7 +143,7 @@ if (Config.WORKTYPE == 'public') {
             })
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -163,7 +163,7 @@ if (Config.WORKTYPE == 'public') {
             })
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,
@@ -183,7 +183,7 @@ if (Config.WORKTYPE == 'public') {
             })
 
         await axios
-            .get(`https://leyscoders-api.herokuapp.com/api/moddroid?q=${pname}&apikey=dappakntlll`)
+            .get(`${Config.LYCODESITE}api/moddroid?q=${pname}&apikey=${Config.LYCODEAPI}`)
             .then(async (response) => {
                 const {
                     url,

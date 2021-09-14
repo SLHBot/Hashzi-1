@@ -14,7 +14,7 @@ const Lang = Language.getString('weather');
 if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'sphub ?(.*)', fromMe: true, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
-        const url = `https://api.lolhuman.xyz/api/pornhubsearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
+        const url = `${Config.LOLSITE}api/pornhubsearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
         try {
             const response = await got(url);
             const json = JSON.parse(response.body);
@@ -100,7 +100,7 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     SlHackers.addCommand({ pattern: 'sphub ?(.*)', fromMe: false, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
-        const url = `https://api.lolhuman.xyz/api/pornhubsearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
+        const url = `${Config.LOLSITE}api/pornhubsearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
         try {
             const response = await got(url);
 

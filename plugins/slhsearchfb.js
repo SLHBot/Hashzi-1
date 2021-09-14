@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
         await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text, { quoted: message.data });
         await axios
-            .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
+            .get(`${Config.LOLSITE}api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
                 const {
                     result,
@@ -52,7 +52,7 @@ else if (Config.WORKTYPE == 'public') {
         if (!link) return await message.client.sendMessage(message.jid, YT_NEED, MessageType.text, { quoted: message.data })
         await message.client.sendMessage(message.jid, DWLOAD_VID, MessageType.text, { quoted: message.data })
         await axios
-            .get(`https://api.lolhuman.xyz/api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
+            .get(`${Config.LOLSITE}api/facebook2?apikey=${Config.LLHAPI}&url=${link}`)
             .then(async (response) => {
                 const {
                     result,
