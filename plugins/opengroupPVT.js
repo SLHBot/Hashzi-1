@@ -10,7 +10,7 @@ const FINAL = "```The group  has opened 🔓!```"
 const TMUTE = "Trying to open the group"
 const TST = ".tagall .gm"
 const SCXR = "Opening..."
-SlHackers.addCommand({ pattern: 'open', fromMe: true, deleteCommand: false, desc: OP, }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'open', fromMe: true, deleteCommand: false, desc: OP, }, (async (message, match) => {
 
   var msg = await message.reply('Preforming....');
 

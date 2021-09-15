@@ -16,7 +16,7 @@ const Lang = Language.getString('ffmpeg');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, 'Need Media and Filter Name!\nℹ️ Ex: ```.ffmpeg fade=in:0:30```\nℹ️ Ex: ```.ffmpeg curves=vintage, fps=fps=25```', MessageType.text);
         if (message.reply_message.video) {
@@ -80,7 +80,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'ffmpeg ?(.*)', fromMe: true, desc: Lang.FF_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, 'Need Media and Filter Name!\nℹ️ Ex: ```.ffmpeg fade=in:0:30```\nℹ️ Ex: ```.ffmpeg curves=vintage, fps=fps=25```', MessageType.text);
         if (message.reply_message.video) {
@@ -141,7 +141,7 @@ else if (Config.WORKTYPE == 'public') {
             return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
         }
     }));
-    SlHackers.addCommand({ pattern: 'ffmpeg ?(.*)', fromMe: false, desc: Lang.FF_DESC, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'ffmpeg ?(.*)', fromMe: false, desc: Lang.FF_DESC, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, 'Need Media and Filter Name!\nℹ️ Ex: ```.ffmpeg fade=in:0:30```\nℹ️ Ex: ```.ffmpeg curves=vintage, fps=fps=25```', MessageType.text);
         if (message.reply_message.video) {

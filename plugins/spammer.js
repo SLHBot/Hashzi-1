@@ -18,7 +18,7 @@ const heroku = new Heroku({
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
 
-SlHackers.addCommand({ pattern: 'killspam', fromMe: true, desc: Lang.STOP_SPAMDESC }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'killspam', fromMe: true, desc: Lang.STOP_SPAMDESC }, (async (message, match) => {
 
     await message.client.sendMessage(message.jid, Lang.STOP_SPAM, MessageType.text);
 
@@ -29,7 +29,7 @@ SlHackers.addCommand({ pattern: 'killspam', fromMe: true, desc: Lang.STOP_SPAMDE
     });
 }));
 
-SlHackers.addCommand({ pattern: 'spam ?(.*)', fromMe: true, desc: Lang.SPAM_DESC }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'spam ?(.*)', fromMe: true, desc: Lang.SPAM_DESC }, (async (message, match) => {
 
 
     if (match[1] === '') {

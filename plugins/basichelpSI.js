@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'EN') {
     if (Config.NEOY == 'xyz') {
 
-        SlHackers.addCommand({ pattern: 'basichelp', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        SlHackers.addCMD({ pattern: 'basichelp', fromMe: true, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 
@@ -44,7 +44,7 @@ if (Config.LANG == 'EN') {
 (04) එම ලැයිස්තුවෙ අවසානයට ඇති Restart all dynos ඔබන්න
 🌀දැන් ඔබේ Bot restart වෙනු ඇත..එය භාවිත කිරීමෙනුත් Bot ක්‍රියාත්මක නොවේනම් logs වල screen shot සමඟ සහය සමූහයට ලියන්න
 
-🚀ඔබ දන්නවද SLHackers-Bot ඔබට Alive  message - Alive logo - Welcome Gif - Ban messages - Captions වෙනස් කිරීමේ පහසුකම් ලබා දී ඇති බව..
+🚀ඔබ දන්නවද SLHackers Team Bot ඔබට Alive  message - Alive logo - Welcome Gif - Ban messages - Captions වෙනස් කිරීමේ පහසුකම් ලබා දී ඇති බව..
 
 
 🚀  *විධානය: .setvar ALIVE_MESSAGE:(ඔබට අවශ්‍ය දේ ලියන්න)*

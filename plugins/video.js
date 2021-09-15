@@ -15,7 +15,7 @@ const NEED_WORD = "*ඔබ 📥වීඩියෝවක URL ඇතුළත් �
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'allvideo ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'allvideo ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         await message.client.sendMessage(message.jid, XN_N, MessageType.text, { quoted: message.data });
 
@@ -33,7 +33,7 @@ if (Config.WORKTYPE == 'public') {
 
 else if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'allvideo ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'allvideo ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         await message.client.sendMessage(message.jid, XN_N, MessageType.text, { quoted: message.data });
 

@@ -8,10 +8,10 @@ you may not use this file except in compliance with the License.
 
 const chalk = require('chalk');
 const { WAConnection, MessageOptions, MessageType } = require('@adiwajshing/baileys');
-const { StringSession } = require('./whatsasena/');
+const { StringSession } = require('./SLHTproject/');
 const fs = require('fs');
 
-async function whatsAsena() {
+async function HiruwaSlHackers() {
     const conn = new WAConnection();
     const Session = new StringSession();
     conn.version = [2, 2121, 7];
@@ -56,4 +56,4 @@ ${chalk.blue.italic('ℹ️  Whatsapp සමඟ සම්බන්ධ වීම 
     await conn.connect();
 }
 
-whatsAsena()
+HiruwaSlHackers()

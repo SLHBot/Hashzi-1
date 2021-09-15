@@ -13,7 +13,7 @@ const slhb = fs.readFileSync('./media/logo.mp3')
 if (Config.LANG == 'EN') {
     if (Config.WORKTYPE == 'public') {
 
-        SlHackers.addCommand({ pattern: 'textimg', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        SlHackers.addCMD({ pattern: 'textimg', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 

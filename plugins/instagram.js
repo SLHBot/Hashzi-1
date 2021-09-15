@@ -16,7 +16,7 @@ const Lang = Language.getString('instagram');
 
 if (Config.WORKTYPE == 'private') {
 
-  SlHackers.addCommand({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'profinsta ?(.*)', fromMe: true, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     const userName = match[1]
 
@@ -56,7 +56,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-  SlHackers.addCommand({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'profinsta ?(.*)', fromMe: false, usage: Lang.USAGE, desc: Lang.DESC }, async (message, match) => {
 
     const userName = match[1]
 

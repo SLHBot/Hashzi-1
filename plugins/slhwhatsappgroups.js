@@ -17,7 +17,7 @@ const NOT_FOUND = "*කිසිවක් සොයා ගත නොහැක!.*
 
 if (Config.WORKTYPE == 'private') {
 
-    hiru.addCommand({ pattern: 'wagrp ?(.*)', fromMe: true, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
+    hiru.addCMD({ pattern: 'wagrp ?(.*)', fromMe: true, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
 
         const pname = match[1]
 
@@ -178,7 +178,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-    hiru.addCommand({ pattern: 'wagrp ?(.*)', fromMe: false, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
+    hiru.addCMD({ pattern: 'wagrp ?(.*)', fromMe: false, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
 
         const pname = match[1]
 

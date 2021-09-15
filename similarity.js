@@ -1,4 +1,4 @@
-/* WhatsAsena Duplicated - Artificial Intelligence Similarity
+/* SLHackers Team Bot Duplicated - Artificial Intelligence Similarity
 Codded by lyfee
 
 function similarity(first, second) {

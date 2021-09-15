@@ -11,7 +11,7 @@ const Lang = Language.getString('system_stats');
 if (Config.LANG == 'EN') {
     if (Config.WORKTYPE == 'public') {
 
-        SlHackers.addCommand({ pattern: 'slhackers', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
+        SlHackers.addCMD({ pattern: 'slhackers', fromMe: false, desc: Lang.ALIVE_DESC }, (async (message, match) => {
 
             var image = await axios.get(Config.MENU_LOGO, { responseType: 'arraybuffer' })
 

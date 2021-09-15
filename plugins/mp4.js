@@ -19,7 +19,7 @@ const NO_RESULT = "*🌀කිසිවක් සොයා ගත නොහැ�
 
 if (Config.WORKTYPE == 'private') {
 
-  SlHackers.addCommand({ pattern: 'slmp4 ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'slmp4 ?(.*)', fromMe: true, desc: YTV_DESC, deleteCommand: false }, async (message, match) => {
 
     const link = match[1]
 
@@ -45,7 +45,7 @@ if (Config.WORKTYPE == 'private') {
 }
 
 else if (Config.WORKTYPE == 'public') {
-  SlHackers.addCommand({ pattern: 'slmp4 ?(.*)', fromMe: false, desc: YTV_DESC }, async (message, match) => {
+  SlHackers.addCMD({ pattern: 'slmp4 ?(.*)', fromMe: false, desc: YTV_DESC }, async (message, match) => {
 
     const link = match[1]
 

@@ -16,7 +16,7 @@ const Lang = Language.getString('wallpaper');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'wallpaper', fromMe: true, desc: Lang.WP }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'wallpaper', fromMe: true, desc: Lang.WP }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -651,7 +651,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'wallpaper', fromMe: false, desc: Lang.WP }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'wallpaper', fromMe: false, desc: Lang.WP }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -1283,7 +1283,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: Config.BOT_NAAAAAME })
 
     }));
-    SlHackers.addCommand({ pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'wallpaper', fromMe: true, desc: Lang.WP, dontaddCMDList: true }, (async (message, match) => {
 
         var r_text = new Array();
 

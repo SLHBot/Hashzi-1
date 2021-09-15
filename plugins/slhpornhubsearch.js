@@ -13,7 +13,7 @@ const Lang = Language.getString('weather');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'sphub ?(.*)', fromMe: true, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
+    SlHackers.addCMD({ pattern: 'sphub ?(.*)', fromMe: true, desc: Lang.DEVICE, dontaddCMDList: false }, async (message, match) => {
         const url = `${Config.LOLSITE}api/pornhubsearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
         try {
             const response = await got(url);
@@ -99,7 +99,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'sphub ?(.*)', fromMe: false, desc: Lang.DEVICE, dontAddCommandList: false }, async (message, match) => {
+    SlHackers.addCMD({ pattern: 'sphub ?(.*)', fromMe: false, desc: Lang.DEVICE, dontaddCMDList: false }, async (message, match) => {
         const url = `${Config.LOLSITE}api/pornhubsearch?apikey=${Config.LLHAPI}&query=${match[1]}`;
         try {
             const response = await got(url);
@@ -183,7 +183,7 @@ else if (Config.WORKTYPE == 'public') {
             return await message.client.sendMessage(message.jid, Lang.NOT_FOUNDMD, MessageType.text);
         }
     });
-    SlHackers.addCommand({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'what now', fromMe: true, desc: Lang.NEWEP }, (async (message, match) => {
 
         await message.sendMessage('*CMND* \n .device\n *DESC* \n know details of a mobilephone\n *example:* .device rog 5\n\n *CMND* \n .rdmore\n *DESC* \n add readmore after give text\n *example:* .rdmore SLHackers\n\n *CMND* \n.brdmore\n *DESC* \n add readmore before given text\n *example:* .brdmore SLHackers\n\n *CMND* \n.bgm one \n .bgm two \n *DESC* \n will change the type of reply bgm \n *example:* .bgm one (.bgm one \n is the default bgm mode - to change that use .bgm two ) ', MessageType.text, { quoted: message.data });
 

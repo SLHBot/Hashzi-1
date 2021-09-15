@@ -1,10 +1,10 @@
 {
-    "__ASENAJSON__": true,
+    "__SLHTBOTJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
     "AUTHOR": "AsenaDev",
     "STRINGS": {
-        "_asena": {
+        "_slhtbot": {
             "COMMAND": "Command",
             "DESC": "Description",
             "EXAMPLE": "Example",

@@ -15,7 +15,7 @@ const config = require('./config');
 const axios = require('axios');
 const Heroku = require('heroku-client');
 const { WAConnection, MessageOptions, MessageType, Mimetype, Presence } = require('@adiwajshing/baileys');
-const { Message, StringSession, Image, Video } = require('./whatsasena/');
+const { Message, StringSession, Image, Video } = require('./SLHTproject/');
 const { DataTypes } = require('sequelize');
 const { GreetingsDB, getMessage } = require("./plugins/sql/greetings");
 const got = require('got');
@@ -31,7 +31,7 @@ const Language = require('./language');
 const Lang = Language.getString('updater');
 
 // Sql
-const WhatsAsenaDB = config.DATABASE.define('WhatsAsenaDuplicated', {
+const SLHackersDB = config.DATABASE.define('WhatsAsenaDuplicated', {
     info: {
         type: DataTypes.STRING,
         allowNull: false
@@ -73,7 +73,7 @@ Array.prototype.remove = function () {
     return this;
 };
 
-async function whatsAsena() {
+async function HiruwaSlHackers() {
     var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }
     var ggg = Buffer.from(clh.cd, 'base64')
     var ddd = ggg.toString('utf-8')
@@ -270,7 +270,7 @@ async function whatsAsena() {
     var insult = await axios.get('https://gist.githubusercontent.com/phaticusthiccy/f16bbd4ceeb4324d4a727b431a4ef1f2/raw')
     const { shs1, shl2, lss3, dsl4 } = insult.data.inside
     await config.DATABASE.sync();
-    var StrSes_Db = await WhatsAsenaDB.findAll({
+    var StrSes_Db = await SLHackersDB.findAll({
         where: {
             info: 'StringSession'
         }
@@ -299,7 +299,7 @@ async function whatsAsena() {
         );
         const authInfo = conn.base64EncodedAuthInfo();
         if (StrSes_Db.length < 1) {
-            await WhatsAsenaDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
+            await SLHackersDB.create({ info: "StringSession", value: Session.createStringSession(authInfo) });
         } else {
             await StrSes_Db[0].update({ value: Session.createStringSession(authInfo) });
         }
@@ -352,7 +352,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         let afwhasena = config.WORKTYPE == 'public' ? ' Public' : ' Private'
         console.log(chalk.bgGreen('🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴' + afwhasena));
         await new Promise(r => setTimeout(r, 500));
-        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*🚀SLHαcĸerѕ Teαм Boт චැට්බෝට් ලෙස ක්රියා කරයි!* 🙇\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴\n Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using 🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 💌*\n    *- Eva*'
+        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*🚀SLHαcĸerѕ Teαм Boт චැට්බෝට් ලෙස ක්රියා කරයි!* 🙇\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*SLHackers Team Bot Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴\n Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using 🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 💌*\n    *- Eva*'
         if (conn.user.jid == one || conn.user.jid == two || conn.user.jid == three || conn.user.jid == four) {
             await conn.sendMessage(conn.user.jid, nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
             await heroku.get(baseURI + '/formation').then(async (formation) => {
@@ -745,7 +745,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
 
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
                                 await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] --*' +
-                                    '\n*WhatsAsena bir hata gerçekleşti!*' +
+                                    '\n*SLHackers Team Bot bir hata gerçekleşti!*' +
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
                                     '\n_Bu mesaj sizin numaranıza (kaydedilen mesajlar) gitmiş olmalıdır._' +
@@ -772,7 +772,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [WHATSASENA] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Split of Undefined_' +
                                         '\n*Nedeni:* _Grup adminlerinin kullanabildiği komutların ara sıra split fonksiyonunu görememesi._ ' +
@@ -1034,4 +1034,4 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
     }
 }
 
-whatsAsena();
+HiruwaSlHackers();

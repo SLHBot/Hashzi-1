@@ -28,7 +28,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-SlHackers.addCommand({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_URL + '.install https://gist.github.com/Hirusha21/4232b1c8c4734e1f06c3d991149c6fbd')
     try {
         var url = new URL(match[1]);
@@ -46,7 +46,7 @@ SlHackers.addCommand({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
     var response = await got(url);
     if (response.statusCode == 200) {
         // plugin adı
-        var plugin_name = response.body.match(/addCommand\({.*pattern: ["'](.*)["'].*}/);
+        var plugin_name = response.body.match(/addCMD\({.*pattern: ["'](.*)["'].*}/);
         if (plugin_name.length >= 1) {
             plugin_name = "__" + plugin_name[1];
         } else {
@@ -70,7 +70,7 @@ SlHackers.addCommand({ pattern: 'pkg ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
     }
 }));
 
-SlHackers.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -86,7 +86,7 @@ SlHackers.addCommand({ pattern: 'plugin', fromMe: true, desc: Lang.PLUGIN_DESC }
     }
 }));
 
-SlHackers.addCommand({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     var plugin = await Db.PluginDB.findAll({ where: { name: match[1] } });
