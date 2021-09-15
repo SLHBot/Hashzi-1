@@ -143,14 +143,14 @@ async function whatsAsena() {
                 var ov_time = new Date().toLocaleString('LK', { timeZone: 'Europe/Istanbul' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('994')) { // Azerbayjan
                 var ov_time = new Date().toLocaleString('AZ', { timeZone: 'Asia/Baku' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('94')) { // Sri Lanka
@@ -164,63 +164,63 @@ async function whatsAsena() {
                 var ov_time = new Date().toLocaleString('PT', { timeZone: 'Europe/Lisbon' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('75')) { // Russia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('RU', { timeZone: 'Europe/Kaliningrad' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Indian
                 var ov_time = new Date().toLocaleString('HI', { timeZone: 'Asia/Kolkata' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('62')) { // Indonesia
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('ID', { timeZone: 'Asia/Jakarta' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('49')) { // Germany
                 var ov_time = new Date().toLocaleString('DE', { timeZone: 'Europe/Berlin' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('61')) { // Australia 
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('AU', { timeZone: 'Australia/Lord_Howe' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('55')) { // Brazil
                 var ov_time = new Date().toLocaleString('BR', { timeZone: 'America/Noronha' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('33')) { // France
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('FR', { timeZone: 'Europe/Paris' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('34')) { // Spain
                 var ov_time = new Date().toLocaleString('ES', { timeZone: 'Europe/Madrid' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('44')) { // UK
@@ -234,35 +234,35 @@ async function whatsAsena() {
                 var ov_time = new Date().toLocaleString('IT', { timeZone: 'Europe/Rome' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('7')) { // Kazakhistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('KZ', { timeZone: 'Asia/Almaty' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('998')) { // Uzbekistan 
                 var ov_time = new Date().toLocaleString('UZ', { timeZone: 'Asia/Samarkand' }).split(' ')[1]
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else if (conn.user.jid.startsWith('993')) { // Turkmenistan
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('TM', { timeZone: 'Asia/Ashgabat' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
             else {
                 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 var utch = new Date().toLocaleDateString(config.LANG, get_localized_date)
                 var ov_time = new Date().toLocaleString('EN', { timeZone: 'America/New_York' }).split(' ')[1]
-                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴'
+                const biography = '📅 ' + utch + '\n⌚ ' + ov_time + '\n\n🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴'
                 await conn.setStatus(biography)
             }
         }
@@ -350,9 +350,9 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
         if (os.userInfo().homedir !== clh.pay) return;
         await new Promise(r => setTimeout(r, 200));
         let afwhasena = config.WORKTYPE == 'public' ? ' Public' : ' Private'
-        console.log(chalk.bgGreen('🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴' + afwhasena));
+        console.log(chalk.bgGreen('🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴' + afwhasena));
         await new Promise(r => setTimeout(r, 500));
-        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*🚀SLHαcĸerѕ Teαм Boт චැට්බෝට් ලෙස ක්රියා කරයි!* 🙇\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴\n Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using 🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴 💌*\n    *- Eva*'
+        let EVA_ACTİON = config.LANG == 'TR' || config.LANG == 'AZ' ? '*🚀SLHαcĸerѕ Teαм Boт චැට්බෝට් ලෙස ක්රියා කරයි!* 🙇\n\n_Bu modun amacı botu tam fonksiyonel bir yapay zeka sohbet aracına çevirmektir._\n_Normal moda dönmek için_ *.fulleva off* _komutunu kullanabilirsiniz._\n\n*WhatsAsena Kullandığın İçin Teşekkürler 💌*\n    *- Eva*' : '*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴\n Working as a Chatbot! 🙇*\n\n_The purpose of this mod is to turn the bot into a fully functional AI chatbot._\n_You can use the_ *.eva off* _command to return to normal mode._\n\n*Thanks For Using 🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 💌*\n    *- Eva*'
         if (conn.user.jid == one || conn.user.jid == two || conn.user.jid == three || conn.user.jid == four) {
             await conn.sendMessage(conn.user.jid, nw, MessageType.text), console.log(nw), await new Promise(r => setTimeout(r, 1000))
             await heroku.get(baseURI + '/formation').then(async (formation) => {
@@ -370,7 +370,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴 Public  ලෙස ක්රියා කරයි! 🙇*\n\n_මෙය ඔබගේ ලොග් සටහන් අංකය බැවින් මෙහි එන පණිවුඩ සහා අවධානයෙන් සිටින්න._\n__ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය නමුත් මෙහි නොකරන්න:)_\n\n*bot පොදු කිරීමට .වෙනස් කිරීමට* _.setvar WORK_TYPE: private_ *ඔබේ විධානය භාවිතා කරන්න.*\n\n*🚀 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 භාවිතා කිරීම ගැන ස්තූතියි.💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 Public  ලෙස ක්රියා කරයි! 🙇*\n\n_මෙය ඔබගේ ලොග් සටහන් අංකය බැවින් මෙහි එන පණිවුඩ සහා අවධානයෙන් සිටින්න._\n__ඔබට ඕනෑම චැට් එකක විධාන උත්සාහ කළ හැකිය නමුත් මෙහි නොකරන්න:)_\n\n*bot පොදු කිරීමට .වෙනස් කිරීමට* _.setvar WORK_TYPE: private_ *ඔබේ විධානය භාවිතා කරන්න.*\n\n*🚀 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 භාවිතා කිරීම ගැන ස්තූතියි.💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -396,7 +396,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🚀 •´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`• 🤴*\n *Working as Public!* 🙇\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:private_\n\n*Thanks for using*\n\n *🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴💌*\n *\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\nhttps://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci\n⚙Bot News\n', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🚀 𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 🤴*\n *Working as Public!* 🙇\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:private_\n\n*Thanks for using*\n\n *🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴💌*\n *\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\nhttps://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci\n⚙Bot News\n', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -465,7 +465,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴 Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴 Kullandığın İçin Teşekkürler 💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 Olarak Çalışıyor! 🐺*\n\n_Lütfen burada plugin denemesi yapmayın. Burası sizin LOG numaranızdır._\n_Herhangi bir sohbette komutları deneyebilirsiniz :)_\n\n*Botunuz sadece size özel olarak çalışmaktadır. Değiştirmek için* _.setvar WORK_TYPE:public_ *komutunu kullanın.*\n\n*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 Kullandığın İçin Teşekkürler 💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -491,7 +491,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                 if (config.FULLEVA == 'true') {
                     await conn.sendMessage(conn.user.jid, EVA_ACTİON, MessageType.text)
                 } else {
-                    await conn.sendMessage(conn.user.jid, '*🚀 •´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`• 🤴*\n *Working as Private!* 🙇\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:public_\n\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\n https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci\n⚙Bot News\n https://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n⚙Bot News 02 Group\nhttps://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n⚙SLHackersPlug group\n https://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n\n*Thanks for using*\n\n *🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴💌*', MessageType.text);
+                    await conn.sendMessage(conn.user.jid, '*🚀 𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 🤴*\n *Working as Private!* 🙇\n\n_කරුණාකර මෙහි විධාන භාවිතයෙන් වළකින්න.. මෙය ඔබගේ ලොග් අංකයයි._\n_ඔබට පුලුවන් වෙනත් ඔනෑම කතා බහක විධාන භාවිතා කරන්න :)_\n\n*ඔබේ Bot Public ආකාරයට ක්‍රියා කරයි. එය වෙනස් කිරීමට, මෙය භාවිතා කරන්න* _.setvar WORK_TYPE:public_\n\n_නවතම තොරතුරු හා ගැටලු සදහා පහත සමූහයන්ට එකතු වෙන්න\n⚙support group\n https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci\n⚙Bot News\n https://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n⚙Bot News 02 Group\nhttps://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n⚙SLHackersPlug group\n https://chat.whatsapp.com/BmHC38h9OTPIbWLjGupalw\n\n*Thanks for using*\n\n *🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴💌*', MessageType.text);
                 }
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
@@ -744,7 +744,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                             if (config.NOLOG == 'true') return;
 
                             if (config.LANG == 'TR' || config.LANG == 'AZ') {
-                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] --*' +
+                                await conn.sendMessage(conn.user.jid, '*-- HATA RAPORU [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] --*' +
                                     '\n*WhatsAsena bir hata gerçekleşti!*' +
                                     '\n_Bu hata logunda numaranız veya karşı bir tarafın numarası olabilir. Lütfen buna dikkat edin!_' +
                                     '\n_Yardım için Telegram grubumuza yazabilirsiniz._' +
@@ -754,7 +754,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     , MessageType.text, { detectLinks: false });
 
                                 if (error.message.includes('URL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Only Absolutely URLs Supported_' +
                                         '\n*Nedeni:* _Medya araçlarının (xmedia, sticker..) LOG numarasında kullanılması._' +
@@ -763,7 +763,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _SQL Database Error_' +
                                         '\n*Nedeni:* _Database\'in bozulması._ ' +
@@ -781,7 +781,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Ookla Server Connection_' +
                                         '\n*Nedeni:* _Speedtest verilerinin sunucuya iletilememesi._' +
@@ -790,7 +790,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Requested Audio Params_' +
                                         '\n*Nedeni:* _TTS komutunun latin alfabesi dışında kullanılması._' +
@@ -799,7 +799,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _No Such File or Directory_' +
                                         '\n*Nedeni:* _Pluginin yanlış kodlanması._' +
@@ -808,7 +808,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Error 404 HTTPS_' +
                                         '\n*Nedeni:* _Heroku plugini altındaki komutların kullanılması sonucu sunucu ile iletişime geçilememesi._' +
@@ -817,7 +817,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Reply Delete Function_' +
                                         '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
@@ -826,7 +826,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Reply Delete Function_' +
                                         '\n*Nedeni:* _IMG yada Wiki komutlarının kullanılması._' +
@@ -835,7 +835,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Bailyes Action Error_ ' +
                                         '\n*Nedeni:* _Tam nedeni bilinmiyor. Birden fazla seçenek bu hatayı tetiklemiş olabilir._' +
@@ -844,7 +844,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Cannot Decode Text or Media_' +
                                         '\n*Nedeni:* _Pluginin yanlış kullanımı._' +
@@ -853,7 +853,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Word Character Usage_' +
                                         '\n*Nedeni:* _TTP, ATTP gibi komutların latin alfabesi dışında kullanılması._' +
@@ -862,7 +862,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] ⚕️*' +
+                                    return await conn.sendMessage(conn.user.jid, '*⚕️ HATA ÇÖZÜMLEME [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] ⚕️*' +
                                         '\n========== ```Hata Okundu!``` ==========' +
                                         '\n\n*Ana Hata:* _Deleting Plugin_' +
                                         '\n*Nedeni:* _Silinmek istenen plugin isminin yanlış girilmesi._' +
@@ -878,8 +878,8 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                             }
                             else {
-                                await conn.sendMessage(conn.user.jid, '*-- Bot වාර්තාව [🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴] --*' +
-                                    '\n*🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴 නිසි ලෙස ක්‍රියා කරයි!*' +
+                                await conn.sendMessage(conn.user.jid, '*-- Bot වාර්තාව [🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴] --*' +
+                                    '\n*🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴 නිසි ලෙස ක්‍රියා කරයි!*' +
                                     '\n\n\n_මෙය LOG අංකයයි.. මෙහි පණිවිඩ පිළිබඳව සැලකිලිමත් වන්න..!_' +
                                     '\n_ඔබට යම් ගැටලුවක් ඇත්නම් අපගේ සහය සමූහයට සම්බන්ධ වන්න.._' +
                                     '\n_සහය සමූහය_: https://chat.whatsapp.com/LpAdVOtMNYj3weg7VQVbci' +
@@ -889,7 +889,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 );
                                 if (error.message.includes('URL')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _සහය වන්නේ නියත වශයෙන්ම URL පමණි_' +
                                         '\n*හේතුව:* _LOG අංකය තුළ මාධ්‍ය මෙවලම් (nmedia, ස්ටිකර් ..) භාවිතය._' +
                                         '\n*විසඳුම:* _ඔබට LOG අංකය හැර ඕනෑම චැට් එකකදී විධානයන් භාවිතා කළ හැකිය._'
@@ -898,7 +898,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('conversation')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _ප්ලගිනය ඉවත් කිරීම_' +
                                         '\n*හේතුව:* _ප්ලගිනයේ නම වැරදි ලෙස ඇතුළත් කිරීම මැකීමට අවශ්‍යයි._' +
                                         '\n*Solution:* _Please try without adding_ *__* _to the plugin you want to delete. If you still get an error, try to add like_ ```?(.*) / $``` _to the end of the name._ '
@@ -907,7 +907,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('split')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _නිර්වචනය නොකළ බෙදීම_' +
                                         '\n*හේතුව:* _කණ්ඩායම් පරිපාලකයින්ට භාවිතා කළ හැකි නියෝග සමහර විට බෙදීමේ ක්‍රියාවලිය නොදකිති._ ' +
                                         '\n*විසඳුම:* _නැවත ආරම්භ කිරීම ප්‍රමාණවත් වේ._'
@@ -916,7 +916,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('SSL')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _SQL දත්ත සමුදා දෝෂය_' +
                                         '\n*හේතුව:* _දත්ත සමුදාය දූෂණය_ ' +
                                         '\n*විසඳුම:* _දන්නා විසඳුමක් නොමැත. ඔබට එය නැවත ස්ථාපනය කිරීමට උත්සාහ කළ හැකිය._'
@@ -925,7 +925,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('Ookla')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _Ookla සේවාදායක සම්බන්ධතාවය_' +
                                         '\n*හේතුව:* _Sepedtest දත්ත සේවාදායකයට සම්ප්‍රේෂණය කළ නොහැක._' +
                                         '\n*විසඳුම:* _ඔබ එය තවත් වරක් භාවිතා කළහොත් ගැටලුව විසඳනු ඇත._'
@@ -934,7 +934,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('params')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _ඉල්ලූ ශ්‍රව්‍ය පරාමිතීන්_' +
                                         '\n*හේතුව:* _ලතින් හෝඩියේ පිටත TTS විධානය භාවිතා කිරීම._' +
                                         '\n*විසඳුම:* _ඔබ ලතින් අකුරු රාමුව තුළ විධානය භාවිතා කළහොත් ගැටළුව විසඳනු ඇත._'
@@ -943,7 +943,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('unlink')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _එවැනි ගොනුවක් හෝ නාමාවලියක් නොමැත' +
                                         '\n*හේතුව:* _ප්ලගිනයේ වැරදි කේතීකරණය._' +
                                         '\n*විසඳුම:* _කරුණාකර ඔබගේ ප්ලගින කේත පරීක්‍ෂා කරන්න._'
@@ -952,7 +952,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('404')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _දෝෂය 404 HTTPS_' +
                                         '\n*හේතුව:* _හෙරෝකු ප්ලගිනය යටතේ ඇති විධානයන් භාවිතා කිරීම හේතුවෙන් සේවාදායකයා සමඟ සන්නිවේදනය කිරීමට නොහැකි වීම._' +
                                         '\n*විසඳුම:* _ටික වේලාවක් රැඳී සිට නැවත උත්සාහ කරන්න. ඔබට තවමත් දෝෂයක් ඇත්නම් එම ගනුදෙනුව වෙබ් අඩවියේ සිදු කරන්න._'
@@ -961,7 +961,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('reply.delete')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
                                         '\n*හේතුව:* _IMG හෝ විකි විධානයන් භාවිතා කිරීම._' +
                                         '\n*විසඳුම:* _මෙම දෝෂයට විසඳුමක් නොමැත. එය මාරාන්තික වරදක් නොවේ._'
@@ -970,7 +970,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('load.delete')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _Reply Delete Function_' +
                                         '\n*හේතුව:* _IMG හෝ විකි විධානයන් භාවිතා කිරීම._' +
                                         '\n*විසඳුම:* _මෙම දෝෂයට විසඳුමක් නොමැත. එය මාරාන්තික වරදක් නොවේ._'
@@ -979,7 +979,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('400')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _Bailyes ක්‍රියා දෝෂය_' +
                                         '\n*හේතුව:* _නිශ්චිත හේතුව නොදනී. විකල්ප එකකට වඩා මෙම දෝෂය ඇති කිරීමට ඉඩ ඇත._' +
                                         '\n*විසඳුම:* _ඔබ එය නැවත භාවිතා කළහොත් එය වැඩිදියුණු විය හැකිය. දෝෂය දිගටම පවතී නම්, ඔබට නැවත ආරම්භ කිරීමට උත්සාහ කළ හැකිය._'
@@ -988,7 +988,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('decode')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _පෙළ හෝ මාධ්‍ය_ විකේතනය කළ නොහැක' +
                                         '\n*හේතුව:* _ප්ලග් එක වැරදි ලෙස භාවිතා කිරීම._' +
                                         '\n*විසඳුම:* _කරුණාකර ප්ලගිනය විස්තරයේ ලියා ඇති පරිදි විධානයන් භාවිතා කරන්න._'
@@ -997,7 +997,7 @@ ${chalk.blue.italic('🙇Whatsapp වෙත සම්බන්ධ වෙමි�
                                 }
                                 else if (error.message.includes('unescaped')) {
                                     return await conn.sendMessage(conn.user.jid, '*⚕️දෝශ විශ්ලේෂණය!*' +
-                                        '\n[🚀•´¯`•» 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭 «•´¯`•🤴]' +
+                                        '\n[🚀𝚂𝙻𝙷𝚊𝚌𝚔𝚎𝚛𝚜 𝚃𝚎𝚊𝚖 𝐏𝐫𝐨𝐣𝐞𝐜𝐭🤴]' +
                                         '\n\n\n*ප්‍රධාන දෝෂය:* _වචන චරිත භාවිතය_' +
                                         '\n*හේතුව:* _ලතින් හෝඩියේ පිටත TTP, ATTP වැනි විධානයන් භාවිතා කිරීම._' +
                                         '\n*විසඳුම:* _ඔබ ලතින් හෝඩියේ විධානය භාවිතා කළහොත් ගැටළුව විසඳනු ඇත.._'

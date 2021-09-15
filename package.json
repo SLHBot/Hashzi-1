@@ -1,7 +1,7 @@
 {
   "name": "SLHTBot-1",
   "version": "1.3.2",
-  "description": "WhatsAsena project - a Whatsapp userbot helping to improve your Whatsapp experience.",
+  "description": "SLHackers Team Bot project - a Whatsapp userbot helping to improve your Whatsapp experience.",
   "main": "./WhatsAsenaDuplicated/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
@@ -14,11 +14,11 @@
     "whatsapp",
     "bot",
     "ai",
-    "asena",
-    "WhatsAsena"
+    "Hirusha",
+    "SLHackers"
   ],
-  "author": "AsenaDev / Yusuf Usta",
-  "developer": "AsenaDev / @Hirusha",
+  "author": "SLHackersDeveloper / Hirusha Dayarathne",
+  "developer": "SLHackersDeveloper / @Hirusha",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/phaticusthiccy/WhatsAsenaDuplicated/issues"
