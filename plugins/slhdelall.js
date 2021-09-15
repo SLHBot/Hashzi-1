@@ -15,6 +15,5 @@ SlHackers.addCommand({ pattern: 'delall', fromMe: true, desc: DEL }, (async (mes
 
     await message.sendMessage(Lang.DELETING);
     await message.client.modifyChat(message.jid, ChatModification.delete);
-    await message.sendMessage('.setvar AUTO_BİO:false');
     await message.sendMessage('```🕊All deleted....```');
 }));
