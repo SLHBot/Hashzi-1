@@ -1,4 +1,4 @@
-const asena = require('../events');
+const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
 const GM = "it sends good morning message"
 const GN = "it sends good night message"
@@ -7,7 +7,7 @@ const Config = require('../config');
 
 
 if (Config.WORKTYPE == 'private') {
-    asena.addCommand({ pattern: 'gm', fromMe: true, deleteCommand: true, desc: GM, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gm', fromMe: true, deleteCommand: true, desc: GM, }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -28,7 +28,7 @@ if (Config.WORKTYPE == 'private') {
     }));
 
 
-    asena.addCommand({ pattern: 'gn', fromMe: true, deleteCommand: true, desc: GN, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gn', fromMe: true, deleteCommand: true, desc: GN, }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -51,7 +51,7 @@ if (Config.WORKTYPE == 'private') {
 
 
 if (Config.WORKTYPE == 'public') {
-    asena.addCommand({ pattern: 'gm', fromMe: false, deleteCommand: true, desc: GM, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gm', fromMe: false, deleteCommand: true, desc: GM, }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -72,7 +72,7 @@ if (Config.WORKTYPE == 'public') {
     }));
 
 
-    asena.addCommand({ pattern: 'gn', fromMe: false, deleteCommand: true, desc: GN, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gn', fromMe: false, deleteCommand: true, desc: GN, }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -90,7 +90,7 @@ if (Config.WORKTYPE == 'public') {
             message.jid, (r_text[i]), MessageType.text);
 
     }));
-    asena.addCommand({ pattern: 'gm', fromMe: true, deleteCommand: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gm', fromMe: true, deleteCommand: true, dontAddCommandList: true }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -111,7 +111,7 @@ if (Config.WORKTYPE == 'public') {
     }));
 
 
-    asena.addCommand({ pattern: 'gn', fromMe: true, deleteCommand: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gn', fromMe: true, deleteCommand: true, dontAddCommandList: true }, (async (message, match) => {
 
         var r_text = new Array();
 

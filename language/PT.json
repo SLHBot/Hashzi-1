@@ -96,7 +96,7 @@
             "SUCC_AF": "*Use o script* ```default``` *para restaurá-lo.*",
             "DEGİS_NONE": "```Por favor, digite qualquer nome de módulo!``` \n\n*.degis afk*\n*.degis alive* _({pp}, {info}, {version}, {plugin})_\n*.degis ban*\n*.degis add*\n*.degis mute*\n*.degis unmute*\n*.degis promote*\n*.degis demote*\n*.degis kickme*\n*.degis block*\n*.degis unblock*",
             "WR": "*Use os módulos que se aplicam!*",
-            "DEGİS_DESC": "Substitua o texto dos módulos como alive, afk."          
+            "DEGİS_DESC": "Substitua o texto dos módulos como alive, afk."
         },
         "filters": {
             "FILTER_DESC": "Ele adiciona um filtro. Se alguém escreve seu filtro, ele envia a resposta. Se você apenas escrever .filter, ele mostra sua lista de filtros.",
@@ -286,7 +286,7 @@
             "XMEDİA_DESC": "É um plugin com mais de 25 ferramentas de mídia.",
             "T_FALSE": "```❌ Efeito de mistura incorreto inserido!```\n```🔎 Comandos Existentes:```\n\n*$dodge* - Aplica um filtro de cor rosa ao vídeo.\n*$multiply* - Aplica um filtro de cor verde ao vídeo.\n*$grainmerge* - Aumenta o contraste do vídeo.\n*$and* - Aplica efeito de raio negro de acordo com a velocidade do vídeo.\n*$or* - Aplica um efeito de raio branco de acordo com a velocidade do vídeo.\n*$burn* - Aplica contraste verde ao vídeo.\n*$difference* - Mostra as diferenças aplicando relevo verde ao vídeo.\n*$grainextract* - Mostra as diferenças aplicando relevo cinza ao vídeo.\n*$divide* - Demonstra as diferenças aplicando um relevo rosa ao vídeo.\n*$xor* - Aplica relevo verde e efeito relâmpago ao vídeo.\n*$hardmix* - Mistura as cores do vídeo em tons de amarelo e vermelho.\n*$negation* - Transforma a dinâmica do vídeo em rosa.",
             "T_NOT": "```💭 Você precisa inserir quaisquer efeitos de mistura!\n```🔎 Comandos Existentes:```\n\n*$dodge* - Aplica um filtro de cor rosa ao vídeo.\n*$multiply* - Aplica um filtro de cor verde ao vídeo.\n*$grainmerge* - Aumenta o contraste do vídeo.\n*$and* - Aplica efeito de raio negro de acordo com a velocidade do vídeo.\n*$or* - Aplica um efeito de raio branco de acordo com a velocidade do vídeo.\n*$burn* - Applies green contrast to video.\n*$difference* - Mostra as diferenças aplicando relevo verde ao vídeo.\n*$grainextract* - Mostra as diferenças aplicando relevo cinza ao vídeo.\n*$divide* - Demonstra as diferenças aplicando um relevo rosa ao vídeo.\n*$xor* - Aplica relevo verde e efeito relâmpago ao vídeo.\n*$hardmix* - Mistura as cores do vídeo em tons de amarelo e vermelho.\n*$negation* - Transforma a dinâmica do vídeo em rosa.",
-            "T_DESC": "Aplica o efeito TBlend selecionado a vídeos." 
+            "T_DESC": "Aplica o efeito TBlend selecionado a vídeos."
         },
         "mute": {
             "BİRMUTE": "*O grupo foi silenciado por 1 minuto!*",
@@ -424,7 +424,7 @@
         },
         "voicy": {
             "NEED_REPLY": "```Por favor responda a qualquer mensagem!```",
-            "ONLY_AUDIO":"```Somente arquivo de áudio é aceito.```",
+            "ONLY_AUDIO": "```Somente arquivo de áudio é aceito.```",
             "USAGE": "Converte áudio em texto.",
             "TEXT": "*Ei! Eu escutei secretamente esta voz e ouvi aquelas!:* \n\n"
         },
