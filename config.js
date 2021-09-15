@@ -19,7 +19,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v5.5.4 Global Stable',
+    VERSION: 'v7.3.6 Global Stable',
     HNLOCK: 'hadi-api',
     ZLOCK: 'zeks',
     ZNLOCK: 'zenzapi.xyz',
@@ -33,6 +33,7 @@ module.exports = {
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'true' : process.env.AUTO_BİO,
     ASENA_PLUG: process.env.ASENA_PLUG === undefined ? 'bimsaraapi' : process.env.ASENA_PLUG,
+    AUTHOR: 'HIRUSHA DAYARATHNE',
     BANWORD: process.env.BANWORD === undefined ? 'true' : process.env.BANWORD,
     BYE_LOGO: process.env.BYE_LOGO === undefined ? 'https://leyscoders-api.herokuapp.com/api/leave?name=SLHackers%20Team%20Bot%20Users&group=Official%20Group&profile=https://i.ibb.co/Gxct8Hg/Logo-SLH.jpg&apikey=dappakntlll' : process.env.BYE_LOGO,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
@@ -41,6 +42,7 @@ module.exports = {
     CAPTION_KEY: process.env.CAPTION_KEY === undefined ? '*⫷ S̳L̳H̳a̳c̳k̳e̳r̳s̳ ̳T̳e̳a̳m̳ ̳B̳o̳t̳ ̳P̳r̳o̳j̳e̳c̳t̳ ⫸*' : process.env.CAPTION_KEY,
     COMMAND: process.env.COMMAND === undefined ? 'hacked' : process.env.COMMAND,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
+    DEVELOPER: 'SLHACKERS TEAM',
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     HACKER: process.env.HACKER === undefined ? 'h4ck3rs404' : process.env.HACKER,
