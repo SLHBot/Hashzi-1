@@ -9,7 +9,7 @@ const Lang = Language.getString('anime');
 const fs = require("fs")
 const slhb = fs.readFileSync('./media/bot.mp3')
 
-SlHackers.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (message, match) => {
 
     var r_text = new Array();
 
@@ -103,7 +103,7 @@ SlHackers.addCommand({ pattern: 'help', fromMe: true, desc: Lang.AN }, (async (m
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'help', fromMe: false, desc: Lang.AN }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'help', fromMe: false, desc: Lang.AN }, (async (message, match) => {
 
         var r_text = new Array();
 

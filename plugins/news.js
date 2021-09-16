@@ -1,8 +1,7 @@
 /* Copyright (C) 2021 Vai838.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-WhatsAsenaDuplicated
-*/
+SLHackers Team Bot*/
 
 const SlHackers = require('../events');
 const { MessageType } = require('@adiwajshing/baileys');
@@ -13,7 +12,7 @@ const Lang = Language.getString('weather');
 
 
 if (Config.WORKTYPE == 'private') {
-	SlHackers.addCommand({ pattern: 'news ?(.*)', fromMe: true, desc: Lang.NEWS_DESC }, async (message, match) => {
+	SlHackers.addCMD({ pattern: 'news ?(.*)', fromMe: true, desc: Lang.NEWS_DESC }, async (message, match) => {
 		if (match[1] === '') return await message.reply(Lang.NEED_CATEGORY);
 		const url = `https://inshortsapi.vercel.app/news?category=${match[1]}`;
 		try {
@@ -62,7 +61,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-	SlHackers.addCommand({ pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC }, async (message, match) => {
+	SlHackers.addCMD({ pattern: 'news ?(.*)', fromMe: false, desc: Lang.NEWS_DESC }, async (message, match) => {
 		if (match[1] === '') return await message.reply(Lang.NEED_CATEGORY);
 		const url = `https://inshortsapi.vercel.app/news?category=${match[1]}`;
 		try {

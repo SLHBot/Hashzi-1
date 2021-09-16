@@ -14,7 +14,7 @@ const Lang = Language.getString('carbon');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.CARBON_NEEDWORD, MessageType.text);
 
@@ -38,7 +38,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'carbon ?(.*)', fromMe: false, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'carbon ?(.*)', fromMe: false, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.CARBON_NEEDWORD, MessageType.text);
 
@@ -59,7 +59,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, { mimetype: Mimetype.png, caption: dd })
 
     }));
-    SlHackers.addCommand({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'carbon ?(.*)', fromMe: true, desc: Lang.CARBON_DESC, warn: Lang.CARBON_WARN, dontaddCMDList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.CARBON_NEEDWORD, MessageType.text);
 

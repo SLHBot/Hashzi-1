@@ -19,7 +19,7 @@ const EEEEEEEDU_SLHEDU = "*TITLE:* *☣MOTIVATION Video No:07*\n*📂TYPE:* *vid
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: '1motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '1motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39049`, { responseType: 'arraybuffer' })
 
@@ -29,7 +29,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '2motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '2motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39050`, { responseType: 'arraybuffer' })
 
@@ -39,7 +39,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '3motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '3motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39053`, { responseType: 'arraybuffer' })
 
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '4motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '4motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39055`, { responseType: 'arraybuffer' })
 
@@ -59,7 +59,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '5motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '5motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39056`, { responseType: 'arraybuffer' })
 
@@ -69,7 +69,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '6motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '6motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39059`, { responseType: 'arraybuffer' })
 
@@ -79,7 +79,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '7motivate ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '7motivate ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39061`, { responseType: 'arraybuffer' })
 
@@ -94,7 +94,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: '1motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '1motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39049`, { responseType: 'arraybuffer' })
 
@@ -104,7 +104,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '2motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '2motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39050`, { responseType: 'arraybuffer' })
 
@@ -114,7 +114,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '3motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '3motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39053`, { responseType: 'arraybuffer' })
 
@@ -124,7 +124,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '4motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '4motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39055`, { responseType: 'arraybuffer' })
 
@@ -134,7 +134,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '5motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '5motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39056`, { responseType: 'arraybuffer' })
 
@@ -144,7 +144,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '6motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '6motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39059`, { responseType: 'arraybuffer' })
 
@@ -154,7 +154,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '7motivate ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '7motivate ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
         var webimage = await axios.get(`https://netfiletolink.herokuapp.com/39061`, { responseType: 'arraybuffer' })
 

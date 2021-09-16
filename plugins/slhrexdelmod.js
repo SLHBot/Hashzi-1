@@ -19,7 +19,7 @@ const NOT_FOUND = "*කිසිවක් සොයා ගත නොහැක!.*
 
 if (Config.WORKTYPE == 'private') {
 
-    hiru.addCommand({ pattern: 'rexdl ?(.*)', fromMe: true, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
+    hiru.addCMD({ pattern: 'rexdl ?(.*)', fromMe: true, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
 
         const pname = match[1]
 
@@ -300,7 +300,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-    hiru.addCommand({ pattern: 'rexdl ?(.*)', fromMe: false, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
+    hiru.addCMD({ pattern: 'rexdl ?(.*)', fromMe: false, usage: USAGE, desc: PHONEDE_DESC }, async (message, match) => {
 
         const pname = match[1]
 

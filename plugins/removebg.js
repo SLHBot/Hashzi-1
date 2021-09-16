@@ -20,7 +20,7 @@ const Lang = Language.getString('removebg');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'removebg ?(.*)', fromMe: true, desc: Lang.REMOVEBG_DESC }, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 
@@ -62,7 +62,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: 'removebg ?(.*)', fromMe: false, desc: Lang.REMOVEBG_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'removebg ?(.*)', fromMe: false, desc: Lang.REMOVEBG_DESC }, (async (message, match) => {
 
         if (message.jid === '905524317852-1612300121@g.us') {
 

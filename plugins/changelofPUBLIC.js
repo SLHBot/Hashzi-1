@@ -7,7 +7,7 @@ const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 if (Config.WORKTYPE == 'public') {
-    SlHackers.addCommand({ pattern: 'cnlog', fromMe: false, desc: Lang.UP }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'cnlog', fromMe: false, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 

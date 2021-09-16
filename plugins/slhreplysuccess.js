@@ -19,7 +19,7 @@ const Lang = Language.getString('nekobin');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCommand({ pattern: '⚜', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '⚜', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         const msg = message.reply_message.text
 
@@ -54,7 +54,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCommand({ pattern: '⚜', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '⚜', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         const msg = message.reply_message.text
 
@@ -88,7 +88,7 @@ else if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCommand({ pattern: '⚜', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: '⚜', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         const msg = message.reply_message.text
 

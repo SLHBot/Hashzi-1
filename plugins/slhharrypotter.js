@@ -7,7 +7,7 @@ const need = "Command Kazhinn Yanthankilum Eyuth muthe\n🙄🙄🙄"
 
 if (Config.WORKTYPE == 'private') {
 
-  SlHackers.addCommand({ pattern: 'harrypotter ?(.*)', fromMe: true, dontAddCommandList: true }, (async (message, match) => {
+  SlHackers.addCMD({ pattern: 'harrypotter ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 
@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-  SlHackers.addCommand({ pattern: 'harrypotter ?(.*)', fromMe: false, dontAddCommandList: true }, (async (message, match) => {
+  SlHackers.addCMD({ pattern: 'harrypotter ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(need);
 

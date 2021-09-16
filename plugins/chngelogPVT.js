@@ -7,7 +7,7 @@ const Language = require('../language');
 const Lang = Language.getString('scrapers');
 
 if (Config.WORKTYPE == 'private') {
-    SlHackers.addCommand({ pattern: 'cnlog', fromMe: false, desc: Lang.UP }, (async (message, match) => {
+    SlHackers.addCMD({ pattern: 'cnlog', fromMe: true, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -27,8 +27,64 @@ if (Config.WORKTYPE == 'private') {
         await message.sendMessage(Buffer.from(respoimage.data), MessageType.image, {
             mimetype: Mimetype.png, caption: `*◁○SLHackers ChangeLogs ○▷*
 
- *🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
-_2021/08/08_
+ *🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.4*
+_2021/08/12_
+◆═════════════⚜
+*SLHackers 5.2.4 UPDATE 🥳*
+◆═════════════▷
+*💡BUG FIXED*
+╔════════════▷
+*╠⚙Command Double Bug* Fixed🥴
+*╠⚙TTS VOICE Updated* 
+*╠⚙Song Upload Error Fixed*
+*╠⚜️Plugging Install Command updated*
+▷New Command: *.pkg*
+╚═══════════▷
+*⚠️TEMPORARY UNAVAILABLE  COMMAND*
+╔═══════════▷
+*╠⭕Menu List Added* *Command▷Temporary unavailable*
+*╠⭕Menu Command Chnge* *Command▷Temporary Unavailable*
+╚════════════▷
+*🔆PENDING COMMAND*
+╔════════════▷
+*╠🙇Facebook Download*
+*╠🙇instergram Download*
+*╠🙇sportify download*
+╚═════════════▷
+*😎WHAT'S NEW*
+╔═════════════▷
+*╠🔞+ Panel Added ( Use : Admin Only*
+▷ Type:  .Admin
+*╠🧚‍♂️Added Update Report System*
+╚═════════════▷
+*🎭𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 NEXT UPDATE*
+╔═════════════▷
+╠ 🙇ඔයාලා දන්නවා ඇති Logo Site Maintenance අලුත් features Add කරන්නලු යන්නෙ එයාලා🌝ඒ නිසා Logo pack එක වැඩ නෑ (තාවකාලිකව)
+║
+╠🙇අලුත් Logo Pack එකක් දෙන්නම් අද හෝ හෙට (girls Logo pack)
+║
+╠🙇 Ban Words system එකක් ඕන කිව්වා කට්ටිය ඒකෙ බාගයක් ඉවරයි🌝
+║
+╠ 🙇TEXT EDITOR FEATURE එක Beta version එකෙ අයටනම් කලින්ම දීලා තිබුනේ ඒ Feature එක ඔයාලත් දෙනවා🌝
+╚═════════════▷
+*⁉️HOW TO INSTALL 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 5.2.4*
+╔═════════════▷
+╠🧚‍♂️මේ Update Normal Update system එකෙන් Update වෙන්නෙ නැ Bot ආය Deploy කරන්න ඕන.
+කලින් QR SESSION එකම දාලා Deploy කරන්න...ඒක නැත්තන් දැං heroku App එකේ settings ගිහින් ගන්න
+_▷ Loging Heroku>Select App>>Click Setting⚙>>> -scroll up- >>>> Click Reveal Config Var_
+*▷🐱: github Link: https://github.com/Hirusha21/SLHTBot-X*
+╔═════════════▷
+╠⚙Update එකේ හෝ Bot සම්බන්ධ ඕනම ගැටලුවක් ADMIN PANEL එකට Inbox කරන්න
+╚═════════════▷
+*🎭CHMOD〽️L*
+Wa.me/+94755681801
+🔰Hiruha
+Wa.me/+94 75 56 81 782
+🔰Bimsara
+Wa.me/+94 75 56 81 800
+🤍Thank For Using 𝐒𝐋𝐇𝐚𝐜𝐤𝐞𝐫𝐬 𝐓𝐞𝐚𝐦 𝐁𝐨𝐭 🙇 Stay Safe &Stay With Us💌
+*🔰𝙑𝙚𝙧𝙨𝙞𝙤𝙣 5.2.3*
+_2021/08/08
 
 ◉mmpack updated
 ◉Added New Command ( .Admin)

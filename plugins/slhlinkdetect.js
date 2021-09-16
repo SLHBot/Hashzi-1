@@ -10,7 +10,7 @@ const Language = require('../language');
 const Lang = Language.getString('conventer');
 
 
-SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCMD({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
     var my_link_detector = 'true'
 
     var adc = ''
@@ -20,7 +20,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     var bdc = ''
     if (Config.LANG == 'EN') bdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
     if (Config.LANG == 'SI') bdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
- 
+
 
     var cdc = ''
     if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'

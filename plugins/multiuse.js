@@ -11,7 +11,7 @@ const LOADING = "Downloading the Video..."
 const NOT_FOUNDFB = "Video Not Found"
 const CAPTION = "Caption"
 
-SlHackers.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
+SlHackers.addCMD({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, async (message, match) => {
 
   const userName = match[1]
 
@@ -54,7 +54,7 @@ SlHackers.addCommand({ pattern: 'insta ?(.*)', fromMe: false, desc: IG_DESC }, a
 
 
 
-SlHackers.addCommand({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
+SlHackers.addCMD({ pattern: 'fb ?(.*)', fromMe: false, desc: FBDESC }, async (message, match) => {
 
   const userName = match[1]
 

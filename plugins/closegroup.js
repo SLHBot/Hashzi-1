@@ -9,7 +9,7 @@ const code = ('!mute 10h')
 const FINAL = "THIS GROUP IS CLOSED & OPEN IN MORNING"
 const TMUTE = "Trying to close temporary,\nAttempting to temporarily close the group"
 const SCXR = "Closing Group...."
-SlHackers.addCommand({ pattern: 'close', fromMe: true, deleteCommand: false, desc: CL, }, (async (message, match) => {
+SlHackers.addCMD({ pattern: 'close', fromMe: true, deleteCommand: false, desc: CL, }, (async (message, match) => {
 
   var msg = await message.reply('Preforming....');
 

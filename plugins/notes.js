@@ -1,12 +1,12 @@
 /*
 # Copyright (C) 2020 MuhammedKpln.
 #
-# WhatsAsena is free software: you can redistribute it and/or modify
+# SLHackers Team Bot is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
 #
-# WhatsAsena is distributed in the hope that it will be useful,
+# SLHackers Team Bot is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
@@ -25,7 +25,7 @@ const NotesDB = require('./sql/notes');
 const Language = require('../language')
 const Lang = Language.getString('notes')
 
-SlHackers.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
+SlHackers.addCMD({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
     const _notes = await NotesDB.getNotes()
@@ -54,7 +54,7 @@ SlHackers.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE },
 
 
 
-SlHackers.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
+SlHackers.addCMD({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
 
     const userNote = match[1]
 
@@ -102,7 +102,7 @@ SlHackers.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAG
     }
 })
 
-SlHackers.addCommand({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
+SlHackers.addCMD({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
 
     await NotesDB.deleteAllNotes()
 
