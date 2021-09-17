@@ -15,12 +15,12 @@ const Lang = Language.getString('_slhtbot');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'tenu862 ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'tenu862 ?(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -49,7 +49,7 @@ if (Config.WORKTYPE == 'private') {
             var CMD_HELP = '';
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -80,12 +80,12 @@ if (Config.WORKTYPE == 'private') {
     }));
 
     /*slf*/
-    SlHackers.addCMD({ pattern: 'sup ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sup ?(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -114,7 +114,7 @@ if (Config.WORKTYPE == 'private') {
             var CMD_HELP = '';
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -146,12 +146,12 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'tenuh862 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'tenuh862 ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -181,7 +181,7 @@ else if (Config.WORKTYPE == 'public') {
             var CMD_HELP = '';
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -212,12 +212,12 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
     /*slf*/
-    SlHackers.addCMD({ pattern: 'sup ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sup ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {
@@ -246,7 +246,7 @@ else if (Config.WORKTYPE == 'public') {
             var CMD_HELP = '';
             Asena.commands.map(
                 async (command) => {
-                    if (command.dontaddCMDList || command.pattern === undefined) return;
+                    if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
                         var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
                     } catch {

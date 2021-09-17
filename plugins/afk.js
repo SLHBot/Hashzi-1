@@ -32,7 +32,7 @@ function secondsToHms(d) {
     return hDisplay + mDisplay + sDisplay;
 }
 
-SlHackers.addCMD({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
     if (Config.AFKMSG == 'default') {
 
         if (AFK.isAfk && ((!message.jid.includes('-')) || (message.jid.includes('-') &&
@@ -84,7 +84,7 @@ SlHackers.addCMD({ on: 'text', fromMe: false, deleteCommand: false }, (async (me
     }
 }));
 
-SlHackers.addCMD({ on: 'text', fromMe: true, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCommand({ on: 'text', fromMe: true, deleteCommand: false }, (async (message, match) => {
     if (AFK.isAfk && !message.id.startsWith('3EB0')) {
         AFK.lastseen = 0;
         AFK.reason = false;
@@ -94,7 +94,7 @@ SlHackers.addCMD({ on: 'text', fromMe: true, deleteCommand: false }, (async (mes
     }
 }));
 
-SlHackers.addCMD({ pattern: 'afk ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.AFK_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'afk ?(.*)', fromMe: true, deleteCommand: false, desc: Lang.AFK_DESC }, (async (message, match) => {
     if (!AFK.isAfk) {
         AFK.lastseen = Math.round((new Date()).getTime() / 1000);
         if (match[1] !== '') { AFK.reason = match[1]; }

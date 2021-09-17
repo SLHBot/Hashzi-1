@@ -38,7 +38,7 @@ const convertToWav = file => {
 
 if (conf.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true }, (async (message, match) => {
 
         try {
             if (message.reply_message) {
@@ -77,7 +77,7 @@ if (conf.WORKTYPE == 'private') {
 }
 if (conf.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: false }, (async (message, match) => {
 
         try {
             if (message.reply_message) {
@@ -113,7 +113,7 @@ if (conf.WORKTYPE == 'public') {
 
 
     }));
-    SlHackers.addCMD({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'voicy', desc: Lang.USAGE, fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         try {
             if (message.reply_message) {

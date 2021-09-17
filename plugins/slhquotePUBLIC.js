@@ -58,7 +58,7 @@ const convertToWav = file => {
         .save('output.wav')
 }
 
-SlHackers.addCMD({ on: 'text', fromMe: wk, dontaddCMDList: true, deleteCommand: false }, (async (message, match) => {
+SlHackers.addCommand({ on: 'text', fromMe: wk, dontaddCommandList: true, deleteCommand: false }, (async (message, match) => {
     if (message.message.startsWith('q') && conf.FULLEVA !== 'true') {
         var unique_ident = message.client.user.jid.split('@')[0]
         var finm = message.message.replace('q', '').replace(' ', '')

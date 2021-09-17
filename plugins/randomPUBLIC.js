@@ -6,7 +6,7 @@ const Config = require('../config');
 const NEED_WORD = "*Must Enter some Words*"
 
 if (Config.WORKTYPE == 'private') {
-    SlHackers.addCMD({ pattern: 'random ?(.*)', fromMe: true, desc: 'word image' }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'random ?(.*)', fromMe: true, desc: 'word image' }, (async (message, match) => {
 
         var r_text = new Array();
 

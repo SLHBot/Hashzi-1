@@ -14,7 +14,7 @@ const Language = require('../language');
 const Lang = Language.getString('weather');
 const { errorMessage, infoMessage } = require('../helpers');
 
-/*SlHackers.addCMD({pattern: 'song ?(.*)', fromMe: false}, async (message, match) => {
+/*SlHackers.addCommand({pattern: 'song ?(.*)', fromMe: false}, async (message, match) => {
   if (match[1] === '') return await message.reply(Lang.NEED_SONG);
   const url = `https://tobz-api.herokuapp.com/api/joox?q=${match[1]}&apikey=BotWeA`;
   try {
@@ -34,7 +34,7 @@ const { errorMessage, infoMessage } = require('../helpers');
 });*/
 
 
-SlHackers.addCMD({ pattern: 'joox ?(.*)', fromMe: false, dontaddCMDList: true }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'joox ?(.*)', fromMe: false, dontaddCommandList: true }, async (message, match) => {
 
   const userName = match[1]
 
@@ -72,7 +72,7 @@ SlHackers.addCMD({ pattern: 'joox ?(.*)', fromMe: false, dontaddCMDList: true },
 
 
 
-SlHackers.addCMD({ pattern: 'rest ?(.*)', fromMe: true, dontaddCMDList: true, desc: Lang.DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'rest ?(.*)', fromMe: true, dontaddCommandList: true, desc: Lang.DESC }, (async (message, match) => {
   if (match[0].includes('install')) return;
   if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
   if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
@@ -101,7 +101,7 @@ SlHackers.addCMD({ pattern: 'rest ?(.*)', fromMe: true, dontaddCMDList: true, de
 
 
 
-SlHackers.addCMD({ pattern: 'twt ?(.*)', fromMe: false, dontaddCMDList: true, desc: "download from twitter links" }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'twt ?(.*)', fromMe: false, dontaddCommandList: true, desc: "download from twitter links" }, async (message, match) => {
 
   const userName = match[1]
 
@@ -146,7 +146,7 @@ SlHackers.addCMD({ pattern: 'twt ?(.*)', fromMe: false, dontaddCMDList: true, de
 
 
 
-SlHackers.addCMD({ pattern: 'show ?(.*)', fromMe: false, desc: "Get info related to tv series and shows" }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'show ?(.*)', fromMe: false, desc: "Get info related to tv series and shows" }, async (message, match) => {
 
   const userName = match[1]
 
@@ -177,7 +177,7 @@ SlHackers.addCMD({ pattern: 'show ?(.*)', fromMe: false, desc: "Get info related
 },
 )
 
-SlHackers.addCMD({ pattern: 'show ?(.*)', fromMe: false, dontaddCMDList: true }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'show ?(.*)', fromMe: false, dontaddCommandList: true }, async (message, match) => {
 
   const userName = match[1]
 

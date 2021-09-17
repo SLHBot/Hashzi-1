@@ -9,7 +9,7 @@ const fs = require("fs")
 const slhb = fs.readFileSync('./media/logo.mp3')
 
 if (Config.WORKTYPE == 'public') {
-    SlHackers.addCMD({ pattern: 'imgtext', fromMe: false, desc: Lang.UP }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'imgtext', fromMe: false, desc: Lang.UP }, (async (message, match) => {
 
         var r_text = new Array();
 

@@ -6,7 +6,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'mmpack', fromMe: true, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mmpack', fromMe: true, }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -24,7 +24,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'mmpack', fromMe: false, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mmpack', fromMe: false, }, (async (message, match) => {
 
         var r_text = new Array();
 

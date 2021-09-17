@@ -7,7 +7,7 @@ const Lang = Language.getString('aiscanner');
 const pb = require('../config');
 
 if (pb.WORKTYPE == 'private') {
-    SlHackers.addCMD({ pattern: '.', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '.', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
         if(message.fromMe) return
         let command = [
         'xmedia',
@@ -181,7 +181,7 @@ if (pb.WORKTYPE == 'private') {
     }));
 }
 else if (pb.WORKTYPE == 'public') {
-    SlHackers.addCMD({ pattern: '.', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '.', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
         if(message.fromMe) return
         let command = [
         'xmedia',
@@ -353,7 +353,7 @@ else if (pb.WORKTYPE == 'public') {
         await message.client.sendMessage(message.jid, msg + sml, MessageType.text)
 
     }));
-    SlHackers.addCMD({ pattern: '.', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: '.', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
         if(message.fromMe) return
         let command = [
         'xmedia',

@@ -17,7 +17,7 @@ const Lang = Language.getString('nekobin');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'neko', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'neko', fromMe: true, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
@@ -36,7 +36,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'neko', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'neko', fromMe: false, desc: Lang.NEKO_DESC }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);
@@ -52,7 +52,7 @@ else if (Config.WORKTYPE == 'public') {
         }
 
     }));
-    SlHackers.addCMD({ pattern: 'neko', fromMe: true, desc: Lang.NEKO_DESC, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'neko', fromMe: true, desc: Lang.NEKO_DESC, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage(Lang.NEED_REPLY);
         if (!message.reply_message.text) return await message.sendMessage(Lang.MUST_TEXT);

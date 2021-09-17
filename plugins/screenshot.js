@@ -16,7 +16,7 @@ const Lang = Language.getString('webss');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
         var r_text = new Array();
@@ -52,7 +52,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'ss ?(.*)', fromMe: false, desc: Lang.SS_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'ss ?(.*)', fromMe: false, desc: Lang.SS_DESC }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
         var r_text = new Array();
@@ -85,7 +85,7 @@ else if (Config.WORKTYPE == 'public') {
         await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *░▒▓█►─═  𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥 ═─◄█▓▒░*' })
 
     }));
-    SlHackers.addCMD({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(Lang.LİNK);
         var r_text = new Array();

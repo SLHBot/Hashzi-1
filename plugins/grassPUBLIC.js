@@ -16,7 +16,7 @@ const got = require("got");
 const QR_DESC = "It Converts Text to Ninja Logo"
 const NEED_TEXT = "*🪐Must Enter Some Words*"
 
-SlHackers.addCMD({ pattern: 'grass ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'grass ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 

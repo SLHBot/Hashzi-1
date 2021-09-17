@@ -9,7 +9,7 @@ const Lang = Language.getString('anime');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'anime', fromMe: true, desc: Lang.AN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'anime', fromMe: true, desc: Lang.AN }, (async (message, match) => {
 
         var r_text = new Array();
 
@@ -103,7 +103,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'anime', fromMe: false, desc: Lang.AN }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'anime', fromMe: false, desc: Lang.AN }, (async (message, match) => {
 
         var r_text = new Array();
 

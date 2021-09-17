@@ -25,7 +25,7 @@ const NotesDB = require('./sql/notes');
 const Language = require('../language')
 const Lang = Language.getString('notes')
 
-SlHackers.addCMD({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, async (message, match) => {
 
 
     const _notes = await NotesDB.getNotes()
@@ -54,7 +54,7 @@ SlHackers.addCMD({ pattern: 'notes', fromMe: true, desc: Lang.NOTES_USAGE }, asy
 
 
 
-SlHackers.addCMD({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE }, async (message, match) => {
 
     const userNote = match[1]
 
@@ -102,7 +102,7 @@ SlHackers.addCMD({ pattern: 'save ?(.*)', fromMe: true, desc: Lang.SAVE_USAGE },
     }
 })
 
-SlHackers.addCMD({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'deleteNotes', fromMe: true, desc: Lang.DELETE_USAGE }, async (message, match) => {
 
     await NotesDB.deleteAllNotes()
 

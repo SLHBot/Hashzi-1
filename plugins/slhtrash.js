@@ -13,7 +13,7 @@ const need = "*type picture url.*"
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'trash(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'trash(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 
@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'trash(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'trash(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(need);
 

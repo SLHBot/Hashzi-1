@@ -12,7 +12,7 @@ const code = "*╔═════◉sʟʜᴀᴄᴋᴇʀs ᴛᴇᴀᴍ ʙᴏᴛ�
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'nop45', fromMe: false, desc: Ln, }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nop45', fromMe: false, desc: Ln, }, (async (message, match) => {
 
         await message.client.sendMessage(
 
@@ -20,7 +20,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'my3 ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'my3 ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -30,7 +30,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'fuck ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'fuck ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'hii ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hii ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -50,7 +50,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'sir ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'sir ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -60,7 +60,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'yasai ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'yasai ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -70,7 +70,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'hapoi ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hapoi ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -80,7 +80,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'uddika ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'uddika ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -90,7 +90,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'aah ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'aah ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -100,7 +100,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'asai ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'asai ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -110,7 +110,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'wow ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'wow ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -120,7 +120,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'hapo ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'hapo ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -130,7 +130,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'anura ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'anura ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -140,7 +140,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'macn ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'macn ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -150,7 +150,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'babah ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'babah ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -160,7 +160,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'gemba ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gemba ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -170,7 +170,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'nah ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nah ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 
@@ -180,7 +180,7 @@ if (Config.WORKTYPE == 'public') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'kaluhutta ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'kaluhutta ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.sendMessage(ll);
 

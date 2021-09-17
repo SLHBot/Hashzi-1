@@ -12,7 +12,7 @@ const Language = require('../language');
 const Lang = Language.getString('instagram')
 
 
-SlHackers.addCMD({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (message, match) => {
 
   const userName = match[1]
 
@@ -34,7 +34,7 @@ SlHackers.addCMD({ pattern: 'vinsta ?(.*)', fromMe: false, desc: sd }, async (me
     await message.sendMessage(errorMessage(Lang.NOT_FOUND + userName))
   })
 });
-SlHackers.addCMD({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (message, match) => {
 
   const userName = match[1]
 
@@ -67,7 +67,7 @@ SlHackers.addCMD({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ph }, async (me
 },
 )
 
-SlHackers.addCMD({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (message, match) => {
 
   const userName = match[1]
 
@@ -103,7 +103,7 @@ SlHackers.addCMD({ pattern: 'igtv ?(.*)', fromMe: false, desc: tvig }, async (me
     )
 },
 )
-SlHackers.addCMD({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'igstalk ?(.*)', fromMe: true, desc: Lang.DESC }, (async (message, match) => {
   if (match[0].includes('install')) return;
   if (match[1] === '') return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });
   if (!match[1].includes('www.instagram.com')) return await message.client.sendMessage(message.jid, Lang.NEED_WORD, MessageType.text, { quoted: message.data });

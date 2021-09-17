@@ -102,13 +102,13 @@ const sin = `💠🔮 *මාධ්‍ය සංස්කාරක* 🔮💠\n\n
 
 if (Config.LANG == 'EN') {
     if (Config.WORKTYPE == 'private') {
-        SlHackers.addCMD({ pattern: 'editor', fromMe: true, deleteCommand: false, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'editor', fromMe: true, deleteCommand: false, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
             await message.sendMessage(message.jid, sin, MessageType.text, { quoted: message.data });
         }));
     }
 
     else if (Config.WORKTYPE == 'public') {
-        SlHackers.addCMD({ pattern: 'editor', fromMe: false, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
+        SlHackers.addCommand({ pattern: 'editor', fromMe: false, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
             await message.sendMessage(message.jid, sin, MessageType.text, { quoted: message.data });
         }));
     }
@@ -116,7 +116,7 @@ if (Config.LANG == 'EN') {
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'nmedia', fromMe: true, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nmedia', fromMe: true, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
 
         await message.sendMessage('💠🔮 *මාධ්‍ය සංස්කාරක* 🔮💠\n\n' +
             '🔮 විධානය : *.mp4enhance*\n' +
@@ -206,7 +206,7 @@ if (Config.WORKTYPE == 'private') {
 
     }));
 
-    SlHackers.addCMD({ pattern: 'x4mp4', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'x4mp4', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message.video) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -228,7 +228,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'x2mp4', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'x2mp4', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message.video) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -250,7 +250,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4image', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4image', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message.image) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -274,7 +274,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'spectrum', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'spectrum', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -295,7 +295,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'waves', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'waves', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -316,7 +316,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'frequency', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'frequency', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -337,7 +337,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'avec', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'avec', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -358,7 +358,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'volumeaudio', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'volumeaudio', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -379,7 +379,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'cqtaudio', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'cqtaudio', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -400,7 +400,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3eq', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3eq', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -421,7 +421,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3crusher', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3crusher', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -442,7 +442,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3reverse', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3reverse', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -463,7 +463,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4vintage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4vintage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -485,7 +485,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4reverse', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4reverse', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -508,7 +508,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4bw', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4bw', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -530,7 +530,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'bwimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'bwimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -551,7 +551,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'vintageimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'vintageimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -572,7 +572,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4enhance', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4enhance', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -594,7 +594,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'blurimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'blurimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -615,7 +615,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4blur', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4blur', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -636,7 +636,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3pitch', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3pitch', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -657,7 +657,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4edge', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4edge', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```Edging Video..```', MessageType.text);
@@ -679,7 +679,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3low', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3low', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -700,7 +700,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'x2mp3', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'x2mp3', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -721,7 +721,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'edgeimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'edgeimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo*');
         var downloading = await message.client.sendMessage(message.jid, '```Edging Image..```', MessageType.text);
@@ -742,7 +742,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'enhanceimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'enhanceimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -763,7 +763,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3volume', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3volume', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -784,7 +784,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'gif', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gif', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('වීඩියෝ අවශ්‍යයි!');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම to Gif..```', MessageType.text);
@@ -807,7 +807,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'agif', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'agif', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('වීඩියෝ අවශ්‍යයි!');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම to Gif..```', MessageType.text);
@@ -829,7 +829,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'grenimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'grenimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('ඡායාරූපය අවශ්‍යයි!');
         var downloading = await message.client.sendMessage(message.jid, '```Adding Gren..```', MessageType.text);
@@ -850,7 +850,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'interp ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'interp ?(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video and FPS Value!*\nEx: ```.interp 100```');
         if (message.reply_message.video && match[1] <= 10) return await message.sendMessage('*Low FPS Value ⚠️*\n*Please, type over 10*');
@@ -876,7 +876,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'rainbowimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'rainbowimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -898,7 +898,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4rainbow', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4rainbow', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -920,7 +920,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'negativeimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'negativeimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -941,7 +941,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4negative', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4negative', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -963,7 +963,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4art', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4art', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -985,7 +985,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'artimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'artimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1006,7 +1006,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4stab', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4stab', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1028,7 +1028,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4color', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4color', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1050,7 +1050,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'colorimage', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'colorimage', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1071,7 +1071,7 @@ if (Config.WORKTYPE == 'private') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4slowmo', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4slowmo', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message.video) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```Motion Render Interpolating..```', MessageType.text);
@@ -1099,13 +1099,13 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'nmedia', fromMe: false, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'nmedia', fromMe: false, desc: Lang.XMEDİA_DESC }, (async (message, match) => {
 
         await message.sendMessage('💻Usage: *.mp4enhance*\nℹ️Desc: Enhance video’s quality.\n\n💻Usage: *.interp*\nℹ️Desc: Increases the FPS of the video.\n\n💻Usage: *.mp4slowmo*\nℹ️Desc: Applies true-slowmo to non-slow motion videos.\n\n💻Usage: *.x4mp4*\nℹ️Desc: Reduce video’s quality by 75%.\n\n💻Usage: *.x2mp4*\nℹ️Desc: Reduce video’s quality by 50%.\n\n💻Usage: *.gif*\nℹ️Desc: Converts video to gif.\n\n💻Usage: *.agif*\nℹ️Desc: Converts video to voiced gif.\n\n💻Usage: *.mp4blur*\nℹ️Desc: Blurs the background of the video.\n\n💻Usage: *.mp4stab*\nℹ️Desc: Decreases the vibration of the video.\n\n💻Usage: *.mp4rainbow*\nℹ️Desc: Applies a rainbow effect to video.\n\n💻Usage: *.mp4color*\nℹ️Desc: Makes the colors of the video more vivid and beautiful.\n\n💻Usage: *.mp4art*\nℹ️Desc: Applies a art effect to the video.\n\n💻Usage: *.mp4negative*\nℹ️Desc: Applies a negative color filter to the video.\n\n💻Usage: *.mp4vintage*\nℹ️Desc: Applies a nostalgic effect to video.\n\n💻Usage: *.mp4bw*\nℹ️Desc: Applies a monochrome effect to video.\n\n💻Usage: *.mp4reverse*\nℹ️Desc: Plays the video in reverse.\n\n💻Usage: *.mp4edge*\nℹ️Desc: Applies a edge effect to the video.\n\n💻Usage: *.mp4image*\nℹ️Desc: Converts photo to 5 sec video.\n\n💻Usage: *.spectrum*\nℹ️Desc: Converts the spectrum of sound into video.\n\n💻Usage: *.waves*\nℹ️Desc: Converts the wave range of sound to video.\n\n💻Usage: *.frequency*\nℹ️Desc: Converts the frequency range of sound to video.\n\n💻Usage: *.avec*\nℹ️Desc: Converts the histogram of sound to video.\n\n💻Usage: *.volumeaudio*\nℹ️Desc: Converts the decibel value of the sound into video.\n\n💻Usage: *.cqtaudio*\nℹ️Desc: Converts the CQT value of audio to video.\n\n💻Usage: *.mp3eq*\nℹ️Desc: Adjusts the sound to a crystal clear level.\n\n💻Usage: *.mp3crusher*\nℹ️Desc: Distorts the sound, makes ridiculous.\n\n💻Usage: *.mp3reverse*\nℹ️Desc: Plays the sound in reverse.\n\n💻Usage: *.mp3pitch*\nℹ️Desc: Makes the sound thinner and faster.\n\n💻Usage *.mp3low*\nℹ️Desc: Makes the sound deep and slower.\n\n💻Usage: *.x2mp3*\nℹ️Desc: Makes the sound twice as fast.\n\n💻Usage: *.mp3volume*\nℹ️Desc: Increase sound level so much.\n\n💻Usage: *.bwimage*\nℹ️Desc: Applies a monochrome effect to image.\n\n💻Usage: *.vintageimage*\nℹ️Desc: Applies a vinatge effect to video.\n\n💻Usage: *.edgeimage*\nℹ️Desc: Applies a edge effect to the photo.\n\n💻Usage: *.enhanceimage*\nℹ️Desc: Makes the photo clearer.\n\n💻Usage: *.blurimage*\nℹ️Desc: Blurs the background of the photo.\n\n💻Usage: *.grenimage*\nℹ️Desc: Applies grain effect to the photo.\n\n💻Usage: *.negativeimage*\nℹ️Desc: Applies a negative color filter to the photo.\n\n💻Usage: *.rainbowimage*\nℹ️Desc: Applies rainbow effect to the photo.\n\n💻Usage: *.colorimage*\nℹ️Desc: It makes the colors of the photo more vivid and attractive.\n\n💻Usage: *.artimage*\nℹ️Desc: Applies a art effect to the photo.');
 
     }));
 
-    SlHackers.addCMD({ pattern: 'x4mp4', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'x4mp4', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1127,7 +1127,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'x2mp4', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'x2mp4', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1149,7 +1149,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4image', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4image', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1173,7 +1173,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'spectrum', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'spectrum', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1194,7 +1194,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'waves', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'waves', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1215,7 +1215,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'frequency', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'frequency', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1236,7 +1236,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'avec', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'avec', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1257,7 +1257,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'volumeaudio', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'volumeaudio', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1278,7 +1278,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'cqtaudio', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'cqtaudio', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1299,7 +1299,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3eq', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3eq', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1320,7 +1320,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3crusher', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3crusher', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1341,7 +1341,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3reverse', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3reverse', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1362,7 +1362,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4vintage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4vintage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1384,7 +1384,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4reverse', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4reverse', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1407,7 +1407,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4bw', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4bw', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1429,7 +1429,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'bwimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'bwimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1450,7 +1450,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'vintageimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'vintageimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1471,7 +1471,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4enhance', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4enhance', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1493,7 +1493,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'blurimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'blurimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1514,7 +1514,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4blur', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4blur', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1535,7 +1535,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3pitch', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3pitch', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1556,7 +1556,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4edge', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4edge', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```Edging Video..```', MessageType.text);
@@ -1578,7 +1578,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3low', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3low', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1599,7 +1599,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'x2mp3', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'x2mp3', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1620,7 +1620,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'edgeimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'edgeimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Need Photo*');
         var downloading = await message.client.sendMessage(message.jid, '```Edging Image..```', MessageType.text);
@@ -1641,7 +1641,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'enhanceimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'enhanceimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම..```', MessageType.text);
@@ -1662,7 +1662,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp3volume', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp3volume', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*Audio file අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1683,7 +1683,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'gif', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'gif', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('වීඩියෝ අවශ්‍යයි!');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම to Gif..```', MessageType.text);
@@ -1706,7 +1706,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'agif', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'agif', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('වීඩියෝ අවශ්‍යයි!');
         var downloading = await message.client.sendMessage(message.jid, '```පරිවර්තනය කිරීම to Gif..```', MessageType.text);
@@ -1728,7 +1728,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'grenimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'grenimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('ඡායාරූපය අවශ්‍යයි!');
         var downloading = await message.client.sendMessage(message.jid, '```Adding Gren..```', MessageType.text);
@@ -1749,7 +1749,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'interp ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'interp ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (!message.reply_message.video) return await message.sendMessage('*Need Video and FPS Value!*\nEx: ```.interp 100```');
         if (message.reply_message.video && match[1] <= 10) return await message.sendMessage('*Low FPS Value ⚠️*\n*Please, type over 10*');
@@ -1775,7 +1775,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'rainbowimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'rainbowimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1797,7 +1797,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4rainbow', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4rainbow', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1819,7 +1819,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'negativeimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'negativeimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1840,7 +1840,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4negative', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4negative', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1862,7 +1862,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4art', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4art', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1884,7 +1884,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'artimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'artimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1905,7 +1905,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4stab', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4stab', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1927,7 +1927,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4color', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4color', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1949,7 +1949,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'colorimage', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'colorimage', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.sendMessage('*ඡායාරූපය අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```සංස්කරණය වෙමින් පවති..```', MessageType.text);
@@ -1970,7 +1970,7 @@ else if (Config.WORKTYPE == 'public') {
         return await message.client.deleteMessage(message.jid, { id: downloading.key.id, remoteJid: message.jid, fromMe: true })
     }));
 
-    SlHackers.addCMD({ pattern: 'mp4slowmo', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'mp4slowmo', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message.video === false) return await message.sendMessage('*වීඩියෝ අවශ්‍යයි!*');
         var downloading = await message.client.sendMessage(message.jid, '```Motion Render Interpolating..```', MessageType.text);

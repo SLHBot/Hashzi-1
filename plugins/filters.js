@@ -13,7 +13,7 @@ const FilterDb = require('./sql/filters');
 const Language = require('../language');
 const Lang = Language.getString('filters');
 
-SlHackers.addCMD({ pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontaddCMDList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC, dontaddCommandList: true }, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
 
     if (match === null) {
@@ -34,7 +34,7 @@ SlHackers.addCMD({ pattern: 'filter ?(.*)', fromMe: true, desc: Lang.FILTER_DESC
     }
 }));
 
-SlHackers.addCMD({ pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, dontaddCMDList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, dontaddCommandList: true }, (async (message, match) => {
     match = match[1].match(/[\'\"\“](.*?)[\'\"\“]/gsm);
     if (match === null) {
         return await message.client.sendMessage(message.jid, Lang.NEED_REPLY + '\n*Example:* ```.stop "hello"```', MessageType.text)
@@ -48,7 +48,7 @@ SlHackers.addCMD({ pattern: 'stop ?(.*)', fromMe: true, desc: Lang.STOP_DESC, do
         await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text)
     }
 }));
-SlHackers.addCMD({ on: 'text', fromMe: false }, (async (message, match) => {
+SlHackers.addCommand({ on: 'text', fromMe: false }, (async (message, match) => {
     if (!!message.mention && message.mention[0] == '918921483992@s.whatsapp.net') {
         await message.client.sendMessage(message.jid, fs.readFileSync('./uploads/mention.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted: message.data, ptt: true })
     }

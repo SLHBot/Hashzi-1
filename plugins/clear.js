@@ -15,7 +15,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-SlHackers.addCMD({ pattern: 'clear', fromMe: true, desc: END, dontaddCMDList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'clear', fromMe: true, desc: END, dontaddCommandList: true }, (async (message, match) => {
 
     await message.sendMessage('```Chat clearing...```');
     await message.client.modifyChat(message.jid, ChatModification.delete);

@@ -13,7 +13,7 @@ const Lang = Language.getString('weather');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'vfb ?(.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'vfb ?(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 
@@ -26,7 +26,7 @@ if (Config.WORKTYPE == 'private') {
 
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'vfb ?(.*)', fromMe: false, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'vfb ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
 
         if (match[1] === '') return await message.client.sendMessage(message.jid, NEED_WORD);
 

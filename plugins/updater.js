@@ -20,7 +20,7 @@ const Language = require('../language');
 const Lang = Language.getString('updater');
 
 
-SlHackers.addCMD({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -73,7 +73,7 @@ SlHackers.addCMD({ pattern: 'update$', fromMe: true, desc: Lang.UPDATER_DESC }, 
     }
 }));
 
-SlHackers.addCMD({ pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC }, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {

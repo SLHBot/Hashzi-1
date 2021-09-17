@@ -31,7 +31,7 @@ if (config.LANG == 'ML') {
     LINKT_off = 'M_LINK TURNED Off'
 }
 
-SlHackers.addCMD({ pattern: 'mlink ?(.*)', fromMe: true, desc: l_dsc, usage: '.mlink on / of' }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'mlink ?(.*)', fromMe: true, desc: l_dsc, usage: '.mlink on / of' }, (async (message, match) => {
     if (match[1] == 'off') {
         await heroku.patch(baseURI + '/config-vars', {
             body: {

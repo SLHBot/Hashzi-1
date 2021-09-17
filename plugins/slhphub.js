@@ -13,7 +13,7 @@ const PB_NO = "*කණගාටුයි හමු නොවීය...*"
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'phub ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'phub ?(.*)', fromMe: true, desc: PB_DESC }, async (message, match) => {
 
         const link = match[1]
 
@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
 
 if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'phub ?(.*)', fromMe: false, desc: PB_DESC }, async (message, match) => {
+    SlHackers.addCommand({ pattern: 'phub ?(.*)', fromMe: false, desc: PB_DESC }, async (message, match) => {
 
         const link = match[1]
 

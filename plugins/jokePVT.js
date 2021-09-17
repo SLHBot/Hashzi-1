@@ -5,7 +5,7 @@ const got = require('got');
 const Language = require('../language');
 const Lang = Language.getString('weather');
 
-SlHackers.addCMD({ pattern: 'joke ?(.*)', fromMe: false, desc: Lang.JOKE_DESC }, async (message, match) => {
+SlHackers.addCommand({ pattern: 'joke ?(.*)', fromMe: false, desc: Lang.JOKE_DESC }, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(Lang.NEED_LOCATIONA);
 	const url = `https://official-joke-api.appspot.com/random_joke`;
 	try {

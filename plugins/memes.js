@@ -18,7 +18,7 @@ const Lang = Language.getString('memes');
 
 if (Config.WORKTYPE == 'private') {
 
-    SlHackers.addCMD({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -56,7 +56,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    SlHackers.addCMD({ pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'meme ?(.*)', fromMe: false, desc: Lang.MEMES_DESC }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;
@@ -91,7 +91,7 @@ else if (Config.WORKTYPE == 'public') {
             await info.delete();
         });
     }));
-    SlHackers.addCMD({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontaddCMDList: true }, (async (message, match) => {
+    SlHackers.addCommand({ pattern: 'meme ?(.*)', fromMe: true, desc: Lang.MEMES_DESC, dontaddCommandList: true }, (async (message, match) => {
 
         if (message.reply_message === false) return await message.client.sendMessage(message.jid, Lang.NEED_REPLY, MessageType.text);
         var topText, bottomText;

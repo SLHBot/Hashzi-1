@@ -13,7 +13,7 @@ const sql = require('./sql/greetings');
 const Language = require('../language');
 const Lang = Language.getString('greetings');
 
-SlHackers.addCMD({ pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC }, (async (message, match) => {
     var hg = await sql.getMessage(message.jid);
     if (hg === false) {
         await message.client.sendMessage(message.jid, Lang.NOT_SET_WELCOME, MessageType.text);
@@ -22,7 +22,7 @@ SlHackers.addCMD({ pattern: 'welcome$', fromMe: true, desc: Lang.WELCOME_DESC },
     }
 }));
 
-SlHackers.addCMD({ pattern: 'welcome (.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'welcome (.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid, Lang.NEED_WELCOME_TEXT);
     } else {
@@ -32,7 +32,7 @@ SlHackers.addCMD({ pattern: 'welcome (.*)', fromMe: true, dontaddCMDList: true }
     }
 }));
 
-SlHackers.addCMD({ pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC }, (async (message, match) => {
     var hg = await sql.getMessage(message.jid, 'goodbye');
     if (hg === false) {
         await message.client.sendMessage(message.jid, Lang.NOT_SET_GOODBYE, MessageType.text)
@@ -41,7 +41,7 @@ SlHackers.addCMD({ pattern: 'goodbye$', fromMe: true, desc: Lang.GOODBYE_DESC },
     }
 }));
 
-SlHackers.addCMD({ pattern: 'goodbye (.*)', fromMe: true, dontaddCMDList: true }, (async (message, match) => {
+SlHackers.addCommand({ pattern: 'goodbye (.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
     if (match[1] === '') {
         return await message.client.sendMessage(message.jid, Lang.NEED_GOODBYE_TEXT, MessageType.text);
     } else {
