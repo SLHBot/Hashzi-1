@@ -2,13 +2,14 @@
     "__SLHTBOTJSON__": true,
     "LANGUAGE": "English",
     "LANGCODE": "en",
-    "AUTHOR": "AsenaDev",
+    "AUTHOR": "SLHTBDeveloper",
     "STRINGS": {
         "_slhtbot": {
-            "COMMAND": "Command",
-            "DESC": "Description",
-            "EXAMPLE": "Example",
-            "NOT_FOUND": "*I couldnt find a command like this*",
+            "COMMAND": "විධානය",
+            "DESC": "විස්තරය",
+            "EXAMPLE": "උදාහරණ",
+            "NOT_FOUND": "*කණගාටුයි හමුනොවීය..*",
+            "PLKADMIN": ".report you are not admin \n\n",
             "WARN": "Warn"
         },
         "_plugin": {

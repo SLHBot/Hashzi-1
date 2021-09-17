@@ -16,9 +16,10 @@ const Lang = Language.getString('_slhtbot');
 if (Config.WORKTYPE == 'private') {
 
     SlHackers.addCommand({ pattern: 'tenu862 ?(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
+
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -47,7 +48,7 @@ if (Config.WORKTYPE == 'private') {
             );
         } else {
             var CMD_HELP = '';
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -83,7 +84,7 @@ if (Config.WORKTYPE == 'private') {
     SlHackers.addCommand({ pattern: 'sup ?(.*)', fromMe: true, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -112,7 +113,7 @@ if (Config.WORKTYPE == 'private') {
             );
         } else {
             var CMD_HELP = '';
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -149,7 +150,7 @@ else if (Config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'tenuh862 ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -179,7 +180,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         } else {
             var CMD_HELP = '';
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -215,7 +216,7 @@ else if (Config.WORKTYPE == 'public') {
     SlHackers.addCommand({ pattern: 'sup ?(.*)', fromMe: false, dontaddCommandList: true }, (async (message, match) => {
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {
@@ -244,7 +245,7 @@ else if (Config.WORKTYPE == 'public') {
             );
         } else {
             var CMD_HELP = '';
-            Asena.commands.map(
+            SlHackers.commands.map(
                 async (command) => {
                     if (command.dontaddCommandList || command.pattern === undefined) return;
                     try {

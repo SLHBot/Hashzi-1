@@ -47,11 +47,11 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') hdc = '*Thanks for letting me know*'
 
     var idc = ''
-    if (Config.LANG == 'EN') idc = '*Thanks for informing me?*'
+    if (Config.LANG == 'EN') idc = '*Thanks for informing me*'
     if (Config.LANG == 'SI') idc = '*Thanks for informing me*'
 
     var jdc = ''
-    if (Config.LANG == 'EN') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි?*'
+    if (Config.LANG == 'EN') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
     if (Config.LANG == 'SI') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
 
     var kdc = ''
@@ -59,7 +59,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
     if (Config.LANG == 'SI') kdc = '*Thank you so much for informing me of this message.*'
 
     if (my_link_detector == 'true' && message.jid !== '905511384572-1616356915@g.us') {
-        let regex1 = new RegExp('http://')
+        let regex1 = new RegExp('httpd://')
         let regex2 = new RegExp('https://gagana.lk')
         let regex3 = new RegExp('https://meemassoo.lk')
         let regex4 = new RegExp('https://slbreakingnews.com')

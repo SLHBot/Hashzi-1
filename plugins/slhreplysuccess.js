@@ -48,7 +48,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${msg}&width=1300&height=1480&extract_text=true&extract_html=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&lazy_load=true&retina=true&destroy_screenshot=true&dark_mode=true&block_tracking=true&omit_background=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, })
 
     }));
 }
@@ -84,7 +84,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${msg}&width=1300&height=1480&extract_text=true&extract_html=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&lazy_load=true&retina=true&destroy_screenshot=true&dark_mode=true&block_tracking=true&omit_background=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, })
 
     }));
 
@@ -94,7 +94,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${msg}&width=1300&height=1480&extract_text=true&extract_html=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&lazy_load=true&retina=true&destroy_screenshot=true&dark_mode=true&block_tracking=true&omit_background=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.BOT_NAME })
+        await message.client.sendMessage(message.jid, Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, })
 
     }));
 }

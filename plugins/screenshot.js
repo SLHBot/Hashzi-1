@@ -46,7 +46,7 @@ if (Config.WORKTYPE == 'private') {
 
         var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&width=1980&height=1080&extract_text=true&extract_html=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&lazy_load=true&retina=true&destroy_screenshot=true&dark_mode=true&block_tracking=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *░▒▓█►─═  𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥 ═─◄█▓▒░*' })
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n 𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥' })
 
     }));
 }
@@ -82,7 +82,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&width=1980&height=1080&extract_text=true&extract_html=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&lazy_load=true&retina=true&destroy_screenshot=true&dark_mode=true&block_tracking=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *░▒▓█►─═  𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥 ═─◄█▓▒░*' })
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n 𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥' })
 
     }));
     SlHackers.addCommand({ pattern: 'ss ?(.*)', fromMe: true, desc: Lang.SS_DESC, dontaddCommandList: true }, (async (message, match) => {
@@ -115,7 +115,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var webimage = await axios.get(`https://shot.screenshotapi.net/screenshot?token=${r_text[i]}&url=${match[1]}&width=1980&height=1080&extract_text=true&extract_html=true&output=image&file_type=png&block_ads=true&no_cookie_banners=true&lazy_load=true&retina=true&destroy_screenshot=true&dark_mode=true&block_tracking=true&wait_for_event=load`, { responseType: 'arraybuffer' })
 
-        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n *░▒▓█►─═  𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥 ═─◄█▓▒░*' })
+        await message.sendMessage(Buffer.from(webimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'speed capt. by :\n 𝕊𝕃ℍ𝕒𝕔𝕜𝕖𝕣𝕤 𝕋𝕖𝕒𝕞 𝔹𝕠𝕥 ℙ𝕣𝕠𝕛𝕖𝕔𝕥' })
 
     }));
 }
