@@ -43,14 +43,14 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
 
 
     if (link_finder == 'true' && message.jid !== '94755681782@s.whatsapp.net') {
-        let regex1 = new RegExp('Good night')
-        let regex2 = new RegExp('Good Night')
-        let regex3 = new RegExp('good night')
-        let regex4 = new RegExp('God Night')
-        let regex5 = new RegExp('Good morning')
-        let regex6 = new RegExp('Good Morning')
-        let regex7 = new RegExp('God Morning')
-        let regex8 = new RegExp('good morning')
+        let regex1 = new RegExp('futck')
+        let regex2 = new RegExp('hutto')
+        let regex3 = new RegExp('pakkk')
+        let regex4 = new RegExp('jkjhjksdct')
+        let regex5 = new RegExp('cdececedcde')
+        let regex6 = new RegExp('edcedevefvv')
+        let regex7 = new RegExp('Gcdcd')
+        let regex8 = new RegExp('effrvvvvng')
         if (regex1.test(message.message)) {
             await message.client.sendMessage(message.jid, edc, MessageType.text, { quoted: message.data })
         }
