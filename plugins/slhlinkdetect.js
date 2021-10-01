@@ -1,4 +1,4 @@
-/* උස්සන්න එපා බේසිකෙ කොල්ලො අහලා ගනිම්
+-/* උස්සන්න එපා බේසිකෙ කොල්ලො අහලා ගනිම්
 Codded BY Hirusha Dayarathne
 Wa.me/+94755681782
 */
@@ -11,62 +11,46 @@ const Lang = Language.getString('conventer');
 
 
 SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async (message, match) => {
-    var my_link_detector = 'true'
+    var link_finder = 'true'
 
     var adc = ''
-    if (Config.LANG == 'EN') adc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි.*'
-    if (Config.LANG == 'SI') adc = '*තොරතුරු බෙදා ගැනීම ගැන ඔබට ස්තුතියි*'
+    if (Config.LANG == 'EN') adc = '🌹🍃 *Good* \n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷\n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Night* \n┆┆┆┆🍃\n┆┆┆🌹\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷 *Sweet* \n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Dreams* \n┆┆┆┆🍃\n┆┆┆🌻\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n'
+    if (Config.LANG == 'SI') adc = '🌹🍃 *Good* \n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷\n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Night* \n┆┆┆┆🍃\n┆┆┆🌹\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷 *Sweet* \n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Dreams* \n┆┆┆┆🍃\n┆┆┆🌻\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n'
 
     var bdc = ''
-    if (Config.LANG == 'EN') bdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
-    if (Config.LANG == 'SI') bdc = '*මට දැනුම් දීම ගැන ඔබට ස්තුතියි*'
-
+    if (Config.LANG == 'EN') bdc = '🌹🍃 *Good* \n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷\n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Night* \n┆┆┆┆🍃\n┆┆┆🌹\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷 *Sweet* \n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Dreams* \n┆┆┆┆🍃\n┆┆┆🌻\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n'
+    if (Config.LANG == 'SI') bdc = '🌹🍃 *Good* \n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷\n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Night* \n┆┆┆┆🍃\n┆┆┆🌹\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷 *Sweet* \n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Dreams* \n┆┆┆┆🍃\n┆┆┆🌻\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n'
 
     var cdc = ''
-    if (Config.LANG == 'EN') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
-    if (Config.LANG == 'SI') cdc = '*👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻👍🏻*'
+    if (Config.LANG == 'EN') cdc = '🌹🍃 *Good* \n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷\n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Night* \n┆┆┆┆🍃\n┆┆┆🌹\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷 *Sweet* \n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Dreams* \n┆┆┆┆🍃\n┆┆┆🌻\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n'
+    if (Config.LANG == 'SI') cdc = '🌹🍃 *Good* \n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷\n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Night* \n┆┆┆┆🍃\n┆┆┆🌹\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n┆🍃\n┆🌼\n┆┆🍃\n┆┆🌷 *Sweet* \n┆┆┆🍃\n┆┆┆🌹\n┆┆┆┆\n┆┆┆┆\n┆┆┆┆\n┆┆┆🌹 *Dreams* \n┆┆┆┆🍃\n┆┆┆🌻\n┆┆┆🍃\n┆┆🌷\n┆┆🍃\n┆🌼\n┆🌹🍃\n🌹🍃\n'
 
     var ddc = ''
-    if (Config.LANG == 'EN') ddc = '*👊👊👊👊👊👊👊*'
-    if (Config.LANG == 'SI') ddc = '*👊👊👊👊👊👊👊*'
+    if (Config.LANG == 'EN') ddc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
+    if (Config.LANG == 'SI') ddc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
 
     var edc = ''
-    if (Config.LANG == 'EN') edc = '*Thank you so much for informing me of this message.*'
-    if (Config.LANG == 'SI') edc = '*Thank you so much for informing me of this message.*'
+    if (Config.LANG == 'EN') edc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
+    if (Config.LANG == 'SI') edc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
 
     var fdc = ''
-    if (Config.LANG == 'EN') fdc = '!🎲'
-    if (Config.LANG == 'SI') fdc = '!🎲'
+    if (Config.LANG == 'EN') fdc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
+    if (Config.LANG == 'SI') fdc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
 
     var gdc = ''
-    if (Config.LANG == 'EN') gdc = '*Why?*'
-    if (Config.LANG == 'SI') gdc = '*ai*'
+    if (Config.LANG == 'EN') gdc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
+    if (Config.LANG == 'SI') gdc = '💚 *Good* 💚\n   💚 *Morning* 💚\n  ===>♡☕️☕️♡<===\n        ┈┈╭╯╯╯┈\n     ┈┈┏━━━━┓\n     ┈╭┫╭▅╭▅┃\n     ┈┃┃┳╭╮┳┃\n     ┈╰┫╰━━╯┃\n     ▔▔╰━━━━╯\n🌸 *This coffee is for you* 🌸\n🌸 *Have a nice day* 🌸'
 
-    var hdc = ''
-    if (Config.LANG == 'EN') hdc = '*Thanks for letting me know*'
-    if (Config.LANG == 'SI') hdc = '*Thanks for letting me know*'
 
-    var idc = ''
-    if (Config.LANG == 'EN') idc = '*Thanks for informing me*'
-    if (Config.LANG == 'SI') idc = '*Thanks for informing me*'
-
-    var jdc = ''
-    if (Config.LANG == 'EN') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
-    if (Config.LANG == 'SI') jdc = '*මා දැනුවත් කිරීම ගැන ස්තූතියි*'
-
-    var kdc = ''
-    if (Config.LANG == 'EN') kdc = '*Thank you so much for informing me of this message.*'
-    if (Config.LANG == 'SI') kdc = '*Thank you so much for informing me of this message.*'
-
-    if (my_link_detector == 'true' && message.jid !== '905511384572-1616356915@g.us') {
-        let regex1 = new RegExp('httpd://')
-        let regex2 = new RegExp('https://gagana.lk')
-        let regex3 = new RegExp('https://meemassoo.lk')
-        let regex4 = new RegExp('https://slbreakingnews.com')
-        let regex5 = new RegExp('https://dailymirror.lk')
-        let regex6 = new RegExp('https://www.github.com')
-        let regex7 = new RegExp('hiruwa')
-        let regex8 = new RegExp('ado')
+    if (link_finder == 'true' && message.jid !== '94755681782@s.whatsapp.net') {
+        let regex1 = new RegExp('Good night')
+        let regex2 = new RegExp('Good Night')
+        let regex3 = new RegExp('good night')
+        let regex4 = new RegExp('God Night')
+        let regex5 = new RegExp('Good morning')
+        let regex6 = new RegExp('Good Morning')
+        let regex7 = new RegExp('God Morning')
+        let regex8 = new RegExp('good morning')
         if (regex1.test(message.message)) {
             await message.client.sendMessage(message.jid, edc, MessageType.text, { quoted: message.data })
         }
@@ -92,7 +76,7 @@ SlHackers.addCommand({ on: 'text', fromMe: false, deleteCommand: false }, (async
             await message.client.sendMessage(message.jid, gdc, MessageType.text, { quoted: message.data })
         }
         else if (message.message.match(/((?:[.]com)\b)/i)) {
-            await message.client.sendMessage(message.jid, ebc, MessageType.text, { quoted: message.data })
+            await message.client.sendMessage(message.jid, abc, MessageType.text, { quoted: message.data })
         }
     }
 }));
